@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../scss/_colors.scss */
+.green {
+  color: green;
+}
+
+/* line 9, ../scss/_colors.scss */
+.white {
+  color: #fff;
+}
+
+/* line 13, ../scss/_colors.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 8, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+/* line 13, ../scss/style.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 35, ../scss/style.scss */
+body {
+  font-family: 'Palanquin', sans-serif;
+  color: white;
+}
+
+/* line 40, ../scss/style.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 6.32911%, 100% 24px;
+  background-origin: content-box, border-box;
+  background-clip: content-box, border-box;
+  background-position: left top;
+  height: 100vh;
+}
+/* line 12, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 45, ../scss/style.scss */
+.header {
+  overflow: hidden;
+}
+/* line 47, ../scss/style.scss */
+.header img {
+  width: 150%;
+  vertical-align: top;
+  overflow: hidden;
+}
+@media screen and (min-width: 600px) {
+  /* line 47, ../scss/style.scss */
+  .header img {
+    width: 100%;
+  }
+}
+
+/* line 56, ../scss/style.scss */
+.left {
+  float: left;
+  padding: 0;
+}
+
+/* line 61, ../scss/style.scss */
+.right {
+  float: right;
+  padding: 0;
+}
+
+/* line 68, ../scss/style.scss */
+.nav {
+  background-color: #1a1a1a;
+}
+@media screen and (max-width: 600px) {
+  /* line 70, ../scss/style.scss */
+  .nav .responsive-li {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 68, ../scss/style.scss */
+  .nav {
+    line-height: 4.0625em;
+    height: 4.0625em;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 83, ../scss/style.scss */
+  .nav ul {
+    float: left;
+    height: 4.0625em;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 89, ../scss/style.scss */
+  .nav ul:nth-child(2) {
+    float: right;
+  }
+}
+/* line 94, ../scss/style.scss */
+.nav ul:nth-child(2) li:nth-child(2) {
+  background: #faa04b;
+}
+@media screen and (min-width: 600px) {
+  /* line 94, ../scss/style.scss */
+  .nav ul:nth-child(2) li:nth-child(2) {
+    margin-left: 0.625em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 785px) {
+  /* line 94, ../scss/style.scss */
+  .nav ul:nth-child(2) li:nth-child(2) {
+    margin-left: 1.875em;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 109, ../scss/style.scss */
+  .nav li {
+    float: left;
+    color: white;
+    margin-left: 2.1875em;
+    font-size: 0.875em;
+    font-weight: bold;
+  }
+}
+/* line 119, ../scss/style.scss */
+.nav li:nth-child(2) {
+  margin-left: 0;
+}
+@media screen and (max-width: 785px) {
+  /* line 109, ../scss/style.scss */
+  .nav li {
+    margin-left: 0.9375em;
+    font-size: 0.75em;
+  }
+  /* line 127, ../scss/style.scss */
+  .nav li:nth-child(2) {
+    margin-left: 0.625em;
+  }
+}
+@media screen and (max-width: 1030px) {
+  /* line 132, ../scss/style.scss */
+  .nav li:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 109, ../scss/style.scss */
+  .nav li {
+    height: 2.5em;
+    font-size: 1.125em;
+    padding: 0.625em;
+    padding-left: 0.9375em;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background: #1a1a1a;
+    border-top: red;
+    margin-left: 0px;
+  }
+  /* line 149, ../scss/style.scss */
+  .nav li:nth-child(2) {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 161, ../scss/style.scss */
+  .burger-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  /* line 168, ../scss/style.scss */
+  .inner-nav {
+    width: 74.68354%;
+    margin: 0 auto;
+  }
+}
+
+/* line 175, ../scss/style.scss */
+.tweet-bar {
+  clear: both;
+  height: 1.5625em;
+  line-height: 1.5625em;
+  background-color: black;
+}
+@media screen and (max-width: 610px) {
+  /* line 175, ../scss/style.scss */
+  .tweet-bar {
+    display: none;
+  }
+}
+
+/* line 186, ../scss/style.scss */
+.inner-tweet-bar {
+  width: 74.68354%;
+  margin: 0 auto;
+  font-size: 0.6875em;
+}
+
+/* line 192, ../scss/style.scss */
+.game-scroll-bar {
+  border-bottom: 1px #faa04b solid;
+  height: 5.625em;
+  background-color: #333333;
+  line-height: 5.625em;
+}
+
+/* line 200, ../scss/style.scss */
+.game-dropper {
+  padding-left: 1%;
+  width: 11.39241%;
+}
+@media screen and (min-width: 600px) {
+  /* line 200, ../scss/style.scss */
+  .game-dropper {
+    float: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 200, ../scss/style.scss */
+  .game-dropper {
+    width: 100%;
+    margin-right: 0.625em;
+    font-size: 1.5625em;
+  }
+}
+
+/* line 214, ../scss/style.scss */
+.sports-window-ctr {
+  background: #333333;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  /* line 214, ../scss/style.scss */
+  .sports-window-ctr {
+    float: left;
+  }
+}
+
+/* line 223, ../scss/style.scss */
+.sports-windows {
+  background-color: #333333;
+  width: 76.58228%;
+  line-height: 1em;
+  height: 5em;
+}
+@media screen and (min-width: 600px) {
+  /* line 223, ../scss/style.scss */
+  .sports-windows {
+    float: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 223, ../scss/style.scss */
+  .sports-windows {
+    margin-left: 15%;
+  }
+}
+/* line 242, ../scss/style.scss */
+.sports-windows .sports-window {
+  min-height: 3.4375em;
+  border: solid black 1px;
+  background: #161616;
+  padding: 0.5em;
+  margin: 10px;
+}
+/* line 248, ../scss/style.scss */
+.sports-windows .sports-window:hover {
+  outline: #fbaa44 1px solid;
+}
+@media screen and (max-width: 600px) {
+  /* line 242, ../scss/style.scss */
+  .sports-windows .sports-window {
+    width: 6.25em;
+  }
+}
+/* line 257, ../scss/style.scss */
+.sports-windows .sports-window-inner-title {
+  font-size: 0.625em;
+  color: darkgrey;
+}
+/* line 266, ../scss/style.scss */
+.sports-windows .sports-window-inner-teamname {
+  font-size: 0.8125em;
+  font-weight: bold;
+}
+/* line 269, ../scss/style.scss */
+.sports-windows .sports-window-inner-teamname span {
+  margin-left: 4%;
+}
+
+/* line 277, ../scss/style.scss */
+.predictions-title {
+  clear: both;
+  background-color: #1a1a1a;
+  height: 9.375em;
+  overflow: auto;
+}
+/* line 283, ../scss/style.scss */
+.predictions-title .predictions-main {
+  margin-top: 0.625em;
+  text-align: center;
+  font-size: 1.875em;
+  font-weight: bold;
+}
+
+/* line 291, ../scss/style.scss */
+.underliner {
+  width: 1.25em;
+  border-bottom: #fff;
+  height: 1px;
+}

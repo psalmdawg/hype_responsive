@@ -1,0 +1,610 @@
+body{
+  /*font-family: 'Arial', sans-serif;*/
+  font-family: 'Palanquin', sans-serif;
+  box-sizing: border-box;
+  background: #0d0d0d;
+  color: white;
+}
+
+
+.header{
+  overflow: auto;
+  /*margin: 0;*/
+  /*height: 95%;*/
+ /*height: 294px;*/
+}
+
+.header img{
+  width: 100%;
+  vertical-align: top;
+}
+
+ul{
+  display: inline-block;
+  /*color: red;*/
+}
+
+.right{
+  float: right;
+}
+
+.nav{
+  font-weight: bold;
+  height: 55px;
+  line-height: 55px;
+  background: black;
+  color: white;
+  font-size:  12px;
+  background: #1a191a;
+}
+.nav-left li:hover{
+  border-top: 1px solid #fbaa44;
+  border-bottom: 1px solid #fbaa44;
+  margin-top: -2px;
+  /*font-size: 13px;*/
+}
+.inner-nav{
+  width: 85%;
+  margin: 0 auto;
+  /*display: inline-block;*/
+}
+.orange{
+  color: #fbaa44 ;
+}
+.navy{
+  background: #0f1a3f;
+}
+.maroon{
+  background: #640438;
+}
+.team-color-span{
+  /*min-height: 20px;
+  min-width: 20px;*/
+  /*border-radius: 100%*/
+}
+.team-color{
+  height: 19px;
+  width: 19px;
+  border-radius: 100%;
+  border: #fbaa44 solid 2px;
+  vertical-align: sub;
+}
+.title-match-container{
+  background: #1a191a;
+  padding-bottom: 25px;
+  -webkit-box-shadow: 0 8px 5px -4px black;
+   /*-moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;*/
+}
+.team-title-match{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: lightgrey;
+
+}
+.team-title-match span{
+  margin: 0 10px;
+
+}
+
+.nav li{
+  /*margin-top: 10px;*/
+  /*margin-right: 2%;*/
+  display: inline-block;
+  /*float: left;*/
+}
+.nav-right{
+  width: 32%;
+  /*display: inline-block;*/
+  /*float: right;*/
+}
+.nav-left{
+  width: 65%
+  /*margin-left: 30px;*/
+}
+.nav-right li{
+}
+.nav-left li{
+  margin-right: 4%;
+}
+
+.li-register{
+  background: #EBA33F;
+  /*margin-left: 5%;*/
+  margin-top:0;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-left: 10%;
+  float: right;
+}
+
+.li-register a{
+  text-decoration: none;
+  color: white;
+}
+.current-game-inner{
+  /*padding: 0;*/
+  padding: 7%;
+}
+.current-game-inner-title{
+  font-size: 8px;
+  color: darkgrey;
+}
+a:visited {
+  text-decoration: none; color: white;
+}
+a:hover {
+  text-decoration: none; color: white;
+}
+a:focus {
+  text-decoration: none; color: white;
+}
+a:hover, a:active {
+  text-decoration: none; color: white;
+}
+
+.section-one{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.share{
+  width: 85%;
+  margin: 0 auto;
+  background: black;
+}
+
+.share-inner{
+  color: white;
+  font-size: 9px;
+  /*width: 85%;*/
+  margin: 0 auto;
+  /*margin-top:10px;*/
+  padding: 7px;
+  padding-left: 0;
+}
+
+.share-inner img{
+  width: 10px;
+  vertical-align: bottom;
+}
+
+.game-scroll-bar{
+  min-height: 90px;
+  background: #333333;
+  /*padding-top: 5px;*/
+  color: white;
+  border-bottom: #fbaa44  1px solid;
+  /*margin-left: 1%;*/
+}
+
+.current-game{
+  border: solid black 1px;
+  overflow: hidden;
+  background: #161616;
+  height: 65px;
+  width: 17%;
+  padding: 0;
+  margin: 10px 1% 0px 0;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.current-game:hover{
+  outline: #fbaa44  1px solid;
+}
+
+.main{
+  color: white;
+  font-weight: bold;
+  padding: 100px;
+  font-size: 20px;
+}
+
+.cg-team{
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.cg-team-stats{
+  font-size: 11px;
+}
+
+.green{
+  color: lightgreen;
+}
+
+.current-game-container{
+  /*line-height: 60px;
+  vertical-align: middle;*/
+  margin-left: -1%;
+}
+
+.current-game-inner-stats span{
+  margin-left: 3%;
+}
+
+.arrow{
+  /*line-height: 20px;*/
+  vertical-align: sub;
+  margin-right: 1%;
+  cursor: pointer;
+
+}
+
+.arrow:hover{
+  color: #fbaa44 ;
+}
+
+.lh-70{
+  line-height: 70px;
+}
+
+.game-dropper{
+  text-align: center;
+  padding-left: 1%;
+  line-height: 90px;
+}
+.game-dropper img{
+  width: 10px;
+
+}
+.DIB{
+  display: inline-block;
+}
+.game-scroll-bar a{
+
+}
+.game-scroll-bar select{
+  background-image: url(white-arrow-down.png)right #BADA55;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  /*background-image: none;*/
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;*/
+
+}
+
+
+.underscorer{
+  border-top: white 1px solid;
+  width: 30px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.date{
+  font-size: 10px;
+  /*border-top: white 1px solid;*/
+  min-width: 30px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.round{
+  font-size: 9px;
+  color: lightgrey;
+  /*border-top: white 1px solid;*/
+  min-width: 30px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+
+.how-to-use-site{
+  font-size: 8px;
+  float: right;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: #e9f1ec;
+
+}
+
+.how-to-use-site a{
+  color: #fbaa44 ;
+  cursor: help;
+}
+
+.main-info-container{
+  width: 85%;
+  margin: 0 auto;
+  /*background: darkgrey;*/
+  /*height: 100vh;*/
+}
+
+.paired-teams-jumbo{
+  /*background: white;*/
+  height:  200px;
+  margin-left: 0px;
+}
+
+.ml0{
+  margin-left: 0;
+}
+
+.paired-teams-title{
+  height: 17px;
+  padding-left: 65px;
+  line-height: 17px;
+  letter-spacing:1px;
+  font-size: 9px;
+  font-weight: lighter;
+  /*margin-left: 0;*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020000+0,f7f7f7+0,020101+51 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020000+0,9b9b9b+0,020101+51 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020000+0,4f4f4f+0,020101+51 */
+  background: #020000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #020000 0%, #4f4f4f 0%, #020101 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #020000 0%,#4f4f4f 0%,#020101 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #020000 0%,#4f4f4f 0%,#020101 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020000', endColorstr='#020101',GradientType=0 ); /* IE6-9 */
+
+}
+
+.paired-teams-info{
+  /*line-height: 50px;*/
+  height: 50px;
+  min-width: 100%;
+  /*display: inline-block;*/
+}
+
+.paired-teams-points{
+  height: 50px;
+  line-height: 50px;
+
+  min-width: 100%;
+  background: #272627;
+}
+
+.team-info-container{
+  background: #272627;
+
+  height: 50px
+  /*border: white solid 1px;*/
+}
+.border-left{
+  border-left: black 3px solid;
+  /*height: 20px;*/
+}
+.border-bottom{
+  border-bottom: 3px solid black;
+}
+.no-padding{
+  padding: 0;
+}
+
+.paired-teams-info span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.team-name-container{
+  /*font-weight: bold;*/
+  /*float: left*/
+}
+
+.team-info-color{
+  /*background: darkgrey;*/
+  /*min-height: 100%;*/
+  width: 4px;
+  height: 40px;
+  /*line-height: 50px;*/
+  /*vertical-align: middle;*/
+  /*display: inline-block;*/
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  float: left;
+}
+.team-info-color-container{
+  /*background: #;*/
+}
+
+.team-name{
+  /*display: inline-block;*/
+  /*margin-top: 30px;*/
+  font-size: 15px;
+  padding-top: 7px;
+  font-weight: bold;
+  /*margin-left: 10px;*/
+}
+
+.power-ranking-sub{
+  font-size: 10px;
+  margin-top: 2px;
+  font-weight: lighter;
+
+  color: #e9f1ec;
+}
+.power-ranking-sub span{
+  font-weight: bolder;
+  margin-left: 1%;
+  font-size: 14px;
+}
+.w85{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.no-margin{
+  margin: 0;
+}
+.bold{
+  font-weight: bold;
+}
+.fs30{
+  font-size: 30px;
+}
+
+.results-summary-container{
+  /*width: 98.8%;*/
+  /*margin: 0 auto;*/
+}
+.results-summary-border-top{
+  height: 15px;
+  /*margin-bottom: 10px;*/
+  width: 98.7%;
+  background: #020000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #020000 0%, #4f4f4f 0%, #020101 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #020000 0%,#4f4f4f 0%,#020101 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #020000 0%,#4f4f4f 0%,#020101 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020000', endColorstr='#020101',GradientType=0 ); /* IE6-9 */
+
+}
+
+.result-summary-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  height: 30px;
+    width: 98.7%;
+  /*margin-bottom: 30px;*/
+  background: black;
+}
+.results-summary-info{
+  background: #272627;
+  width: 98.7%;
+  height: 100px;
+  /*margin: 0 auto;*/
+}
+
+.games-prediction-container{
+  width: 85%auto;
+  margin: 0 auto;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.games-prediction-title{
+  height: 15px;
+  /*margin-bottom: 10px;*/
+  margin-top: 50px;
+  /*width: 100%;*/
+  background: #020000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #020000 0%, #4f4f4f 0%, #020101 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #020000 0%,#4f4f4f 0%,#020101 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #020000 0%,#4f4f4f 0%,#020101 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020000', endColorstr='#020101',GradientType=0 ); /* IE6-9 */
+}
+
+.prediction-title-text{
+
+  background: black;
+  font-size: 20px;
+  height: 50px
+
+}
+.games-prediction-title-subtext{
+  font-size: 11px;
+  color: #808080;
+  font-weight: 100;
+  margin-top: 2px;
+  font-style: italic;
+}
+.circle-stats-box{
+  height: 300px;
+  background:darkgrey;
+  width: 100%;
+}
+.lower-stats-box{
+  background: #808080;
+  height: 100px;
+  width: 100%
+}
+.player-name-title{
+
+}
+
+.player-stats-team-name{
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  /*margin-top: 30px;*/
+  background: black;
+  /*margin-bottom: 30px;*/
+}
+
+
+.first-try,
+.anytime-try,
+.first-team-try,
+.fantasy-points {
+  color: lightgrey;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+}
+.player-name-title,
+.first-try-title,
+.anytime-try-title,
+.first-team-try-title,
+.fantasy-points-title {
+  color: lightgrey;
+  font-size: 10px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.player-name-title{
+    margin-left: 6px;
+  text-align: left;
+}
+
+.player-name{
+  /*background:  #181A18;*/
+  color: lightgrey;
+  height: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 10px;
+  border-right: 1px solid black;
+  margin:1px;
+  margin-left: 5px;
+
+}
+
+.player-name span{
+  font-size: 14px;
+  margin-left: 2px;
+}
+.lighter{
+  background:#3B2F2F;
+}
+.darker{
+  background:#1E1919;
+}
+
+.player-stats-table >.row:nth-child(even) {background: black}
+.player-stats-table >.row:nth-child(odd) {background:#2A2B2A;}
+.player-stats-table{
+  margin-bottom: 75px;
+}
+.stats-header{
+  height: 5px;
+  background: rgba(5,4,3,1);
+  background: -moz-linear-gradient(left, rgba(5,4,3,1) 0%, rgba(0,0,0,1) 7%, rgba(84,81,84,1) 32%, rgba(148,142,148,1) 51%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(5,4,3,1)), color-stop(7%, rgba(0,0,0,1)), color-stop(32%, rgba(84,81,84,1)), color-stop(51%, rgba(148,142,148,1)), color-stop(88%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(left, rgba(5,4,3,1) 0%, rgba(0,0,0,1) 7%, rgba(84,81,84,1) 32%, rgba(148,142,148,1) 51%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(5,4,3,1) 0%, rgba(0,0,0,1) 7%, rgba(84,81,84,1) 32%, rgba(148,142,148,1) 51%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(5,4,3,1) 0%, rgba(0,0,0,1) 7%, rgba(84,81,84,1) 32%, rgba(148,142,148,1) 51%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to right, rgba(5,4,3,1) 0%, rgba(0,0,0,1) 7%, rgba(84,81,84,1) 32%, rgba(148,142,148,1) 51%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050403', endColorstr='#000000', GradientType=1 );
+}
+.footer{
+  width: 100%;
+  height: 200px;
+  background: #161616;
+}

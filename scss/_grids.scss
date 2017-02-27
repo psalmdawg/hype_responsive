@@ -1,0 +1,23 @@
+// Requirements
+// ============
+
+@import "susy";
+
+//functions
+@function em($pixels, $content: 16px){
+  @return ($pixels / $content) * 1em;
+}
+
+
+
+$susy: (
+  columns: 16,
+  gutters: 1/4,
+  debug: (image: show),
+  global-box-sizing: border-sizing
+);
+
+$nav-color: #1a1a1a;
+$orange: #faa04b;
+$nav-height: 65px;
+$game-scroll-bar: #333333;
