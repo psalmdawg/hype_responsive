@@ -380,12 +380,6 @@ body {
 .sports-windows .sports-window:hover {
   outline: #fbaa44 1px solid;
 }
-@media screen and (max-width: 700px) {
-  /* line 281, ../scss/style.scss */
-  .sports-windows .sports-window {
-    background: red;
-  }
-}
 /* line 300, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
