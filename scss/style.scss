@@ -134,10 +134,12 @@ body{
     &:nth-child(1){
       padding-left: 0;
     }
+      @media screen and (min-width: $break-small) {
+        &:hover .dropdown-content {
+          display: block;
+        }
+      }
 
-    &:hover .dropdown-content {
-      display: block;
-    }
 
   }
 
@@ -249,22 +251,35 @@ body{
     font-size:em(25px);
   }
 }
-
+//
+// .nextArrow{
+//   left: 100px !important;
+//       background-color: red  !important; /*to notice it, is white*/
+//  z-index: 1;
+//   // float:left;
+// }
+// .prevArrow{
+//   left: 100px !important;
+//       background-color: red  !important; /*to notice it, is white*/
+//  z-index: 1;
+// }
 //sports window section
 .sports-window-ctr{
     background: $game-scroll-bar;
     width: span(16);
     @media screen and (max-width: $break-small) {
       float:left;
-      // overflow:auto;
+      overflow:auto;
     }
  }
+
+
   .sports-windows {
     visibility: hidden;
     background-color:$game-scroll-bar;
     width: span(12.3);
     line-height: 1em;
-    height: em(80px);
+    // height: em(80px);
     @media screen and (max-width: $break-small) {
       margin-bottom: em(6px);
       // overflow:auto;
@@ -282,6 +297,7 @@ body{
       @include box-shadow(2px 2px 5px  rgba(0,0,0,0.75));
       @include border-radius(em(2px));
       min-height: em(55px);
+      // height: 200px;
       border: solid black 1px;
       background-color: $nav-color;
       padding: em(5px, 10px);

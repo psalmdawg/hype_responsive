@@ -13,30 +13,46 @@
     });
 
 
-    $(window).resize(function(){
+    if($(window).width() < 700 ){
+      console.log("yyes")
+      $(".responsive-nav").addClass('mobile-menu-tabs');
+    }
 
-       if ($(window).width() > 625 ){
+    $(window).resize(function(){
+          console.log($(window).width())
+       if ($(window).width() > 700 ){
           console.log("not mobile");
           $(".responsive-nav").show();
           $(".menu-close").css({"display":"none"});
           $(".burger-icon").css({"display":"none"});
+          $(".responsive-nav").removeClass("mobile-menu-tabs");
        } else {
+         console.log('mobile')
          $(".burger-icon").css({"display":"block"});
          $(".menu-close").css({"display":"none"});
          $(".responsive-nav").css({"display":"none"});
+         $(".responsive-nav").addClass('mobile-menu-tabs');
        }//end of it statenent
     });
+
+    $('.mobile-menu-tabs').click(function(){
+
+      $(this).closest('.dropdown').find('.dropdown-content').toggle();
+
+    })
 
 
       $('.sports-windows').slick({
         // dots: true,
         infinite: true,
         // fade: true,
-        speed: 1100,
+        speed: 600,
         slidesToShow: 5,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
+        // nextArrow: '<div class="nextArrow"></div>',
+        // prevArrow: '<div class="prevArrow">></div>',
         responsive: [
           {
             breakpoint: 1024,
@@ -60,7 +76,8 @@
             {
 
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              speed: 100
             }
           }
           // You can unslick at a given breakpoint now by adding:
