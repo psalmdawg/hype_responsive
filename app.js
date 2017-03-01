@@ -2,11 +2,13 @@
   $(document).ready(function(){
 
     $(".burger-icon").click(function(){
+      $('.dropdown-content').hide();
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
     });
     $(".menu-close").click(function(){
+      $('.dropdown-content').hide();
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
@@ -14,12 +16,11 @@
 
 
     if($(window).width() < 700 ){
-      console.log("yyes")
+      // console.log("yyes")
       $(".responsive-nav").addClass('mobile-menu-tabs');
     }
 
     $(window).resize(function(){
-          console.log($(window).width())
        if ($(window).width() > 700 ){
           console.log("not mobile");
           $(".responsive-nav").show();
@@ -32,12 +33,15 @@
          $(".menu-close").css({"display":"none"});
          $(".responsive-nav").css({"display":"none"});
          $(".responsive-nav").addClass('mobile-menu-tabs');
+         $('.dropdown-content').hide();
        }//end of it statenent
     });
 
     $('.mobile-menu-tabs').click(function(){
-
+      // console.log($(this).closest('.dropdown').find('.dropdown-content').css())
+      $('.dropdown-content').hide();
       $(this).closest('.dropdown').find('.dropdown-content').toggle();
+
 
     })
 
