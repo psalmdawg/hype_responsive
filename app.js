@@ -20,33 +20,40 @@
 
     if($(window).width() < 700 ){
       $(".responsive-nav").addClass('mobile-menu-tabs');
+
+      $(".responsive-nav").click(function(){
+         $(this).closest('.dropdown').find('.dropdown-content').toggle();
+      });
+
     }
 
     $(window).resize(function(){
        if ($(window).width() > 700 ){
           console.log("not mobile");
-          $(".responsive-nav").show();
-          $(".menu-close").css({"display":"none"});
-          $(".burger-icon").css({"display":"none"});
+          $('.dropdown-content').hide();
+          // $(".responsive-nav").show();
+      //     $(".menu-close").css({"display":"none"});
+      //     $(".burger-icon").css({"display":"none"});
           $(".responsive-nav").removeClass("mobile-menu-tabs");
+          // $(".responsive-nav").removeClass("dropdown");
        } else {
-         console.log('mobile')
-         $(".burger-icon").css({"display":"block"});
-         $(".menu-close").css({"display":"none"});
-         $(".responsive-nav").css({"display":"none"});
-         $(".responsive-nav").addClass('mobile-menu-tabs');
+      //    console.log('mobile')
+      //    $(".burger-icon").css({"display":"block"});
+      //    $(".menu-close").css({"display":"none"});
+      //    $(".responsive-nav").css({"display":"none"});
+        //  $(".responsive-nav").addClass('mobile-menu-tabs');
          $('.dropdown-content').hide();
        }//end of it statenent
     });
 
-    $('.mobile-menu-tabs').click(function(){
-      console.log("click mo res")
-      // console.log($(this).closest('.dropdown').find('.dropdown-content').css())
-      $('.dropdown-content').hide();
-      $(this).closest('.dropdown').find('.dropdown-content').toggle();
-
-
-    })
+    // $('.mobile-menu-tabs').click(function(){
+    //   console.log("click mo res")
+    //   // console.log($(this).closest('.dropdown').find('.dropdown-content').css())
+    //   $('.dropdown-content').hide();
+    //   $(this).closest('.dropdown').find('.dropdown-content').toggle();
+    //
+    //
+    // })
 
 
       $('.sports-windows').slick({

@@ -65,8 +65,10 @@ body{
 }
 
 //***********************
-
-
+//this is outside of nav to work with Jquery
+.dropdown-content{
+  display: none;
+}
 .nav{
   font-weight: bold;
   background: $nav-color;
@@ -145,7 +147,7 @@ body{
 
   .dropdown-content {
 
-    display: none;
+    // display: none;
     overflow: hidden;
     // position: absolute;
     background-color: lighten(#f9f9f9, 5%);

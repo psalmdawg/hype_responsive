@@ -136,7 +136,12 @@ body {
   padding: 0;
 }
 
-/* line 70, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
+.dropdown-content {
+  display: none;
+}
+
+/* line 72, ../scss/style.scss */
 .nav {
   font-weight: bold;
   background: #1a1a1a;
@@ -144,17 +149,17 @@ body {
   line-height: 3.9375em;
   font-size: 0.875em;
 }
-/* line 78, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 700px) {
-  /* line 78, ../scss/style.scss */
+  /* line 80, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
-/* line 85, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -162,7 +167,7 @@ body {
   line-height: 3.875em;
   cursor: pointer;
 }
-/* line 91, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #faa04b;
   padding: 0 20px;
@@ -171,22 +176,22 @@ body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 700px) {
-  /* line 91, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 110, ../scss/style.scss */
+  /* line 112, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 115, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
 }
-/* line 119, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1a1a1a;
   height: 3.875em;
@@ -197,25 +202,24 @@ body {
   cursor: pointer;
   box-sizing: content-box;
 }
-/* line 128, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #121212;
   border-bottom: #faa04b solid 1px;
   margin-bottom: -0.0625em;
 }
-/* line 134, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 138, ../scss/style.scss */
+  /* line 140, ../scss/style.scss */
   .nav .dropdown:hover .dropdown-content {
     display: block;
   }
 }
-/* line 146, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .nav .dropdown-content {
-  display: none;
   overflow: hidden;
   background-color: white;
   min-width: 150px;
@@ -226,12 +230,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 700px) {
-  /* line 146, ../scss/style.scss */
+  /* line 148, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 167, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -242,16 +246,16 @@ body {
   display: block;
   background-color: #343434;
 }
-/* line 177, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #272727;
 }
-/* line 179, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
 }
 @media screen and (max-width: 700px) {
-  /* line 188, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -259,24 +263,24 @@ body {
   }
 }
 
-/* line 200, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   font-size: 2.5em;
   padding-left: 0.625em;
 }
 @media screen and (min-width: 700px) {
-  /* line 200, ../scss/style.scss */
+  /* line 202, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 209, ../scss/style.scss */
+/* line 211, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
 
-/* line 215, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   height: 1.5625em;
@@ -284,13 +288,13 @@ body {
   background-color: black;
 }
 @media screen and (max-width: 700px) {
-  /* line 215, ../scss/style.scss */
+  /* line 217, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 225, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 74.68354%;
@@ -298,7 +302,7 @@ body {
   font-size: 0.625em;
 }
 
-/* line 232, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #faa04b solid;
   height: 5.625em;
@@ -306,19 +310,19 @@ body {
   line-height: 5.625em;
 }
 
-/* line 240, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .game-dropper {
   padding-left: 1.5625em;
   width: 11.39241%;
 }
 @media screen and (min-width: 700px) {
-  /* line 240, ../scss/style.scss */
+  /* line 242, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 240, ../scss/style.scss */
+  /* line 242, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
@@ -326,20 +330,20 @@ body {
   }
 }
 
-/* line 267, ../scss/style.scss */
+/* line 269, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 700px) {
-  /* line 267, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
   }
 }
 
-/* line 277, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -347,24 +351,24 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 700px) {
-  /* line 277, ../scss/style.scss */
+  /* line 279, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 277, ../scss/style.scss */
+  /* line 279, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 277, ../scss/style.scss */
+  /* line 279, ../scss/style.scss */
   .sports-windows {
     margin-left: 12%;
   }
 }
-/* line 296, ../scss/style.scss */
+/* line 298, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -378,28 +382,28 @@ body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 305, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fbaa44 1px solid;
 }
-/* line 316, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
-/* line 326, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 329, ../scss/style.scss */
+/* line 331, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 338, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -409,12 +413,12 @@ body {
   height: 9.375em;
   overflow: auto;
 }
-/* line 345, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 350, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -422,7 +426,7 @@ body {
   font-size: 1.875em;
   font-weight: bold;
 }
-/* line 359, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   display: inline-block;
   background: purple;
@@ -433,14 +437,14 @@ body {
   border-radius: 1.25em;
   border: orange 1px solid;
 }
-/* line 367, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams {
   display: inline-block;
   vertical-align: top;
   margin: 0 1.25em;
 }
 
-/* line 376, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
 .underliner {
   clear: both;
   margin: 0.625em auto;
