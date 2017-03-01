@@ -79,7 +79,6 @@ body{
 
     @media screen and (min-width: $break-small) {
       @include float-right();
-      // background: $nav-color;
     }
     color: white;
 
@@ -199,7 +198,6 @@ body{
 .burger-icon-ctr{
   float:left;
   font-size: em(40px);
-  padding-top:em(4px);
   padding-left: em(10px);
   // line-height: em(62px);
     // height: em(62px);
