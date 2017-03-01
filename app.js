@@ -2,16 +2,41 @@
   $(document).ready(function(){
 
     $(".burger-icon").click(function(){
-      $(".responsive-li").toggle();
+      $(".responsive-nav").toggle();
+      $(".burger-icon").toggle();
+      $(".menu-close").toggle();
     });
+    $(".menu-close").click(function(){
+      $(".responsive-nav").toggle();
+      $(".burger-icon").toggle();
+      $(".menu-close").toggle();
+    });
+
+
+    $(window).resize(function(){
+
+       if ($(window).width() > 625 ){
+          console.log("not mobile");
+          $(".responsive-nav").show();
+          $(".menu-close").css({"display":"none"});
+          $(".burger-icon").css({"display":"none"});
+       } else {
+         $(".burger-icon").css({"display":"block"});
+         $(".menu-close").css({"display":"none"});
+         $(".responsive-nav").css({"display":"none"});
+       }//end of it statenent
+    });
+
 
       $('.sports-windows').slick({
         // dots: true,
-        infinite: false,
+        infinite: true,
         // fade: true,
-        speed: 600,
+        speed: 1100,
         slidesToShow: 5,
         slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: [
           {
             breakpoint: 1024,
@@ -44,4 +69,9 @@
         ]
       });
 
-  })
+      setTimeout(function() {
+        // $('.sports-windows').cs
+        $('.sports-windows').hide().css('visibility','visible').fadeIn('slow');
+      }, 100);
+
+  });
