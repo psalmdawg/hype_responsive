@@ -1,4 +1,7 @@
 
+  function myFunction(){
+    console.log("resized")
+  }
   $(document).ready(function(){
 
     $(".burger-icon").click(function(){
@@ -16,7 +19,6 @@
 
 
     if($(window).width() < 700 ){
-      // console.log("yyes")
       $(".responsive-nav").addClass('mobile-menu-tabs');
     }
 
@@ -38,6 +40,7 @@
     });
 
     $('.mobile-menu-tabs').click(function(){
+      console.log("click mo res")
       // console.log($(this).closest('.dropdown').find('.dropdown-content').css())
       $('.dropdown-content').hide();
       $(this).closest('.dropdown').find('.dropdown-content').toggle();
@@ -81,7 +84,7 @@
 
               slidesToShow: 1,
               slidesToScroll: 1,
-              speed: 100
+              speed: 300
             }
           }
           // You can unslick at a given breakpoint now by adding:
