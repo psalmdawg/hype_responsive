@@ -49,6 +49,10 @@ $( window ).resize(function() {
 
 $('.sports-expander-btn').on('click', function(){
   console.log('clickde')
+  $(this).closest('.sports-expander-btn').find('.seb-minus').toggle();
+  $(this).closest('.sports-expander-btn').find('.seb-plus').toggle()
+  // $(this).next('.seb-plus').toggle();
+  // $(this).next('.sports-expander-btn').toggle();
   $(this).next('.sports-expander').toggle();
  })
 
