@@ -4,9 +4,11 @@
 @import "grids";
 @import "reset";
 @import "colors";
+@import "compass/css3/box-sizing";
 
 *{
-  box-sizing: border-box;
+  // box-sizing: border-box;
+   @include box-sizing(border-box);
   // color: white;
 }
 
@@ -40,15 +42,36 @@ body{
 }
 
 .container{
-  @include container(100%);
-  min-height: 100vh;
+  // @include container(100%);
+  // min-height: 100vh;
+  width: 100%;
+  .page-container-right{
+    @include float-left();
+    border: 1px solid black;
+    width: 25%;
+    min-height: 40vh;
+    background: lighten(lightpink, 5%);
+    @media screen and (max-width: $break-small) {
+      display: none;
+    };
+  }
+  .page-container-left{
+    width: 75%;
+    @include float-left();
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    };
+
+
+  }
 }
+
 
 .header{
   overflow: hidden;
   img{
-    @media screen and (min-width: $break-small) {width: 100%};
-    width: 150%;
+    // @media screen and (min-width: $break-small) {width: 100%};
+    width: 100%;
     vertical-align: top;
   }
   border-bottom: 1px solid grey;
@@ -235,6 +258,7 @@ body{
   }
 }
 
+///////////////// *********************************** END OF NAV
 
 .tweet-bar{
   clear: both;
@@ -462,14 +486,15 @@ body{
       // background: green;
 
       @include float-left;
-      // span{
-      //   text-align: middle;
-      // }
+
+
     }
   }
   .power-ranking-ctr{
+
     @include span(16);
       .power-rankings{
+          text-align: middle;
         // font-size: em(30px);
         color: white;
         background: $nav-color;
@@ -493,7 +518,28 @@ body{
           }
         }
       }
+  }
+  .team-scores-ctr{
 
+    .team-scores-inner{
+      .team-scores{
+        float: left;
+          width: 50%;
+          background: gray;
+          height: em(35px);
+          line-height: em(35px);
+          font-size: em(20px);
+          font-weight: bold;
+          text-align: center;
+          // vertical-align: middle;
+          // float: left;
+          border: 1px solid black;
+          .score{
+            margin-left: em(15px);
+          }
+
+      }
+    }
   }
 
   .to-win-ctr, .over-under-ctr, .team-1-stats-ctr, .team-2-stats-ctr{
@@ -555,10 +601,24 @@ body{
   }
 
 
-
 } //.main-sports-section
+
+
+// inner container right
+
+.inner-ctr-right{
+  font-size: em(40px);
+  color: black;
+  padding-top: em(40px);
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
 
 .icon-footer{
   padding: em(20px);
   text-align: center;
+  clear: both;
 }

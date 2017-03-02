@@ -109,7 +109,7 @@ $('.sports-expander-btn').on('click', function(){
         slidesToShow: 5,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 9000,
         // nextArrow: '<div class="nextArrow"></div>',
         // prevArrow: '<div class="prevArrow">></div>',
         responsive: [
