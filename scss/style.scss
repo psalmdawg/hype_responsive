@@ -7,7 +7,7 @@
 
 *{
   box-sizing: border-box;
-  color: white;
+  // color: white;
 }
 
 a{
@@ -112,6 +112,10 @@ body{
 
           }
       }
+    }
+    a{
+      color: white;
+      text-decoration: none;
     }
 
 
@@ -433,7 +437,7 @@ body{
   .how-to-txt{
     font-size: em(8px);
   }
-  
+
 }
 //
 // .team-match-inner{
@@ -444,14 +448,18 @@ body{
 
    @include span(16);
     .team-match{
+      font-weight: bold;
+      color: $orange;
+      background: $game-scroll-bar;
 
       min-height: em(50px);
       line-height: em(50px);
-      padding-left: em(30px);
+      padding-left: em(40px);
       width: 50%;
       border: black 1px solid;
+      font-size: em(12px);
 
-      background: green;
+      // background: green;
 
       @include float-left;
       // span{
@@ -496,14 +504,24 @@ body{
     background: lime;
     overflow: hidden;
   }
+
+  .to-win-ctr, .over-under-ctr{
+    background: $game-scroll-bar;
+  }
+  .team-1-stats-ctr{
+    background: $purple;
+  }
+  .team-2-stats-ctr{
+    background: $maroon;
+  }
   .sports-expander-btn {
     // vertical-align: sub;
     .seb-plus, .seb-minus{
-      font-size: em(50px);
-      color: black;
+      font-size: em(20px);
+      color: lightgrey;
       // clear: both;
       float: right;
-      margin-right: em(10px);
+      margin-right: em(20px);
       margin-top: em(-2px);
       cursor: pointer;
 
@@ -522,11 +540,25 @@ body{
 
     display: none;
     height: 50vh;
-    background: red;
+    background: grey;
     clear:both;
+    padding: em(5px);
+
+    .sports-expander-inner{
+      border: $nav-color 1px solid;
+        @include box-shadow(1px 1px 2px 0px rgba(0,0,0,0.75));
+        height: 100%;
+        width: 100%;
+
+    }
 
   }
 
 
 
 } //.main-sports-section
+
+.icon-footer{
+  padding: em(20px);
+  text-align: center;
+}
