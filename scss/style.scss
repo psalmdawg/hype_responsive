@@ -36,6 +36,7 @@ body{
   font-family: "cooper hewitt book", sans-serif;
   color: white;
   background: $main;
+  // background: pink;
 }
 
 .container{
@@ -67,7 +68,7 @@ body{
 //***********************
 //this is outside of nav to work with Jquery
 .dropdown-content{
-  display: none;
+  // display: none;
 }
 .nav{
   font-weight: bold;
@@ -76,7 +77,14 @@ body{
   line-height:em(63px);
   font-size: em(14px);
   // overflow: hidden;
-
+  .inner-nav{
+    overflow: hidden;
+  }
+  // .underline-nav{
+  //   @media screen and (max-width: $break-small) {
+  //     border-top: $orange solid 1px;
+  //   }
+  // }
   .nav-right{
 
     @media screen and (min-width: $break-small) {
@@ -132,22 +140,33 @@ body{
         border-bottom: $orange solid 1px;
         margin-bottom: em(-1px);
       } //dropbtn hover end
+
+      @media screen and (max-width: $break-small) {
+        &:hover {
+          // color:
+          // font-size: em(17px);
+          background: $orange;;
+        }
+      }
+
     } //dropbtm end
     &:nth-child(1){
       padding-left: 0;
     }
-      @media screen and (min-width: $break-small) {
-        &:hover .dropdown-content {
-          display: block;
-        }
+
+
+      &:hover .dropdown-content {
+        display: block;
       }
+
+
 
 
   }
 
   .dropdown-content {
 
-    // display: none;
+    display: none;
     overflow: hidden;
     // position: absolute;
     background-color: lighten(#f9f9f9, 5%);
@@ -159,11 +178,8 @@ body{
     border-top: orange 1px solid;
     // border
     @media screen and (min-width: $break-small) {position:absolute;}
-    @media screen and (max-width: $break-small) {
-      // right:auto;
 
 
-    }
   }
 
   .dropdown-content a {
@@ -178,10 +194,18 @@ body{
     background-color: lighten($nav-color, 10%);
     &:hover{
       background-color: lighten($nav-color, 5%);
-      .dropbtn {
+    }
+      &:hover .dropbtn {
         color: blue;
+        font-size: 50px;
       }
       // outline: 1px white solid;
+
+    @media screen and (max-width: $break-small) {
+      &:hover .dropbtn {
+        color: $orange;
+        font-size: em(17px);
+      }
     }
 
     // &:hover
@@ -365,12 +389,30 @@ body{
         width: 30px;
         @include border-radius(em(20px));
         border: orange 1px solid;
+
+          @media screen and (max-width: $break-small) {
+            width: 20px;
+            height: 20px;
+          }
       }
+
       .teams{
         display: inline-block;
-          vertical-align: top;
-          margin: 0 em(20px);
+        vertical-align: top;
+        margin: 0px em(20px);
+        @media screen and (max-width: $break-small) {
+            font-size: em(14px);
+            margin: 0px em(12px);
+            vertical-align: middle;
+        }
       }
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    .predictions-main{
+      // background: red;
+      width: 100%;
     }
   }
 }
@@ -382,3 +424,77 @@ body{
   border-bottom: $white solid 1px;
   height: 1px;
 }
+.game-date{
+  margin: em(10px) auto;
+  // width: em(25px);
+  text-size: em(10px);
+  text-align: center;
+}
+
+.how-to-bar-ctr{
+  background: black;
+  padding: em(5px);
+  padding-left: em(30px);
+  .how-to-txt{
+    font-size: em(10px);
+
+  }
+
+}
+
+
+.main-sports-section{
+  .team-match-ctr{
+   @include span(16);
+    .team-match{
+      min-height: 50px;
+      width: 50%;
+      border: black 1px solid;
+      padding: 20px;
+      background: green;
+      @include float-left;
+    }
+  }
+  .power-ranking-ctr{
+     @include span(16);
+    .power-rankings{
+      min-height: 30px;
+      width: 50%;
+      border: black 1px solid;
+      padding: 10px;
+      background: red;
+        @include float-left;
+    }
+
+  }
+
+  .to-win-ctr, .over-under-ctr, .team-1-stats-ctr, .team-2-stats-ctr{
+    clear:both;
+    min-height: em(50px);
+    line-height: em(50px);
+    margin-top:2px;
+    // margin-bottom: 2px;
+    background: lime;
+  }
+  .sports-expander-btn{
+    font-size: em(40px);
+    color: black;
+    float: right;
+    margin-right: em(20px);
+    cursor: pointer;
+  }
+  .expander-box-text{
+    float: left;
+  }
+  .sports-expander{
+
+    display: none;
+    height: 50vh;
+    background: red;
+    clear:both;
+
+  }
+
+
+
+} //.main-sports-section

@@ -13,7 +13,8 @@
 $susy: (
   columns: 16,
   gutters: 1/4,
-  // debug: (image: show),
+  // math: fluid,
+  debug: (image: show),
   global-box-sizing: border-sizing
 );
 

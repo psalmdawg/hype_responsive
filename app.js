@@ -2,49 +2,90 @@
   function myFunction(){
     console.log("resized")
   }
+
+
   $(document).ready(function(){
+    // $('.dropdown-content').hide();
+
+    // $('.dropdown-content').hide();
 
     $(".burger-icon").click(function(){
-      $('.dropdown-content').hide();
+      // $('.dropdown-content').hide();
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
     });
     $(".menu-close").click(function(){
-      $('.dropdown-content').hide();
+      // $('.dropdown-content').hide();
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
     });
 
-
-    if($(window).width() < 700 ){
-      $(".responsive-nav").addClass('mobile-menu-tabs');
-
-      $(".responsive-nav").click(function(){
-         $(this).closest('.dropdown').find('.dropdown-content').toggle();
-      });
-
-    }
-
-    $(window).resize(function(){
-       if ($(window).width() > 700 ){
-          console.log("not mobile");
-          $('.dropdown-content').hide();
-          // $(".responsive-nav").show();
-      //     $(".menu-close").css({"display":"none"});
-      //     $(".burger-icon").css({"display":"none"});
-          $(".responsive-nav").removeClass("mobile-menu-tabs");
-          // $(".responsive-nav").removeClass("dropdown");
-       } else {
-      //    console.log('mobile')
-      //    $(".burger-icon").css({"display":"block"});
-      //    $(".menu-close").css({"display":"none"});
-      //    $(".responsive-nav").css({"display":"none"});
-        //  $(".responsive-nav").addClass('mobile-menu-tabs');
-         $('.dropdown-content').hide();
-       }//end of it statenent
+// setInterval(function(){
+$( window ).resize(function() {
+    if($(window).width() > 700 ){
+      $(".drop-btn").show();
+      $(".responsive-nav").show();
+    //   console.log("window big")
+    //   // $(".responsive-nav").addClass('mobile-menu-tabs');
+    //   $('.dropbtn ').hover(function(){
+    //     // console.log("hovering over drop button")
+    //     //  $(this).closest('.dropdown').find('.dropdown-content').toggle();
+    //        $(this).children('.dropdown-content').stop(true, false, true).slideToggle(300);
+      };
     });
+ $('.dropdown-content').mouseenter(function(){
+     $(this).prev('.dropbtn').css({"background":"#faa04b"});
+     console.log( $(this).closest('.dropbtn'))
+     console.log('hovering')
+   });
+   $('.dropdown-content').mouseleave(function(){
+       $(this).prev('.dropbtn').css({"background":"#1a1a1a"});
+       console.log( $(this).closest('.dropbtn'))
+       console.log('hovering')
+     });
+
+
+$('.sports-expander-btn').on('click', function(){
+  console.log('clickde')
+  $(this).next('.sports-expander').toggle();
+ })
+
+
+
+
+    // }
+    // if($(window).width() < 700 ){
+    //     console.log("window small")
+    //   $(".responsive-nav").click(function(){
+    //     console.log('clickable')
+    //     $('.dropdown-content').hide();
+    //      $(this).closest('.dropdown').find('.dropdown-content').toggle();
+    //   });
+    // };
+// }, 1000)
+
+    // }
+
+    // $(window).resize(function(){
+    //    if ($(window).width() > 700 ){
+    //       console.log("not mobile");
+    //       $('.dropdown-content').hide();
+    //       // $(".responsive-nav").show();
+    //   //     $(".menu-close").css({"display":"none"});
+    //   //     $(".burger-icon").css({"display":"none"});
+    //       $(".responsive-nav").removeClass("mobile-menu-tabs");
+    //       // $(".responsive-nav").removeClass("dropdown");
+    //    } else {
+    //   //    console.log('mobile')
+    //   //    $(".burger-icon").css({"display":"block"});
+    //   //    $(".menu-close").css({"display":"none"});
+    //   //    $(".responsive-nav").css({"display":"none"});
+    //     //  $(".responsive-nav").addClass('mobile-menu-tabs');
+    //      $('.dropdown-content').hide();
+    //    }//end of it statenent
+    // });
 
     // $('.mobile-menu-tabs').click(function(){
     //   console.log("click mo res")
