@@ -41,29 +41,49 @@ body{
   // background: pink;
 }
 
+//containers
 .container{
+  margin: 0 auto;
   // @include container(100%);
   // min-height: 100vh;
-  width: 100%;
-  .page-container-right{
-    @include float-left();
-    border: 1px solid black;
-    width: 25%;
-    min-height: 40vh;
-    background: lighten(lightpink, 5%);
-    @media screen and (max-width: $break-small) {
-      display: none;
-    };
-  }
-  .page-container-left{
-    width: 75%;
-    @include float-left();
-    @media screen and (max-width: $break-small) {
-      width: 100%;
-    };
+  max-width: em(1300px);
 
+  .main-page-container{
+    @media screen and (max-width: $break-small) {
+     width: 100%;
+    }
+
+    // @include span(14);
+    width: 90%;
+    // @include container;
+    margin: 0 auto;
+
+    .page-container-right{
+
+      @include float-left();
+      // border: 1px solid black;
+      border-left: solid 1px grey;
+      padding-left: em(16px);
+      @include span(4 of 16);
+      @include last();
+      min-height: 40vh;
+      // background: lighten(lightpink, 5%);
+      @media screen and (max-width: $break-small) {
+        display: none;
+      };
+    }
+    .page-container-left{
+
+      @include span(12 of 16);
+      padding-right: em(9px);
+      @include float-left();
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+      };
+    }
 
   }
+
 }
 
 
@@ -317,6 +337,7 @@ body{
     width: span(16);
     @media screen and (max-width: $break-small) {
       float:left;
+      // clear:both;
       overflow:auto;
     }
  }
@@ -330,6 +351,8 @@ body{
     // height: em(80px);
     @media screen and (max-width: $break-small) {
       margin-bottom: em(6px);
+      width: span(8);
+      margin: 0 auto;
       // overflow:auto;
     }
 
@@ -337,9 +360,9 @@ body{
     // float:left;
 
     @media screen and (min-width: $break-small) {float:left}
-      @media screen and (max-width: $break-small) {
-        margin-left: 12%;
-      }
+      // @media screen and (max-width: $break-small) {
+      //   margin-left: 12%;
+      // }
 
     .sports-window {
       @include box-shadow(2px 2px 5px  rgba(0,0,0,0.75));
@@ -353,12 +376,7 @@ body{
       &:hover{
         outline: #fbaa44 1px solid;
       }
-      @media screen and (max-width: $break-small) {
-        // background: red;
-        // clear: both;
-        // max-width: em(150px);
-        // height: em(66px);
-      }
+
     }
 
     .sports-window-inner-title{
@@ -458,6 +476,9 @@ body{
   padding-top: em(4px);
   padding-bottom: em(4px);
   padding-left: em(30px);
+  @media screen and (min-width: $break-small) {
+    padding-left: em(0px);
+  };
   .how-to-txt{
     font-size: em(8px);
   }
@@ -467,8 +488,59 @@ body{
 // .team-match-inner{
 //   margin-left: em(30px);
 // }
+
+.round-games-scrollbar-ctr{
+
+  // height: 85px;
+  border: solid 1px black;
+  padding: em(10px), 0px, em(10px), 0px;
+  background: grey;
+  // clear: both;
+  // overflow: auto;
+  padding: 30px;
+
+
+  .games-round-scroller{
+    border: 1px solid white;
+    height: 20px;
+    @include span(12 of 16);
+    @include float-left();
+  }
+  .projected-ladder-title{
+    @include span(4 of 16);
+    border: 1px solid white;
+    height: 20px;
+    @include float-right();
+    @include last;
+  }
+
+}
+
+
 .main-sports-section{
+
+  .team-points-bar{
+    border: 1px $nav-color solid;
+    height: em(35px);
+    line-height: em(35px);
+    background: black;
+    .team{
+      @include span(8 of 16);
+      @include float-left();
+    }
+    .points{
+        @include span(8 of 16);
+        @include float-left();
+        @include last();
+        text-align: center;
+
+    }
+  }
+
   .team-match-ctr{
+    @media screen and (min-width: $break-small) {
+      margin-bottom: em(55px);
+    };
 
    @include span(16);
     .team-match{
@@ -477,30 +549,53 @@ body{
       background: $game-scroll-bar;
 
       min-height: em(50px);
-      line-height: em(50px);
+      // line-height: em(50px);
       padding-left: em(40px);
-      width: 50%;
+      // width: 50%;
+      @include span(8 of 16);
+      &:nth-child(2){
+        @include last();
+      }
       border: black 1px solid;
       font-size: em(12px);
-
-      // background: green;
-
       @include float-left;
-
-
+      .team-match-inner{
+        span{
+          // margin: auto;
+          color: white;
+        }
+      .power-rankings-large{
+        color: white;
+        font-weight: normal;
+        font-weight: em(8px);
+        span{
+          font-weight: bold;
+          font-size: em(19px);
+        }
+        @media screen and (max-width: $break-small) {
+          display: none
+        };
+      }
+      }
     }
   }
   .power-ranking-ctr{
+    @media screen and (min-width: $break-small) {
+      display: none
+    };
 
     @include span(16);
       .power-rankings{
-          text-align: middle;
+        text-align: middle;
         // font-size: em(30px);
         color: white;
         background: $nav-color;
         min-height: 30px;
         line-height: em(30px);
-        width: 50%;
+        @include span(8 of 16);
+        &:nth-child(2){
+          @include last();
+        }
         border: black 1px solid;
 
         // overflow: hidden;
@@ -524,31 +619,56 @@ body{
     .team-scores-inner{
       .team-scores{
         float: left;
-          width: 50%;
-          background: gray;
-          height: em(35px);
-          line-height: em(35px);
-          font-size: em(20px);
-          font-weight: bold;
-          text-align: center;
-          // vertical-align: middle;
-          // float: left;
-          border: 1px solid black;
-          .score{
-            margin-left: em(15px);
-          }
+        background: gray;
+        height: em(35px);
+        line-height: em(35px);
+        font-size: em(20px);
+        font-weight: bold;
+        text-align: center;
+        // vertical-align: middle;
+        // float: left;
+        border: 1px solid black;
+        .score{
+          margin-left: em(15px);
+        }
+        @include span(8 of 16);
+        &:nth-child(2){
+          @include last();
+        }
 
       }
     }
   }
 
   .to-win-ctr, .over-under-ctr, .team-1-stats-ctr, .team-2-stats-ctr{
-    clear:both;
+    // clear:both;
+    border: 1px solid black;
     min-height: em(50px);
     line-height: em(50px);
     margin-top:2px;
     background: lime;
     overflow: hidden;
+    // @media screen and (min-width: $break-small) {
+    //   @include span(8 of 16);
+    // }
+  }
+  .to-win-ctr, .team-1-stats-ctr{
+    @media screen and (min-width: $break-small) {
+      // width: 40%;
+      // float: left;
+      @include span(8 of 16);
+      // @include float-left();
+      // @include last();
+    }
+  }
+  .over-under-ctr, .team-2-stats-ctr{
+    @media screen and (min-width: $break-small) {
+        // width: 40%;
+        // float: left;
+      @include span(8 of 16);
+        // @include float-left();
+      @include last();
+    }
   }
 
   .to-win-ctr, .over-under-ctr{
@@ -561,6 +681,13 @@ body{
     background: $maroon;
   }
   .sports-expander-btn {
+    @media screen and (min-width: $break-small) {
+      display: none;
+    }
+
+    i{
+      font-size: em(12px);
+    }
     // vertical-align: sub;
     .seb-plus, .seb-minus{
       font-size: em(20px);
@@ -570,7 +697,6 @@ body{
       margin-right: em(20px);
       margin-top: em(-2px);
       cursor: pointer;
-
     }
     .seb-minus{
       display: none;
@@ -579,23 +705,34 @@ body{
   }
   .expander-box-text{
     float: left;
-    padding-left: em(30px);
 
+    padding-left: em(30px);
   }
+
   .sports-expander{
 
-    display: none;
     height: 50vh;
     background: grey;
     clear:both;
+
     padding: em(5px);
+    @media screen and (min-width: $break-small) {
+      display: block;
+      display: block;
+    }
+    @media screen and (max-width: $break-small) {
+      display: none;
+
+    }
+    .expander-box-text{
+      text-align: center;
+    }
 
     .sports-expander-inner{
       border: $nav-color 1px solid;
-        @include box-shadow(1px 1px 2px 0px rgba(0,0,0,0.75));
-        height: 100%;
-        width: 100%;
-
+      @include box-shadow(1px 1px 2px 0px rgba(0,0,0,0.75));
+      height: 100%;
+      width: 100%;
     }
 
   }
@@ -609,12 +746,17 @@ body{
 .inner-ctr-right{
   font-size: em(40px);
   color: black;
-  padding-top: em(40px);
+  // padding: em(5px);
   font-weight: bold;
   text-align: center;
-
 }
 
+.fantasy-articles{
+  height: em(100px);
+  margin-bottom: em(6px);
+  width: 100%;
+  background: skyblue;
+}
 
 
 .icon-footer{

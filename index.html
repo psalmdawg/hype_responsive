@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Palanquin" rel="stylesheet">
   <link rel="stylesheet" href="semantic/dropdown.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/icon.css">
   <!-- slick -->
@@ -22,6 +23,9 @@
   <script src="semantic/transition.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+
+  <script type="text/javascript" src="highcharts.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -290,102 +294,138 @@
   </div>
 
 
+
+
+
+
+<div class="main-page-container">
   <div class="how-to-bar-ctr">
     <div class="how-to-txt">
       How to use this page <span class="orange">&#8744;</span>
     </div>
   </div>
+  <div class="page-container-left">
+
+    <div class="round-games-scrollbar-ctr">
+      <div class="games-round-title">
+        Round 4 Games
+      </div>
+      <div class="games-round-scroller-ctr">
+        <div class="games-round-scroller"></div>
+        <div class="projected-ladder-title"></div>
+      </div>
+    </div>
 
 
+    <div class="main-sports-section">
+      <div class="team-points-bar">
+        <div class="team">TEAM</div>
+        <div class="points">POINTS</div>
+      </div>
+      <div class="team-match-ctr">
+        <div class="team-match">
+          <div class="team-match-inner">
+            <div class="team-color-vert-bar-a"></div>
 
+              <span>BRISBANE </span>BRONCOS
+              <div class="power-rankings-large">
+                POWER RANKING<span>19</span>
+              </div>
+          </div>
+        </div>
+        <div class="team-match">
+          <div class="team-match-inner">
+            <div class="team-color-vert-bar-b"></div>
 
-<div class="page-container-left">
+              <span>NORTH QUEENSLAND </span>COWBOYS
+              <div class="power-rankings-large">
+                POWER RANKING<span>19</span></div>
+          </div>
 
-
-  <div class="main-sports-section">
-    <div class="team-match-ctr">
-      <div class="team-match">
-        <div class="team-match-inner">
-            BRONCOS
         </div>
       </div>
-      <div class="team-match">
-        <div class="team-match-inner">
-            COWBOYS
+
+      <div class="power-ranking-ctr">
+        <div class="power-rankings">
+          <div>POWER RANKING<span>19</span>
+          </div>
         </div>
-
-      </div>
-    </div>
-
-    <div class="power-ranking-ctr">
-      <div class="power-rankings">
-        <div>POWER RANKING<span>19</span>
+        <div class="power-rankings">
+          <div>POWER RANKING<span>20</span>
+          </div>
         </div>
       </div>
-      <div class="power-rankings">
-        <div>POWER RANKING<span>20</span>
+
+      <div class="team-scores-ctr">
+        <div class="team-scores-inner">
+          <div class="team-scores"><span class="winning-team">O</span><span class="score">19.0</span></div>
+          <div class="team-scores"><span class="winning-team">O</span><span class="score">21.0</span></div>
         </div>
       </div>
-    </div>
 
-    <div class="team-scores-ctr">
-      <div class="team-scores-inner">
-        <div class="team-scores"><span class="winning-team">O</span><span class="score">19.0</span></div>
-        <div class="team-scores"><span class="winning-team">O</span><span class="score">21.0</span></div>
+
+      <div class="to-win-ctr">
+        <div class="expander-box-text">TO WIN</div>
+
+        <div class="sports-expander-btn"><span class="seb-plus"><i class="fa fa-plus" aria-hidden="true"></i></span><span class="seb-minus"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+        <div class="sports-expander">
+          <div class="sports-expander-inner">
+            <div id="container1"></div>
+          </div>
+        </div>
       </div>
-    </div>
-
-
-    <div class="to-win-ctr">
-      <div class="expander-box-text">TO WIN</div>
-
-      <div class="sports-expander-btn"><span class="seb-plus">&#43;</span><span class="seb-minus">&#8722;</span></div>
-      <div class="sports-expander">
-        <div class="sports-expander-inner"></div></div>
-    </div>
-    <div class="over-under-ctr">
-      <div class="expander-box-text">OVER / UNDER</div>
-        <div class="sports-expander-btn"><span class="seb-plus">&#43;</span><span class="seb-minus">&#8722;</span></div>
-      <div class="sports-expander">
-        <div class="sports-expander-inner"></div>
+      <div class="over-under-ctr">
+        <div class="expander-box-text">RESULTS SUMMARY</div>
+          <div class="sports-expander-btn"><span class="seb-plus"><i class="fa fa-plus" aria-hidden="true"></i></span><span class="seb-minus"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+        <div class="sports-expander">
+          <div class="sports-expander-inner">
+            <div id="container2"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="team-1-stats-ctr">
-      <div class="expander-box-text">BRONCOS STATS</div>
-        <div class="sports-expander-btn"><span class="seb-plus">&#43;</span><span class="seb-minus">&#8722;</span></div>
-      <div class="sports-expander">
-        <div class="sports-expander-inner"></div>
+      <div class="team-1-stats-ctr">
+        <div class="expander-box-text">BRONCOS STATS</div>
+          <div class="sports-expander-btn"><span class="seb-plus"><i class="fa fa-plus" aria-hidden="true"></i></span><span class="seb-minus"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+        <div class="sports-expander">
+          <div class="sports-expander-inner"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="team-2-stats-ctr">
-      <div class="expander-box-text">COWBOYS STATS</div>
-          <div class="sports-expander-btn"><span class="seb-plus">&#43;</span><span class="seb-minus">&#8722;</span></div>
-      <div class="sports-expander">
-        <div class="sports-expander-inner"></div>
+      <div class="team-2-stats-ctr">
+        <div class="expander-box-text">COWBOYS STATS</div>
+            <div class="sports-expander-btn"><span class="seb-plus"><i class="fa fa-plus" aria-hidden="true"></i></span><span class="seb-minus"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+        <div class="sports-expander">
+          <div class="sports-expander-inner"></div>
+        </div>
       </div>
+
+
+
+    </div> <!-- main-sports-section -->
+
+
+
+  </div><!-- ***END page cnter left -->
+  <div class="page-container-right">
+
+    <div class="inner-ctr-right">
+        <!-- <p>Ads and Shit</p> -->
+
+        <div class="fantasy-articles"></div>
+        <div class="fantasy-articles"></div>
+        <div class="fantasy-articles"></div>
+        <div class="fantasy-articles"></div>
+        <div class="fantasy-articles"></div>
+
     </div>
 
+  </div><!-- ***END page cnter RIGHT -->
 
+</div> <!-- main page container end -->
+<div class="icon-footer">
 
-  </div> <!-- main-sports-section -->
-
-
-
-</div><!-- ***END page cnter left -->
-<div class="page-container-right">
-
-  <div class="inner-ctr-right">
-      <p>Ads and Shit</p>
-  </div>
-
-</div><!-- ***END page cnter RIGHT -->
-
-
-  <div class="icon-footer">
-
-  here are all the pretty icons
-  </div>
+ICON BAR
+</div>
 
 
 

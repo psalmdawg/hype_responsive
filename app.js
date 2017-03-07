@@ -27,6 +27,7 @@ $( window ).resize(function() {
     if($(window).width() > 700 ){
       $(".drop-btn").show();
       $(".responsive-nav").show();
+      $('.sports-expander').show();
     //   console.log("window big")
     //   // $(".responsive-nav").addClass('mobile-menu-tabs');
     //   $('.dropbtn ').hover(function(){
