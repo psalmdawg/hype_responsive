@@ -69,12 +69,12 @@ body{
     .page-container-right{
 
       @include float-left();
-        @include span(4 of 16);
+      @include span(4 of 16);
       // border: 1px solid black;
       border-left: solid 1px grey;
       padding-left: em(16px);
       @include last();
-      min-height: 40vh;
+      // min-height: 40vh;
       // background: lighten(lightpink, 5%);
       @media screen and (max-width: $break-small) {
         display: none;
@@ -155,13 +155,9 @@ body{
         height: em(61px);
         border: 1px solid darken($orange, 10%);
         margin-left: em(40px);
-        // @media screen and (min-width: $break-small) {
-        //   @include float-left();
-        // }
-          @media screen and (max-width: $break-small) {
-            margin-left: 0;
-
-          }
+        @media screen and (max-width: $break-small) {
+          margin-left: 0;
+        }
       }
     }
     a{
@@ -311,6 +307,10 @@ body{
   width: span(12);
   margin: 0 auto;
   font-size: em(10px);
+  span{
+    color: $orange;
+    cursor:help;
+  }
 }
 
 .game-scroll-bar{
@@ -452,6 +452,7 @@ body{
 .predictions-title{
   @include box-shadow(0px 3px 5px 0px black);
   clear: both;
+  font-family: 'cooper-hewitt-bold';
   // background-color: $nav-color;
   min-height: em(100px);
   overflow: auto;
