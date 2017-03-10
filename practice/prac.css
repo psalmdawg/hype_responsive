@@ -1,0 +1,85 @@
+
+.match-round-windows-ctr{
+  color: white;
+  @include span(7.8 of 16);
+  @include float-left();
+  height: 400px;
+  border: #696969 solid 1px;
+}
+.match-round-windows-inner{ }
+
+.match-round-venue-date{
+width: 100%;
+border: grey 1px solid;
+height: em(50px);
+}
+
+.match-round-team-title{
+padding-left: em(20px);
+font-size: em(12px);
+font-family: "roboto-thin";
+}
+.mrt-teams, .mrt-team{
+    width: 60%;
+    @include float-left();
+  // @include span(10 of 16);
+}
+
+
+
+.mrt-team, .mrt-team-pred, .mrt-team-outcome{
+  border: 1px solid $black;
+  margin-right: 0;
+  // height: em(46px);
+}
+
+.mrt-outcome, .mrt-team-outcome{
+  @include float-left();
+  width: 20%;
+}
+.mrt-predicted, .mrt-team-pred{
+width: 20%;
+@include float-left();
+}
+.mrt-team{
+padding-top: 10px;
+padding-left: em(20px);
+font-family: 'cooper-hewitt-bold';
+background: $nav-color;
+}
+.mrt-circle-color{
+background: $maroon;
+border: $orange 2px solid;
+@include border-radius(100%);
+width: em(18px);
+height: em(18px);
+// float: left;
+margin-right: em(10px);
+}
+span{
+color: $orange;
+}
+
+
+
+
+
+  .mrt-power-ranking{
+    font-size: em(12px);
+    font-family: "roboto-thin";
+    span{
+      color: $white;
+    }
+  }
+  .mrt-team-outcome, .mrt-team-pred{
+
+    background: $nav-color;
+    text-align: center;
+    // height: em(30px);
+    // max-height: em(46px);
+    font-family: 'cooper-hewitt-bold';
+    line-height: em(25px);
+    font-size: em(25px);
+    // overflow:hidden;
+    // height: em(43px);
+  }

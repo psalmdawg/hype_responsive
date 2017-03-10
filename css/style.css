@@ -59,81 +59,602 @@ table {
   border-spacing: 0;
 }
 
-/* line 7, ../scss/_colors.scss */
+/* line 23, ../scss/_colors.scss */
 .green {
-  color: green;
+  color: #61e063;
 }
 
-/* line 10, ../scss/_colors.scss */
+/* line 26, ../scss/_colors.scss */
 .white {
   color: #fff;
 }
 
-/* line 14, ../scss/_colors.scss */
+/* line 30, ../scss/_colors.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 17, ../scss/_colors.scss */
+/* line 33, ../scss/_colors.scss */
 .orange {
-  color: #faa04b;
+  color: #fcaa35;
 }
 
-/* line 9, ../scss/style.scss */
+/* line 37, ../scss/_colors.scss */
+.black-bg {
+  background: #000000;
+}
+
+@font-face {
+  font-family: "roboto-thin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "cooper-hewitt-medium";
+  src: url("../fonts/cooper-hewitt/CooperHewitt-Medium.otf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "cooper-hewitt-heavy";
+  src: url("../fonts/cooper-hewitt/CooperHewitt-Heavy.otf");
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "cooper-hewitt-bold";
+  src: url("../fonts/cooper-hewitt/CooperHewitt-Bold.otf");
+}
+/* line 3, ../scss/partials/_nrl_hub.scss */
+.projected-ladder-button-B {
+  min-height: 3.125em;
+  background: #fcaa35;
+  width: 100%;
+  font-size: 0.625em;
+  line-height: 3.125em;
+  text-align: center;
+  margin-top: 0.625em;
+}
+
+/* line 16, ../scss/partials/_nrl_hub.scss */
+.price-packages {
+  color: #fcaa35;
+  min-height: 3.125em;
+  border: #aaaaaa 1px solid;
+  width: 100%;
+  font-size: 0.625em;
+  line-height: 3.125em;
+  text-align: center;
+  margin-top: 0.625em;
+}
+
+/* line 31, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .main-articles {
+  width: 59.14286%;
+  float: left;
+  margin-right: 0.57143%;
+  float: left;
+}
+/* line 39, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr {
+  height: 500px;
+  width: 37.14286%;
+  float: left;
+  margin-right: 0.57143%;
+  float: left;
+  float: right;
+  margin-right: 0;
+}
+/* line 46, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr .ps-ladder-top {
+  width: 100%;
+  background: black;
+  height: 2.8125em;
+  color: #fff;
+  font-size: 0.625em;
+}
+/* line 55, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr .ps-ladders {
+  line-height: 1.25em;
+  height: 2.1875em;
+  padding: 0.125em;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 62, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr .ps-ladders .ps-number {
+  padding: 0.125em;
+  width: 5.71429%;
+  float: left;
+  margin-right: 0.57143%;
+  text-align: center;
+}
+/* line 67, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr .ps-ladders .ps-team {
+  padding: 0.125em;
+  padding-left: 0.5em;
+  background: #1c1c1c;
+  border: #1c1c1c 1px solid;
+  width: 74.85714%;
+  float: left;
+  margin-right: 0.57143%;
+}
+/* line 75, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .proj-season-ladder-ctr .ps-ladders .ps-score {
+  background: #0c0c0c;
+  padding: 0.125em;
+  border: #1c1c1c 1px solid;
+  width: 18.28571%;
+  float: left;
+  margin-right: 0.57143%;
+  float: right;
+  margin-right: 0;
+  text-align: center;
+}
+/* line 85, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .ps-ldr-color {
+  background: #6f0036;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 0.9375em;
+  border: #fcaa35 1px solid;
+}
+/* line 97, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .project-season-title {
+  clear: both;
+  text-align: center;
+  padding-top: 0.3125em;
+  z-index: -10;
+}
+/* line 106, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .main-article {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+  float: left;
+  background: #aaaaaa;
+}
+/* line 117, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .main-article img {
+  width: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+/* line 125, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .projected-ladder-button {
+  clear: both;
+  height: 3.125em;
+  background: #fcaa35;
+  width: 100%;
+  line-height: 3.125em;
+  text-align: center;
+  font-size: 0.625em;
+}
+/* line 138, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .article-left-btn {
+  float: left;
+  cursor: pointer;
+  margin-top: 3.125em;
+  margin-right: -1.875em;
+  padding-left: 0.625em;
+  font-size: 2.5em;
+  color: black;
+  z-index: 100;
+  position: relative;
+}
+/* line 150, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .article-left-btn:hover {
+  color: #fcaa35;
+  font-weight: bold;
+}
+/* line 155, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .article-right-btn {
+  color: black;
+  font-size: 2.5em;
+  cursor: pointer;
+  z-index: 100;
+  top: 3.125em;
+  margin-left: -30px;
+  position: relative;
+}
+/* line 166, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .article-right-btn:hover {
+  color: #fcaa35;
+  font-weight: bold;
+}
+/* line 172, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .sub-articles {
+  clear: both;
+  padding-top: 0.625em;
+  overflow: auto;
+  height: 100%;
+}
+/* line 178, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .sub-articles .sub-article {
+  border: black 1px solid;
+  min-height: 100px;
+  background: white;
+  float: left;
+  width: 32.82443%;
+  float: left;
+  margin-right: 0.76336%;
+}
+/* line 187, ../scss/partials/_nrl_hub.scss */
+.main-article-ctr .sub-articles .sub-article:nth-child(3) {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 197, ../scss/partials/_nrl_hub.scss */
+.main-scroll-section {
+  margin-top: 1.5625em;
+  margin-bottom: 0.9375em;
+  overflow: auto;
+}
+/* line 201, ../scss/partials/_nrl_hub.scss */
+.main-scroll-section .year-dropdown {
+  padding-top: 0.125em;
+}
+
+/* line 205, ../scss/partials/_nrl_hub.scss */
+.large-main-scroller {
+  width: 85%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+/* line 213, ../scss/partials/_nrl_hub.scss */
+.round-button-container {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 224, ../scss/partials/_nrl_hub.scss */
+.rounds {
+  width: 3.64964%;
+  float: left;
+  margin-right: 0.36496%;
+  line-height: 2em;
+  width: 3.3%;
+  height: 1.6875em;
+  text-align: center;
+}
+/* line 236, ../scss/partials/_nrl_hub.scss */
+.rounds:hover {
+  background: #fcaa35;
+}
+
+/* line 242, ../scss/partials/_nrl_hub.scss */
+.rounds-arrow-right {
+  float: right;
+  font-size: 1.25em;
+}
+
+/* line 247, ../scss/partials/_nrl_hub.scss */
+.rounds-arrow-left {
+  float: left;
+  margin-right: 5%;
+  font-size: 1.25em;
+}
+
+/* line 253, ../scss/partials/_nrl_hub.scss */
+.rounds-arrow-left, .rounds-arrow-right {
+  margin-top: 0.1875em;
+}
+/* line 255, ../scss/partials/_nrl_hub.scss */
+.rounds-arrow-left:hover, .rounds-arrow-right:hover {
+  color: #fcaa35;
+  cursor: pointer;
+}
+
+/* line 261, ../scss/partials/_nrl_hub.scss */
+.match-round-windows-ctr {
+  color: white;
+  width: 48.45714%;
+  float: left;
+  margin-right: 0.57143%;
+  float: left;
+}
+
+/* line 271, ../scss/partials/_nrl_hub.scss */
+.match-round-venue-date {
+  width: 100%;
+  border: #343434 1px solid;
+  padding: 0.625em 0.625em 0.625em 1.875em;
+  font-size: 0.6875em;
+  font-family: "roboto-thin";
+}
+/* line 278, ../scss/partials/_nrl_hub.scss */
+.match-round-venue-date span:first-child {
+  font-family: 'cooper-hewitt-bold';
+  margin-right: 0.125em;
+}
+/* line 282, ../scss/partials/_nrl_hub.scss */
+.match-round-venue-date span:nth-child(2) {
+  float: right;
+  margin-top: 0.125em;
+  font-family: 'cooper-hewitt-bold';
+}
+
+/* line 289, ../scss/partials/_nrl_hub.scss */
+.match-round-team-title {
+  padding-left: 1.875em;
+  font-size: 0.6875em;
+  font-family: "roboto-thin";
+}
+
+/* line 296, ../scss/partials/_nrl_hub.scss */
+.mrt-team-ctr {
+  background: #0c0c0c;
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+}
+
+/* line 303, ../scss/partials/_nrl_hub.scss */
+.mrt-teams, .mrt-team {
+  width: 60%;
+  float: left;
+}
+
+/* line 308, ../scss/partials/_nrl_hub.scss */
+.mrt-teams, .mrt-outcome, .mrt-predicted {
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+}
+
+/* line 312, ../scss/partials/_nrl_hub.scss */
+.mrt-outcome, .mrt-predicted {
+  text-align: center;
+}
+
+/* line 316, ../scss/partials/_nrl_hub.scss */
+.mrt-team, .mrt-team-pred, .mrt-team-outcome {
+  margin-right: 0;
+  margin-top: 2px;
+  height: 100%;
+}
+
+/* line 322, ../scss/partials/_nrl_hub.scss */
+.ml {
+  border-left: 2px solid black;
+}
+
+/* line 325, ../scss/partials/_nrl_hub.scss */
+.mrt-outcome, .mrt-team-outcome {
+  float: left;
+  width: 20%;
+}
+
+/* line 329, ../scss/partials/_nrl_hub.scss */
+.mrt-predicted, .mrt-team-pred {
+  width: 20%;
+  float: left;
+}
+
+/* line 333, ../scss/partials/_nrl_hub.scss */
+.mrt-team {
+  padding-top: 0.6875em;
+  padding-left: 1.4375em;
+  font-family: 'cooper-hewitt-bold';
+  background: #1c1c1c;
+}
+/* line 340, ../scss/partials/_nrl_hub.scss */
+.mrt-team span {
+  color: #fcaa35;
+}
+
+/* line 345, ../scss/partials/_nrl_hub.scss */
+.mrt-circle-color {
+  background: #6f0036;
+  border: #fcaa35 2px solid;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 1.125em;
+  height: 1.125em;
+  float: left;
+  margin-right: 1.25em;
+  margin-top: 0.375em;
+}
+
+/* line 357, ../scss/partials/_nrl_hub.scss */
+.mrt-power-ranking {
+  font-size: 0.6875em;
+  font-family: "roboto-thin";
+}
+/* line 360, ../scss/partials/_nrl_hub.scss */
+.mrt-power-ranking span {
+  color: #fff;
+}
+
+/* line 364, ../scss/partials/_nrl_hub.scss */
+.mrt-team-outcome, .mrt-team-pred {
+  background: #1c1c1c;
+  text-align: center;
+  font-family: 'cooper-hewitt-bold';
+  padding-top: 0.5625em;
+  font-size: 1.5625em;
+  height: 100%;
+}
+
+/* line 374, ../scss/partials/_nrl_hub.scss */
+.mrv-results-inner {
+  font-family: 'cooper-hewitt-bold';
+  width: 60.2%;
+  height: 80px;
+  background: #aaaaaa;
+  padding-top: 0.9375em;
+  float: left;
+}
+
+/* line 384, ../scss/partials/_nrl_hub.scss */
+.mrv-text {
+  color: #000000;
+  font-size: 0.75em;
+  margin-left: 4.6875em;
+  margin-bottom: 0.75em;
+}
+
+/* line 391, ../scss/partials/_nrl_hub.scss */
+.mrv-numbers {
+  font-size: 1.25em;
+}
+/* line 393, ../scss/partials/_nrl_hub.scss */
+.mrv-numbers span {
+  color: #61e063;
+  font-size: 0.9375em;
+  margin-right: 0.625em;
+  margin-left: 1.25em;
+}
+/* line 399, ../scss/partials/_nrl_hub.scss */
+.mrv-numbers span:nth-child(2) {
+  margin-left: 0.625em;
+  color: #fff;
+}
+
+/* line 406, ../scss/partials/_nrl_hub.scss */
+.mrv-projections {
+  font-family: "roboto-thin";
+  width: 39.8%;
+  height: 80px;
+  padding-top: 1.375em;
+  float: left;
+}
+/* line 414, ../scss/partials/_nrl_hub.scss */
+.mrv-projections .projections-share {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 0.25em;
+}
+/* line 419, ../scss/partials/_nrl_hub.scss */
+.mrv-projections .share-socials {
+  text-align: center;
+}
+/* line 422, ../scss/partials/_nrl_hub.scss */
+.mrv-projections .share-socials i {
+  color: #aaaaaa;
+  margin-right: 0.3125em;
+  border: 1px solic white;
+  border-radius: 30px;
+}
+
+/* line 432, ../scss/partials/_nrl_hub.scss */
+.last {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 436, ../scss/partials/_nrl_hub.scss */
+.detailed-match-link-btn, .countdown-to-match {
+  width: 50%;
+  float: left;
+  line-height: 2.8125em;
+  height: 2.8125em;
+  border: #fcaa35 1px solid;
+  background: #0c0c0c;
+  text-align: center;
+  font-size: 0.8125em;
+  font-family: "roboto-medium";
+}
+
+/* line 449, ../scss/partials/_nrl_hub.scss */
+.countdown-to-match {
+  background: #fcaa35;
+}
+
+/* line 453, ../scss/partials/_nrl_hub.scss */
+.advert-full-width-ctr {
+  clear: both;
+  padding-top: 2.1875em;
+}
+
+/* line 461, ../scss/partials/_nrl_hub.scss */
+.advert-full-width {
+  clear: both;
+  background: grey;
+  height: 12.5em;
+  margin-bottom: 2.1875em;
+  width: 100%;
+  border: #696969 solid 1px;
+}
+/* line 462, ../scss/partials/_nrl_hub.scss */
+.advert-full-width:hover {
+  cursor: pointer;
+  border: #fcaa35 1px solid;
+}
+
+/* line 12, ../scss/style.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 15, ../scss/style.scss */
+/* line 18, ../scss/style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 37, ../scss/style.scss */
-body {
-  font-family: "cooper hewitt book", sans-serif;
-  color: white;
-  background: #0d0d0d;
+/* line 28, ../scss/style.scss */
+.bold {
+  font-weight: bold;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
+body {
+  font-family: "cooper-hewitt-medium";
+  color: white;
+  background: #0c0c0c;
+}
+
+/* line 52, ../scss/style.scss */
 .container {
   margin: 0 auto;
-  max-width: 81.25em;
+  max-width: 84.375em;
 }
-/* line 51, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .container .main-page-container {
   width: 90%;
   margin: 0 auto;
+  margin-top: 1.25em;
 }
 @media screen and (max-width: 700px) {
-  /* line 51, ../scss/style.scss */
+  /* line 58, ../scss/style.scss */
   .container .main-page-container {
     width: 100%;
   }
 }
-/* line 61, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .container .main-page-container .page-container-right {
   float: left;
-  border-left: solid 1px grey;
-  padding-left: 1em;
   width: 24.57143%;
   float: left;
   margin-right: 0.57143%;
+  border-left: solid 1px grey;
+  padding-left: 1em;
   float: right;
   margin-right: 0;
   min-height: 40vh;
 }
 @media screen and (max-width: 700px) {
-  /* line 61, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   .container .main-page-container .page-container-right {
     display: none;
   }
 }
-/* line 75, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .container .main-page-container .page-container-left {
   width: 74.85714%;
   float: left;
@@ -142,58 +663,57 @@ body {
   float: left;
 }
 @media screen and (max-width: 700px) {
-  /* line 75, ../scss/style.scss */
+  /* line 83, ../scss/style.scss */
   .container .main-page-container .page-container-left {
     width: 100%;
   }
 }
 
-/* line 90, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .header {
   overflow: hidden;
-  border-bottom: 1px solid grey;
 }
-/* line 92, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 .header img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 101, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 .left {
   float: left;
   padding: 0;
 }
 
-/* line 106, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .right {
   float: right;
   padding: 0;
 }
 
-/* line 116, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 .nav {
   font-weight: bold;
-  background: #1a1a1a;
+  background: #1c1c1c;
   min-height: 3.9375em;
   line-height: 3.9375em;
   font-size: 0.875em;
 }
-/* line 123, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 .nav .inner-nav {
   overflow: hidden;
 }
-/* line 131, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 700px) {
-  /* line 131, ../scss/style.scss */
+  /* line 139, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
-/* line 138, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -201,38 +721,39 @@ body {
   line-height: 3.875em;
   cursor: pointer;
 }
-/* line 144, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
-  background: #faa04b;
+  background: #fcaa35;
   padding: 0 20px;
   height: 3.8125em;
-  border: 1px solid #f98619;
+  border: 1px solid #fa9504;
   margin-left: 2.5em;
 }
 @media screen and (max-width: 700px) {
-  /* line 144, ../scss/style.scss */
+  /* line 152, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 159, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
 @media screen and (min-width: 700px) {
-  /* line 167, ../scss/style.scss */
+  /* line 175, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 172, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
+  background: #0c0c0c;
 }
-/* line 176, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .nav .dropdown .dropbtn {
-  background: #1a1a1a;
+  background: #1c1c1c;
   height: 3.875em;
   line-height: 3.875em;
   color: white;
@@ -241,27 +762,31 @@ body {
   cursor: pointer;
   box-sizing: content-box;
 }
-/* line 185, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
+.nav .dropdown .dropbtn .black {
+  background: #000000;
+}
+/* line 198, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
-  background: #121212;
-  border-bottom: #faa04b solid 1px;
+  background: #141414;
+  border-bottom: #fcaa35 solid 1px;
   margin-bottom: -0.0625em;
 }
 @media screen and (max-width: 700px) {
-  /* line 192, ../scss/style.scss */
+  /* line 205, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
-    background: #faa04b;
+    background: #fcaa35;
   }
 }
-/* line 198, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 202, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 209, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -274,12 +799,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 700px) {
-  /* line 209, ../scss/style.scss */
+  /* line 224, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 226, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -288,26 +813,26 @@ body {
   line-height: 2.5em;
   text-decoration: none;
   display: block;
-  background-color: #343434;
+  background-color: #363636;
 }
-/* line 236, ../scss/style.scss */
+/* line 251, ../scss/style.scss */
 .nav .dropdown-content a:hover {
-  background-color: #272727;
+  background-color: #292929;
 }
-/* line 239, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 700px) {
-  /* line 246, ../scss/style.scss */
+  /* line 261, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
-    color: #faa04b;
+    color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 255, ../scss/style.scss */
+  /* line 270, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -315,38 +840,39 @@ body {
   }
 }
 
-/* line 267, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   font-size: 2.5em;
   padding-left: 0.625em;
 }
 @media screen and (min-width: 700px) {
-  /* line 267, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 276, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
 
-/* line 283, ../scss/style.scss */
+/* line 298, ../scss/style.scss */
 .tweet-bar {
   clear: both;
+  margin-top: 0.3125em;
   height: 1.5625em;
   line-height: 1.5625em;
   background-color: black;
 }
 @media screen and (max-width: 700px) {
-  /* line 283, ../scss/style.scss */
+  /* line 298, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 293, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 74.85714%;
@@ -354,48 +880,79 @@ body {
   font-size: 0.625em;
 }
 
-/* line 300, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .game-scroll-bar {
-  border-bottom: 1px #faa04b solid;
+  border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
   background-color: #333333;
   line-height: 5.625em;
 }
 
-/* line 308, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 .game-dropper {
   padding-left: 1.5625em;
-  width: 12%;
+  font-family: "cooper-hewitt-bold";
+  font-weight: bold;
+  font-size: 0.9375em;
+  vertical-align: top;
+  margin-top: -0.625em;
+  width: 8.85714%;
 }
 @media screen and (min-width: 700px) {
-  /* line 308, ../scss/style.scss */
+  /* line 324, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 308, ../scss/style.scss */
+  /* line 324, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
-    font-size: 1.5625em;
   }
 }
+/* line 342, ../scss/style.scss */
+.game-dropper i {
+  margin-left: 8px;
+  font-size: 1.375em;
+}
 
-/* line 335, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
+.main-left-selector {
+  cursor: pointer;
+  float: left;
+  padding-right: 10px;
+}
+/* line 364, ../scss/style.scss */
+.main-left-selector:hover {
+  color: #fcaa35;
+}
+
+/* line 371, ../scss/style.scss */
+.main-right-selector {
+  cursor: pointer;
+  margin-right: 50px;
+  padding-left: 10px;
+}
+/* line 374, ../scss/style.scss */
+.main-right-selector:hover {
+  color: #fcaa35;
+}
+
+/* line 380, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 700px) {
-  /* line 335, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
   }
 }
 
-/* line 346, ../scss/style.scss */
+/* line 392, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -403,7 +960,7 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 700px) {
-  /* line 346, ../scss/style.scss */
+  /* line 392, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     width: 49.71429%;
@@ -411,12 +968,12 @@ body {
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 346, ../scss/style.scss */
+  /* line 392, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 367, ../scss/style.scss */
+/* line 415, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -426,47 +983,46 @@ body {
   border-radius: 0.125em;
   min-height: 3.4375em;
   border: solid black 1px;
-  background-color: #1a1a1a;
+  background-color: #1c1c1c;
   padding: 0.5em;
   margin: 10px;
 }
-/* line 376, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fbaa44 1px solid;
 }
-/* line 382, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
-/* line 392, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 395, ../scss/style.scss */
+/* line 443, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 404, ../scss/style.scss */
+/* line 452, ../scss/style.scss */
 .predictions-title {
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px black;
+  -webkit-box-shadow: 0px 3px 5px 0px black;
+  box-shadow: 0px 3px 5px 0px black;
   clear: both;
-  background-color: #1a1a1a;
-  height: 6.25em;
+  min-height: 6.25em;
   overflow: auto;
 }
-/* line 411, ../scss/style.scss */
+/* line 459, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 416, ../scss/style.scss */
+/* line 464, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -474,7 +1030,7 @@ body {
   font-size: 1.875em;
   font-weight: bold;
 }
-/* line 425, ../scss/style.scss */
+/* line 473, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   display: inline-block;
   background: purple;
@@ -486,20 +1042,20 @@ body {
   border: orange 1px solid;
 }
 @media screen and (max-width: 700px) {
-  /* line 425, ../scss/style.scss */
+  /* line 473, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 439, ../scss/style.scss */
+/* line 487, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams {
   display: inline-block;
   vertical-align: top;
   margin: 0px 1.25em;
 }
 @media screen and (max-width: 700px) {
-  /* line 439, ../scss/style.scss */
+  /* line 487, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams {
     font-size: 0.875em;
     margin: 0px 0.75em;
@@ -507,29 +1063,28 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 453, ../scss/style.scss */
+  /* line 501, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 100%;
   }
 }
-
-/* line 460, ../scss/style.scss */
-.underliner {
+/* line 507, ../scss/style.scss */
+.predictions-title .underliner {
   clear: both;
   margin: 0.625em auto;
   width: 1.5625em;
   border-bottom: #fff solid 1px;
   height: 1px;
 }
-
-/* line 467, ../scss/style.scss */
-.game-date {
+/* line 514, ../scss/style.scss */
+.predictions-title .game-date {
   margin: 0.625em auto;
+  font-size: 0.5em;
   text-size: 0.625em;
   text-align: center;
 }
 
-/* line 474, ../scss/style.scss */
+/* line 526, ../scss/style.scss */
 .how-to-bar-ctr {
   background: black;
   padding-top: 0.25em;
@@ -537,24 +1092,24 @@ body {
   padding-left: 1.875em;
 }
 @media screen and (min-width: 700px) {
-  /* line 474, ../scss/style.scss */
+  /* line 526, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 482, ../scss/style.scss */
+/* line 534, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   font-size: 0.5em;
 }
 
-/* line 492, ../scss/style.scss */
+/* line 544, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   border: solid 1px black;
   padding: 0.625em, 0px, 0.625em, 0px;
   background: grey;
   padding: 30px;
 }
-/* line 503, ../scss/style.scss */
+/* line 555, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller {
   border: 1px solid white;
   height: 20px;
@@ -563,7 +1118,7 @@ body {
   margin-right: 0.57143%;
   float: left;
 }
-/* line 509, ../scss/style.scss */
+/* line 561, ../scss/style.scss */
 .round-games-scrollbar-ctr .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -575,21 +1130,21 @@ body {
   margin-right: 0;
 }
 
-/* line 522, ../scss/style.scss */
+/* line 574, ../scss/style.scss */
 .main-sports-section .team-points-bar {
-  border: 1px #1a1a1a solid;
+  border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 527, ../scss/style.scss */
+/* line 579, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
   float: left;
 }
-/* line 531, ../scss/style.scss */
+/* line 583, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -599,7 +1154,7 @@ body {
   margin-right: 0;
   text-align: center;
 }
-/* line 540, ../scss/style.scss */
+/* line 592, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -607,15 +1162,15 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 540, ../scss/style.scss */
+  /* line 592, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 546, ../scss/style.scss */
+/* line 598, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
-  color: #faa04b;
+  color: #fcaa35;
   background: #333333;
   min-height: 3.125em;
   padding-left: 2.5em;
@@ -626,33 +1181,33 @@ body {
   font-size: 0.75em;
   float: left;
 }
-/* line 556, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 563, ../scss/style.scss */
+/* line 615, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 567, ../scss/style.scss */
+/* line 619, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 571, ../scss/style.scss */
+/* line 623, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 700px) {
-  /* line 567, ../scss/style.scss */
+  /* line 619, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 582, ../scss/style.scss */
+/* line 634, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -660,16 +1215,16 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 582, ../scss/style.scss */
+  /* line 634, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 588, ../scss/style.scss */
+/* line 640, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
-  background: #1a1a1a;
+  background: #1c1c1c;
   min-height: 30px;
   line-height: 1.875em;
   width: 49.71429%;
@@ -678,25 +1233,25 @@ body {
   border: black 1px solid;
   float: left;
 }
-/* line 596, ../scss/style.scss */
+/* line 648, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 603, ../scss/style.scss */
+/* line 655, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 607, ../scss/style.scss */
+/* line 659, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 620, ../scss/style.scss */
+/* line 672, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -710,16 +1265,16 @@ body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 631, ../scss/style.scss */
+/* line 683, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 635, ../scss/style.scss */
+/* line 687, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 643, ../scss/style.scss */
+/* line 695, ../scss/style.scss */
 .main-sports-section .to-win-ctr, .main-sports-section .over-under-ctr, .main-sports-section .team-1-stats-ctr, .main-sports-section .team-2-stats-ctr {
   border: 1px solid black;
   min-height: 3.125em;
@@ -729,7 +1284,7 @@ body {
   overflow: hidden;
 }
 @media screen and (min-width: 700px) {
-  /* line 655, ../scss/style.scss */
+  /* line 707, ../scss/style.scss */
   .main-sports-section .to-win-ctr, .main-sports-section .team-1-stats-ctr {
     width: 49.71429%;
     float: left;
@@ -737,7 +1292,7 @@ body {
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 664, ../scss/style.scss */
+  /* line 716, ../scss/style.scss */
   .main-sports-section .over-under-ctr, .main-sports-section .team-2-stats-ctr {
     width: 49.71429%;
     float: left;
@@ -746,29 +1301,29 @@ body {
     margin-right: 0;
   }
 }
-/* line 674, ../scss/style.scss */
+/* line 726, ../scss/style.scss */
 .main-sports-section .to-win-ctr, .main-sports-section .over-under-ctr {
   background: #333333;
 }
-/* line 677, ../scss/style.scss */
+/* line 729, ../scss/style.scss */
 .main-sports-section .team-1-stats-ctr {
   background: #111441;
 }
-/* line 680, ../scss/style.scss */
+/* line 732, ../scss/style.scss */
 .main-sports-section .team-2-stats-ctr {
   background: #6f0036;
 }
 @media screen and (min-width: 700px) {
-  /* line 683, ../scss/style.scss */
+  /* line 735, ../scss/style.scss */
   .main-sports-section .sports-expander-btn {
     display: none;
   }
 }
-/* line 688, ../scss/style.scss */
+/* line 740, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 692, ../scss/style.scss */
+/* line 744, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -777,16 +1332,16 @@ body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 701, ../scss/style.scss */
+/* line 753, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 706, ../scss/style.scss */
+/* line 758, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   float: left;
   padding-left: 1.875em;
 }
-/* line 712, ../scss/style.scss */
+/* line 764, ../scss/style.scss */
 .main-sports-section .sports-expander {
   height: 50vh;
   background: grey;
@@ -794,25 +1349,25 @@ body {
   padding: 0.3125em;
 }
 @media screen and (min-width: 700px) {
-  /* line 712, ../scss/style.scss */
+  /* line 764, ../scss/style.scss */
   .main-sports-section .sports-expander {
     display: block;
     display: block;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 712, ../scss/style.scss */
+  /* line 764, ../scss/style.scss */
   .main-sports-section .sports-expander {
     display: none;
   }
 }
-/* line 727, ../scss/style.scss */
+/* line 779, ../scss/style.scss */
 .main-sports-section .sports-expander .expander-box-text {
   text-align: center;
 }
-/* line 731, ../scss/style.scss */
+/* line 783, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
-  border: #1a1a1a 1px solid;
+  border: #1c1c1c 1px solid;
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
@@ -820,7 +1375,7 @@ body {
   width: 100%;
 }
 
-/* line 746, ../scss/style.scss */
+/* line 798, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -828,7 +1383,7 @@ body {
   text-align: center;
 }
 
-/* line 754, ../scss/style.scss */
+/* line 806, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -836,7 +1391,7 @@ body {
   background: skyblue;
 }
 
-/* line 762, ../scss/style.scss */
+/* line 814, ../scss/style.scss */
 .icon-footer {
   padding: 1.25em;
   text-align: center;

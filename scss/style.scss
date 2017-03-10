@@ -4,7 +4,10 @@
 @import "grids";
 @import "reset";
 @import "colors";
+@import "fonts";
 @import "compass/css3/box-sizing";
+
+@import "partials/nrl_hub";
 
 *{
   // box-sizing: border-box;
@@ -22,6 +25,10 @@ $break-small: 700px;
 $break-large: 1030px;
 $break-medium: 785px;
 
+.bold{
+  font-weight: bold;
+}
+
 @mixin float-left {
   @include float(left);
 }
@@ -35,7 +42,7 @@ $break-medium: 785px;
 //   margin: 0 auto;
 // }
 body{
-  font-family: "cooper hewitt book", sans-serif;
+  font-family: "cooper-hewitt-medium";
   color: white;
   background: $main;
   // background: pink;
@@ -46,7 +53,7 @@ body{
   margin: 0 auto;
   // @include container(100%);
   // min-height: 100vh;
-  max-width: em(1300px);
+  max-width: em(1350px);
 
   .main-page-container{
     @media screen and (max-width: $break-small) {
@@ -57,14 +64,15 @@ body{
     width: 90%;
     // @include container;
     margin: 0 auto;
+    margin-top: em(20px);
 
     .page-container-right{
 
       @include float-left();
+        @include span(4 of 16);
       // border: 1px solid black;
       border-left: solid 1px grey;
       padding-left: em(16px);
-      @include span(4 of 16);
       @include last();
       min-height: 40vh;
       // background: lighten(lightpink, 5%);
@@ -94,7 +102,7 @@ body{
     width: 100%;
     vertical-align: top;
   }
-  border-bottom: 1px solid grey;
+  // border-bottom: 1px solid grey;
 
 }
 
@@ -171,10 +179,15 @@ body{
 
     &:nth-child(1){
       margin-left: 0;
+      background: $main;
     }
 
     .dropbtn {
       background: $nav-color;
+      .black{
+        background: $black;
+      }
+
       height: em(62px);
       line-height: em(62px);
       color: white;
@@ -192,7 +205,9 @@ body{
         &:hover {
           background: $orange;;
         }
+
       }
+
 
     } //dropbtm end
     &:nth-child(1){
@@ -282,6 +297,7 @@ body{
 
 .tweet-bar{
   clear: both;
+  margin-top: em(5px);
   height: em(25px);
   line-height: em(25px);
   background-color: black;
@@ -307,16 +323,25 @@ body{
 
 .game-dropper {
   padding-left: em(25px);
+  font-family: "cooper-hewitt-bold";
+  font-weight: bold;
+  font-size:em(15px);
   // margin-top: em(27px);
   // margin-left: em(5px);
-
-  width: span(2);
-    @media screen and (min-width: $break-small) {float:left}
+  vertical-align: top;
+  margin-top:em(-10px);
+  width: span(1.5);
+    @media screen and (min-width: $break-small) {float:left;}
     @media screen and (max-width: $break-small) {
 
     width: span(16);
     margin-right: em(10px);
-    font-size:em(25px);
+
+
+  }
+  i{
+    margin-left: 8px;
+    font-size: em(22px);
   }
 }
 //
@@ -332,6 +357,26 @@ body{
 //  z-index: 1;
 // }
 //sports window section
+
+.main-left-selector{
+  cursor: pointer;
+  float: left;
+  &:hover{
+    color: $orange;
+  }
+  // margin-left: -10px;
+  padding-right: 10px;
+}
+
+.main-right-selector{
+  cursor: pointer;
+  margin-right: 50px;
+  &:hover{
+    color: $orange;
+  }
+  padding-left: 10px;
+}
+
 .sports-window-ctr{
     background: $game-scroll-bar;
     width: span(16);
@@ -340,6 +385,7 @@ body{
       // clear:both;
       overflow:auto;
     }
+
  }
 
 
@@ -355,6 +401,8 @@ body{
       margin: 0 auto;
       // overflow:auto;
     }
+
+
 
 
     // float:left;
@@ -402,10 +450,10 @@ body{
 } //sports-windows
 
 .predictions-title{
-  @include box-shadow(0px 3px 5px 0px rgba(0,0,0,0.75));
+  @include box-shadow(0px 3px 5px 0px black);
   clear: both;
-  background-color: $nav-color;
-  height: em(100px);
+  // background-color: $nav-color;
+  min-height: em(100px);
   overflow: auto;
 
   .predictions-main{
@@ -455,21 +503,25 @@ body{
       width: 100%;
     }
   }
+
+  .underliner{
+    clear: both;
+    margin: em(10px) auto;
+    width: em(25px);
+    border-bottom: $white solid 1px;
+    height: 1px;
+  }
+  .game-date{
+    margin: em(10px) auto;
+    // width: em(25px);
+    font-size: em(8px);
+    text-size: em(10px);
+    text-align: center;
+  }
+
+
 }
 
-.underliner{
-  clear: both;
-  margin: em(10px) auto;
-  width: em(25px);
-  border-bottom: $white solid 1px;
-  height: 1px;
-}
-.game-date{
-  margin: em(10px) auto;
-  // width: em(25px);
-  text-size: em(10px);
-  text-align: center;
-}
 
 .how-to-bar-ctr{
   background: black;

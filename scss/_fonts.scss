@@ -1,0 +1,33 @@
+// @include font-face("Cooper-hewitt-heavy", font-files("fonts/cooper-hewitt/CooperHewitt-Heavy.otf"));
+// @include font-face("Cooper-hewitt-bold", font-files("fonts/cooper-hewitt/CooperHewitt-Bold.otf"));
+// @include font-face("Cooper-hewitt-medium", font-files("fonts/cooper-hewitt/CooperHewitt-Medium.otf"));
+// @include font-face("roboto-thin", font-files("../fonts/roboto/Roboto-Thin.ttf"));
+// @include font-face("roboto-bold", font-files("roboto/Roboto-Bold.ttf"));
+
+
+
+@font-face {
+    font-family: "roboto-thin";
+    src: url("../fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face {
+    font-family: "cooper-hewitt-medium";
+    src: url("../fonts/cooper-hewitt/CooperHewitt-Medium.otf");
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "cooper-hewitt-heavy";
+    src: url("../fonts/cooper-hewitt/CooperHewitt-Heavy.otf");
+}
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "cooper-hewitt-bold";
+    src: url("../fonts/cooper-hewitt/CooperHewitt-Bold.otf");
+}

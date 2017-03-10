@@ -1,8 +1,24 @@
-$green: green;
+$green: #61e063;
 $white: #fff;
+$grey: #aaaaaa;
+$black: #000000;
 
 $purple: #111441;
 $maroon: #6f0036;
+$orange: #fcaa35;
+
+$background: #0c0c0c;
+$nav-color: #1c1c1c;
+// $nav-color: grey;
+$slick-color: #343434;
+
+$nav-height: 65px;
+$game-scroll-bar: #333333;
+$main: #0c0c0c;
+// $main:black;
+$dark-border:#343434;
+
+
 
 .green{
   color: $green;
@@ -16,4 +32,8 @@ $maroon: #6f0036;
 }
 .orange{
   color: $orange;
+}
+
+.black-bg{
+  background: $black;
 }

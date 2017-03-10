@@ -1,8 +1,4 @@
 
-  function myFunction(){
-    console.log("resized")
-  }
-
 
   $(document).ready(function(){
     // $('.dropdown-content').hide();
@@ -103,23 +99,24 @@ $('.sports-expander-btn').on('click', function(){
 
 
       $('.sports-windows').slick({
-        // dots: true,
-        infinite: true,
+        arrows: false,
+
+        // infinite: true,
+
         // fade: true,
         speed: 600,
         slidesToShow: 5,
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 9000,
-        // nextArrow: '<div class="nextArrow"></div>',
-        // prevArrow: '<div class="prevArrow">></div>',
+
         responsive: [
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-              infinite: true,
+              // infinite: true,
               // dots: true
             }
           },
@@ -144,6 +141,29 @@ $('.sports-expander-btn').on('click', function(){
           // settings: "unslick"
           // instead of a settings object
         ]
+
+      });
+
+      $('.main-left-selector').on('click', function(){
+        $('.sports-windows').slick("slickPrev")
+      });
+      $('.main-right-selector').on('click', function(){
+      $('.sports-windows').slick("slickNext")
+      });
+
+
+
+
+
+      $('.main-article').slick({
+        arrows: false,
+        //  nextArrow: ".nn",
+      });
+      $('.article-left-btn').on('click', function(){
+        $('.main-article').slick("slickPrev")
+      });
+      $('.article-right-btn').on('click', function(){
+        $('.main-article').slick("slickNext")
       });
 
       setTimeout(function() {
