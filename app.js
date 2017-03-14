@@ -48,62 +48,15 @@ $('.sports-expander-btn').on('click', function(){
   console.log('clickde')
   $(this).closest('.sports-expander-btn').find('.seb-minus').toggle();
   $(this).closest('.sports-expander-btn').find('.seb-plus').toggle()
-  // $(this).next('.seb-plus').toggle();
-  // $(this).next('.sports-expander-btn').toggle();
+
   $(this).next('.sports-expander').toggle();
  })
 
 
 
-
-    // }
-    // if($(window).width() < 700 ){
-    //     console.log("window small")
-    //   $(".responsive-nav").click(function(){
-    //     console.log('clickable')
-    //     $('.dropdown-content').hide();
-    //      $(this).closest('.dropdown').find('.dropdown-content').toggle();
-    //   });
-    // };
-// }, 1000)
-
-    // }
-
-    // $(window).resize(function(){
-    //    if ($(window).width() > 700 ){
-    //       console.log("not mobile");
-    //       $('.dropdown-content').hide();
-    //       // $(".responsive-nav").show();
-    //   //     $(".menu-close").css({"display":"none"});
-    //   //     $(".burger-icon").css({"display":"none"});
-    //       $(".responsive-nav").removeClass("mobile-menu-tabs");
-    //       // $(".responsive-nav").removeClass("dropdown");
-    //    } else {
-    //   //    console.log('mobile')
-    //   //    $(".burger-icon").css({"display":"block"});
-    //   //    $(".menu-close").css({"display":"none"});
-    //   //    $(".responsive-nav").css({"display":"none"});
-    //     //  $(".responsive-nav").addClass('mobile-menu-tabs');
-    //      $('.dropdown-content').hide();
-    //    }//end of it statenent
-    // });
-
-    // $('.mobile-menu-tabs').click(function(){
-    //   console.log("click mo res")
-    //   // console.log($(this).closest('.dropdown').find('.dropdown-content').css())
-    //   $('.dropdown-content').hide();
-    //   $(this).closest('.dropdown').find('.dropdown-content').toggle();
-    //
-    //
-    // })
-
-
       $('.sports-windows').slick({
         arrows: false,
-
-        // infinite: true,
-
-        // fade: true,
+        infinite: false,
         speed: 600,
         slidesToShow: 5,
         slidesToScroll: 2,
@@ -116,7 +69,7 @@ $('.sports-expander-btn').on('click', function(){
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-              // infinite: true,
+              infinite: false,
               // dots: true
             }
           },
@@ -171,4 +124,115 @@ $('.sports-expander-btn').on('click', function(){
         $('.sports-windows').hide().css('visibility','visible').fadeIn('slow');
       }, 100);
 
+  });
+
+
+
+
+
+
+
+
+
+
+
+  $(document).ready(function() {
+      var title = {
+        showInLegend: false,
+        text: '',
+          style: {
+            display: 'none'
+          }
+      };
+      var xAxis = {
+
+        labels:{
+          enabled: false
+        },
+        lineColor: 'transparent',
+          minorTickLength: 0,
+       tickLength: 0
+      };
+      var yAxis = {
+        labels:{
+          enabled: false
+        },
+        title: {
+          text: 'Temperature (\xB0C)',
+            style: {
+              display: 'none'
+            }
+          },
+        plotLines: [{
+          value: 0,
+          width: 0,
+          color: '#1c1c1c'
+        }],
+        gridLineColor: '#1c1c1c',
+        lineColor: 'transparent',
+      };
+      var plotOptions = {
+        line: {
+          marker: {
+            enabled: false
+          }
+        }
+      }
+
+      var tooltip = {
+        valueSuffix: '\xB0C'
+      }
+
+      var legend = {
+        enabled: false,
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle',
+        borderWidth: 0
+      };
+
+      var chart = {
+        backgroundColor: '#1c1c1c',
+        credits: {
+          enabled: false
+        },
+      };
+      var credits =  {
+          enabled: false
+      }
+
+      var series =  [{
+        //  showInLegend: false,
+
+          data: [1.3, 1.5, 2.9, 3.5, 3.4, 3.9, 4.1,
+          4.9, 5.2, 5.9, 6,6],
+          color: "purple"
+        },
+        {
+
+          data: [1, 1, 1.5, 2, 2, 2.5, 3,
+          4, 4, 5, 6,9],
+          color: 'green'
+        },
+        {
+
+          data: [.9, 1.1, 1.2, 1.8, 1.9, 2.1, 2,
+          1.9, 1.3, 1, 1.4 , 1],
+          color: 'yellow'
+        }
+      ];
+
+     var json = {};
+     json.credits = credits;
+     json.chart = chart;
+     json.title = title;
+     json.plotOptions = plotOptions;
+     json.xAxis = xAxis;
+     json.yAxis = yAxis;
+     json.tooltip = tooltip;
+     json.legend = legend;
+     json.series = series;
+
+     $('#linegraph').highcharts(json);
+    
   });

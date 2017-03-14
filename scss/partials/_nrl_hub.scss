@@ -1,20 +1,26 @@
 @import "compass";
+
+
+.large-orange-button{
+  // clear:both;
+  // color: blue;
+  cursor: pointer;
+  min-height:em(60px);
+  background: $orange;
+  width: 100%;
+  // border: $nav-color 1px solid;
+  font-size: 10px;
+  line-height: em(60px);
+  text-align: center;
+  margin-bottom: em(20px);
+  color: $white;
+}
+
 .right-inner-custom-ctr{
   height: em(380px);
   overflow: hidden;
 
-  .large-orange-button{
-    // clear:both;
-    // color: blue;
-    min-height:em(50px);
-    background: $orange;
-    width: 100%;
-    // border: $nav-color 1px solid;
-    font-size: em(10px);
-    line-height: em(50px);
-    text-align: center;
-    margin-bottom: em(20px);
-  }
+
   // .no-top{
   //   margin-top: 0;
   // }
@@ -284,6 +290,7 @@
   // background: black;
   &:hover{
     // background: $orange;
+    cursor: pointer;
     background: $orange;
   }
 }
