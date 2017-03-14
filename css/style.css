@@ -59,32 +59,32 @@ table {
   border-spacing: 0;
 }
 
-/* line 23, ../scss/_colors.scss */
+/* line 24, ../scss/_colors.scss */
 .green {
   color: #61e063;
 }
 
-/* line 26, ../scss/_colors.scss */
+/* line 27, ../scss/_colors.scss */
 .white {
   color: #fff;
 }
 
-/* line 30, ../scss/_colors.scss */
+/* line 31, ../scss/_colors.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 33, ../scss/_colors.scss */
+/* line 34, ../scss/_colors.scss */
 .orange {
   color: #fcaa35;
 }
 
-/* line 37, ../scss/_colors.scss */
+/* line 38, ../scss/_colors.scss */
 .black-bg {
   background: #000000;
 }
 
-/* line 41, ../scss/_colors.scss */
+/* line 42, ../scss/_colors.scss */
 .border-grey {
   border: 1px solid #343434;
 }
@@ -1034,59 +1034,343 @@ table {
   vertical-align: bottom;
 }
 
-/* line 14, ../scss/style.scss */
+/* line 6, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-title {
+  text-align: center;
+  font-family: "cooper-hewitt-bold";
+  background: #000000;
+  width: 100%;
+  border: #343434 1px solid;
+  padding: 0.625em;
+}
+/* line 15, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-title {
+  background: #262626;
+  padding: 0.5em 0.3125em 0.5em 4.6875em;
+  overflow: hidden;
+}
+/* line 22, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-title div {
+  font-family: 'roboto-thin';
+  width: 66.41221%;
+  float: left;
+  margin-right: 0.76336%;
+}
+/* line 26, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-title div:last-child {
+  width: 32.82443%;
+  float: left;
+  margin-right: 0.76336%;
+  float: right;
+  margin-right: 0;
+  text-align: center;
+}
+/* line 34, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main {
+  background: #1c1c1c;
+  clear: both;
+}
+/* line 38, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team {
+  border-top: #000000 2px solid;
+  height: 50px;
+}
+/* line 42, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left {
+  height: 50px;
+  padding-top: 0.75em;
+  border-right: #000000 2px solid;
+  font-family: "cooper-hewitt-bold";
+  width: 66.41221%;
+  float: left;
+  margin-right: 0.76336%;
+}
+/* line 50, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left .lr-team-color {
+  float: left;
+  width: 5px;
+  height: 35px;
+  background: #6f0036;
+  margin-right: 2.1875em;
+  margin-left: 2.1875em;
+  margin-top: -0.3125em;
+}
+/* line 61, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left span:nth-child(2) {
+  color: #fcaa35;
+}
+/* line 65, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left div {
+  margin-top: 0.125em;
+  font-family: 'roboto-thin';
+  font-size: 0.6875em;
+}
+/* line 69, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left div span {
+  font-weight: bold;
+  font-size: 1.125em;
+  font-family: "cooper-hewitt-bold";
+  margin-left: 0.25em;
+}
+/* line 78, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right {
+  min-height: 3.125em;
+  width: 32.82443%;
+  float: left;
+  margin-right: 0.76336%;
+  float: right;
+  margin-right: 0;
+}
+/* line 83, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div {
+  text-align: center;
+  min-height: 3.125em;
+  line-height: 3.125em;
+  width: 32.82443%;
+  float: left;
+  margin-right: 0.76336%;
+}
+/* line 89, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div:last-child {
+  float: right;
+  margin-right: 0;
+}
+/* line 91, ../scss/partials/_in-running.scss */
+.live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div:last-child span {
+  font-size: 0.8125em;
+  font-weight: bold;
+  background: #61e063;
+  padding: 0.5em 1.25em 0.1875em 1.25em;
+}
+
+/* line 108, ../scss/partials/_in-running.scss */
+.lir-chart-ctr {
+  min-width: 100%;
+  background: white;
+  min-height: 25em;
+  clear: both;
+  margin-top: 2.5em;
+}
+/* line 114, ../scss/partials/_in-running.scss */
+.lir-chart-ctr .lirc-title {
+  font-family: "cooper-hewitt-bold";
+  background: #000000;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #343434;
+  padding: 0.625em;
+}
+
+/* line 125, ../scss/partials/_in-running.scss */
+.live-tweet-ctr {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  width: 100%;
+  overflow: auto;
+}
+/* line 132, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .live-tweet-title {
+  font-family: "cooper-hewitt-bold";
+  border: #343434 1px solid;
+  text-align: center;
+  padding: 0.4375em;
+}
+/* line 138, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .tweet-updates-header {
+  background: #262626;
+  font-family: "roboto-thin";
+  font-size: 0.5625em;
+  padding: 0.4375em;
+  padding-left: 0px;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  overflow: auto;
+}
+/* line 148, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .tweet-updates-header div {
+  width: 16.03053%;
+  float: left;
+  margin-right: 0.76336%;
+  text-align: center;
+}
+/* line 156, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar {
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+  border-bottom: 2px solid black;
+}
+/* line 162, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar:nth-child(odd) {
+  background: #000000;
+}
+/* line 165, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar:nth-child(even) {
+  background: #1c1c1c;
+}
+/* line 169, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar .lt-time {
+  width: 16.03053%;
+  float: left;
+  margin-right: 0.76336%;
+  background: pink;
+  font-size: 0.625em;
+  min-height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #262626;
+  border-right: 2px solid #000000;
+}
+/* line 181, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar .lt-main {
+  width: 83.20611%;
+  float: left;
+  margin-right: 0.76336%;
+  float: right;
+  margin-right: 0;
+  font-size: 0.8125em;
+  min-height: 25px;
+  line-height: 25px;
+  padding-left: 0.625em;
+  font-family: "roboto-thin";
+}
+/* line 191, ../scss/partials/_in-running.scss */
+.live-tweet-ctr .live-tweet-inr .lt-bar .lt-main span {
+  float: right;
+}
+
+/* line 200, ../scss/partials/_in-running.scss */
+.previous-games-ctr {
+  color: #fff;
+  padding-top: 3.125em;
+  font-size: 0.25em;
+  text-align: left;
+  font-family: 'cooper-hewitt-bold';
+  margin-bottom: 0.9375em;
+  letter-spacing: 0.08em;
+}
+/* line 212, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-game-title {
+  font-family: "roboto-thin";
+  margin-top: 0.9375em;
+  margin-bottom: 0.9375em;
+  font-size: 0.5em;
+}
+/* line 217, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-game-title span {
+  font-family: "cooper-hewitt-medium";
+}
+/* line 221, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-games {
+  height: 4.375em;
+  line-height: 4.375em;
+}
+/* line 226, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-games:nth-child(3) {
+  background: #1c1c1c;
+}
+/* line 230, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-games .ps-ldr-color {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-top: 1.0625em;
+  margin-left: 0.9375em;
+  margin-right: 0.9375em;
+  float: left;
+  border: #fcaa35 2px solid;
+  background: #6f0036;
+}
+/* line 241, ../scss/partials/_in-running.scss */
+.previous-games-ctr .previous-games span {
+  color: #fcaa35;
+}
+/* line 246, ../scss/partials/_in-running.scss */
+.previous-games-ctr .value-bets-results {
+  padding: 1.25em;
+  background: #aaaaaa;
+  width: 100%;
+  height: 6.25em;
+  margin-bottom: 1.875em;
+}
+/* line 253, ../scss/partials/_in-running.scss */
+.previous-games-ctr .value-bets-results div {
+  color: #000000;
+  margin-bottom: 0.625em;
+  margin-left: 2.8125em;
+}
+/* line 259, ../scss/partials/_in-running.scss */
+.previous-games-ctr .value-bets-results div i {
+  color: #61e063;
+  font-size: 2.1875em;
+  margin-right: 0.3125em;
+  margin-left: -1.25em;
+}
+/* line 265, ../scss/partials/_in-running.scss */
+.previous-games-ctr .value-bets-results div span {
+  margin-left: 0.625em;
+  color: white;
+  font-size: 1.625em;
+}
+
+/* line 15, ../scss/style.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 38, ../scss/style.scss */
+/* line 39, ../scss/style.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 .mb-zero {
   margin-bottom: 0px;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 .mb-50 {
   margin-bottom: 3.125em;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
+.subtext {
+  font-family: 'roboto-thin';
+}
+
+/* line 64, ../scss/style.scss */
 body {
   font-family: "cooper-hewitt-medium";
   color: white;
   background: #0c0c0c;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 84.375em;
 }
-/* line 72, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .container .main-page-container {
   width: 90%;
   margin: 0 auto;
   margin-top: 1.25em;
 }
 @media screen and (max-width: 700px) {
-  /* line 72, ../scss/style.scss */
+  /* line 76, ../scss/style.scss */
   .container .main-page-container {
     width: 100%;
   }
 }
-/* line 81, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .container .main-page-container .page-container-right {
   float: left;
   width: 24.57143%;
@@ -1098,12 +1382,12 @@ body {
   margin-right: 0;
 }
 @media screen and (max-width: 700px) {
-  /* line 81, ../scss/style.scss */
+  /* line 85, ../scss/style.scss */
   .container .main-page-container .page-container-right {
     display: none;
   }
 }
-/* line 95, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .container .main-page-container .page-container-left {
   width: 74.85714%;
   float: left;
@@ -1112,35 +1396,35 @@ body {
   float: left;
 }
 @media screen and (max-width: 700px) {
-  /* line 95, ../scss/style.scss */
+  /* line 99, ../scss/style.scss */
   .container .main-page-container .page-container-left {
     width: 100%;
   }
 }
 
-/* line 110, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .header {
   overflow: hidden;
 }
-/* line 112, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .header img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 .left {
   float: left;
   padding: 0;
 }
 
-/* line 126, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .right {
   float: right;
   padding: 0;
 }
 
-/* line 136, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .nav {
   font-weight: bold;
   background: #1c1c1c;
@@ -1148,21 +1432,21 @@ body {
   line-height: 3.9375em;
   font-size: 0.875em;
 }
-/* line 143, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .nav .inner-nav {
   overflow: hidden;
 }
-/* line 151, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 700px) {
-  /* line 151, ../scss/style.scss */
+  /* line 155, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
-/* line 158, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -1170,7 +1454,7 @@ body {
   line-height: 3.875em;
   cursor: pointer;
 }
-/* line 164, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #fcaa35;
   padding: 0 20px;
@@ -1179,28 +1463,28 @@ body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 700px) {
-  /* line 164, ../scss/style.scss */
+  /* line 168, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 175, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
 @media screen and (min-width: 700px) {
-  /* line 183, ../scss/style.scss */
+  /* line 187, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 188, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
   background: #0c0c0c;
 }
-/* line 193, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1c1c1c;
   height: 3.875em;
@@ -1211,31 +1495,31 @@ body {
   cursor: pointer;
   box-sizing: content-box;
 }
-/* line 195, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
   background: #000000;
 }
-/* line 206, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #141414;
   border-bottom: #fcaa35 solid 1px;
   margin-bottom: -0.0625em;
 }
 @media screen and (max-width: 700px) {
-  /* line 213, ../scss/style.scss */
+  /* line 217, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
     background: #fcaa35;
   }
 }
-/* line 221, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 225, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 232, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -1248,12 +1532,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 700px) {
-  /* line 232, ../scss/style.scss */
+  /* line 236, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 249, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -1264,24 +1548,24 @@ body {
   display: block;
   background-color: #363636;
 }
-/* line 259, ../scss/style.scss */
+/* line 263, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #292929;
 }
-/* line 262, ../scss/style.scss */
+/* line 266, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 700px) {
-  /* line 269, ../scss/style.scss */
+  /* line 273, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
     color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 278, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -1289,24 +1573,24 @@ body {
   }
 }
 
-/* line 290, ../scss/style.scss */
+/* line 294, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   font-size: 2.5em;
   padding-left: 0.625em;
 }
 @media screen and (min-width: 700px) {
-  /* line 290, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 299, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
 
-/* line 306, ../scss/style.scss */
+/* line 310, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   margin-top: 0.3125em;
@@ -1315,26 +1599,26 @@ body {
   background-color: black;
 }
 @media screen and (max-width: 700px) {
-  /* line 306, ../scss/style.scss */
+  /* line 310, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 317, ../scss/style.scss */
+/* line 321, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 74.85714%;
   margin: 0 auto;
   font-size: 0.625em;
 }
-/* line 322, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .inner-tweet-bar span {
   color: #fcaa35;
   cursor: help;
 }
 
-/* line 328, ../scss/style.scss */
+/* line 332, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
@@ -1342,7 +1626,7 @@ body {
   line-height: 5.625em;
 }
 
-/* line 336, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 .game-dropper {
   padding-left: 1.5625em;
   font-family: "cooper-hewitt-bold";
@@ -1353,60 +1637,60 @@ body {
   width: 8.85714%;
 }
 @media screen and (min-width: 700px) {
-  /* line 336, ../scss/style.scss */
+  /* line 340, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 336, ../scss/style.scss */
+  /* line 340, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
   }
 }
-/* line 354, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .game-dropper i {
   margin-left: 8px;
   font-size: 1.375em;
 }
 
-/* line 373, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 .main-left-selector {
   cursor: pointer;
   float: left;
   padding-right: 10px;
 }
-/* line 376, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .main-left-selector:hover {
   color: #fcaa35;
 }
 
-/* line 383, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 .main-right-selector {
   cursor: pointer;
   margin-right: 50px;
   padding-left: 10px;
 }
-/* line 386, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 .main-right-selector:hover {
   color: #fcaa35;
 }
 
-/* line 392, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 700px) {
-  /* line 392, ../scss/style.scss */
+  /* line 396, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
   }
 }
 
-/* line 404, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -1414,7 +1698,7 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 700px) {
-  /* line 404, ../scss/style.scss */
+  /* line 408, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     width: 49.71429%;
@@ -1422,12 +1706,12 @@ body {
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 404, ../scss/style.scss */
+  /* line 408, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 426, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -1441,28 +1725,28 @@ body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 435, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fbaa44 1px solid;
 }
-/* line 441, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
-/* line 451, ../scss/style.scss */
+/* line 455, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 454, ../scss/style.scss */
+/* line 458, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 463, ../scss/style.scss */
+/* line 467, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 3px 5px 0px black;
   -webkit-box-shadow: 0px 3px 5px 0px black;
@@ -1473,13 +1757,14 @@ body {
   min-height: 6.25em;
   overflow: auto;
   font-size: 0.6875em;
+  padding-bottom: 1.25em;
 }
-/* line 472, ../scss/style.scss */
+/* line 477, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 477, ../scss/style.scss */
+/* line 482, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -1487,7 +1772,7 @@ body {
   font-size: 1.875em;
   font-weight: bold;
 }
-/* line 486, ../scss/style.scss */
+/* line 491, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   display: inline-block;
   background: purple;
@@ -1499,20 +1784,20 @@ body {
   border: orange 1px solid;
 }
 @media screen and (max-width: 700px) {
-  /* line 486, ../scss/style.scss */
+  /* line 491, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 500, ../scss/style.scss */
+/* line 505, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams {
   display: inline-block;
   vertical-align: top;
   margin: 0px 1.25em;
 }
 @media screen and (max-width: 700px) {
-  /* line 500, ../scss/style.scss */
+  /* line 505, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams {
     font-size: 0.875em;
     margin: 0px 0.75em;
@@ -1520,12 +1805,12 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 514, ../scss/style.scss */
+  /* line 519, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 100%;
   }
 }
-/* line 520, ../scss/style.scss */
+/* line 525, ../scss/style.scss */
 .predictions-title .underliner {
   clear: both;
   margin: 0.625em auto;
@@ -1533,7 +1818,7 @@ body {
   border-bottom: #fff solid 1px;
   height: 1px;
 }
-/* line 527, ../scss/style.scss */
+/* line 532, ../scss/style.scss */
 .predictions-title .game-date {
   margin: 0.625em auto;
   font-size: 0.5em;
@@ -1541,7 +1826,7 @@ body {
   text-align: center;
 }
 
-/* line 539, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 .how-to-bar-ctr {
   background: black;
   padding-top: 0.25em;
@@ -1549,24 +1834,24 @@ body {
   padding-left: 1.875em;
 }
 @media screen and (min-width: 700px) {
-  /* line 539, ../scss/style.scss */
+  /* line 545, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 547, ../scss/style.scss */
+/* line 553, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   font-size: 0.5em;
 }
 
-/* line 557, ../scss/style.scss */
+/* line 563, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   border: solid 1px black;
   padding: 0.625em, 0px, 0.625em, 0px;
   background: grey;
   padding: 30px;
 }
-/* line 568, ../scss/style.scss */
+/* line 574, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller {
   border: 1px solid white;
   height: 20px;
@@ -1575,7 +1860,7 @@ body {
   margin-right: 0.57143%;
   float: left;
 }
-/* line 574, ../scss/style.scss */
+/* line 580, ../scss/style.scss */
 .round-games-scrollbar-ctr .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -1587,21 +1872,21 @@ body {
   margin-right: 0;
 }
 
-/* line 587, ../scss/style.scss */
+/* line 593, ../scss/style.scss */
 .main-sports-section .team-points-bar {
   border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 592, ../scss/style.scss */
+/* line 598, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
   float: left;
 }
-/* line 596, ../scss/style.scss */
+/* line 602, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -1611,7 +1896,7 @@ body {
   margin-right: 0;
   text-align: center;
 }
-/* line 605, ../scss/style.scss */
+/* line 611, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -1619,12 +1904,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 605, ../scss/style.scss */
+  /* line 611, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 611, ../scss/style.scss */
+/* line 617, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
   color: #fcaa35;
@@ -1638,33 +1923,33 @@ body {
   font-size: 0.75em;
   float: left;
 }
-/* line 621, ../scss/style.scss */
+/* line 627, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 628, ../scss/style.scss */
+/* line 634, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 632, ../scss/style.scss */
+/* line 638, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 636, ../scss/style.scss */
+/* line 642, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 700px) {
-  /* line 632, ../scss/style.scss */
+  /* line 638, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 647, ../scss/style.scss */
+/* line 653, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -1672,12 +1957,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 647, ../scss/style.scss */
+  /* line 653, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 653, ../scss/style.scss */
+/* line 659, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
@@ -1690,25 +1975,25 @@ body {
   border: black 1px solid;
   float: left;
 }
-/* line 661, ../scss/style.scss */
+/* line 667, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 668, ../scss/style.scss */
+/* line 674, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 672, ../scss/style.scss */
+/* line 678, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 685, ../scss/style.scss */
+/* line 691, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -1722,16 +2007,16 @@ body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 696, ../scss/style.scss */
+/* line 702, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 700, ../scss/style.scss */
+/* line 706, ../scss/style.scss */
 .main-sports-section .team-scores-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 708, ../scss/style.scss */
+/* line 714, ../scss/style.scss */
 .main-sports-section .to-win-ctr, .main-sports-section .over-under-ctr, .main-sports-section .team-1-stats-ctr, .main-sports-section .team-2-stats-ctr {
   border: 1px solid black;
   min-height: 3.125em;
@@ -1741,7 +2026,7 @@ body {
   overflow: hidden;
 }
 @media screen and (min-width: 700px) {
-  /* line 720, ../scss/style.scss */
+  /* line 726, ../scss/style.scss */
   .main-sports-section .to-win-ctr, .main-sports-section .team-1-stats-ctr {
     width: 49.71429%;
     float: left;
@@ -1749,7 +2034,7 @@ body {
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 729, ../scss/style.scss */
+  /* line 735, ../scss/style.scss */
   .main-sports-section .over-under-ctr, .main-sports-section .team-2-stats-ctr {
     width: 49.71429%;
     float: left;
@@ -1758,29 +2043,29 @@ body {
     margin-right: 0;
   }
 }
-/* line 739, ../scss/style.scss */
+/* line 745, ../scss/style.scss */
 .main-sports-section .to-win-ctr, .main-sports-section .over-under-ctr {
   background: #333333;
 }
-/* line 742, ../scss/style.scss */
+/* line 748, ../scss/style.scss */
 .main-sports-section .team-1-stats-ctr {
   background: #111441;
 }
-/* line 745, ../scss/style.scss */
+/* line 751, ../scss/style.scss */
 .main-sports-section .team-2-stats-ctr {
   background: #6f0036;
 }
 @media screen and (min-width: 700px) {
-  /* line 748, ../scss/style.scss */
+  /* line 754, ../scss/style.scss */
   .main-sports-section .sports-expander-btn {
     display: none;
   }
 }
-/* line 753, ../scss/style.scss */
+/* line 759, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 757, ../scss/style.scss */
+/* line 763, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -1789,16 +2074,16 @@ body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 766, ../scss/style.scss */
+/* line 772, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 771, ../scss/style.scss */
+/* line 777, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   float: left;
   padding-left: 1.875em;
 }
-/* line 777, ../scss/style.scss */
+/* line 783, ../scss/style.scss */
 .main-sports-section .sports-expander {
   height: 50vh;
   background: grey;
@@ -1806,23 +2091,23 @@ body {
   padding: 0.3125em;
 }
 @media screen and (min-width: 700px) {
-  /* line 777, ../scss/style.scss */
+  /* line 783, ../scss/style.scss */
   .main-sports-section .sports-expander {
     display: block;
     display: block;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 777, ../scss/style.scss */
+  /* line 783, ../scss/style.scss */
   .main-sports-section .sports-expander {
     display: none;
   }
 }
-/* line 792, ../scss/style.scss */
+/* line 798, ../scss/style.scss */
 .main-sports-section .sports-expander .expander-box-text {
   text-align: center;
 }
-/* line 796, ../scss/style.scss */
+/* line 802, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
   border: #1c1c1c 1px solid;
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
@@ -1832,7 +2117,7 @@ body {
   width: 100%;
 }
 
-/* line 811, ../scss/style.scss */
+/* line 817, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -1840,7 +2125,7 @@ body {
   text-align: center;
 }
 
-/* line 819, ../scss/style.scss */
+/* line 825, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -1848,7 +2133,7 @@ body {
   background: skyblue;
 }
 
-/* line 827, ../scss/style.scss */
+/* line 833, ../scss/style.scss */
 .icon-footer {
   padding: 1.25em;
   text-align: center;

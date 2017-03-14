@@ -10,6 +10,7 @@
 @import "partials/nrl_hub";
 @import "partials/results-summary";
 @import "partials/projected-season";
+@import "partials/in-running";
 
 *{
   // box-sizing: border-box;
@@ -45,6 +46,9 @@ $break-medium: 785px;
   margin-bottom: em(50px);
 }
 
+.subtext{
+  font-family: 'roboto-thin';
+}
 @mixin float-left {
   @include float(left);
 }
@@ -468,6 +472,7 @@ body{
   min-height: em(100px);
   overflow: auto;
   font-size: em(11px);
+  padding-bottom: em(20px);
 
   .predictions-main{
 
@@ -527,6 +532,7 @@ body{
   .game-date{
     margin: em(10px) auto;
     // width: em(25px);
+
     font-size: em(8px);
     text-size: em(10px);
     text-align: center;
