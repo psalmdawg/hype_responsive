@@ -1,6 +1,20 @@
 
 
   $(document).ready(function(){
+
+
+    //***** SEMANTIC UI ********
+
+
+
+      $('.ui.dropdown')
+        .dropdown();
+
+
+
+
+//***********SEMANTIC
+
     // $('.dropdown-content').hide();
 
     // $('.dropdown-content').hide();
@@ -23,7 +37,7 @@ $( window ).resize(function() {
     if($(window).width() > 700 ){
       $(".drop-btn").show();
       $(".responsive-nav").show();
-      $('.sports-expander').show();
+      // $('.sports-expander').show();
     //   console.log("window big")
     //   // $(".responsive-nav").addClass('mobile-menu-tabs');
     //   $('.dropbtn ').hover(function(){
@@ -31,26 +45,39 @@ $( window ).resize(function() {
     //     //  $(this).closest('.dropdown').find('.dropdown-content').toggle();
     //        $(this).children('.dropdown-content').stop(true, false, true).slideToggle(300);
       };
+        if($(window).width() < 700 ){
+          $(".drop-btn").hide();
+          $(".responsive-nav").hide();
+        }
+
+      // if($(window).width() <  700 ) && ($window.width() -){
+
+      // function () {
+        $difference = $(window).width() - 200;
+
+        console.log($difference);
+      // }
+
     });
- $('.dropdown-content').mouseenter(function(){
-     $(this).prev('.dropbtn').css({"background":"#faa04b"});
-     console.log( $(this).closest('.dropbtn'))
-     console.log('hovering')
-   });
-   $('.dropdown-content').mouseleave(function(){
-       $(this).prev('.dropbtn').css({"background":"#1a1a1a"});
-       console.log( $(this).closest('.dropbtn'))
-       console.log('hovering')
-     });
+ // $('.dropdown-content').mouseenter(function(){
+ //     $(this).prev('.dropbtn').css({"background":"#faa04b"});
+ //     console.log( $(this).closest('.dropbtn'))
+ //     console.log('hovering')
+ //   });
+  //  $('.dropdown-content').mouseleave(function(){
+  //      $(this).prev('.dropbtn').css({"background":"#1a1a1a"});
+  //      console.log( $(this).closest('.dropbtn'))
+  //      console.log('hovering')
+  //    });
 
 
-$('.sports-expander-btn').on('click', function(){
-  console.log('clickde')
-  $(this).closest('.sports-expander-btn').find('.seb-minus').toggle();
-  $(this).closest('.sports-expander-btn').find('.seb-plus').toggle()
-
-  $(this).next('.sports-expander').toggle();
- })
+// $('.sports-expander-btn').on('click', function(){
+//   console.log('clickde')
+//   $(this).closest('.sports-expander-btn').find('.seb-minus').toggle();
+//   $(this).closest('.sports-expander-btn').find('.seb-plus').toggle()
+//
+//   $(this).next('.sports-expander').toggle();
+//  })
 
 
 
@@ -76,7 +103,7 @@ $('.sports-expander-btn').on('click', function(){
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           },
@@ -85,7 +112,7 @@ $('.sports-expander-btn').on('click', function(){
             settings:
             {
 
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 1,
               speed: 300
             }
@@ -123,6 +150,50 @@ $('.sports-expander-btn').on('click', function(){
         // $('.sports-windows').cs
         $('.sports-windows').hide().css('visibility','visible').fadeIn('slow');
       }, 100);
+
+  });
+
+
+  $('.sports-windows').slick({
+    arrows: false,
+    infinite: false,
+    speed: 600,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 9000,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          // dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 570,
+        settings:
+        {
+
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 300
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
 
   });
 
@@ -234,5 +305,13 @@ $('.sports-expander-btn').on('click', function(){
      json.series = series;
 
      $('#linegraph').highcharts(json);
-    
+     $('#linegraph2').highcharts(json);
+     $('#linegraph3').highcharts(json);
+     $('#linegraph4').highcharts(json);
+     $('#linegraph5').highcharts(json);
+     $('#linegraph6').highcharts(json);
+     $('#linegraph7').highcharts(json);
+     $('#linegraph8').highcharts(json);
+
+
   });

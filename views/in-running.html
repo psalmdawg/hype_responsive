@@ -7,26 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Palanquin" rel="stylesheet">
-  <link rel="stylesheet" href="semantic/dropdown.min.css">
+  <link rel="stylesheet" href="../semantic/dropdown.min.css">
   <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/icon.css">
   <!-- slick -->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
   <link rel="stylesheet" href="../semantic/transition.min.css">
 
-  <script type="text/javascript" src="jquery-3.1.1.js"></script>
-  <script type="text/javascript" src="jquery-migrate-1.4.1.min.js"></script>
-  <script src="semantic/jquery.min.js"></script>
-  <script src="semantic/dropdown.min.js"></script>
-  <script src="semantic/transition.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="../jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="../jquery-migrate-1.4.1.min.js"></script>
+  <script src="../semantic/jquery.min.js"></script>
+  <script src="../semantic/dropdown.min.js"></script>
+  <script src="../semantic/transition.min.js"></script>
+  <script type="text/javascript" src="../slick/slick.min.js"></script>
+  <script type="text/javascript" src="../app.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
 
   <!-- <script type="text/javascript" src="highcharts.js"></script> -->
     <link rel="stylesheet" href="../css/style.css">
+
 
 
 
@@ -37,31 +38,43 @@
 <body>
 
 <div class="container">
+  <!-- <div class="main-page-container"> -->
 
-  <div class="predictions-title mb-50">
+  <div class="predictions-title">
     <div class="predictions-main">
       <div class="team-title-cntr">
         <div class="team-circle-color"></div>
-        <div class="teams">TEAM vs TEAM</div>
+        <div class="teams"><div>BRONCOS VS COWBOYS</div></div>
         <div class="team-circle-color"></div>
       </div>
     </div>
     <div class="underliner"></div>
-    <div class="game-date bold">LIVE IN RUNNING PROJECTIONS</div>
+    <div class="game-date bold">EXPLAINER TEXT ABOUT PAGE</div>
 
-    <div class="game-date sub">NRL ROUND 4</div>
+    <!-- <div class="game-date sub">NRL ROUND 4</div> -->
   </div>
   <!-- <div ></div> -->
-  <div class="tweet-bar">How to use this page</div>
+
 
 <div class="main-page-container">
+
+  <div class="tweet-bar">
+    <div class="inner-tweet-bar">
+      <!-- <p class="left">Blake Misipeka generated an AFL lineup for DraftStars 29 minutes ago</p> -->
+      <p class="right">HOW TO USE THIS PAGE <span>[?]</span></p>
+    </div>
+  </div>
+
+
+
+
+
   <div class="page-container-right">
-    <div class="inner-ctr-right" >
-      <div class="large-orange-button">
-          VIEW MATCH ARTICLES
-      </div>
+    <div class="inner-ctr-right">
+
+
       <div class="adverts-right-title">RECENT ARTICLES</div>
-        <!-- <p>Ads and Shit</p> -->
+
       <div class="results-fantasy-articles">
         <div class="rfa-image">
 
@@ -89,24 +102,11 @@
           VIEW MORE ARTICLES
       </div>
 
-      <div class="previous-games-ctr">
-          PREVIOUS GAMES
-        <div class="previous-game-title">
-          <span>MON, 28 MAR 2016</span> 7:00pm, Southern Cross Group Stadium
-        </div>
-        <div class="previous-games"><div class="ps-ldr-color"></div>CRONULLA <span>SHARKS</span></div>
-        <div class="previous-games"><div class="ps-ldr-color"></div>MELBOURNE  <span>STORM</span></div>
-        <div class="value-bets-results">
-          <div>VALUE BET RESULTS:</div>
-          <div><i class="fa fa-angle-down" aria-hidden="true"></i>
-            <span>$132.50 (-22.1%)</span>
-          </div>
-        </div>
-      </div>
-      <div class="large-orange-button">
-          VIEW MORE HISTORICAL RESULTS
-      </div>
-      <div class="results-social-media">
+
+
+      <div class="advert-right-small">hello</div>
+
+      <div class="results-social-media mg-top20">
         <div>Join the conversation</div>
         <!-- <div class="results-socials"> -->
           <div class="share-socials">
@@ -125,11 +125,11 @@
     <div class="live-running-wrap">
       <div class="live-running-inner">
         <div class="lr-title">
-          LIVE IN-RUNNING SCORE
+          PROJECTED WIN
         </div>
         <div class="lr-table-wrap">
           <div class="lr-table-title">
-              <div>TEAM</div><div>POINTS</div>
+              <div>TEAM</div><div>POINTS</div><div>WIN %</div>
           </div>
           <div class="lr-table-main">
             <div class="lr-table-team">
@@ -139,9 +139,9 @@
               </div>
               <div class="lr-tt-right">
 
-                <div class="lr-tt-icon">0</div>
-                <div class="lrtt-score">21.0</div>
-                <div class="lr-tt-islive"><span>LIVE</span></div>
+                <div class="lr-tt-icon">19.0</div>
+                <div class="lrtt-score">89.7</div>
+
 
               </div>
             </div>
@@ -151,9 +151,9 @@
                   <div>Power Ranking <span>7</span></div>
               </div>
               <div class="lr-tt-right">
-                  <div class="lr-tt-icon">0</div>
-                  <div class="lrtt-score">19.0</div>
-                  <div class="lr-tt-islive"><span>LIVE</span></div>
+                  <div class="lr-tt-points">21.0</div>
+                  <div class="lrtt-win-p">10.3</div>
+
               </div>
             </div>
           </div>
@@ -163,13 +163,19 @@
 
     <div class="lir-chart-ctr">
       <div class="lirc-title">
-        WIN PERCENTAGE
+        WIN %
+      </div>
+      <div class="lirc-chart" id="linegraph2">
+
+
       </div>
 
     </div>
 
-
-  <div class="live-tweet-ctr">
+    <div class="advert-full-width">
+      <img src="../assets/adverts/Banner_BigBash16.jpg" alt="">
+    </div>
+  <!-- <div class="live-tweet-ctr">
     <div class="live-tweet-inr">
       <div class="live-tweet-title">
         LIVE IN-RUNNING UPDATES
@@ -202,9 +208,9 @@
         <div class="lt-main">At this stage in the match, our models project that BRONCOS will WIN 32-26 <span>TW</span></div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="advert-full-width"></div>
+
 
 
   </div> <!-- page container left -->

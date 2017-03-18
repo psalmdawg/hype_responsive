@@ -10,8 +10,8 @@ $(function() {
         backgroundColor:'lightgrey',
         type: 'pie',
         margin: [0,0,0,0],
-        height: 100,
-        width: 100,
+        height: 120,
+        width: 120,
         borderRadius: 60
       },
       tooltip: {
@@ -31,11 +31,11 @@ $(function() {
 
        floating: true,
        align: 'right',
-       x: -23,
-       y: 39,
+       x: -30,
+       y: 48,
           style: {
-              fontSize: '15px',
-              fontFamily: 'verdana'
+              fontSize: '20px',
+              fontFamily: 'cooper-hewitt-bold'
           }
     },
       credits: {
@@ -44,7 +44,7 @@ $(function() {
       series: [{
           name: 'Browsers',
           data: [[1],[,2]],
-          innerSize: '85%',
+          innerSize: '90%',
           showInLegend:false,
           dataLabels: {
               enabled: false
@@ -63,8 +63,8 @@ $(function() {
         backgroundColor:'lightgrey',
         type: 'pie',
         margin: [0,0,0,0],
-        height: 100,
-        width: 100,
+        height: 120,
+        width: 120,
         borderRadius: 60
       },
       tooltip: {
@@ -83,11 +83,11 @@ $(function() {
        text: '57% <br> <span class="donut-game-over">over</span>',
        floating: true,
        align: 'right',
-       x: -23,
-       y: 39,
+       x: -30,
+       y: 48,
           style: {
-              fontSize: '15px',
-              fontFamily: 'verdana'
+              fontSize: '20px',
+              fontFamily: 'cooper-hewitt-bold'
           }
     },
       credits: {
@@ -96,7 +96,7 @@ $(function() {
       series: [{
           name: 'Browsers',
           data: [[1],[,2]],
-          innerSize: '85%',
+          innerSize: '90%',
           showInLegend:false,
           dataLabels: {
               enabled: false

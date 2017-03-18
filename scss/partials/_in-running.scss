@@ -14,39 +14,38 @@
   .lr-table-wrap{
     .lr-table-title{
         background: $nav-lighter;
-
-        padding: em(8px) em(5px) em(8px) em(75px);
-
-
+        padding: em(4px) em(5px) em(4px) em(0px);
         overflow: hidden;
       div{
+        padding-left: em(85px);
         font-family: 'roboto-thin';
-        // background: red;
-        @include span(8 of 12);
-        &:last-child{
-          @include span(4 of 12);
-          @include last();
+        font-size:em(13px);
+        @include span(7 of 12);
+        &:nth-child(2){
+          padding-left: em(10px);
+          @include span(2.5 of 12);
           text-align: center;
         }
+        &:last-child{
+        padding-left: em(10px);
+        @include span(2.5 of 12);
+        @include last();
+        text-align: center;
+        }
       }
-
     }
     .lr-table-main{
-      // border-top: $black 2px solid;
       background: $nav-color;
       clear: both;
       .lr-table-team{
         border-top: $black 2px solid;
         height: 50px;
-
         .lr-tt-left{
           height: 50px;
-          // background: pink;
           padding-top: em(12px);
           border-right: $black 2px solid;
-
           font-family: "cooper-hewitt-bold";
-          @include span(8 of 12);
+          @include span(7 of 12);
           .lr-team-color{
             float: left;
             width: 5px;
@@ -55,7 +54,6 @@
             margin-right: em(35px);
             margin-left: em(35px);
             margin-top: em(-5px);
-
           }
           span{
             &:nth-child(2){
@@ -63,14 +61,15 @@
             }
           }
           div{
-            margin-top: em(2px);
+            margin-top: em(6px);
             font-family: 'roboto-thin';
-            font-size: em(11px);
+            font-size: em(12px);
             span{
               font-weight: bold;
               font-size: em(18px);
               font-family: "cooper-hewitt-bold";
-              margin-left: em(4px);
+              margin-left: em(5px);
+              vertical-align: middle;
             }
           }
         }
@@ -78,20 +77,22 @@
         .lr-tt-right{
           min-height: em(50px);
           // background: green;
-          @include span(4 of 12);
+          @include span(5 of 12);
           @include last();
           div{
             text-align: center;
             min-height: em(50px);
             line-height: em(50px);
-            // border: black 1px solid;
-            @include span( 4 of 12);
+            border-right: black 2px solid;
+            @include span( 6 of 12);
             &:last-child{
               @include last();
+                border-right: none;
               span{
                 font-size: em(13px);
                 font-weight: bold;
                 background: $green;
+
                 padding: em(8px) em(20px) em(3px) em(20px);
               }
             }
@@ -100,17 +101,16 @@
       }
     }
   }
-
-
 }
 
 
 .lir-chart-ctr{
   min-width: 100%;
-  background: lighten(pink, 20%);
+
   min-height: em(400px);
   clear: both;
   margin-top: em(40px);
+  margin-bottom: em(40px);
   .lirc-title{
     font-family: "cooper-hewitt-bold";
     background: $black;
@@ -119,6 +119,10 @@
     text-align: center;
     border: 1px solid $dark-border;
     padding: em(10px);
+  }
+  .lirc-chart{
+
+
   }
 }
 
@@ -199,7 +203,7 @@
 
 .previous-games-ctr{
   color: $white;
-  padding-top: em(50px);
+  // padding-top: em(50px);
 
   // color: #fff;
   font-size: em(4px);
@@ -219,8 +223,6 @@
     }
   }
   .previous-games{
-
-    // border: white 1px solid;
     height: em(70px);
     line-height: em(70px);
     &:nth-child(3){
@@ -270,3 +272,16 @@
     }
   }
 }
+
+// .inner-ctr-right{
+
+  .advert-right-small{
+    clear:both;
+    height: em(100px);
+    padding: em(5px);
+    color: blue;
+    width: 100%;
+    background: $grey;
+  }
+
+// }

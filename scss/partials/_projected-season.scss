@@ -8,50 +8,77 @@
   margin-bottom: em(15px);
   letter-spacing: 0.08em;
 }
+
+.projections-sport-icons-wrap{
+
+  width: 40%;
+  @include float-left();
+  h2{
+    letter-spacing: 0.08em;
+    font-family: "cooper-hewitt-bold";
+    margin-bottom: 5px;
+    font-size: em(12px);
+  }
+}
+.pro-main-orange-button-ctr{
+  width: 40%;
+  @include float-right();
+  height: 50px;
+  overflow: auto;
+
+  // border:1px solid white;
+}
+
 .projected-ladder-table{
   margin-bottom: em(40px);
 
   .title-wrap{
-    // background: pink;
-    font-size: em(12px);
-    overflow: auto;
-    height: em(34px);
+    background: $black;
+    font-family: 'roboto-medium';
+    font-size: em(13px);
+    max-height: em(55px);
     margin-bottom: em(25px);
-    line-height: em(34px);
     border: 1px $dark-border solid;
+    width: 100%;
+    overflow: hidden;
   }
 
   .pl-title{
-    // width: 100%;
-    height: em(34px);
-    padding-left: em(70px);
-    // background: green;
-    @include span(5 of 12);
-    // background: red;
-    margin-right: 0px;
-    // border-left: 1px $dark-border solid;
-    // border-top: 1px $dark-border solid;
-    // border: 1px $dark-border solid;
 
-    border-bottom: $orange 3px solid;
+    padding-left: em(70px);
+
+    @include span(5 of 12);
+
+
+
+    padding-top: em(17px);
+    padding-bottom: em(18px);
+    border-bottom: $orange 2px solid;
     // border-right: 2px solid black;
     margin-bottom: em(20px);
     float: left;
 
   }
   .pl-title-headers{
+    padding-top: em(16px);
+    padding-bottom: em(10px);
     font-family: 'roboto-thin';
-    // border-right: 1px $dark-border solid;
-    // border-top: 1px $dark-border solid;
-    // border-bottom: 1px $dark-border solid;
-    @include span( 7 of 12);
+    @include span( 7 of 12 );
     // background: purple;
-    text-align: center;
-    height: em(34px);
+
+    // height: em(34px);
     @include last();
-    // margin-left: 0px;
+
     div{
-      @include span(1 of 14);
+      // font-size: em(10px);
+      text-align: center;
+      // @include span(1 of 11);
+      &:first-child{
+        @include span(1.50 of 11 (gutters: 0));
+      }
+
+      @include span(0.95 of 11 (gutters: 0));
+      // margin-right: 0.4%;
       &:last-child{
         @include last;
       }
@@ -60,16 +87,18 @@
 
 
   .pl-main-table{
-    // margin-top: em(20px);
+
     .pl-main-table-row{
       font-family: 'cooper-hewitt-bold';
       overflow: hidden;
-      height: em(32px);
-      border-bottom: $black 2px solid;
-      width: 100%;
-      // .pl-main-table-inner{
-      //   width: 50%;
-      // }
+      // display: block;
+      clear: both;
+      background: blue;
+      border-bottom: 1px solid $black;
+
+      height: 36px;
+      overflow: hidden;
+
       &:nth-child(odd){
         background: $dark-border;
       };
@@ -80,64 +109,88 @@
       .plmt-number{
         @include span(0.5 of 12);
         background: $main;
-        min-height: 100%;
-        line-height: em(32px);
-        overflow: hidden;
+        font-size: em(10px);
+
 
         div{
-          // padding-top: em(2px);
-          // color: red;
-          font-size: em(24px);
-
+          font-size: 23px;
+          height: 36px;
+          line-height: 36px;
+          // vertical-align: middle;
           font-weight: bold;
+          padding-top: 3px;
+          // height: 100%;
+          // background: red;
         }
       }
       .plmt-team{
-        min-height: em(32px);
-        line-height: em(32px);
+        font-size: em(14px);
         color: $orange;
         padding-top: em(3px);
-        border-right: 2px solid $black;
-        @include span( 4.5 of 12);
-        height: 100%;
-        font-size: em(13px);
-        overflow: hidden;
+        // border-right: 2px solid $black;
+        @include span( 4.5 of 12 (gutters: 0));
+        height: 36px;
+        line-height: 34px;
+        padding-top: em(3px);
+        // background: yellow;
 
         span{
           color: $white;
           &:nth-child(2){
             // color: purple;
-            margin-right: em(10px);
-            margin-left: em(6px);
+            // margin-right: em(10px);
+
           }
           &:first-child{
+            padding-top: em(6px);
             margin-right: em(10px);
             background: $maroon;
             border: $orange 2px solid;
             @include border-radius(100%);
-            width: em(18px);
-            height: em(18px);
+            width: 15px;
+            height: 15px;
             @include float-left();
             margin-right: em(20px);
-            margin-top: em(4px);
+            margin-left:6px;
+            margin-top: 7px;
           }
         }
       }
       .plmt-points-ctr{
-        font-size: em(13px);
-        padding-top:em(4px);
-        min-height: em(32px);
-        line-height: em(32px);
-        @include span( 7 of 12);
+
+        // padding-top: em(3px);
+        font-size: em(14px);
+        height: 36px;
+        line-height: 36px;
+
+        @include span( 7 of 12 );
         @include last();
 
         .plmt-points{
-          height: 100%;
-          float: left;
-          text-align: center;
-          width: 7.142857142%;
-          vertical-align: bottom;
 
+          // border: 1px white solid;
+
+          &:first-child{
+            @include span(1.50 of 11 (gutters: 0));
+            background: $black;
+            color: $orange;
+            border: $main 1px solid;
+            padding-top: 0px;
+            height: 33px;
+            margin-top: 1px;
+            // padding-left: 10px;
+            // margin-left: -5px;
+            // margin-right: 5px;
+          }
+
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+
+          @include span(0.95 of 11 (gutters: 0));
+          &:last-child{
+            @include last();
+          }
         }
       }
     }
