@@ -246,7 +246,7 @@ body{
       padding-right: em(25px);
       padding-left: em(25px);
       cursor: pointer;
-      box-sizing: content-box;
+      // box-sizing: content-box;
       &:hover{
         background: darken($nav-color, 3%);
         border-bottom: $orange solid 1px;

@@ -2136,7 +2136,6 @@ body {
   padding-right: 1.5625em;
   padding-left: 1.5625em;
   cursor: pointer;
-  box-sizing: content-box;
 }
 /* line 239, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
