@@ -179,7 +179,12 @@ body{
 
 
   .inner-nav{
-    overflow: hidden;
+
+    @media screen and (min-width: $break-small) {
+      height: 56px;
+    }
+
+
   }
 
   .nav-right{
@@ -197,7 +202,7 @@ body{
       float: left;
       padding-left: em(16px);
       font-size: em(16px);
-      line-height: em(62px);
+      line-height: 55px;
       cursor: pointer;
       &:nth-child(2){
         background: $orange;
@@ -223,6 +228,7 @@ body{
       float: left;
     }
 
+
     &:nth-child(1){
       margin-left: 0;
       background: $main;
@@ -233,9 +239,9 @@ body{
       .black{
         background: $black;
       }
-
+      border-bottom: $nav-color solid 1px;
       height: em(62px);
-      line-height: em(62px);
+      line-height: 60px;
       color: white;
       padding-right: em(25px);
       padding-left: em(25px);
@@ -251,11 +257,19 @@ body{
         &:hover {
           background: $orange;;
         }
+      }
+      @media screen and (max-width: $break-small) {
+        height: 18.3vh;
+        line-height: 18.3vh;
+        font-size: 20px;
+        border: $orange 1px solid;
 
       }
 
-
     } //dropbtm end
+
+
+
     &:nth-child(1){
       padding-left: 0;
     }

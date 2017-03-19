@@ -2066,35 +2066,37 @@ body {
   background: #1c1c1c;
   font-size: 0.875em;
 }
-/* line 181, ../scss/style.scss */
-.nav .inner-nav {
-  overflow: hidden;
+@media screen and (min-width: 750px) {
+  /* line 181, ../scss/style.scss */
+  .nav .inner-nav {
+    height: 56px;
+  }
 }
-/* line 185, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 750px) {
-  /* line 185, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 185, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   .nav .nav-right {
     display: none;
   }
 }
-/* line 196, ../scss/style.scss */
+/* line 201, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
   font-size: 1em;
-  line-height: 3.875em;
+  line-height: 55px;
   cursor: pointer;
 }
-/* line 202, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #fcaa35;
   padding: 0 20px;
@@ -2103,62 +2105,72 @@ body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 202, ../scss/style.scss */
+  /* line 207, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 213, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 221, ../scss/style.scss */
+  /* line 226, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 226, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
   background: #0c0c0c;
 }
-/* line 231, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1c1c1c;
+  border-bottom: #1c1c1c solid 1px;
   height: 3.875em;
-  line-height: 3.875em;
+  line-height: 60px;
   color: white;
   padding-right: 1.5625em;
   padding-left: 1.5625em;
   cursor: pointer;
   box-sizing: content-box;
 }
-/* line 233, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
   background: #000000;
 }
-/* line 244, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #141414;
   border-bottom: #fcaa35 solid 1px;
 }
 @media screen and (max-width: 750px) {
-  /* line 251, ../scss/style.scss */
+  /* line 257, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
     background: #fcaa35;
   }
 }
-/* line 259, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 237, ../scss/style.scss */
+  .nav .dropdown .dropbtn {
+    height: 18.3vh;
+    line-height: 18.3vh;
+    font-size: 20px;
+    border: #fcaa35 1px solid;
+  }
+}
+/* line 273, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 263, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 270, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -2171,12 +2183,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 270, ../scss/style.scss */
+  /* line 284, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 287, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -2187,24 +2199,24 @@ body {
   display: block;
   background-color: #363636;
 }
-/* line 297, ../scss/style.scss */
+/* line 311, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #292929;
 }
-/* line 300, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 750px) {
-  /* line 307, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
     color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 316, ../scss/style.scss */
+  /* line 330, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -2212,7 +2224,7 @@ body {
   }
 }
 
-/* line 328, ../scss/style.scss */
+/* line 342, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   width: 100%;
@@ -2221,30 +2233,30 @@ body {
   padding-top: 13px;
   padding-bottom: 5px;
 }
-/* line 329, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 .burger-icon-ctr span {
   min-width: 30px;
 }
-/* line 331, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 .burger-icon-ctr span div {
   display: inline-block;
   min-width: 30px;
 }
 @media screen and (min-width: 750px) {
-  /* line 328, ../scss/style.scss */
+  /* line 342, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 345, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
-/* line 348, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 .burger-icon-ctr img {
   width: 80px;
 }
-/* line 351, ../scss/style.scss */
+/* line 365, ../scss/style.scss */
 .burger-icon-ctr .n-sup {
   background: #fcaa35;
   cursor: pointer;
@@ -2258,7 +2270,7 @@ body {
   padding-top: 7px;
 }
 
-/* line 368, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   font-size: 0.625em;
@@ -2267,26 +2279,26 @@ body {
   line-height: 1.5625em;
 }
 @media screen and (max-width: 750px) {
-  /* line 368, ../scss/style.scss */
+  /* line 382, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 380, ../scss/style.scss */
+/* line 394, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 77%;
   margin: 0 auto;
   font-size: 0.5em;
 }
-/* line 385, ../scss/style.scss */
+/* line 399, ../scss/style.scss */
 .inner-tweet-bar span {
   color: #fcaa35;
   cursor: help;
 }
 
-/* line 391, ../scss/style.scss */
+/* line 405, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
@@ -2294,7 +2306,7 @@ body {
   line-height: 5.625em;
 }
 
-/* line 399, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 .game-dropper {
   padding-left: 1.5625em;
   font-family: "cooper-hewitt-bold";
@@ -2305,99 +2317,99 @@ body {
   width: 8.85714%;
 }
 @media screen and (min-width: 750px) {
-  /* line 399, ../scss/style.scss */
+  /* line 413, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 399, ../scss/style.scss */
+  /* line 413, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
     display: none;
   }
 }
-/* line 418, ../scss/style.scss */
+/* line 432, ../scss/style.scss */
 .game-dropper i {
   margin-left: 8px;
   font-size: 1.375em;
   width: 0;
 }
-/* line 423, ../scss/style.scss */
+/* line 437, ../scss/style.scss */
 .game-dropper .ui.simple.dropdown .menu {
   margin-top: -25px;
   color: #fff;
   border: 1px #000000 solid !important;
 }
-/* line 428, ../scss/style.scss */
+/* line 442, ../scss/style.scss */
 .game-dropper .menu {
   border: 1px #fcaa35 solid;
 }
-/* line 436, ../scss/style.scss */
+/* line 450, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item, .game-dropper .ui.scrolling.dropdown .menu .item.item.item {
   color: white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   background: #000000;
 }
-/* line 441, ../scss/style.scss */
+/* line 455, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item:hover, .game-dropper .ui.scrolling.dropdown .menu .item.item.item:hover {
   color: #fcaa35 !important;
 }
 
-/* line 465, ../scss/style.scss */
+/* line 479, ../scss/style.scss */
 .main-left-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-right: 10px;
 }
-/* line 469, ../scss/style.scss */
+/* line 483, ../scss/style.scss */
 .main-left-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 469, ../scss/style.scss */
+  /* line 483, ../scss/style.scss */
   .main-left-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 484, ../scss/style.scss */
+/* line 498, ../scss/style.scss */
 .main-right-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-left: 10px;
 }
-/* line 489, ../scss/style.scss */
+/* line 503, ../scss/style.scss */
 .main-right-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 489, ../scss/style.scss */
+  /* line 503, ../scss/style.scss */
   .main-right-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 504, ../scss/style.scss */
+/* line 518, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 750px) {
-  /* line 504, ../scss/style.scss */
+  /* line 518, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
     padding-left: 10px;
   }
 }
-/* line 515, ../scss/style.scss */
+/* line 529, ../scss/style.scss */
 .sports-window-ctr .sports-window-inr-wrp {
   width: 90%;
   margin: 0 auto;
@@ -2405,13 +2417,13 @@ body {
   border: white 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 515, ../scss/style.scss */
+  /* line 529, ../scss/style.scss */
   .sports-window-ctr .sports-window-inr-wrp {
     width: 100%;
   }
 }
 
-/* line 528, ../scss/style.scss */
+/* line 542, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -2419,7 +2431,7 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 750px) {
-  /* line 528, ../scss/style.scss */
+  /* line 542, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     margin: 0 auto;
@@ -2428,12 +2440,12 @@ body {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 528, ../scss/style.scss */
+  /* line 542, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 553, ../scss/style.scss */
+/* line 567, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -2447,44 +2459,44 @@ body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 561, ../scss/style.scss */
+/* line 575, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fcaa35 1px solid;
 }
 @media screen and (max-width: 750px) {
-  /* line 553, ../scss/style.scss */
+  /* line 567, ../scss/style.scss */
   .sports-windows .sports-window {
     border: #fcaa35 1px solid;
   }
 }
-/* line 571, ../scss/style.scss */
+/* line 585, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
 @media screen and (max-width: 750px) {
-  /* line 571, ../scss/style.scss */
+  /* line 585, ../scss/style.scss */
   .sports-windows .sports-window-inner-title {
     display: none;
   }
 }
-/* line 582, ../scss/style.scss */
+/* line 596, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 584, ../scss/style.scss */
+/* line 598, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname:last-child span {
   color: #61e063;
 }
-/* line 590, ../scss/style.scss */
+/* line 604, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 600, ../scss/style.scss */
+/* line 614, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 5px 5px 0px black;
   -webkit-box-shadow: 0px 5px 5px 0px black;
@@ -2497,12 +2509,12 @@ body {
   font-size: 0.6875em;
   padding-bottom: 1.25em;
 }
-/* line 610, ../scss/style.scss */
+/* line 624, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 615, ../scss/style.scss */
+/* line 629, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -2513,7 +2525,7 @@ body {
   padding-top: 2px;
   overflow: auto;
 }
-/* line 628, ../scss/style.scss */
+/* line 642, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   float: left;
   margin-top: 2px;
@@ -2525,20 +2537,20 @@ body {
   border-radius: 1.25em;
   border: orange 2px solid;
 }
-/* line 636, ../scss/style.scss */
+/* line 650, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
   float: left;
   background: green;
   margin-left: 0.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 628, ../scss/style.scss */
+  /* line 642, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 653, ../scss/style.scss */
+/* line 667, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams div {
   margin-top: 2px;
   vertical-align: bottom;
@@ -2548,19 +2560,19 @@ body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 653, ../scss/style.scss */
+  /* line 667, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams div {
     font-size: 0.875em;
     margin: 0px 0.75em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 670, ../scss/style.scss */
+  /* line 684, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 95%;
   }
 }
-/* line 676, ../scss/style.scss */
+/* line 690, ../scss/style.scss */
 .predictions-title .underliner {
   clear: both;
   margin: 0 auto;
@@ -2569,7 +2581,7 @@ body {
   height: 1px;
   margin-bottom: 1.25em;
 }
-/* line 684, ../scss/style.scss */
+/* line 698, ../scss/style.scss */
 .predictions-title .game-date {
   margin: 0.625em auto;
   font-size: 0.5em;
@@ -2577,7 +2589,7 @@ body {
   text-align: center;
 }
 
-/* line 694, ../scss/style.scss */
+/* line 708, ../scss/style.scss */
 .how-to-bar-ctr {
   overflow: auto;
   padding-top: 0.25em;
@@ -2585,28 +2597,28 @@ body {
   padding-left: 1.875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 694, ../scss/style.scss */
+  /* line 708, ../scss/style.scss */
   .how-to-bar-ctr {
     display: none;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 694, ../scss/style.scss */
+  /* line 708, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 707, ../scss/style.scss */
+/* line 721, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   float: right;
   font-size: 0.5em;
 }
-/* line 710, ../scss/style.scss */
+/* line 724, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt:hover {
   cursor: help;
 }
 
-/* line 715, ../scss/style.scss */
+/* line 729, ../scss/style.scss */
 .games-round-title {
   width: 55%;
   font-size: 0.5625em;
@@ -2615,7 +2627,7 @@ body {
   font-size: 0.5625em;
 }
 
-/* line 725, ../scss/style.scss */
+/* line 739, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   clear: both;
   width: 65.42857%;
@@ -2623,38 +2635,38 @@ body {
   margin-right: 0.57143%;
   font-family: "cooper-hewitt-bold";
 }
-/* line 731, ../scss/style.scss */
+/* line 745, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg, .round-games-scrollbar-ctr .caret-right-svg {
   width: 4%;
   padding-top: 3px;
   float: left;
 }
-/* line 737, ../scss/style.scss */
+/* line 751, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg {
   margin-right: 10px;
   float: left;
 }
-/* line 742, ../scss/style.scss */
+/* line 756, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-right-svg {
   float: right;
 }
-/* line 748, ../scss/style.scss */
+/* line 762, ../scss/style.scss */
 .round-games-scrollbar-ctr img {
   width: 100%;
 }
-/* line 751, ../scss/style.scss */
+/* line 765, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr {
   float: left;
   width: 89%;
 }
-/* line 759, ../scss/style.scss */
+/* line 773, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller {
   width: 100%;
   float: left;
   height: 20px;
   line-height: 20px;
 }
-/* line 765, ../scss/style.scss */
+/* line 779, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
   cursor: pointer;
   text-align: center;
@@ -2665,27 +2677,27 @@ body {
   float: left;
   margin-right: 1.14943%;
 }
-/* line 766, ../scss/style.scss */
+/* line 780, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:first-child {
   display: block;
   background: none;
   clear: both;
 }
-/* line 777, ../scss/style.scss */
+/* line 791, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 780, ../scss/style.scss */
+/* line 794, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div span {
   color: #000000;
 }
-/* line 783, ../scss/style.scss */
+/* line 797, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:hover {
   background: #fcaa35;
 }
 
-/* line 791, ../scss/style.scss */
+/* line 805, ../scss/style.scss */
 .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -2701,13 +2713,13 @@ body {
   font-family: "cooper-hewitt-bold";
 }
 
-/* line 803, ../scss/style.scss */
+/* line 817, ../scss/style.scss */
 .main-sports-section {
   clear: both;
   margin-bottom: 2.8125em;
   overflow: auto;
 }
-/* line 808, ../scss/style.scss */
+/* line 822, ../scss/style.scss */
 .main-sports-section .main-sports-title {
   font-size: 1.125em;
   background: #000000;
@@ -2718,14 +2730,14 @@ body {
   text-align: center;
   padding-top: 0.125em;
 }
-/* line 819, ../scss/style.scss */
+/* line 833, ../scss/style.scss */
 .main-sports-section .team-points-bar {
   border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 824, ../scss/style.scss */
+/* line 838, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
@@ -2733,7 +2745,7 @@ body {
   float: left;
   padding-left: 1.875em;
 }
-/* line 829, ../scss/style.scss */
+/* line 843, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -2743,7 +2755,7 @@ body {
   margin-right: 0;
   text-align: center;
 }
-/* line 838, ../scss/style.scss */
+/* line 852, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -2751,12 +2763,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 838, ../scss/style.scss */
+  /* line 852, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 844, ../scss/style.scss */
+/* line 858, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
   color: #fcaa35;
@@ -2770,33 +2782,33 @@ body {
   font-size: 0.75em;
   float: left;
 }
-/* line 854, ../scss/style.scss */
+/* line 868, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 861, ../scss/style.scss */
+/* line 875, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 865, ../scss/style.scss */
+/* line 879, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 869, ../scss/style.scss */
+/* line 883, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 865, ../scss/style.scss */
+  /* line 879, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 880, ../scss/style.scss */
+/* line 894, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -2804,12 +2816,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 880, ../scss/style.scss */
+  /* line 894, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 886, ../scss/style.scss */
+/* line 900, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
@@ -2822,30 +2834,30 @@ body {
   border: black 1px solid;
   float: left;
 }
-/* line 894, ../scss/style.scss */
+/* line 908, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 901, ../scss/style.scss */
+/* line 915, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 905, ../scss/style.scss */
+/* line 919, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 916, ../scss/style.scss */
+/* line 930, ../scss/style.scss */
 .main-sports-section .lmp-running-inner {
   margin-top: 1.125em;
   overflow: auto;
 }
-/* line 920, ../scss/style.scss */
+/* line 934, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-title {
   background: #000000;
   border: #343434 1px solid;
@@ -2855,7 +2867,7 @@ body {
   padding-top: 2px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 931, ../scss/style.scss */
+/* line 945, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title {
   background: #262626;
   height: 20px;
@@ -2863,14 +2875,14 @@ body {
   font-size: 0.75em;
   border-bottom: #000000 2px solid;
 }
-/* line 937, ../scss/style.scss */
+/* line 951, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div {
   font-family: "roboto-thin";
   padding-left: 75px;
   width: 66.66667%;
   float: left;
 }
-/* line 941, ../scss/style.scss */
+/* line 955, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div:last-child {
   width: 33.33333%;
   float: left;
@@ -2879,23 +2891,23 @@ body {
   text-align: center;
   padding-left: 0;
 }
-/* line 950, ../scss/style.scss */
+/* line 964, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-main:first-child {
   border-top: #000000 2px solid;
 }
-/* line 954, ../scss/style.scss */
+/* line 968, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team {
   background: #1c1c1c;
   overflow: auto;
   font-family: 'cooper-hewitt-bold';
 }
 @media screen and (max-width: 750px) {
-  /* line 954, ../scss/style.scss */
+  /* line 968, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team {
     font-size: 12px;
   }
 }
-/* line 964, ../scss/style.scss */
+/* line 978, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
   width: 66.66667%;
   float: left;
@@ -2906,12 +2918,12 @@ body {
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 964, ../scss/style.scss */
+  /* line 978, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
     padding-top: 9px;
   }
 }
-/* line 975, ../scss/style.scss */
+/* line 989, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left .lmp-team-color {
   float: left;
   width: 5px;
@@ -2921,23 +2933,23 @@ body {
   margin-left: 2.1875em;
   margin-top: -0.375em;
 }
-/* line 985, ../scss/style.scss */
+/* line 999, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left span:nth-child(2) {
   margin-left: 3px;
   color: #fcaa35;
 }
-/* line 990, ../scss/style.scss */
+/* line 1004, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div {
   font-size: 0.6875em;
   font-family: 'roboto-thin';
 }
-/* line 995, ../scss/style.scss */
+/* line 1009, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div span {
   margin-left: 3px;
   font-size: 14px;
   font-size: bold;
 }
-/* line 1002, ../scss/style.scss */
+/* line 1016, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right {
   overflow: hidden;
   width: 33.33333%;
@@ -2950,15 +2962,15 @@ body {
   padding: 2px;
   border-bottom: #000000 2px solid;
 }
-/* line 1013, ../scss/style.scss */
+/* line 1027, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score {
   text-align: center;
 }
-/* line 1021, ../scss/style.scss */
+/* line 1035, ../scss/style.scss */
 .main-sports-section .results-summary-ctr {
   margin-top: 30px;
 }
-/* line 1023, ../scss/style.scss */
+/* line 1037, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .results-summary-title {
   text-align: center;
   font-family: "cooper-hewitt-bold";
@@ -2969,36 +2981,36 @@ body {
   border: #343434 1px solid;
   padding-top: 2px;
 }
-/* line 1035, ../scss/style.scss */
+/* line 1049, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main {
   height: 5.625em;
   background: #1c1c1c;
 }
-/* line 1040, ../scss/style.scss */
+/* line 1054, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
   padding-top: 20px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 1040, ../scss/style.scss */
+  /* line 1054, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
     width: 99%;
     margin: 0 auto;
     padding-top: 18px;
   }
 }
-/* line 1052, ../scss/style.scss */
+/* line 1066, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div {
   width: 33.33333%;
   float: left;
 }
-/* line 1055, ../scss/style.scss */
+/* line 1069, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1058, ../scss/style.scss */
+/* line 1072, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
   text-align: right;
   margin-right: 10px;
@@ -3008,7 +3020,7 @@ body {
   color: #fcaa35;
 }
 @media screen and (max-width: 750px) {
-  /* line 1058, ../scss/style.scss */
+  /* line 1072, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
     text-align: left;
     padding-left: 5px;
@@ -3018,7 +3030,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1078, ../scss/style.scss */
+/* line 1092, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
   text-align: left;
   width: 50%;
@@ -3027,12 +3039,12 @@ body {
   font-family: "cooper-hewitt-bold";
 }
 @media screen and (max-width: 750px) {
-  /* line 1078, ../scss/style.scss */
+  /* line 1092, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
     font-size: 1.5em;
   }
 }
-/* line 1089, ../scss/style.scss */
+/* line 1103, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-sub {
   text-align: center;
   float: left;
@@ -3040,7 +3052,7 @@ body {
   font-size: 0.625em;
   margin-left: 56px;
 }
-/* line 1103, ../scss/style.scss */
+/* line 1117, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -3054,29 +3066,29 @@ body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 1114, ../scss/style.scss */
+/* line 1128, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 1118, ../scss/style.scss */
+/* line 1132, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1127, ../scss/style.scss */
+/* line 1141, ../scss/style.scss */
 .main-sports-section .simulations-ctr {
   margin-top: 30px;
   width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 1130, ../scss/style.scss */
+/* line 1144, ../scss/style.scss */
 .main-sports-section .simulations-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1127, ../scss/style.scss */
+  /* line 1141, ../scss/style.scss */
   .main-sports-section .simulations-ctr {
     width: 100%;
     float: left;
@@ -3084,11 +3096,11 @@ body {
     margin-right: 0;
   }
 }
-/* line 1152, ../scss/style.scss */
+/* line 1166, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 1156, ../scss/style.scss */
+/* line 1170, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -3097,11 +3109,11 @@ body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 1165, ../scss/style.scss */
+/* line 1179, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 1170, ../scss/style.scss */
+/* line 1184, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   text-align: center;
   background: #000000;
@@ -3111,18 +3123,18 @@ body {
   line-height: 2.1875em;
   border: solid 1px #343434;
 }
-/* line 1182, ../scss/style.scss */
+/* line 1196, ../scss/style.scss */
 .main-sports-section .sports-expander {
   overflow: auto;
   clear: both;
   padding-bottom: 10px;
 }
-/* line 1197, ../scss/style.scss */
+/* line 1211, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
   border: #1c1c1c 1px solid;
   overflow: auto;
 }
-/* line 1201, ../scss/style.scss */
+/* line 1215, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-title {
   text-align: center;
   font-family: "roboto-thin";
@@ -3131,7 +3143,7 @@ body {
   height: 4.375em;
   line-height: 4.375em;
 }
-/* line 1210, ../scss/style.scss */
+/* line 1224, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main {
   width: 100%;
   clear: both;
@@ -3140,49 +3152,49 @@ body {
   background-size: 105%;
   overflow: auto;
 }
-/* line 1219, ../scss/style.scss */
+/* line 1233, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
   width: 24.5%;
   text-align: right;
   float: left;
 }
-/* line 1228, ../scss/style.scss */
+/* line 1242, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
   float: left;
   width: 50%;
 }
-/* line 1237, ../scss/style.scss */
+/* line 1251, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr {
   width: 120px;
   margin: 0 auto;
 }
-/* line 1242, ../scss/style.scss */
+/* line 1256, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr .hc-pie {
   height: 5em;
 }
-/* line 1255, ../scss/style.scss */
+/* line 1269, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
   float: right;
   width: 24.5%;
   text-align: left;
   height: 5em;
 }
-/* line 1265, ../scss/style.scss */
+/* line 1279, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top {
   height: 3.75em;
 }
-/* line 1269, ../scss/style.scss */
+/* line 1283, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom {
   height: 5em;
 }
-/* line 1276, ../scss/style.scss */
+/* line 1290, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom {
   height: 3.4375em;
   border: #343434 1px solid;
   background: #1c1c1c;
   clear: both;
 }
-/* line 1282, ../scss/style.scss */
+/* line 1296, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats {
   font-family: "roboto-thin";
   text-align: center;
@@ -3190,16 +3202,16 @@ body {
   float: left;
   margin-top: 0.3125em;
 }
-/* line 1283, ../scss/style.scss */
+/* line 1297, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats:nth-child(2) {
   padding-top: 25px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 1291, ../scss/style.scss */
+/* line 1305, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats span {
   font-size: 0.75em;
 }
-/* line 1294, ../scss/style.scss */
+/* line 1308, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats div {
   font-family: "cooper-hewitt-bold";
   border: 1px solid #61e063;
@@ -3210,7 +3222,7 @@ body {
   padding: 2px;
 }
 
-/* line 1310, ../scss/style.scss */
+/* line 1324, ../scss/style.scss */
 .team-stats-ctr {
   margin-top: 30px;
   width: 49.61832%;
@@ -3218,13 +3230,13 @@ body {
   margin-right: 0.76336%;
   min-height: 200px;
 }
-/* line 1314, ../scss/style.scss */
+/* line 1328, ../scss/style.scss */
 .team-stats-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1310, ../scss/style.scss */
+  /* line 1324, ../scss/style.scss */
   .team-stats-ctr {
     width: 100%;
     float: left;
@@ -3232,7 +3244,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1325, ../scss/style.scss */
+/* line 1339, ../scss/style.scss */
 .team-stats-ctr .team-stats-title {
   background: #000000;
   height: 35px;
@@ -3240,12 +3252,12 @@ body {
   text-align: center;
   border: 1px solid #343434;
 }
-/* line 1333, ../scss/style.scss */
+/* line 1347, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title {
   background: #1c1c1c;
   overflow: auto;
 }
-/* line 1338, ../scss/style.scss */
+/* line 1352, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div {
   height: 25px;
   line-height: 25px;
@@ -3257,34 +3269,34 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1347, ../scss/style.scss */
+/* line 1361, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:first-child {
   padding-left: 10px;
   text-align: left;
   width: 33.33333%;
   float: left;
 }
-/* line 1353, ../scss/style.scss */
+/* line 1367, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1364, ../scss/style.scss */
+/* line 1378, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row {
   clear: both;
   font-size: 11px;
   font-family: "cooper-hewitt-bold";
   overflow: auto;
 }
-/* line 1372, ../scss/style.scss */
+/* line 1386, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(odd) {
   background: #0c0c0c;
 }
-/* line 1375, ../scss/style.scss */
+/* line 1389, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 1379, ../scss/style.scss */
+/* line 1393, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div {
   height: 30px;
   line-height: 30px;
@@ -3294,7 +3306,7 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1388, ../scss/style.scss */
+/* line 1402, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:first-child {
   padding-left: 10px;
   width: 33.33333%;
@@ -3303,14 +3315,14 @@ body {
   background: #262626;
   border-right: 2px #000000 solid;
 }
-/* line 1398, ../scss/style.scss */
+/* line 1412, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:last-child {
   float: right;
   margin-right: 0;
   border-right: none;
 }
 
-/* line 1412, ../scss/style.scss */
+/* line 1426, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -3318,7 +3330,7 @@ body {
   text-align: center;
 }
 
-/* line 1420, ../scss/style.scss */
+/* line 1434, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -3326,7 +3338,7 @@ body {
   background: skyblue;
 }
 
-/* line 1428, ../scss/style.scss */
+/* line 1442, ../scss/style.scss */
 .icon-footer {
   padding-top: 50px;
   height: 20vh;
@@ -3335,40 +3347,40 @@ body {
   clear: both;
   background: #000000;
 }
-/* line 1437, ../scss/style.scss */
+/* line 1451, ../scss/style.scss */
 .icon-footer div {
   width: 26.66667%;
   float: left;
 }
-/* line 1439, ../scss/style.scss */
+/* line 1453, ../scss/style.scss */
 .icon-footer div i {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1445, ../scss/style.scss */
+/* line 1459, ../scss/style.scss */
 .icon-footer div img {
   padding-top: 40px;
   width: 100px;
 }
 @media screen and (min-width: 750px) {
-  /* line 1445, ../scss/style.scss */
+  /* line 1459, ../scss/style.scss */
   .icon-footer div img {
     width: 65px;
   }
 }
-/* line 1453, ../scss/style.scss */
+/* line 1467, ../scss/style.scss */
 .icon-footer div p {
   font-size: 10px;
   font-family: "roboto-thin";
   margin-top: 20px;
 }
-/* line 1460, ../scss/style.scss */
+/* line 1474, ../scss/style.scss */
 .icon-footer div:nth-child(2) {
   width: 46.66667%;
   float: left;
 }
-/* line 1463, ../scss/style.scss */
+/* line 1477, ../scss/style.scss */
 .icon-footer div:last-child {
   float: right;
   margin-right: 0;
