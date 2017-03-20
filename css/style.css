@@ -113,7 +113,7 @@ table {
   font-family: "cooper-hewitt-bold";
   src: url("../fonts/cooper-hewitt/CooperHewitt-Bold.otf");
 }
-/* line 4, ../scss/partials/_round-page.scss */
+/* line 8, ../scss/partials/_round-page.scss */
 .large-orange-button {
   cursor: pointer;
   min-height: 3.75em;
@@ -126,7 +126,7 @@ table {
   color: #fff;
 }
 
-/* line 25, ../scss/partials/_round-page.scss */
+/* line 29, ../scss/partials/_round-page.scss */
 .right-inner-custom-ctr .price-packages {
   margin-bottom: 1.25em;
   color: #fcaa35;
@@ -138,23 +138,23 @@ table {
   text-align: center;
 }
 
-/* line 44, ../scss/partials/_round-page.scss */
+/* line 48, ../scss/partials/_round-page.scss */
 .main-article-ctr {
   overflow: hidden;
   margin-bottom: 1.875em;
 }
 
-/* line 53, ../scss/partials/_round-page.scss */
+/* line 57, ../scss/partials/_round-page.scss */
 .main-articles {
   height: 100%;
   overflow: auto;
 }
 
-/* line 67, ../scss/partials/_round-page.scss */
+/* line 71, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr {
   font-family: "cooper-hewitt-bold";
 }
-/* line 72, ../scss/partials/_round-page.scss */
+/* line 76, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladder-top {
   width: 50%;
   position: relative;
@@ -167,19 +167,19 @@ table {
   margin: 0 auto;
   margin-bottom: 0.5em;
 }
-/* line 83, ../scss/partials/_round-page.scss */
+/* line 87, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladder-top .psl-text {
   position: absolute;
   bottom: 0px;
 }
-/* line 89, ../scss/partials/_round-page.scss */
+/* line 93, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders {
   height: 1.5625em;
   line-height: 1.5625em;
   padding-bottom: 0.125em;
   width: 100%;
 }
-/* line 98, ../scss/partials/_round-page.scss */
+/* line 102, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-number {
   height: 100%;
   color: #aaaaaa;
@@ -190,7 +190,7 @@ table {
   padding-top: 0.0625em;
   text-align: center;
 }
-/* line 108, ../scss/partials/_round-page.scss */
+/* line 112, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-team {
   font-size: 0.625em;
   padding-left: 0.5em;
@@ -200,7 +200,7 @@ table {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 118, ../scss/partials/_round-page.scss */
+/* line 122, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-score {
   height: 100%;
   background: #000000;
@@ -215,7 +215,7 @@ table {
   text-align: center;
 }
 
-/* line 131, ../scss/partials/_round-page.scss */
+/* line 135, ../scss/partials/_round-page.scss */
 .ps-ldr-color {
   background: #6f0036;
   height: 12px;
@@ -227,7 +227,7 @@ table {
   border: #fcaa35 2px solid;
 }
 
-/* line 142, ../scss/partials/_round-page.scss */
+/* line 146, ../scss/partials/_round-page.scss */
 .project-season-title {
   border: #343434 1px solid;
   text-align: center;
@@ -235,13 +235,13 @@ table {
   padding-top: 0.375em;
 }
 
-/* line 150, ../scss/partials/_round-page.scss */
+/* line 154, ../scss/partials/_round-page.scss */
 .main-article-wrap {
   width: 81.14286%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 154, ../scss/partials/_round-page.scss */
+/* line 158, ../scss/partials/_round-page.scss */
 .main-article-wrap .main-article {
   height: 24.375em;
   margin: 0 auto;
@@ -250,7 +250,7 @@ table {
   margin-right: 0.625em;
 }
 
-/* line 175, ../scss/partials/_round-page.scss */
+/* line 179, ../scss/partials/_round-page.scss */
 .article-left-btn {
   float: left;
   cursor: pointer;
@@ -262,13 +262,13 @@ table {
   z-index: 100;
   position: relative;
 }
-/* line 187, ../scss/partials/_round-page.scss */
+/* line 191, ../scss/partials/_round-page.scss */
 .article-left-btn:hover {
   color: #fcaa35;
   font-weight: bold;
 }
 
-/* line 192, ../scss/partials/_round-page.scss */
+/* line 196, ../scss/partials/_round-page.scss */
 .article-right-btn {
   color: black;
   font-size: 2.5em;
@@ -278,13 +278,13 @@ table {
   margin-left: -30px;
   position: relative;
 }
-/* line 203, ../scss/partials/_round-page.scss */
+/* line 207, ../scss/partials/_round-page.scss */
 .article-right-btn:hover {
   color: #fcaa35;
   font-weight: bold;
 }
 
-/* line 209, ../scss/partials/_round-page.scss */
+/* line 213, ../scss/partials/_round-page.scss */
 .sub-articles {
   width: 18.28571%;
   float: left;
@@ -292,24 +292,24 @@ table {
   float: right;
   margin-right: 0;
 }
-/* line 218, ../scss/partials/_round-page.scss */
+/* line 222, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article {
   color: #000000;
   border: black 1px solid;
   min-height: 116px;
   background: white;
 }
-/* line 231, ../scss/partials/_round-page.scss */
+/* line 235, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-img {
   height: 5em;
   overflow: hidden;
 }
-/* line 238, ../scss/partials/_round-page.scss */
+/* line 242, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-img img {
   zoom: 100%;
   vertical-align: bottom;
 }
-/* line 245, ../scss/partials/_round-page.scss */
+/* line 249, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-text {
   line-height: 1.1;
   color: white;
@@ -320,12 +320,12 @@ table {
   letter-spacing: 0.07em;
   background: #000000;
 }
-/* line 253, ../scss/partials/_round-page.scss */
+/* line 257, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-text span {
   color: #fcaa35;
   cursor: pointer;
 }
-/* line 262, ../scss/partials/_round-page.scss */
+/* line 266, ../scss/partials/_round-page.scss */
 .sub-articles .view-more-articles-link {
   color: #fcaa35;
   font-family: "cooper-hewitt-bold";
@@ -334,11 +334,11 @@ table {
   margin-top: 0.9375em;
 }
 
-/* line 272, ../scss/partials/_round-page.scss */
+/* line 276, ../scss/partials/_round-page.scss */
 .projected-ladder-button {
   clear: both;
 }
-/* line 276, ../scss/partials/_round-page.scss */
+/* line 280, ../scss/partials/_round-page.scss */
 .projected-ladder-button .plbtn-inner {
   height: 3.125em;
   background: #fcaa35;
@@ -349,28 +349,28 @@ table {
   color: #fff;
 }
 
-/* line 289, ../scss/partials/_round-page.scss */
+/* line 293, ../scss/partials/_round-page.scss */
 .ui-nomt {
   margin-top: 0 !important;
 }
 
-/* line 294, ../scss/partials/_round-page.scss */
+/* line 298, ../scss/partials/_round-page.scss */
 .main-scroll-section {
   margin-top: 1.5625em;
 }
-/* line 298, ../scss/partials/_round-page.scss */
+/* line 302, ../scss/partials/_round-page.scss */
 .main-scroll-section .year-dropdown {
   padding-top: 0.125em;
 }
 
-/* line 302, ../scss/partials/_round-page.scss */
+/* line 306, ../scss/partials/_round-page.scss */
 .large-main-scroller {
   width: 85%;
   overflow: auto;
   margin: 0 auto;
 }
 
-/* line 310, ../scss/partials/_round-page.scss */
+/* line 314, ../scss/partials/_round-page.scss */
 .round-button-container {
   float: left;
   height: 50px;
@@ -379,7 +379,7 @@ table {
   margin: 0 auto;
 }
 
-/* line 321, ../scss/partials/_round-page.scss */
+/* line 325, ../scss/partials/_round-page.scss */
 .rounds {
   width: 3.64964%;
   float: left;
@@ -389,36 +389,36 @@ table {
   height: 1.6875em;
   text-align: center;
 }
-/* line 333, ../scss/partials/_round-page.scss */
+/* line 337, ../scss/partials/_round-page.scss */
 .rounds:hover {
   cursor: pointer;
   background: #fcaa35;
 }
 
-/* line 340, ../scss/partials/_round-page.scss */
+/* line 344, ../scss/partials/_round-page.scss */
 .rounds-arrow-right {
   float: right;
   font-size: 1.25em;
 }
 
-/* line 345, ../scss/partials/_round-page.scss */
+/* line 349, ../scss/partials/_round-page.scss */
 .rounds-arrow-left {
   float: left;
   margin-right: 5%;
   font-size: 1.25em;
 }
 
-/* line 351, ../scss/partials/_round-page.scss */
+/* line 355, ../scss/partials/_round-page.scss */
 .rounds-arrow-left, .rounds-arrow-right {
   margin-top: 0.1875em;
 }
-/* line 353, ../scss/partials/_round-page.scss */
+/* line 357, ../scss/partials/_round-page.scss */
 .rounds-arrow-left:hover, .rounds-arrow-right:hover {
   color: #fcaa35;
   cursor: pointer;
 }
 
-/* line 359, ../scss/partials/_round-page.scss */
+/* line 363, ../scss/partials/_round-page.scss */
 .match-round-windows-ctr {
   margin-top: 1.5625em;
   color: white;
@@ -427,8 +427,14 @@ table {
   margin-right: 0.57143%;
   float: left;
 }
+@media screen and (max-width: 750px) {
+  /* line 363, ../scss/partials/_round-page.scss */
+  .match-round-windows-ctr {
+    width: 100%;
+  }
+}
 
-/* line 370, ../scss/partials/_round-page.scss */
+/* line 378, ../scss/partials/_round-page.scss */
 .match-round-venue-date {
   width: 100%;
   border: #343434 1px solid;
@@ -436,26 +442,26 @@ table {
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
-/* line 377, ../scss/partials/_round-page.scss */
+/* line 385, ../scss/partials/_round-page.scss */
 .match-round-venue-date span:first-child {
   font-family: 'cooper-hewitt-bold';
   margin-right: 0.125em;
 }
-/* line 381, ../scss/partials/_round-page.scss */
+/* line 389, ../scss/partials/_round-page.scss */
 .match-round-venue-date span:nth-child(2) {
   float: right;
   margin-top: 0.125em;
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 388, ../scss/partials/_round-page.scss */
+/* line 396, ../scss/partials/_round-page.scss */
 .match-round-team-title {
   padding-left: 1.875em;
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
 
-/* line 395, ../scss/partials/_round-page.scss */
+/* line 403, ../scss/partials/_round-page.scss */
 .mrt-team-ctr {
   background: #0c0c0c;
   width: 100%;
@@ -463,60 +469,60 @@ table {
   height: 50px;
 }
 
-/* line 402, ../scss/partials/_round-page.scss */
+/* line 410, ../scss/partials/_round-page.scss */
 .mrt-teams, .mrt-team {
   width: 60%;
   float: left;
 }
 
-/* line 407, ../scss/partials/_round-page.scss */
+/* line 415, ../scss/partials/_round-page.scss */
 .mrt-teams, .mrt-outcome, .mrt-predicted {
   padding-top: 0.3125em;
   padding-bottom: 0.3125em;
 }
 
-/* line 411, ../scss/partials/_round-page.scss */
+/* line 419, ../scss/partials/_round-page.scss */
 .mrt-outcome, .mrt-predicted {
   text-align: center;
 }
 
-/* line 415, ../scss/partials/_round-page.scss */
+/* line 423, ../scss/partials/_round-page.scss */
 .mrt-team, .mrt-team-pred, .mrt-team-outcome {
   margin-right: 0;
   margin-top: 2px;
   height: 100%;
 }
 
-/* line 421, ../scss/partials/_round-page.scss */
+/* line 429, ../scss/partials/_round-page.scss */
 .ml {
   border-left: 2px solid black;
 }
 
-/* line 424, ../scss/partials/_round-page.scss */
+/* line 432, ../scss/partials/_round-page.scss */
 .mrt-outcome, .mrt-team-outcome {
   float: left;
   width: 20%;
 }
 
-/* line 428, ../scss/partials/_round-page.scss */
+/* line 436, ../scss/partials/_round-page.scss */
 .mrt-predicted, .mrt-team-pred {
   width: 20%;
   float: left;
 }
 
-/* line 432, ../scss/partials/_round-page.scss */
+/* line 440, ../scss/partials/_round-page.scss */
 .mrt-team {
   padding-top: 0.6875em;
   padding-left: 1.4375em;
   font-family: 'cooper-hewitt-bold';
   background: #1c1c1c;
 }
-/* line 439, ../scss/partials/_round-page.scss */
+/* line 447, ../scss/partials/_round-page.scss */
 .mrt-team span {
   color: #fcaa35;
 }
 
-/* line 444, ../scss/partials/_round-page.scss */
+/* line 452, ../scss/partials/_round-page.scss */
 .mrt-circle-color {
   background: #6f0036;
   border: #fcaa35 2px solid;
@@ -530,17 +536,17 @@ table {
   margin-top: 0.375em;
 }
 
-/* line 456, ../scss/partials/_round-page.scss */
+/* line 464, ../scss/partials/_round-page.scss */
 .mrt-power-ranking {
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
-/* line 459, ../scss/partials/_round-page.scss */
+/* line 467, ../scss/partials/_round-page.scss */
 .mrt-power-ranking span {
   color: #fff;
 }
 
-/* line 463, ../scss/partials/_round-page.scss */
+/* line 471, ../scss/partials/_round-page.scss */
 .mrt-team-outcome, .mrt-team-pred {
   background: #1c1c1c;
   text-align: center;
@@ -550,7 +556,7 @@ table {
   height: 100%;
 }
 
-/* line 473, ../scss/partials/_round-page.scss */
+/* line 481, ../scss/partials/_round-page.scss */
 .mrv-results-inner {
   font-family: 'cooper-hewitt-bold';
   width: 60.2%;
@@ -560,7 +566,7 @@ table {
   float: left;
 }
 
-/* line 483, ../scss/partials/_round-page.scss */
+/* line 491, ../scss/partials/_round-page.scss */
 .mrv-text {
   color: #000000;
   font-size: 0.75em;
@@ -568,24 +574,24 @@ table {
   margin-bottom: 0.75em;
 }
 
-/* line 490, ../scss/partials/_round-page.scss */
+/* line 498, ../scss/partials/_round-page.scss */
 .mrv-numbers {
   font-size: 1.25em;
 }
-/* line 492, ../scss/partials/_round-page.scss */
+/* line 500, ../scss/partials/_round-page.scss */
 .mrv-numbers span {
   color: #61e063;
   font-size: 0.9375em;
   margin-right: 0.625em;
   margin-left: 1.25em;
 }
-/* line 498, ../scss/partials/_round-page.scss */
+/* line 506, ../scss/partials/_round-page.scss */
 .mrv-numbers span:nth-child(2) {
   margin-left: 0.625em;
   color: #fff;
 }
 
-/* line 505, ../scss/partials/_round-page.scss */
+/* line 513, ../scss/partials/_round-page.scss */
 .mrv-projections {
   font-family: "roboto-thin";
   width: 39.8%;
@@ -593,17 +599,17 @@ table {
   padding-top: 0.9375em;
   float: left;
 }
-/* line 513, ../scss/partials/_round-page.scss */
+/* line 521, ../scss/partials/_round-page.scss */
 .mrv-projections .projections-share {
   text-align: center;
   margin-bottom: 0.5em;
   font-size: 0.25em;
 }
-/* line 518, ../scss/partials/_round-page.scss */
+/* line 526, ../scss/partials/_round-page.scss */
 .mrv-projections .share-socials {
   text-align: center;
 }
-/* line 521, ../scss/partials/_round-page.scss */
+/* line 529, ../scss/partials/_round-page.scss */
 .mrv-projections .share-socials i {
   color: #aaaaaa;
   margin-right: 0.3125em;
@@ -611,13 +617,13 @@ table {
   border-radius: 30px;
 }
 
-/* line 531, ../scss/partials/_round-page.scss */
+/* line 539, ../scss/partials/_round-page.scss */
 .last {
   float: right;
   margin-right: 0;
 }
 
-/* line 535, ../scss/partials/_round-page.scss */
+/* line 543, ../scss/partials/_round-page.scss */
 .detailed-match-link-btn, .countdown-to-match {
   width: 50%;
   float: left;
@@ -631,18 +637,18 @@ table {
   font-weight: bold;
 }
 
-/* line 549, ../scss/partials/_round-page.scss */
+/* line 557, ../scss/partials/_round-page.scss */
 .countdown-to-match {
   background: #fcaa35;
 }
 
-/* line 553, ../scss/partials/_round-page.scss */
+/* line 561, ../scss/partials/_round-page.scss */
 .advert-full-width-ctr {
   clear: both;
   padding-top: 2.1875em;
 }
 
-/* line 559, ../scss/partials/_round-page.scss */
+/* line 567, ../scss/partials/_round-page.scss */
 .advert-full-width {
   overflow: hidden;
   clear: both;
@@ -652,22 +658,22 @@ table {
   width: 100%;
   border: #696969 solid 1px;
 }
-/* line 562, ../scss/partials/_round-page.scss */
+/* line 570, ../scss/partials/_round-page.scss */
 .advert-full-width:hover {
   cursor: pointer;
   border: #fcaa35 1px solid;
 }
-/* line 573, ../scss/partials/_round-page.scss */
+/* line 581, ../scss/partials/_round-page.scss */
 .advert-full-width img {
   width: 100%;
   vertical-align: bottom;
 }
 
-/* line 4, ../scss/partials/_results-summary.scss */
+/* line 7, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry {
   font-family: "cooper-hewitt-bold";
 }
-/* line 7, ../scss/partials/_results-summary.scss */
+/* line 10, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-title {
   text-align: center;
   background: #000000;
@@ -677,13 +683,13 @@ table {
   color: #fff;
   border: #343434 1px solid;
 }
-/* line 16, ../scss/partials/_results-summary.scss */
+/* line 19, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main {
   width: 100%;
   overflow: auto;
   background: #1c1c1c;
 }
-/* line 20, ../scss/partials/_results-summary.scss */
+/* line 23, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-sub {
   padding-top: 0.625em;
   padding-left: 1.25em;
@@ -693,39 +699,39 @@ table {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 28, ../scss/partials/_results-summary.scss */
+/* line 31, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-sub:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 31, ../scss/partials/_results-summary.scss */
+/* line 34, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-sub i {
   font-size: 0.8125em;
   padding-bottom: 0.3125em;
 }
-/* line 35, ../scss/partials/_results-summary.scss */
+/* line 38, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-sub span {
   color: #61e063;
   font-size: 0.5em;
 }
-/* line 41, ../scss/partials/_results-summary.scss */
+/* line 44, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-icon {
   color: #fcaa35;
   vertical-align: top;
   padding-right: 0.625em;
   float: left;
 }
-/* line 47, ../scss/partials/_results-summary.scss */
+/* line 50, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-stat {
   padding-top: 0.0625em;
   overflow: auto;
 }
-/* line 51, ../scss/partials/_results-summary.scss */
+/* line 54, ../scss/partials/_results-summary.scss */
 .all-time-value-bet-smry .atvb-inner .atvb-main .atvb-stat .atvb-stat-sub {
   font-size: 0.1875em;
 }
 
-/* line 61, ../scss/partials/_results-summary.scss */
+/* line 64, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr {
   float: left;
   margin-top: 3.125em;
@@ -736,31 +742,31 @@ table {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 75, ../scss/partials/_results-summary.scss */
+/* line 78, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-top {
   font-family: 'roboto-thin';
   font-size: 0.6875em;
   width: 100%;
   margin-bottom: 0.9375em;
 }
-/* line 82, ../scss/partials/_results-summary.scss */
+/* line 85, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-top div {
   padding-left: 0.3125em;
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 86, ../scss/partials/_results-summary.scss */
+/* line 89, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-top div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 91, ../scss/partials/_results-summary.scss */
+/* line 94, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons {
   margin-top: 1.25em;
   width: 100%;
 }
-/* line 94, ../scss/partials/_results-summary.scss */
+/* line 97, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn {
   letter-spacing: 0.075em;
   text-align: center;
@@ -774,34 +780,34 @@ table {
   float: left;
   margin-right: 1.14943%;
 }
-/* line 105, ../scss/partials/_results-summary.scss */
+/* line 108, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 108, ../scss/partials/_results-summary.scss */
+/* line 111, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn:hover {
   background: #fcaa35;
   cursor: pointer;
 }
-/* line 114, ../scss/partials/_results-summary.scss */
+/* line 117, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables {
   font-family: "cooper-hewitt-bold";
   width: 100%;
   border: 1px pink 1px;
 }
-/* line 119, ../scss/partials/_results-summary.scss */
+/* line 122, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table {
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 123, ../scss/partials/_results-summary.scss */
+/* line 126, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 126, ../scss/partials/_results-summary.scss */
+/* line 129, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table-title {
   border: #1b1b1b 1px solid;
   background: #000000;
@@ -810,72 +816,72 @@ table {
   overflow: auto;
   text-align: center;
 }
-/* line 135, ../scss/partials/_results-summary.scss */
+/* line 138, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table {
   float: left;
   width: 100%;
   height: 276px;
 }
-/* line 143, ../scss/partials/_results-summary.scss */
+/* line 146, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table .highchart-liner {
   width: 100%;
   height: 100%;
   height: 276px;
 }
-/* line 151, ../scss/partials/_results-summary.scss */
+/* line 154, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table table {
   width: 100%;
 }
-/* line 154, ../scss/partials/_results-summary.scss */
+/* line 157, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table th, .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table td {
   width: 20%;
   height: 1.25em;
   text-align: center;
   font-size: 0.625em;
 }
-/* line 164, ../scss/partials/_results-summary.scss */
+/* line 167, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table th {
   font-family: 'roboto-thin';
   padding-top: 0.9375em;
   padding-bottom: 0.3125em;
 }
-/* line 170, ../scss/partials/_results-summary.scss */
+/* line 173, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table td {
   font-weight: bold;
   padding-top: 0.9375em;
   padding-bottom: 0.9375em;
 }
-/* line 175, ../scss/partials/_results-summary.scss */
+/* line 178, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table tr:nth-child(odd) {
   background: #000000;
 }
-/* line 179, ../scss/partials/_results-summary.scss */
+/* line 182, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table tr:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 186, ../scss/partials/_results-summary.scss */
+/* line 189, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .clearfix {
   clear: both;
 }
 
-/* line 192, ../scss/partials/_results-summary.scss */
+/* line 195, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles {
   cursor: pointer;
   height: 3.9em;
   margin-bottom: 0.3em;
   width: 100%;
 }
-/* line 198, ../scss/partials/_results-summary.scss */
+/* line 201, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-image {
   width: 100%;
   height: 70%;
   overflow: hidden;
 }
-/* line 203, ../scss/partials/_results-summary.scss */
+/* line 206, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-image img {
   width: 100%;
 }
-/* line 207, ../scss/partials/_results-summary.scss */
+/* line 210, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-text {
   font-family: "cooper-hewitt-medium";
   color: white;
@@ -885,12 +891,12 @@ table {
   padding-top: 0.6em;
   line-height: 1.3em;
 }
-/* line 215, ../scss/partials/_results-summary.scss */
+/* line 218, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-text span {
   color: #fcaa35;
 }
 
-/* line 222, ../scss/partials/_results-summary.scss */
+/* line 225, ../scss/partials/_results-summary.scss */
 .results-social-media {
   border-top: #343434 1px solid;
   color: #aaaaaa;
@@ -899,16 +905,16 @@ table {
   margin-top: 65px;
   padding-top: 1.25em;
 }
-/* line 229, ../scss/partials/_results-summary.scss */
+/* line 232, ../scss/partials/_results-summary.scss */
 .results-social-media div {
   margin-bottom: 1.25em;
 }
-/* line 232, ../scss/partials/_results-summary.scss */
+/* line 235, ../scss/partials/_results-summary.scss */
 .results-social-media i {
   margin-right: 0.625em;
 }
 
-/* line 3, ../scss/partials/_projected-season.scss */
+/* line 7, ../scss/partials/_projected-season.scss */
 .adverts-right-title {
   color: #fff;
   font-size: 0.25em;
@@ -918,12 +924,12 @@ table {
   letter-spacing: 0.08em;
 }
 
-/* line 12, ../scss/partials/_projected-season.scss */
+/* line 16, ../scss/partials/_projected-season.scss */
 .projections-sport-icons-wrap {
   width: 40%;
   float: left;
 }
-/* line 16, ../scss/partials/_projected-season.scss */
+/* line 20, ../scss/partials/_projected-season.scss */
 .projections-sport-icons-wrap h2 {
   letter-spacing: 0.08em;
   font-family: "cooper-hewitt-bold";
@@ -931,7 +937,7 @@ table {
   font-size: 0.75em;
 }
 
-/* line 23, ../scss/partials/_projected-season.scss */
+/* line 27, ../scss/partials/_projected-season.scss */
 .pro-main-orange-button-ctr {
   width: 40%;
   float: right;
@@ -939,11 +945,11 @@ table {
   overflow: auto;
 }
 
-/* line 32, ../scss/partials/_projected-season.scss */
+/* line 36, ../scss/partials/_projected-season.scss */
 .projected-ladder-table {
   margin-bottom: 2.5em;
 }
-/* line 35, ../scss/partials/_projected-season.scss */
+/* line 39, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .title-wrap {
   background: #000000;
   font-family: 'roboto-medium';
@@ -954,7 +960,7 @@ table {
   width: 100%;
   overflow: hidden;
 }
-/* line 46, ../scss/partials/_projected-season.scss */
+/* line 50, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-title {
   padding-left: 4.375em;
   width: 41.22137%;
@@ -966,7 +972,7 @@ table {
   margin-bottom: 1.25em;
   float: left;
 }
-/* line 62, ../scss/partials/_projected-season.scss */
+/* line 66, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-title-headers {
   padding-top: 1em;
   padding-bottom: 0.625em;
@@ -977,23 +983,23 @@ table {
   float: right;
   margin-right: 0;
 }
-/* line 72, ../scss/partials/_projected-season.scss */
+/* line 76, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-title-headers div {
   text-align: center;
   width: 8.63636%;
   float: left;
 }
-/* line 76, ../scss/partials/_projected-season.scss */
+/* line 80, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-title-headers div:first-child {
   width: 13.63636%;
   float: left;
 }
-/* line 82, ../scss/partials/_projected-season.scss */
+/* line 86, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-title-headers div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 91, ../scss/partials/_projected-season.scss */
+/* line 95, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row {
   font-family: 'cooper-hewitt-bold';
   overflow: hidden;
@@ -1003,15 +1009,15 @@ table {
   height: 36px;
   overflow: hidden;
 }
-/* line 102, ../scss/partials/_projected-season.scss */
+/* line 106, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row:nth-child(odd) {
   background: #343434;
 }
-/* line 105, ../scss/partials/_projected-season.scss */
+/* line 109, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 109, ../scss/partials/_projected-season.scss */
+/* line 113, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-number {
   width: 3.43511%;
   float: left;
@@ -1019,7 +1025,7 @@ table {
   background: #0c0c0c;
   font-size: 0.625em;
 }
-/* line 115, ../scss/partials/_projected-season.scss */
+/* line 119, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-number div {
   font-size: 23px;
   height: 36px;
@@ -1027,7 +1033,7 @@ table {
   font-weight: bold;
   padding-top: 3px;
 }
-/* line 126, ../scss/partials/_projected-season.scss */
+/* line 130, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-team {
   font-size: 0.875em;
   color: #fcaa35;
@@ -1038,11 +1044,11 @@ table {
   line-height: 34px;
   padding-top: 0.1875em;
 }
-/* line 137, ../scss/partials/_projected-season.scss */
+/* line 141, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-team span {
   color: #fff;
 }
-/* line 144, ../scss/partials/_projected-season.scss */
+/* line 148, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-team span:first-child {
   padding-top: 0.375em;
   margin-right: 0.625em;
@@ -1058,7 +1064,7 @@ table {
   margin-left: 6px;
   margin-top: 7px;
 }
-/* line 159, ../scss/partials/_projected-season.scss */
+/* line 163, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr {
   font-size: 0.875em;
   height: 36px;
@@ -1069,7 +1075,7 @@ table {
   float: right;
   margin-right: 0;
 }
-/* line 169, ../scss/partials/_projected-season.scss */
+/* line 173, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points {
   height: 36px;
   line-height: 36px;
@@ -1077,7 +1083,7 @@ table {
   width: 8.63636%;
   float: left;
 }
-/* line 173, ../scss/partials/_projected-season.scss */
+/* line 177, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points:first-child {
   width: 13.63636%;
   float: left;
@@ -1088,7 +1094,7 @@ table {
   height: 33px;
   margin-top: 1px;
 }
-/* line 191, ../scss/partials/_projected-season.scss */
+/* line 195, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points:last-child {
   float: right;
   margin-right: 0;
@@ -1363,7 +1369,6 @@ table {
   padding: 1.25em;
   background: #aaaaaa;
   width: 100%;
-  height: 6.25em;
   margin-bottom: 1.875em;
 }
 /* line 255, ../scss/partials/_in-running.scss */
@@ -1968,18 +1973,24 @@ body {
   max-width: 90.625em;
   overflow: auto;
 }
-/* line 92, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 87, ../scss/style.scss */
+  .container {
+    padding: 5px;
+  }
+}
+/* line 95, ../scss/style.scss */
 .container .main-page-container {
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 92, ../scss/style.scss */
+  /* line 95, ../scss/style.scss */
   .container .main-page-container {
     width: 100%;
   }
 }
-/* line 101, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .container .main-page-container .page-container-right {
   margin-top: 1.25em;
   float: left;
@@ -1992,12 +2003,12 @@ body {
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 101, ../scss/style.scss */
+  /* line 104, ../scss/style.scss */
   .container .main-page-container .page-container-right {
     display: none;
   }
 }
-/* line 113, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .container .main-page-container .page-container-left {
   margin-top: 1.25em;
   width: 74.80916%;
@@ -2007,88 +2018,88 @@ body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 113, ../scss/style.scss */
+  /* line 116, ../scss/style.scss */
   .container .main-page-container .page-container-left {
     width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 129, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .header {
   overflow: hidden;
   height: 17vh;
   padding-top: 30px;
 }
 @media screen and (max-width: 750px) {
-  /* line 129, ../scss/style.scss */
+  /* line 132, ../scss/style.scss */
   .header {
     display: none;
   }
 }
-/* line 136, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .header .header-left {
   width: 20%;
   margin-left: 25px;
   float: left;
 }
-/* line 140, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .header .header-left img {
   width: 100%;
   vertical-align: top;
 }
-/* line 145, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .header .header-right {
   width: 50%;
   float: right;
 }
-/* line 148, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .header .header-right img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .left {
   float: left;
   padding: 0;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 .right {
   float: right;
   padding: 0;
 }
 
-/* line 170, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 .nav {
   font-family: "cooper-hewitt-bold";
   background: #1c1c1c;
   font-size: 0.875em;
 }
 @media screen and (min-width: 750px) {
-  /* line 181, ../scss/style.scss */
+  /* line 184, ../scss/style.scss */
   .nav .inner-nav {
     height: 56px;
   }
 }
-/* line 190, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 750px) {
-  /* line 190, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 190, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   .nav .nav-right {
     display: none;
   }
 }
-/* line 201, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -2096,7 +2107,7 @@ body {
   line-height: 55px;
   cursor: pointer;
 }
-/* line 207, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #fcaa35;
   padding: 0 20px;
@@ -2105,28 +2116,28 @@ body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 207, ../scss/style.scss */
+  /* line 210, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 218, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 226, ../scss/style.scss */
+  /* line 229, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 232, ../scss/style.scss */
+/* line 235, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
   background: #0c0c0c;
 }
-/* line 237, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1c1c1c;
   border-bottom: #1c1c1c solid 1px;
@@ -2137,23 +2148,23 @@ body {
   padding-left: 1.5625em;
   cursor: pointer;
 }
-/* line 239, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
   background: #000000;
 }
-/* line 250, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #141414;
   border-bottom: #fcaa35 solid 1px;
 }
 @media screen and (max-width: 750px) {
-  /* line 257, ../scss/style.scss */
+  /* line 260, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
     background: #fcaa35;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 237, ../scss/style.scss */
+  /* line 240, ../scss/style.scss */
   .nav .dropdown .dropbtn {
     height: 18.3vh;
     line-height: 18.3vh;
@@ -2161,15 +2172,15 @@ body {
     border: #fcaa35 1px solid;
   }
 }
-/* line 273, ../scss/style.scss */
+/* line 276, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 277, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 284, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -2182,12 +2193,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 284, ../scss/style.scss */
+  /* line 287, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 301, ../scss/style.scss */
+/* line 304, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -2198,24 +2209,24 @@ body {
   display: block;
   background-color: #363636;
 }
-/* line 311, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #292929;
 }
-/* line 314, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 750px) {
-  /* line 321, ../scss/style.scss */
+  /* line 324, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
     color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 330, ../scss/style.scss */
+  /* line 333, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -2223,7 +2234,7 @@ body {
   }
 }
 
-/* line 342, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   width: 100%;
@@ -2232,30 +2243,30 @@ body {
   padding-top: 13px;
   padding-bottom: 5px;
 }
-/* line 343, ../scss/style.scss */
+/* line 346, ../scss/style.scss */
 .burger-icon-ctr span {
   min-width: 30px;
 }
-/* line 345, ../scss/style.scss */
+/* line 348, ../scss/style.scss */
 .burger-icon-ctr span div {
   display: inline-block;
   min-width: 30px;
 }
 @media screen and (min-width: 750px) {
-  /* line 342, ../scss/style.scss */
+  /* line 345, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 359, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
-/* line 362, ../scss/style.scss */
+/* line 365, ../scss/style.scss */
 .burger-icon-ctr img {
   width: 80px;
 }
-/* line 365, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 .burger-icon-ctr .n-sup {
   background: #fcaa35;
   cursor: pointer;
@@ -2269,7 +2280,7 @@ body {
   padding-top: 7px;
 }
 
-/* line 382, ../scss/style.scss */
+/* line 385, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   font-size: 0.625em;
@@ -2278,26 +2289,26 @@ body {
   line-height: 1.5625em;
 }
 @media screen and (max-width: 750px) {
-  /* line 382, ../scss/style.scss */
+  /* line 385, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 394, ../scss/style.scss */
+/* line 397, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 77%;
   margin: 0 auto;
   font-size: 0.5em;
 }
-/* line 399, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 .inner-tweet-bar span {
   color: #fcaa35;
   cursor: help;
 }
 
-/* line 405, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
@@ -2305,7 +2316,7 @@ body {
   line-height: 5.625em;
 }
 
-/* line 413, ../scss/style.scss */
+/* line 416, ../scss/style.scss */
 .game-dropper {
   padding-left: 1.5625em;
   font-family: "cooper-hewitt-bold";
@@ -2316,99 +2327,99 @@ body {
   width: 8.85714%;
 }
 @media screen and (min-width: 750px) {
-  /* line 413, ../scss/style.scss */
+  /* line 416, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 413, ../scss/style.scss */
+  /* line 416, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
     display: none;
   }
 }
-/* line 432, ../scss/style.scss */
+/* line 435, ../scss/style.scss */
 .game-dropper i {
   margin-left: 8px;
   font-size: 1.375em;
   width: 0;
 }
-/* line 437, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 .game-dropper .ui.simple.dropdown .menu {
   margin-top: -25px;
   color: #fff;
   border: 1px #000000 solid !important;
 }
-/* line 442, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 .game-dropper .menu {
   border: 1px #fcaa35 solid;
 }
-/* line 450, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item, .game-dropper .ui.scrolling.dropdown .menu .item.item.item {
   color: white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   background: #000000;
 }
-/* line 455, ../scss/style.scss */
+/* line 458, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item:hover, .game-dropper .ui.scrolling.dropdown .menu .item.item.item:hover {
   color: #fcaa35 !important;
 }
 
-/* line 479, ../scss/style.scss */
+/* line 482, ../scss/style.scss */
 .main-left-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-right: 10px;
 }
-/* line 483, ../scss/style.scss */
+/* line 486, ../scss/style.scss */
 .main-left-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 483, ../scss/style.scss */
+  /* line 486, ../scss/style.scss */
   .main-left-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 498, ../scss/style.scss */
+/* line 501, ../scss/style.scss */
 .main-right-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-left: 10px;
 }
-/* line 503, ../scss/style.scss */
+/* line 506, ../scss/style.scss */
 .main-right-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 503, ../scss/style.scss */
+  /* line 506, ../scss/style.scss */
   .main-right-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 518, ../scss/style.scss */
+/* line 521, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 750px) {
-  /* line 518, ../scss/style.scss */
+  /* line 521, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
     padding-left: 10px;
   }
 }
-/* line 529, ../scss/style.scss */
+/* line 532, ../scss/style.scss */
 .sports-window-ctr .sports-window-inr-wrp {
   width: 90%;
   margin: 0 auto;
@@ -2416,13 +2427,13 @@ body {
   border: white 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 529, ../scss/style.scss */
+  /* line 532, ../scss/style.scss */
   .sports-window-ctr .sports-window-inr-wrp {
     width: 100%;
   }
 }
 
-/* line 542, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -2430,7 +2441,7 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 750px) {
-  /* line 542, ../scss/style.scss */
+  /* line 545, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     margin: 0 auto;
@@ -2439,12 +2450,12 @@ body {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 542, ../scss/style.scss */
+  /* line 545, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 567, ../scss/style.scss */
+/* line 570, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -2458,44 +2469,44 @@ body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 575, ../scss/style.scss */
+/* line 578, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fcaa35 1px solid;
 }
 @media screen and (max-width: 750px) {
-  /* line 567, ../scss/style.scss */
+  /* line 570, ../scss/style.scss */
   .sports-windows .sports-window {
     border: #fcaa35 1px solid;
   }
 }
-/* line 585, ../scss/style.scss */
+/* line 588, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
 @media screen and (max-width: 750px) {
-  /* line 585, ../scss/style.scss */
+  /* line 588, ../scss/style.scss */
   .sports-windows .sports-window-inner-title {
     display: none;
   }
 }
-/* line 596, ../scss/style.scss */
+/* line 599, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 598, ../scss/style.scss */
+/* line 601, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname:last-child span {
   color: #61e063;
 }
-/* line 604, ../scss/style.scss */
+/* line 607, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 614, ../scss/style.scss */
+/* line 617, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 5px 5px 0px black;
   -webkit-box-shadow: 0px 5px 5px 0px black;
@@ -2508,12 +2519,12 @@ body {
   font-size: 0.6875em;
   padding-bottom: 1.25em;
 }
-/* line 624, ../scss/style.scss */
+/* line 627, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 629, ../scss/style.scss */
+/* line 632, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -2524,7 +2535,13 @@ body {
   padding-top: 2px;
   overflow: auto;
 }
-/* line 642, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 632, ../scss/style.scss */
+  .predictions-title .predictions-main .team-title-cntr {
+    width: 293px;
+  }
+}
+/* line 649, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   float: left;
   margin-top: 2px;
@@ -2536,20 +2553,26 @@ body {
   border-radius: 1.25em;
   border: orange 2px solid;
 }
-/* line 650, ../scss/style.scss */
+/* line 657, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
   float: left;
   background: green;
   margin-left: 0.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 642, ../scss/style.scss */
+  /* line 657, ../scss/style.scss */
+  .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 649, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 667, ../scss/style.scss */
+/* line 677, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams div {
   margin-top: 2px;
   vertical-align: bottom;
@@ -2559,19 +2582,19 @@ body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 667, ../scss/style.scss */
+  /* line 677, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams div {
     font-size: 0.875em;
     margin: 0px 0.75em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 684, ../scss/style.scss */
+  /* line 694, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 95%;
   }
 }
-/* line 690, ../scss/style.scss */
+/* line 700, ../scss/style.scss */
 .predictions-title .underliner {
   clear: both;
   margin: 0 auto;
@@ -2580,7 +2603,7 @@ body {
   height: 1px;
   margin-bottom: 1.25em;
 }
-/* line 698, ../scss/style.scss */
+/* line 708, ../scss/style.scss */
 .predictions-title .game-date {
   margin: 0.625em auto;
   font-size: 0.5em;
@@ -2588,7 +2611,7 @@ body {
   text-align: center;
 }
 
-/* line 708, ../scss/style.scss */
+/* line 718, ../scss/style.scss */
 .how-to-bar-ctr {
   overflow: auto;
   padding-top: 0.25em;
@@ -2596,28 +2619,28 @@ body {
   padding-left: 1.875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 708, ../scss/style.scss */
+  /* line 718, ../scss/style.scss */
   .how-to-bar-ctr {
     display: none;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 708, ../scss/style.scss */
+  /* line 718, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 721, ../scss/style.scss */
+/* line 731, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   float: right;
   font-size: 0.5em;
 }
-/* line 724, ../scss/style.scss */
+/* line 734, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt:hover {
   cursor: help;
 }
 
-/* line 729, ../scss/style.scss */
+/* line 739, ../scss/style.scss */
 .games-round-title {
   width: 55%;
   font-size: 0.5625em;
@@ -2626,7 +2649,7 @@ body {
   font-size: 0.5625em;
 }
 
-/* line 739, ../scss/style.scss */
+/* line 749, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   clear: both;
   width: 65.42857%;
@@ -2634,38 +2657,44 @@ body {
   margin-right: 0.57143%;
   font-family: "cooper-hewitt-bold";
 }
-/* line 745, ../scss/style.scss */
+/* line 755, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg, .round-games-scrollbar-ctr .caret-right-svg {
   width: 4%;
   padding-top: 3px;
   float: left;
 }
-/* line 751, ../scss/style.scss */
+/* line 761, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg {
   margin-right: 10px;
   float: left;
 }
-/* line 756, ../scss/style.scss */
+/* line 766, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-right-svg {
   float: right;
 }
-/* line 762, ../scss/style.scss */
+/* line 772, ../scss/style.scss */
 .round-games-scrollbar-ctr img {
   width: 100%;
 }
-/* line 765, ../scss/style.scss */
+/* line 775, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr {
   float: left;
-  width: 89%;
+  width: 87%;
 }
-/* line 773, ../scss/style.scss */
+/* line 783, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller {
   width: 100%;
   float: left;
   height: 20px;
   line-height: 20px;
 }
-/* line 779, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 785, ../scss/style.scss */
+  .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller .round-games-responsive {
+    display: none;
+  }
+}
+/* line 795, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
   cursor: pointer;
   text-align: center;
@@ -2676,27 +2705,34 @@ body {
   float: left;
   margin-right: 1.14943%;
 }
-/* line 780, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 795, ../scss/style.scss */
+  .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
+    width: 23%;
+    float: left;
+  }
+}
+/* line 801, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:first-child {
   display: block;
   background: none;
   clear: both;
 }
-/* line 791, ../scss/style.scss */
+/* line 812, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 794, ../scss/style.scss */
+/* line 815, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div span {
   color: #000000;
 }
-/* line 797, ../scss/style.scss */
+/* line 818, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:hover {
   background: #fcaa35;
 }
 
-/* line 805, ../scss/style.scss */
+/* line 826, ../scss/style.scss */
 .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -2710,15 +2746,16 @@ body {
   color: #fcaa35;
   letter-spacing: 0.1em;
   font-family: "cooper-hewitt-bold";
+  margin-bottom: 7px;
 }
 
-/* line 817, ../scss/style.scss */
+/* line 839, ../scss/style.scss */
 .main-sports-section {
   clear: both;
   margin-bottom: 2.8125em;
   overflow: auto;
 }
-/* line 822, ../scss/style.scss */
+/* line 844, ../scss/style.scss */
 .main-sports-section .main-sports-title {
   font-size: 1.125em;
   background: #000000;
@@ -2729,14 +2766,14 @@ body {
   text-align: center;
   padding-top: 0.125em;
 }
-/* line 833, ../scss/style.scss */
+/* line 855, ../scss/style.scss */
 .main-sports-section .team-points-bar {
   border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 838, ../scss/style.scss */
+/* line 860, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
@@ -2744,7 +2781,7 @@ body {
   float: left;
   padding-left: 1.875em;
 }
-/* line 843, ../scss/style.scss */
+/* line 865, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -2754,7 +2791,7 @@ body {
   margin-right: 0;
   text-align: center;
 }
-/* line 852, ../scss/style.scss */
+/* line 874, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -2762,12 +2799,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 852, ../scss/style.scss */
+  /* line 874, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 858, ../scss/style.scss */
+/* line 880, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
   color: #fcaa35;
@@ -2781,33 +2818,33 @@ body {
   font-size: 0.75em;
   float: left;
 }
-/* line 868, ../scss/style.scss */
+/* line 890, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 875, ../scss/style.scss */
+/* line 897, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 879, ../scss/style.scss */
+/* line 901, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 883, ../scss/style.scss */
+/* line 905, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 879, ../scss/style.scss */
+  /* line 901, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 894, ../scss/style.scss */
+/* line 916, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -2815,12 +2852,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 894, ../scss/style.scss */
+  /* line 916, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 900, ../scss/style.scss */
+/* line 922, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
@@ -2833,30 +2870,30 @@ body {
   border: black 1px solid;
   float: left;
 }
-/* line 908, ../scss/style.scss */
+/* line 930, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 915, ../scss/style.scss */
+/* line 937, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 919, ../scss/style.scss */
+/* line 941, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 930, ../scss/style.scss */
+/* line 952, ../scss/style.scss */
 .main-sports-section .lmp-running-inner {
   margin-top: 1.125em;
   overflow: auto;
 }
-/* line 934, ../scss/style.scss */
+/* line 956, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-title {
   background: #000000;
   border: #343434 1px solid;
@@ -2866,7 +2903,7 @@ body {
   padding-top: 2px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 945, ../scss/style.scss */
+/* line 967, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title {
   background: #262626;
   height: 20px;
@@ -2874,14 +2911,14 @@ body {
   font-size: 0.75em;
   border-bottom: #000000 2px solid;
 }
-/* line 951, ../scss/style.scss */
+/* line 973, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div {
   font-family: "roboto-thin";
   padding-left: 75px;
   width: 66.66667%;
   float: left;
 }
-/* line 955, ../scss/style.scss */
+/* line 977, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div:last-child {
   width: 33.33333%;
   float: left;
@@ -2890,23 +2927,23 @@ body {
   text-align: center;
   padding-left: 0;
 }
-/* line 964, ../scss/style.scss */
+/* line 986, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-main:first-child {
   border-top: #000000 2px solid;
 }
-/* line 968, ../scss/style.scss */
+/* line 990, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team {
   background: #1c1c1c;
   overflow: auto;
   font-family: 'cooper-hewitt-bold';
 }
 @media screen and (max-width: 750px) {
-  /* line 968, ../scss/style.scss */
+  /* line 990, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team {
     font-size: 12px;
   }
 }
-/* line 978, ../scss/style.scss */
+/* line 1000, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
   width: 66.66667%;
   float: left;
@@ -2917,12 +2954,12 @@ body {
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 978, ../scss/style.scss */
+  /* line 1000, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
     padding-top: 9px;
   }
 }
-/* line 989, ../scss/style.scss */
+/* line 1011, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left .lmp-team-color {
   float: left;
   width: 5px;
@@ -2932,23 +2969,23 @@ body {
   margin-left: 2.1875em;
   margin-top: -0.375em;
 }
-/* line 999, ../scss/style.scss */
+/* line 1021, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left span:nth-child(2) {
   margin-left: 3px;
   color: #fcaa35;
 }
-/* line 1004, ../scss/style.scss */
+/* line 1026, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div {
   font-size: 0.6875em;
   font-family: 'roboto-thin';
 }
-/* line 1009, ../scss/style.scss */
+/* line 1031, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div span {
   margin-left: 3px;
   font-size: 14px;
   font-size: bold;
 }
-/* line 1016, ../scss/style.scss */
+/* line 1038, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right {
   overflow: hidden;
   width: 33.33333%;
@@ -2961,15 +2998,15 @@ body {
   padding: 2px;
   border-bottom: #000000 2px solid;
 }
-/* line 1027, ../scss/style.scss */
+/* line 1049, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score {
   text-align: center;
 }
-/* line 1035, ../scss/style.scss */
+/* line 1057, ../scss/style.scss */
 .main-sports-section .results-summary-ctr {
   margin-top: 30px;
 }
-/* line 1037, ../scss/style.scss */
+/* line 1059, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .results-summary-title {
   text-align: center;
   font-family: "cooper-hewitt-bold";
@@ -2980,36 +3017,36 @@ body {
   border: #343434 1px solid;
   padding-top: 2px;
 }
-/* line 1049, ../scss/style.scss */
+/* line 1071, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main {
   height: 5.625em;
   background: #1c1c1c;
 }
-/* line 1054, ../scss/style.scss */
+/* line 1076, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
   padding-top: 20px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 1054, ../scss/style.scss */
+  /* line 1076, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
     width: 99%;
     margin: 0 auto;
     padding-top: 18px;
   }
 }
-/* line 1066, ../scss/style.scss */
+/* line 1088, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div {
   width: 33.33333%;
   float: left;
 }
-/* line 1069, ../scss/style.scss */
+/* line 1091, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1072, ../scss/style.scss */
+/* line 1094, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
   text-align: right;
   margin-right: 10px;
@@ -3019,7 +3056,7 @@ body {
   color: #fcaa35;
 }
 @media screen and (max-width: 750px) {
-  /* line 1072, ../scss/style.scss */
+  /* line 1094, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
     text-align: left;
     padding-left: 5px;
@@ -3029,7 +3066,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1092, ../scss/style.scss */
+/* line 1114, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
   text-align: left;
   width: 50%;
@@ -3038,12 +3075,12 @@ body {
   font-family: "cooper-hewitt-bold";
 }
 @media screen and (max-width: 750px) {
-  /* line 1092, ../scss/style.scss */
+  /* line 1114, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
     font-size: 1.5em;
   }
 }
-/* line 1103, ../scss/style.scss */
+/* line 1125, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-sub {
   text-align: center;
   float: left;
@@ -3051,7 +3088,7 @@ body {
   font-size: 0.625em;
   margin-left: 56px;
 }
-/* line 1117, ../scss/style.scss */
+/* line 1139, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -3065,29 +3102,29 @@ body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 1128, ../scss/style.scss */
+/* line 1150, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 1132, ../scss/style.scss */
+/* line 1154, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1141, ../scss/style.scss */
+/* line 1163, ../scss/style.scss */
 .main-sports-section .simulations-ctr {
   margin-top: 30px;
   width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 1144, ../scss/style.scss */
+/* line 1166, ../scss/style.scss */
 .main-sports-section .simulations-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1141, ../scss/style.scss */
+  /* line 1163, ../scss/style.scss */
   .main-sports-section .simulations-ctr {
     width: 100%;
     float: left;
@@ -3095,11 +3132,11 @@ body {
     margin-right: 0;
   }
 }
-/* line 1166, ../scss/style.scss */
+/* line 1188, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 1170, ../scss/style.scss */
+/* line 1192, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -3108,11 +3145,11 @@ body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 1179, ../scss/style.scss */
+/* line 1201, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 1184, ../scss/style.scss */
+/* line 1206, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   text-align: center;
   background: #000000;
@@ -3122,18 +3159,18 @@ body {
   line-height: 2.1875em;
   border: solid 1px #343434;
 }
-/* line 1196, ../scss/style.scss */
+/* line 1218, ../scss/style.scss */
 .main-sports-section .sports-expander {
   overflow: auto;
   clear: both;
   padding-bottom: 10px;
 }
-/* line 1211, ../scss/style.scss */
+/* line 1233, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
   border: #1c1c1c 1px solid;
   overflow: auto;
 }
-/* line 1215, ../scss/style.scss */
+/* line 1237, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-title {
   text-align: center;
   font-family: "roboto-thin";
@@ -3142,7 +3179,7 @@ body {
   height: 4.375em;
   line-height: 4.375em;
 }
-/* line 1224, ../scss/style.scss */
+/* line 1246, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main {
   width: 100%;
   clear: both;
@@ -3151,49 +3188,49 @@ body {
   background-size: 105%;
   overflow: auto;
 }
-/* line 1233, ../scss/style.scss */
+/* line 1255, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
   width: 24.5%;
   text-align: right;
   float: left;
 }
-/* line 1242, ../scss/style.scss */
+/* line 1264, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
   float: left;
   width: 50%;
 }
-/* line 1251, ../scss/style.scss */
+/* line 1273, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr {
   width: 120px;
   margin: 0 auto;
 }
-/* line 1256, ../scss/style.scss */
+/* line 1278, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr .hc-pie {
   height: 5em;
 }
-/* line 1269, ../scss/style.scss */
+/* line 1291, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
   float: right;
   width: 24.5%;
   text-align: left;
   height: 5em;
 }
-/* line 1279, ../scss/style.scss */
+/* line 1301, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top {
   height: 3.75em;
 }
-/* line 1283, ../scss/style.scss */
+/* line 1305, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom {
   height: 5em;
 }
-/* line 1290, ../scss/style.scss */
+/* line 1312, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom {
   height: 3.4375em;
   border: #343434 1px solid;
   background: #1c1c1c;
   clear: both;
 }
-/* line 1296, ../scss/style.scss */
+/* line 1318, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats {
   font-family: "roboto-thin";
   text-align: center;
@@ -3201,16 +3238,16 @@ body {
   float: left;
   margin-top: 0.3125em;
 }
-/* line 1297, ../scss/style.scss */
+/* line 1319, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats:nth-child(2) {
   padding-top: 25px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 1305, ../scss/style.scss */
+/* line 1327, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats span {
   font-size: 0.75em;
 }
-/* line 1308, ../scss/style.scss */
+/* line 1330, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats div {
   font-family: "cooper-hewitt-bold";
   border: 1px solid #61e063;
@@ -3221,7 +3258,7 @@ body {
   padding: 2px;
 }
 
-/* line 1324, ../scss/style.scss */
+/* line 1346, ../scss/style.scss */
 .team-stats-ctr {
   margin-top: 30px;
   width: 49.61832%;
@@ -3229,13 +3266,13 @@ body {
   margin-right: 0.76336%;
   min-height: 200px;
 }
-/* line 1328, ../scss/style.scss */
+/* line 1350, ../scss/style.scss */
 .team-stats-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1324, ../scss/style.scss */
+  /* line 1346, ../scss/style.scss */
   .team-stats-ctr {
     width: 100%;
     float: left;
@@ -3243,7 +3280,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1339, ../scss/style.scss */
+/* line 1361, ../scss/style.scss */
 .team-stats-ctr .team-stats-title {
   background: #000000;
   height: 35px;
@@ -3251,12 +3288,12 @@ body {
   text-align: center;
   border: 1px solid #343434;
 }
-/* line 1347, ../scss/style.scss */
+/* line 1369, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title {
   background: #1c1c1c;
   overflow: auto;
 }
-/* line 1352, ../scss/style.scss */
+/* line 1374, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div {
   height: 25px;
   line-height: 25px;
@@ -3268,34 +3305,34 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1361, ../scss/style.scss */
+/* line 1383, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:first-child {
   padding-left: 10px;
   text-align: left;
   width: 33.33333%;
   float: left;
 }
-/* line 1367, ../scss/style.scss */
+/* line 1389, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1378, ../scss/style.scss */
+/* line 1400, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row {
   clear: both;
   font-size: 11px;
   font-family: "cooper-hewitt-bold";
   overflow: auto;
 }
-/* line 1386, ../scss/style.scss */
+/* line 1408, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(odd) {
   background: #0c0c0c;
 }
-/* line 1389, ../scss/style.scss */
+/* line 1411, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 1393, ../scss/style.scss */
+/* line 1415, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div {
   height: 30px;
   line-height: 30px;
@@ -3305,7 +3342,7 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1402, ../scss/style.scss */
+/* line 1424, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:first-child {
   padding-left: 10px;
   width: 33.33333%;
@@ -3314,14 +3351,14 @@ body {
   background: #262626;
   border-right: 2px #000000 solid;
 }
-/* line 1412, ../scss/style.scss */
+/* line 1434, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:last-child {
   float: right;
   margin-right: 0;
   border-right: none;
 }
 
-/* line 1426, ../scss/style.scss */
+/* line 1448, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -3329,7 +3366,7 @@ body {
   text-align: center;
 }
 
-/* line 1434, ../scss/style.scss */
+/* line 1456, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -3337,7 +3374,7 @@ body {
   background: skyblue;
 }
 
-/* line 1442, ../scss/style.scss */
+/* line 1464, ../scss/style.scss */
 .icon-footer {
   padding-top: 50px;
   height: 20vh;
@@ -3346,40 +3383,40 @@ body {
   clear: both;
   background: #000000;
 }
-/* line 1451, ../scss/style.scss */
+/* line 1473, ../scss/style.scss */
 .icon-footer div {
   width: 26.66667%;
   float: left;
 }
-/* line 1453, ../scss/style.scss */
+/* line 1475, ../scss/style.scss */
 .icon-footer div i {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1459, ../scss/style.scss */
+/* line 1481, ../scss/style.scss */
 .icon-footer div img {
   padding-top: 40px;
   width: 100px;
 }
-@media screen and (min-width: 750px) {
-  /* line 1459, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 1481, ../scss/style.scss */
   .icon-footer div img {
-    width: 65px;
+    width: 85%;
   }
 }
-/* line 1467, ../scss/style.scss */
+/* line 1489, ../scss/style.scss */
 .icon-footer div p {
   font-size: 10px;
   font-family: "roboto-thin";
   margin-top: 20px;
 }
-/* line 1474, ../scss/style.scss */
+/* line 1496, ../scss/style.scss */
 .icon-footer div:nth-child(2) {
   width: 46.66667%;
   float: left;
 }
-/* line 1477, ../scss/style.scss */
+/* line 1499, ../scss/style.scss */
 .icon-footer div:last-child {
   float: right;
   margin-right: 0;

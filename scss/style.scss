@@ -88,6 +88,9 @@ body{
   margin: 0 auto;
   max-width: em(1450px);
   overflow: auto;
+  @media screen and (max-width: $break-small) {
+   padding: 5px;
+  }
 
   .main-page-container{
     @media screen and (max-width: $break-small) {
@@ -638,6 +641,10 @@ body{
 
       overflow: auto;
 
+      @media screen and (max-width: $break-small) {
+        width: 293px;
+      }
+
 
     .team-circle-color{
 
@@ -651,6 +658,9 @@ body{
         float: left;
         background: green;
         margin-left: em(8px);
+        @media screen and (max-width: $break-small) {
+            margin-left:0px;
+        }
       }
 
       @include border-radius(em(20px));
@@ -767,16 +777,27 @@ body{
 
 
     @include float-left();
-    width: 89%;
+    width: 87%;
 
 
     .games-round-scroller{
+
+      .round-games-responsive{
+        @media screen and (max-width: $break-small) {
+          display: none;
+        };
+      }
       width: 100%;
       @include float-left();
       height: 20px;
       line-height: 20px;
 
       div{
+        @media screen and (max-width: $break-small) {
+          width: 23%;
+          float: left;
+        };
+
         &:first-child{
           display:block;
           background: none;
@@ -812,6 +833,7 @@ body{
   color: $orange;
   letter-spacing: 0.1em;
   font-family: "cooper-hewitt-bold";
+  margin-bottom: 7px;
 }
 
 .main-sports-section{
@@ -1459,8 +1481,8 @@ body{
     img{
       padding-top: 40px;
       width: 100px;
-      @media screen and (min-width: $break-small) {
-        width: 65px;
+      @media screen and (max-width: $break-small) {
+        width: 85%;
       };
     }
 

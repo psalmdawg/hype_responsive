@@ -34,7 +34,7 @@
 
 // setInterval(function(){
 $( window ).resize(function() {
-    if($(window).width() > 700 ){
+    if($(window).width() > 750 ){
       $(".drop-btn").show();
       $(".responsive-nav").show();
       // $('.sports-expander').show();

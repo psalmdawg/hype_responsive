@@ -1,4 +1,8 @@
 @import "compass";
+$break-small: 750px;
+$break-large: 1030px;
+$break-medium: 850px;
+
 
 
 .large-orange-button{
@@ -361,6 +365,10 @@
   color: white;
   @include span(7.8 of 16);
   @include float-left();
+
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  };
 
   // border: #696969 solid 1px;
 } //match round windows ctr
