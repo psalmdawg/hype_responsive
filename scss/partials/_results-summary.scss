@@ -17,12 +17,26 @@ $break-medium: 850px;
       border: $dark-border 1px solid;
     }
     .atvb-main{
+      padding-left: 15px;
+      @media screen and (max-width: $break-small) {
+        padding-left: 0;
+      }
       width: 100%;
       overflow: auto;
       background: $nav-color;
       .atvb-sub{
-        padding-top: em(10px);
-        padding-left: em(20px);
+        @media screen and (max-width: $break-small) {
+          @include span( 8 of 16);
+          padding-left: em(8px);
+
+        }
+        &:nth-child(even){
+          @media screen and (max-width: $break-small) {
+            @include last();
+          }
+        }
+        padding-top: em(12px);
+        padding-left: 0.5%;
         height: em(40px);
         // line-height: em(40px);
         font-size: em(30px);
@@ -46,6 +60,11 @@ $break-medium: 850px;
         vertical-align: top;
         padding-right: em(10px);
         @include float-left();
+        span{
+          i{
+            vertical-align: super;
+          }
+        }
       }
       .atvb-stat{
         // border: 1px solid $white;
