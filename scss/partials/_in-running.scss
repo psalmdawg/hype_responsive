@@ -38,6 +38,9 @@
       background: $nav-color;
       clear: both;
       .lr-table-team{
+        @media screen and (max-width: $break-small) {
+          font-size: 13px;
+        }
         border-top: $black 2px solid;
         height: 50px;
         .lr-tt-left{
@@ -45,8 +48,13 @@
           padding-top: em(12px);
           border-right: $black 2px solid;
           font-family: "cooper-hewitt-bold";
+          letter-spacing: 0.02em;
           @include span(7 of 12);
           .lr-team-color{
+            @media screen and (max-width: $break-small) {
+              margin-right: 6px;
+              margin-left: 6px;
+            }
             float: left;
             width: 5px;
             height: 35px;
@@ -61,6 +69,9 @@
             }
           }
           div{
+            @media screen and (max-width: $break-small) {
+              font-size: em(11px);
+            }
             margin-top: em(6px);
             font-family: 'roboto-thin';
             font-size: em(12px);

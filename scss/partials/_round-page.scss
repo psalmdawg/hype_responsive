@@ -94,6 +94,7 @@ $break-medium: 850px;
       // line-height: em(39px);
       height: em(25px);
       line-height: em(25px);
+      letter-spacing: 0.02em;
       padding-bottom: em(2px);
       // background: lighten(blue, 30%);
       // border: white 1px solid;
@@ -152,10 +153,16 @@ $break-medium: 850px;
 
 
 .main-article-wrap{
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  };
 
   @include span(13 of 16);
 
   .main-article{
+    @media screen and (min-width: $break-small) {
+      margin-right: em(10px);
+    };
     // width: 100%;
     height: em(390px);
     margin: 0 auto;
@@ -166,7 +173,7 @@ $break-medium: 850px;
     margin-bottom: em(20px);
     // overflow: hidden;
 
-    margin-right: em(10px);
+
     // @include float-left;
 
   }
@@ -211,37 +218,40 @@ $break-medium: 850px;
   }
 
   .sub-articles{
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    };
     @include span(3 of 16);
-     @include last();
-    // clear: both;
-    // padding-top: em(10px);
-    // background: pink;
-    // overflow: hidden;
-      // @include float-left();
-    // height: em(116px);
+    @include last();
+
     .sub-article{
+      @media screen and (max-width: $break-small) {
+      // @include span(1 of 3);
+      //   &:last-child{
+      //     @include last();
+      //     border:1px solid red;
+        width: 32%;
+        margin-left: 1%;
+        float: left;
+      }
+
+
+
+
       color: $black;
       border: black 1px solid;
-      // margin: em(5px);
       min-height: 116px;
       background: white;
-      // @include float-left();
-      //
-      // // width:
-      // @include span(4 of 12);
+
       &:nth-child(3){
-        // @include last();
+
       }
       .sub-art-img{
-        // background: pink;
         height: em(80px);
-        // height: 50%;
-        // width: 100%;
+
         overflow: hidden;
 
         img{
-          // max-width: em(180px);
-          // height: 60px;
           zoom: 100%;
           vertical-align: bottom;
         }
@@ -264,11 +274,18 @@ $break-medium: 850px;
 
     }
     .view-more-articles-link{
+      @media screen and (max-width: $break-small) {
+        clear:both;
+        margin-left: 1%;
+        margin-top: 10px;
+        font-size: em(15px);
+      }
+
       color: $orange;
       font-family: "cooper-hewitt-bold";
       font-size: em(10px);
       letter-spacing: 0.07em;
-      margin-top: em(15px);
+      padding-top: em(12px);
     }
   }
 
@@ -304,6 +321,10 @@ $break-medium: 850px;
   }
 }
 .large-main-scroller{
+  @media screen and (max-width: $break-small) {
+    width: 95%;
+
+  }
   width: 85%;
   overflow: auto;
   // background: red;
@@ -312,6 +333,10 @@ $break-medium: 850px;
   // border: red 1px solid;
 }
 .round-button-container{
+  @media screen and (max-width: $break-small) {
+    width: 80%;
+  };
+
   // text-align: center;
   @include float-left();
   // border: solid 1px blue;
@@ -320,9 +345,21 @@ $break-medium: 850px;
   //  @include span(14);
   width: 90%;
   margin: 0 auto;
+  .rbc-resp{
+    @media screen and (max-width: $break-small) {
+      display: none;
+    };
+  }
 
 }
 .rounds {
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 10);
+    &:nth-child(10){
+      @include last();
+      // color: red;
+    }
+  };
   @include span(1 of 25);
   // margin-left: 0.5%;
   // margin-right: 0.5%;
@@ -401,11 +438,16 @@ $break-medium: 850px;
   }
 
   .mrt-team-ctr{
+    letter-spacing: 0.02em;
+    @media screen and (max-width: $break-small) {
+     height: 80px;
+    }
+
     // border: yellow 1px solid;
     background: $main;
     width: 100%;
     overflow: hidden;
-    height: 50px;
+    height: 60px;
   }
   .mrt-teams, .mrt-team{
     width: 60%;
@@ -418,6 +460,7 @@ $break-medium: 850px;
   }
   .mrt-outcome, .mrt-predicted{
     text-align: center;
+
   }
 
   .mrt-team, .mrt-team-pred, .mrt-team-outcome{
@@ -438,6 +481,9 @@ $break-medium: 850px;
     @include float-left();
   }
   .mrt-team{
+    @media screen and (max-width: $break-small) {
+     padding-top: 5%;
+    }
     // height:  100%;
     padding-top: em(11px);
     padding-left: em(23px);
@@ -446,6 +492,10 @@ $break-medium: 850px;
 
     span{
       color: $orange;
+    }
+    .mrt-team-inr-wrp{
+      // border: white 1px solid;
+      padding-left: 37px;
     }
   }
 
@@ -469,6 +519,9 @@ $break-medium: 850px;
     }
   }
   .mrt-team-outcome, .mrt-team-pred{
+    @media screen and (max-width: $break-small) {
+     line-height: 51px;
+    }
     background: $nav-color;
     text-align: center;
     font-family: 'cooper-hewitt-bold';
@@ -479,6 +532,9 @@ $break-medium: 850px;
 
 
   .mrv-results-inner{
+    @media screen and (max-width: $break-small) {
+     height: 80px;
+    }
     font-family: 'cooper-hewitt-bold';
 
     width: 60.2%;
@@ -542,6 +598,9 @@ $break-medium: 850px;
 
 .detailed-match-link-btn, .countdown-to-match{
   width: 50%;
+  @media screen and (max-width: $break-small) {
+   width: 100%;
+  }
 
   @include float-left();
   // padding-top: em(13px);

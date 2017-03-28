@@ -176,10 +176,11 @@ table {
 .proj-season-ladder-ctr .ps-ladders {
   height: 1.5625em;
   line-height: 1.5625em;
+  letter-spacing: 0.02em;
   padding-bottom: 0.125em;
   width: 100%;
 }
-/* line 102, ../scss/partials/_round-page.scss */
+/* line 103, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-number {
   height: 100%;
   color: #aaaaaa;
@@ -190,7 +191,7 @@ table {
   padding-top: 0.0625em;
   text-align: center;
 }
-/* line 112, ../scss/partials/_round-page.scss */
+/* line 113, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-team {
   font-size: 0.625em;
   padding-left: 0.5em;
@@ -200,7 +201,7 @@ table {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 122, ../scss/partials/_round-page.scss */
+/* line 123, ../scss/partials/_round-page.scss */
 .proj-season-ladder-ctr .ps-ladders .ps-score {
   height: 100%;
   background: #000000;
@@ -215,7 +216,7 @@ table {
   text-align: center;
 }
 
-/* line 135, ../scss/partials/_round-page.scss */
+/* line 136, ../scss/partials/_round-page.scss */
 .ps-ldr-color {
   background: #6f0036;
   height: 12px;
@@ -227,7 +228,7 @@ table {
   border: #fcaa35 2px solid;
 }
 
-/* line 146, ../scss/partials/_round-page.scss */
+/* line 147, ../scss/partials/_round-page.scss */
 .project-season-title {
   border: #343434 1px solid;
   text-align: center;
@@ -235,22 +236,33 @@ table {
   padding-top: 0.375em;
 }
 
-/* line 154, ../scss/partials/_round-page.scss */
+/* line 155, ../scss/partials/_round-page.scss */
 .main-article-wrap {
   width: 81.14286%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 158, ../scss/partials/_round-page.scss */
+@media screen and (max-width: 750px) {
+  /* line 155, ../scss/partials/_round-page.scss */
+  .main-article-wrap {
+    width: 100%;
+  }
+}
+/* line 162, ../scss/partials/_round-page.scss */
 .main-article-wrap .main-article {
   height: 24.375em;
   margin: 0 auto;
   background: #aaaaaa;
   margin-bottom: 1.25em;
-  margin-right: 0.625em;
+}
+@media screen and (min-width: 750px) {
+  /* line 162, ../scss/partials/_round-page.scss */
+  .main-article-wrap .main-article {
+    margin-right: 0.625em;
+  }
 }
 
-/* line 179, ../scss/partials/_round-page.scss */
+/* line 186, ../scss/partials/_round-page.scss */
 .article-left-btn {
   float: left;
   cursor: pointer;
@@ -262,13 +274,13 @@ table {
   z-index: 100;
   position: relative;
 }
-/* line 191, ../scss/partials/_round-page.scss */
+/* line 198, ../scss/partials/_round-page.scss */
 .article-left-btn:hover {
   color: #fcaa35;
   font-weight: bold;
 }
 
-/* line 196, ../scss/partials/_round-page.scss */
+/* line 203, ../scss/partials/_round-page.scss */
 .article-right-btn {
   color: black;
   font-size: 2.5em;
@@ -278,13 +290,13 @@ table {
   margin-left: -30px;
   position: relative;
 }
-/* line 207, ../scss/partials/_round-page.scss */
+/* line 214, ../scss/partials/_round-page.scss */
 .article-right-btn:hover {
   color: #fcaa35;
   font-weight: bold;
 }
 
-/* line 213, ../scss/partials/_round-page.scss */
+/* line 220, ../scss/partials/_round-page.scss */
 .sub-articles {
   width: 18.28571%;
   float: left;
@@ -292,24 +304,38 @@ table {
   float: right;
   margin-right: 0;
 }
-/* line 222, ../scss/partials/_round-page.scss */
+@media screen and (max-width: 750px) {
+  /* line 220, ../scss/partials/_round-page.scss */
+  .sub-articles {
+    width: 100%;
+  }
+}
+/* line 227, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article {
   color: #000000;
   border: black 1px solid;
   min-height: 116px;
   background: white;
 }
-/* line 235, ../scss/partials/_round-page.scss */
+@media screen and (max-width: 750px) {
+  /* line 227, ../scss/partials/_round-page.scss */
+  .sub-articles .sub-article {
+    width: 32%;
+    margin-left: 1%;
+    float: left;
+  }
+}
+/* line 249, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-img {
   height: 5em;
   overflow: hidden;
 }
-/* line 242, ../scss/partials/_round-page.scss */
+/* line 254, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-img img {
   zoom: 100%;
   vertical-align: bottom;
 }
-/* line 249, ../scss/partials/_round-page.scss */
+/* line 259, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-text {
   line-height: 1.1;
   color: white;
@@ -320,25 +346,34 @@ table {
   letter-spacing: 0.07em;
   background: #000000;
 }
-/* line 257, ../scss/partials/_round-page.scss */
+/* line 267, ../scss/partials/_round-page.scss */
 .sub-articles .sub-article .sub-art-text span {
   color: #fcaa35;
   cursor: pointer;
 }
-/* line 266, ../scss/partials/_round-page.scss */
+/* line 276, ../scss/partials/_round-page.scss */
 .sub-articles .view-more-articles-link {
   color: #fcaa35;
   font-family: "cooper-hewitt-bold";
   font-size: 0.625em;
   letter-spacing: 0.07em;
-  margin-top: 0.9375em;
+  padding-top: 0.75em;
+}
+@media screen and (max-width: 750px) {
+  /* line 276, ../scss/partials/_round-page.scss */
+  .sub-articles .view-more-articles-link {
+    clear: both;
+    margin-left: 1%;
+    margin-top: 10px;
+    font-size: 0.9375em;
+  }
 }
 
-/* line 276, ../scss/partials/_round-page.scss */
+/* line 293, ../scss/partials/_round-page.scss */
 .projected-ladder-button {
   clear: both;
 }
-/* line 280, ../scss/partials/_round-page.scss */
+/* line 297, ../scss/partials/_round-page.scss */
 .projected-ladder-button .plbtn-inner {
   height: 3.125em;
   background: #fcaa35;
@@ -349,28 +384,34 @@ table {
   color: #fff;
 }
 
-/* line 293, ../scss/partials/_round-page.scss */
+/* line 310, ../scss/partials/_round-page.scss */
 .ui-nomt {
   margin-top: 0 !important;
 }
 
-/* line 298, ../scss/partials/_round-page.scss */
+/* line 315, ../scss/partials/_round-page.scss */
 .main-scroll-section {
   margin-top: 1.5625em;
 }
-/* line 302, ../scss/partials/_round-page.scss */
+/* line 319, ../scss/partials/_round-page.scss */
 .main-scroll-section .year-dropdown {
   padding-top: 0.125em;
 }
 
-/* line 306, ../scss/partials/_round-page.scss */
+/* line 323, ../scss/partials/_round-page.scss */
 .large-main-scroller {
   width: 85%;
   overflow: auto;
   margin: 0 auto;
 }
+@media screen and (max-width: 750px) {
+  /* line 323, ../scss/partials/_round-page.scss */
+  .large-main-scroller {
+    width: 95%;
+  }
+}
 
-/* line 314, ../scss/partials/_round-page.scss */
+/* line 335, ../scss/partials/_round-page.scss */
 .round-button-container {
   float: left;
   height: 50px;
@@ -378,8 +419,20 @@ table {
   width: 90%;
   margin: 0 auto;
 }
+@media screen and (max-width: 750px) {
+  /* line 335, ../scss/partials/_round-page.scss */
+  .round-button-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 348, ../scss/partials/_round-page.scss */
+  .round-button-container .rbc-resp {
+    display: none;
+  }
+}
 
-/* line 325, ../scss/partials/_round-page.scss */
+/* line 355, ../scss/partials/_round-page.scss */
 .rounds {
   width: 3.64964%;
   float: left;
@@ -389,36 +442,49 @@ table {
   height: 1.6875em;
   text-align: center;
 }
-/* line 337, ../scss/partials/_round-page.scss */
+@media screen and (max-width: 750px) {
+  /* line 355, ../scss/partials/_round-page.scss */
+  .rounds {
+    width: 9.17431%;
+    float: left;
+    margin-right: 0.91743%;
+  }
+  /* line 358, ../scss/partials/_round-page.scss */
+  .rounds:nth-child(10) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 374, ../scss/partials/_round-page.scss */
 .rounds:hover {
   cursor: pointer;
   background: #fcaa35;
 }
 
-/* line 344, ../scss/partials/_round-page.scss */
+/* line 381, ../scss/partials/_round-page.scss */
 .rounds-arrow-right {
   float: right;
   font-size: 1.25em;
 }
 
-/* line 349, ../scss/partials/_round-page.scss */
+/* line 386, ../scss/partials/_round-page.scss */
 .rounds-arrow-left {
   float: left;
   margin-right: 5%;
   font-size: 1.25em;
 }
 
-/* line 355, ../scss/partials/_round-page.scss */
+/* line 392, ../scss/partials/_round-page.scss */
 .rounds-arrow-left, .rounds-arrow-right {
   margin-top: 0.1875em;
 }
-/* line 357, ../scss/partials/_round-page.scss */
+/* line 394, ../scss/partials/_round-page.scss */
 .rounds-arrow-left:hover, .rounds-arrow-right:hover {
   color: #fcaa35;
   cursor: pointer;
 }
 
-/* line 363, ../scss/partials/_round-page.scss */
+/* line 400, ../scss/partials/_round-page.scss */
 .match-round-windows-ctr {
   margin-top: 1.5625em;
   color: white;
@@ -428,13 +494,13 @@ table {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 363, ../scss/partials/_round-page.scss */
+  /* line 400, ../scss/partials/_round-page.scss */
   .match-round-windows-ctr {
     width: 100%;
   }
 }
 
-/* line 378, ../scss/partials/_round-page.scss */
+/* line 415, ../scss/partials/_round-page.scss */
 .match-round-venue-date {
   width: 100%;
   border: #343434 1px solid;
@@ -442,87 +508,104 @@ table {
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
-/* line 385, ../scss/partials/_round-page.scss */
+/* line 422, ../scss/partials/_round-page.scss */
 .match-round-venue-date span:first-child {
   font-family: 'cooper-hewitt-bold';
   margin-right: 0.125em;
 }
-/* line 389, ../scss/partials/_round-page.scss */
+/* line 426, ../scss/partials/_round-page.scss */
 .match-round-venue-date span:nth-child(2) {
   float: right;
   margin-top: 0.125em;
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 396, ../scss/partials/_round-page.scss */
+/* line 433, ../scss/partials/_round-page.scss */
 .match-round-team-title {
   padding-left: 1.875em;
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
 
-/* line 403, ../scss/partials/_round-page.scss */
+/* line 440, ../scss/partials/_round-page.scss */
 .mrt-team-ctr {
+  letter-spacing: 0.02em;
   background: #0c0c0c;
   width: 100%;
   overflow: hidden;
-  height: 50px;
+  height: 60px;
+}
+@media screen and (max-width: 750px) {
+  /* line 440, ../scss/partials/_round-page.scss */
+  .mrt-team-ctr {
+    height: 80px;
+  }
 }
 
-/* line 410, ../scss/partials/_round-page.scss */
+/* line 452, ../scss/partials/_round-page.scss */
 .mrt-teams, .mrt-team {
   width: 60%;
   float: left;
 }
 
-/* line 415, ../scss/partials/_round-page.scss */
+/* line 457, ../scss/partials/_round-page.scss */
 .mrt-teams, .mrt-outcome, .mrt-predicted {
   padding-top: 0.3125em;
   padding-bottom: 0.3125em;
 }
 
-/* line 419, ../scss/partials/_round-page.scss */
+/* line 461, ../scss/partials/_round-page.scss */
 .mrt-outcome, .mrt-predicted {
   text-align: center;
 }
 
-/* line 423, ../scss/partials/_round-page.scss */
+/* line 466, ../scss/partials/_round-page.scss */
 .mrt-team, .mrt-team-pred, .mrt-team-outcome {
   margin-right: 0;
   margin-top: 2px;
   height: 100%;
 }
 
-/* line 429, ../scss/partials/_round-page.scss */
+/* line 472, ../scss/partials/_round-page.scss */
 .ml {
   border-left: 2px solid black;
 }
 
-/* line 432, ../scss/partials/_round-page.scss */
+/* line 475, ../scss/partials/_round-page.scss */
 .mrt-outcome, .mrt-team-outcome {
   float: left;
   width: 20%;
 }
 
-/* line 436, ../scss/partials/_round-page.scss */
+/* line 479, ../scss/partials/_round-page.scss */
 .mrt-predicted, .mrt-team-pred {
   width: 20%;
   float: left;
 }
 
-/* line 440, ../scss/partials/_round-page.scss */
+/* line 483, ../scss/partials/_round-page.scss */
 .mrt-team {
   padding-top: 0.6875em;
   padding-left: 1.4375em;
   font-family: 'cooper-hewitt-bold';
   background: #1c1c1c;
 }
-/* line 447, ../scss/partials/_round-page.scss */
+@media screen and (max-width: 750px) {
+  /* line 483, ../scss/partials/_round-page.scss */
+  .mrt-team {
+    padding-top: 5%;
+  }
+}
+/* line 493, ../scss/partials/_round-page.scss */
 .mrt-team span {
   color: #fcaa35;
 }
+/* line 496, ../scss/partials/_round-page.scss */
+.mrt-team .mrt-team-inr-wrp {
+  padding-left: 37px;
+}
 
-/* line 452, ../scss/partials/_round-page.scss */
+/* line 502, ../scss/partials/_round-page.scss */
 .mrt-circle-color {
   background: #6f0036;
   border: #fcaa35 2px solid;
@@ -536,17 +619,17 @@ table {
   margin-top: 0.375em;
 }
 
-/* line 464, ../scss/partials/_round-page.scss */
+/* line 514, ../scss/partials/_round-page.scss */
 .mrt-power-ranking {
   font-size: 0.6875em;
   font-family: "roboto-thin";
 }
-/* line 467, ../scss/partials/_round-page.scss */
+/* line 517, ../scss/partials/_round-page.scss */
 .mrt-power-ranking span {
   color: #fff;
 }
 
-/* line 471, ../scss/partials/_round-page.scss */
+/* line 521, ../scss/partials/_round-page.scss */
 .mrt-team-outcome, .mrt-team-pred {
   background: #1c1c1c;
   text-align: center;
@@ -555,8 +638,14 @@ table {
   font-size: 1.5625em;
   height: 100%;
 }
+@media screen and (max-width: 750px) {
+  /* line 521, ../scss/partials/_round-page.scss */
+  .mrt-team-outcome, .mrt-team-pred {
+    line-height: 51px;
+  }
+}
 
-/* line 481, ../scss/partials/_round-page.scss */
+/* line 534, ../scss/partials/_round-page.scss */
 .mrv-results-inner {
   font-family: 'cooper-hewitt-bold';
   width: 60.2%;
@@ -565,8 +654,14 @@ table {
   padding-top: 0.625em;
   float: left;
 }
+@media screen and (max-width: 750px) {
+  /* line 534, ../scss/partials/_round-page.scss */
+  .mrv-results-inner {
+    height: 80px;
+  }
+}
 
-/* line 491, ../scss/partials/_round-page.scss */
+/* line 547, ../scss/partials/_round-page.scss */
 .mrv-text {
   color: #000000;
   font-size: 0.75em;
@@ -574,24 +669,24 @@ table {
   margin-bottom: 0.75em;
 }
 
-/* line 498, ../scss/partials/_round-page.scss */
+/* line 554, ../scss/partials/_round-page.scss */
 .mrv-numbers {
   font-size: 1.25em;
 }
-/* line 500, ../scss/partials/_round-page.scss */
+/* line 556, ../scss/partials/_round-page.scss */
 .mrv-numbers span {
   color: #61e063;
   font-size: 0.9375em;
   margin-right: 0.625em;
   margin-left: 1.25em;
 }
-/* line 506, ../scss/partials/_round-page.scss */
+/* line 562, ../scss/partials/_round-page.scss */
 .mrv-numbers span:nth-child(2) {
   margin-left: 0.625em;
   color: #fff;
 }
 
-/* line 513, ../scss/partials/_round-page.scss */
+/* line 569, ../scss/partials/_round-page.scss */
 .mrv-projections {
   font-family: "roboto-thin";
   width: 39.8%;
@@ -599,17 +694,17 @@ table {
   padding-top: 0.9375em;
   float: left;
 }
-/* line 521, ../scss/partials/_round-page.scss */
+/* line 577, ../scss/partials/_round-page.scss */
 .mrv-projections .projections-share {
   text-align: center;
   margin-bottom: 0.5em;
   font-size: 0.25em;
 }
-/* line 526, ../scss/partials/_round-page.scss */
+/* line 582, ../scss/partials/_round-page.scss */
 .mrv-projections .share-socials {
   text-align: center;
 }
-/* line 529, ../scss/partials/_round-page.scss */
+/* line 585, ../scss/partials/_round-page.scss */
 .mrv-projections .share-socials i {
   color: #aaaaaa;
   margin-right: 0.3125em;
@@ -617,13 +712,13 @@ table {
   border-radius: 30px;
 }
 
-/* line 539, ../scss/partials/_round-page.scss */
+/* line 595, ../scss/partials/_round-page.scss */
 .last {
   float: right;
   margin-right: 0;
 }
 
-/* line 543, ../scss/partials/_round-page.scss */
+/* line 599, ../scss/partials/_round-page.scss */
 .detailed-match-link-btn, .countdown-to-match {
   width: 50%;
   float: left;
@@ -636,19 +731,25 @@ table {
   font-family: "roboto-thin";
   font-weight: bold;
 }
+@media screen and (max-width: 750px) {
+  /* line 599, ../scss/partials/_round-page.scss */
+  .detailed-match-link-btn, .countdown-to-match {
+    width: 100%;
+  }
+}
 
-/* line 557, ../scss/partials/_round-page.scss */
+/* line 616, ../scss/partials/_round-page.scss */
 .countdown-to-match {
   background: #fcaa35;
 }
 
-/* line 561, ../scss/partials/_round-page.scss */
+/* line 620, ../scss/partials/_round-page.scss */
 .advert-full-width-ctr {
   clear: both;
   padding-top: 2.1875em;
 }
 
-/* line 567, ../scss/partials/_round-page.scss */
+/* line 626, ../scss/partials/_round-page.scss */
 .advert-full-width {
   overflow: hidden;
   clear: both;
@@ -658,12 +759,12 @@ table {
   width: 100%;
   border: #696969 solid 1px;
 }
-/* line 570, ../scss/partials/_round-page.scss */
+/* line 629, ../scss/partials/_round-page.scss */
 .advert-full-width:hover {
   cursor: pointer;
   border: #fcaa35 1px solid;
 }
-/* line 581, ../scss/partials/_round-page.scss */
+/* line 640, ../scss/partials/_round-page.scss */
 .advert-full-width img {
   width: 100%;
   vertical-align: bottom;
@@ -749,24 +850,44 @@ table {
   width: 100%;
   margin-bottom: 0.9375em;
 }
-/* line 85, ../scss/partials/_results-summary.scss */
+/* line 89, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-top div {
   padding-left: 0.3125em;
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 89, ../scss/partials/_results-summary.scss */
+/* line 94, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-top div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 94, ../scss/partials/_results-summary.scss */
+@media screen and (max-width: 750px) {
+  /* line 94, ../scss/partials/_results-summary.scss */
+  .results-table-main-ctr .rtmc-top div:last-child {
+    display: none;
+  }
+}
+/* line 103, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-top-resp {
+  font-family: 'roboto-thin';
+  margin-bottom: 0.9375em;
+  font-size: 0.6875em;
+  width: 100%;
+  padding-left: 0.3125em;
+}
+@media screen and (min-width: 750px) {
+  /* line 103, ../scss/partials/_results-summary.scss */
+  .results-table-main-ctr .rtmc-top-resp {
+    display: none;
+  }
+}
+/* line 115, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons {
   margin-top: 1.25em;
   width: 100%;
 }
-/* line 97, ../scss/partials/_results-summary.scss */
+/* line 118, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn {
   letter-spacing: 0.075em;
   text-align: center;
@@ -780,35 +901,54 @@ table {
   float: left;
   margin-right: 1.14943%;
 }
-/* line 108, ../scss/partials/_results-summary.scss */
+/* line 129, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 111, ../scss/partials/_results-summary.scss */
+/* line 132, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn:hover {
   background: #fcaa35;
   cursor: pointer;
 }
-/* line 117, ../scss/partials/_results-summary.scss */
+@media screen and (max-width: 750px) {
+  /* line 118, ../scss/partials/_results-summary.scss */
+  .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn {
+    width: 23.25581%;
+    float: left;
+    margin-right: 2.32558%;
+  }
+  /* line 138, ../scss/partials/_results-summary.scss */
+  .results-table-main-ctr .rtmc-selector-buttons .rtmc-btn:nth-child(4) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 144, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .rtmc-tables {
   font-family: "cooper-hewitt-bold";
   width: 100%;
   border: 1px pink 1px;
 }
-/* line 122, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table {
+/* line 150, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp {
   width: 49.71429%;
   float: left;
   margin-right: 0.57143%;
 }
-/* line 126, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table:last-child {
+@media screen and (max-width: 750px) {
+  /* line 150, ../scss/partials/_results-summary.scss */
+  .results-table-main-ctr .rtmc-tables .rtmc-table-wrp {
+    width: 100%;
+  }
+}
+/* line 157, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 129, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table-title {
+/* line 160, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table-title {
   border: #1b1b1b 1px solid;
   background: #000000;
   padding-top: 0.625em;
@@ -816,72 +956,72 @@ table {
   overflow: auto;
   text-align: center;
 }
-/* line 138, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table {
+/* line 169, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table {
   float: left;
   width: 100%;
   height: 276px;
 }
-/* line 146, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table .highchart-liner {
+/* line 177, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table .highchart-liner {
   width: 100%;
   height: 100%;
   height: 276px;
 }
-/* line 154, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table table {
+/* line 185, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table table {
   width: 100%;
 }
-/* line 157, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table th, .results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table td {
+/* line 188, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table th, .results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table td {
   width: 20%;
   height: 1.25em;
   text-align: center;
   font-size: 0.625em;
 }
-/* line 167, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table th {
+/* line 198, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table th {
   font-family: 'roboto-thin';
   padding-top: 0.9375em;
   padding-bottom: 0.3125em;
 }
-/* line 173, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table td {
+/* line 204, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table td {
   font-weight: bold;
   padding-top: 0.9375em;
   padding-bottom: 0.9375em;
 }
-/* line 178, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table tr:nth-child(odd) {
+/* line 209, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table tr:nth-child(odd) {
   background: #000000;
 }
-/* line 182, ../scss/partials/_results-summary.scss */
-.results-table-main-ctr .rtmc-tables .rtmc-table .rtmc-table tr:nth-child(even) {
+/* line 213, ../scss/partials/_results-summary.scss */
+.results-table-main-ctr .rtmc-tables .rtmc-table-wrp .rtmc-table tr:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 189, ../scss/partials/_results-summary.scss */
+/* line 220, ../scss/partials/_results-summary.scss */
 .results-table-main-ctr .clearfix {
   clear: both;
 }
 
-/* line 195, ../scss/partials/_results-summary.scss */
+/* line 226, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles {
   cursor: pointer;
   height: 3.9em;
   margin-bottom: 0.3em;
   width: 100%;
 }
-/* line 201, ../scss/partials/_results-summary.scss */
+/* line 232, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-image {
   width: 100%;
   height: 70%;
   overflow: hidden;
 }
-/* line 206, ../scss/partials/_results-summary.scss */
+/* line 237, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-image img {
   width: 100%;
 }
-/* line 210, ../scss/partials/_results-summary.scss */
+/* line 241, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-text {
   font-family: "cooper-hewitt-medium";
   color: white;
@@ -891,12 +1031,12 @@ table {
   padding-top: 0.6em;
   line-height: 1.3em;
 }
-/* line 218, ../scss/partials/_results-summary.scss */
+/* line 249, ../scss/partials/_results-summary.scss */
 .results-fantasy-articles .rfa-text span {
   color: #fcaa35;
 }
 
-/* line 225, ../scss/partials/_results-summary.scss */
+/* line 256, ../scss/partials/_results-summary.scss */
 .results-social-media {
   border-top: #343434 1px solid;
   color: #aaaaaa;
@@ -905,11 +1045,11 @@ table {
   margin-top: 65px;
   padding-top: 1.25em;
 }
-/* line 232, ../scss/partials/_results-summary.scss */
+/* line 263, ../scss/partials/_results-summary.scss */
 .results-social-media div {
   margin-bottom: 1.25em;
 }
-/* line 235, ../scss/partials/_results-summary.scss */
+/* line 266, ../scss/partials/_results-summary.scss */
 .results-social-media i {
   margin-right: 0.625em;
 }
@@ -1152,17 +1292,24 @@ table {
   border-top: #000000 2px solid;
   height: 50px;
 }
-/* line 43, ../scss/partials/_in-running.scss */
+@media screen and (max-width: 750px) {
+  /* line 40, ../scss/partials/_in-running.scss */
+  .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team {
+    font-size: 13px;
+  }
+}
+/* line 46, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left {
   height: 50px;
   padding-top: 0.75em;
   border-right: #000000 2px solid;
   font-family: "cooper-hewitt-bold";
+  letter-spacing: 0.02em;
   width: 58.01527%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 49, ../scss/partials/_in-running.scss */
+/* line 53, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left .lr-team-color {
   float: left;
   width: 5px;
@@ -1172,17 +1319,30 @@ table {
   margin-left: 2.1875em;
   margin-top: -0.3125em;
 }
-/* line 59, ../scss/partials/_in-running.scss */
+@media screen and (max-width: 750px) {
+  /* line 53, ../scss/partials/_in-running.scss */
+  .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left .lr-team-color {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}
+/* line 67, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left span:nth-child(2) {
   color: #fcaa35;
 }
-/* line 63, ../scss/partials/_in-running.scss */
+/* line 71, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left div {
   margin-top: 0.375em;
   font-family: 'roboto-thin';
   font-size: 0.75em;
 }
-/* line 67, ../scss/partials/_in-running.scss */
+@media screen and (max-width: 750px) {
+  /* line 71, ../scss/partials/_in-running.scss */
+  .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left div {
+    font-size: 0.6875em;
+  }
+}
+/* line 78, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-left div span {
   font-weight: bold;
   font-size: 1.125em;
@@ -1190,7 +1350,7 @@ table {
   margin-left: 0.3125em;
   vertical-align: middle;
 }
-/* line 77, ../scss/partials/_in-running.scss */
+/* line 88, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right {
   min-height: 3.125em;
   width: 41.22137%;
@@ -1199,7 +1359,7 @@ table {
   float: right;
   margin-right: 0;
 }
-/* line 82, ../scss/partials/_in-running.scss */
+/* line 93, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div {
   text-align: center;
   min-height: 3.125em;
@@ -1209,13 +1369,13 @@ table {
   float: left;
   margin-right: 0.76336%;
 }
-/* line 88, ../scss/partials/_in-running.scss */
+/* line 99, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div:last-child {
   float: right;
   margin-right: 0;
   border-right: none;
 }
-/* line 91, ../scss/partials/_in-running.scss */
+/* line 102, ../scss/partials/_in-running.scss */
 .live-running-wrap .lr-table-wrap .lr-table-main .lr-table-team .lr-tt-right div:last-child span {
   font-size: 0.8125em;
   font-weight: bold;
@@ -1223,7 +1383,7 @@ table {
   padding: 0.5em 1.25em 0.1875em 1.25em;
 }
 
-/* line 107, ../scss/partials/_in-running.scss */
+/* line 118, ../scss/partials/_in-running.scss */
 .lir-chart-ctr {
   min-width: 100%;
   min-height: 25em;
@@ -1231,7 +1391,7 @@ table {
   margin-top: 2.5em;
   margin-bottom: 2.5em;
 }
-/* line 114, ../scss/partials/_in-running.scss */
+/* line 125, ../scss/partials/_in-running.scss */
 .lir-chart-ctr .lirc-title {
   font-family: "cooper-hewitt-bold";
   background: #000000;
@@ -1241,21 +1401,21 @@ table {
   padding: 0.625em;
 }
 
-/* line 129, ../scss/partials/_in-running.scss */
+/* line 140, ../scss/partials/_in-running.scss */
 .live-tweet-ctr {
   margin-top: 2.5em;
   margin-bottom: 2.5em;
   width: 100%;
   overflow: auto;
 }
-/* line 136, ../scss/partials/_in-running.scss */
+/* line 147, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .live-tweet-title {
   font-family: "cooper-hewitt-bold";
   border: #343434 1px solid;
   text-align: center;
   padding: 0.4375em;
 }
-/* line 142, ../scss/partials/_in-running.scss */
+/* line 153, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .tweet-updates-header {
   background: #262626;
   font-family: "roboto-thin";
@@ -1266,29 +1426,29 @@ table {
   width: 100%;
   overflow: auto;
 }
-/* line 152, ../scss/partials/_in-running.scss */
+/* line 163, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .tweet-updates-header div {
   width: 16.03053%;
   float: left;
   margin-right: 0.76336%;
   text-align: center;
 }
-/* line 160, ../scss/partials/_in-running.scss */
+/* line 171, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar {
   width: 100%;
   min-height: 100%;
   overflow: auto;
   border-bottom: 2px solid black;
 }
-/* line 166, ../scss/partials/_in-running.scss */
+/* line 177, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar:nth-child(odd) {
   background: #000000;
 }
-/* line 169, ../scss/partials/_in-running.scss */
+/* line 180, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 173, ../scss/partials/_in-running.scss */
+/* line 184, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar .lt-time {
   width: 16.03053%;
   float: left;
@@ -1301,7 +1461,7 @@ table {
   background: #262626;
   border-right: 2px solid #000000;
 }
-/* line 185, ../scss/partials/_in-running.scss */
+/* line 196, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar .lt-main {
   width: 83.20611%;
   float: left;
@@ -1314,12 +1474,12 @@ table {
   padding-left: 0.625em;
   font-family: "roboto-thin";
 }
-/* line 195, ../scss/partials/_in-running.scss */
+/* line 206, ../scss/partials/_in-running.scss */
 .live-tweet-ctr .live-tweet-inr .lt-bar .lt-main span {
   float: right;
 }
 
-/* line 204, ../scss/partials/_in-running.scss */
+/* line 215, ../scss/partials/_in-running.scss */
 .previous-games-ctr {
   color: #fff;
   font-size: 0.25em;
@@ -1328,27 +1488,27 @@ table {
   margin-bottom: 0.9375em;
   letter-spacing: 0.08em;
 }
-/* line 216, ../scss/partials/_in-running.scss */
+/* line 227, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-game-title {
   font-family: "roboto-thin";
   margin-top: 0.9375em;
   margin-bottom: 0.9375em;
   font-size: 0.5em;
 }
-/* line 221, ../scss/partials/_in-running.scss */
+/* line 232, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-game-title span {
   font-family: "cooper-hewitt-medium";
 }
-/* line 225, ../scss/partials/_in-running.scss */
+/* line 236, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-games {
   height: 4.375em;
   line-height: 4.375em;
 }
-/* line 228, ../scss/partials/_in-running.scss */
+/* line 239, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-games:nth-child(3) {
   background: #1c1c1c;
 }
-/* line 232, ../scss/partials/_in-running.scss */
+/* line 243, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-games .ps-ldr-color {
   height: 18px;
   width: 18px;
@@ -1360,38 +1520,38 @@ table {
   border: #fcaa35 2px solid;
   background: #6f0036;
 }
-/* line 243, ../scss/partials/_in-running.scss */
+/* line 254, ../scss/partials/_in-running.scss */
 .previous-games-ctr .previous-games span {
   color: #fcaa35;
 }
-/* line 248, ../scss/partials/_in-running.scss */
+/* line 259, ../scss/partials/_in-running.scss */
 .previous-games-ctr .value-bets-results {
   padding: 1.25em;
   background: #aaaaaa;
   width: 100%;
   margin-bottom: 1.875em;
 }
-/* line 255, ../scss/partials/_in-running.scss */
+/* line 266, ../scss/partials/_in-running.scss */
 .previous-games-ctr .value-bets-results div {
   color: #000000;
   margin-bottom: 0.625em;
   margin-left: 2.8125em;
 }
-/* line 261, ../scss/partials/_in-running.scss */
+/* line 272, ../scss/partials/_in-running.scss */
 .previous-games-ctr .value-bets-results div i {
   color: #61e063;
   font-size: 2.1875em;
   margin-right: 0.3125em;
   margin-left: -1.25em;
 }
-/* line 267, ../scss/partials/_in-running.scss */
+/* line 278, ../scss/partials/_in-running.scss */
 .previous-games-ctr .value-bets-results div span {
   margin-left: 0.625em;
   color: white;
   font-size: 1.625em;
 }
 
-/* line 278, ../scss/partials/_in-running.scss */
+/* line 289, ../scss/partials/_in-running.scss */
 .advert-right-small {
   clear: both;
   height: 6.25em;
@@ -1456,9 +1616,9 @@ table {
 
 /* line 52, ../scss/partials/_home-page.scss */
 .sports-icons-ctr {
-  overflow: auto;
+  overflow: hidden;
   border: 1px #343434 solid;
-  background: purple;
+  background: #000000;
   margin-bottom: 1.25em;
 }
 /* line 58, ../scss/partials/_home-page.scss */
@@ -1467,34 +1627,35 @@ table {
   width: 16.666666%;
   float: left;
   text-align: center;
-  height: 2.9375em;
+  min-height: 56px;
   padding-top: 0.375em;
+  padding-bottom: 0.375em;
   border-right: 1px solid #343434;
 }
-/* line 66, ../scss/partials/_home-page.scss */
+/* line 67, ../scss/partials/_home-page.scss */
 .sports-icons-ctr div:last-child {
   border-right: 0px solid #343434;
 }
-/* line 70, ../scss/partials/_home-page.scss */
+/* line 71, ../scss/partials/_home-page.scss */
 .sports-icons-ctr div img {
   max-width: 70%;
   margin: 0 auto;
   vertical-align: bottom;
 }
-/* line 75, ../scss/partials/_home-page.scss */
+/* line 76, ../scss/partials/_home-page.scss */
 .sports-icons-ctr div:hover {
   background: #fcaa35;
   border: 1px #fcaa35 solid;
   cursor: pointer;
 }
 
-/* line 84, ../scss/partials/_home-page.scss */
+/* line 85, ../scss/partials/_home-page.scss */
 .historical-icons-ctr {
   overflow: auto;
   border: 1px solid #343434;
   margin-bottom: 1.25em;
 }
-/* line 88, ../scss/partials/_home-page.scss */
+/* line 89, ../scss/partials/_home-page.scss */
 .historical-icons-ctr div {
   padding: 0.375em;
   background: #000000;
@@ -1502,31 +1663,31 @@ table {
   float: left;
   text-align: center;
 }
-/* line 94, ../scss/partials/_home-page.scss */
+/* line 95, ../scss/partials/_home-page.scss */
 .historical-icons-ctr div:last-child {
   border-left: 1px solid #343434;
 }
-/* line 98, ../scss/partials/_home-page.scss */
+/* line 99, ../scss/partials/_home-page.scss */
 .historical-icons-ctr div img {
   max-width: 30%;
 }
-/* line 101, ../scss/partials/_home-page.scss */
+/* line 102, ../scss/partials/_home-page.scss */
 .historical-icons-ctr div:hover {
   background: #fcaa35;
   cursor: pointer;
 }
 
-/* line 109, ../scss/partials/_home-page.scss */
+/* line 110, ../scss/partials/_home-page.scss */
 .sports-advertising-ctr {
   margin-bottom: 1.25em;
   overflow: hidden;
 }
-/* line 112, ../scss/partials/_home-page.scss */
+/* line 113, ../scss/partials/_home-page.scss */
 .sports-advertising-ctr img {
   width: 100%;
 }
 
-/* line 117, ../scss/partials/_home-page.scss */
+/* line 118, ../scss/partials/_home-page.scss */
 .home-twitter-feed {
   width: 100%;
   height: 300px;
@@ -1535,7 +1696,7 @@ table {
   padding: 30px;
 }
 
-/* line 125, ../scss/partials/_home-page.scss */
+/* line 126, ../scss/partials/_home-page.scss */
 .hp-social-media {
   color: #aaaaaa;
   border-top: #343434 1px solid;
@@ -1545,28 +1706,28 @@ table {
   font-size: 12px;
   text-align: center;
 }
-/* line 134, ../scss/partials/_home-page.scss */
+/* line 135, ../scss/partials/_home-page.scss */
 .hp-social-media div {
   margin-bottom: 10px;
 }
-/* line 137, ../scss/partials/_home-page.scss */
+/* line 138, ../scss/partials/_home-page.scss */
 .hp-social-media i {
   font-size: 18px;
   color: #aaaaaa;
   text-align: center;
   margin-right: 0.625em;
 }
-/* line 144, ../scss/partials/_home-page.scss */
+/* line 145, ../scss/partials/_home-page.scss */
 .hp-social-media i:hover {
   color: #fff;
   cursor: pointer;
 }
 
-/* line 159, ../scss/partials/_home-page.scss */
+/* line 160, ../scss/partials/_home-page.scss */
 .punting-container {
   font-family: "cooper-hewitt-bold";
 }
-/* line 163, ../scss/partials/_home-page.scss */
+/* line 164, ../scss/partials/_home-page.scss */
 .punting-container .punting-title {
   background: #000000;
   text-align: center;
@@ -1574,13 +1735,13 @@ table {
   padding: 0.625em;
   border: #343434 1px solid;
 }
-/* line 172, ../scss/partials/_home-page.scss */
+/* line 173, ../scss/partials/_home-page.scss */
 .punting-container .punting-main .punting-row {
   height: 2.8125em;
   line-height: 2.8125em;
   margin-bottom: 0.125em;
 }
-/* line 177, ../scss/partials/_home-page.scss */
+/* line 178, ../scss/partials/_home-page.scss */
 .punting-container .punting-main .punting-row .punting-row-left {
   width: 79.87805%;
   float: left;
@@ -1589,7 +1750,7 @@ table {
   color: #fff;
   padding-left: 1.875em;
 }
-/* line 184, ../scss/partials/_home-page.scss */
+/* line 185, ../scss/partials/_home-page.scss */
 .punting-container .punting-main .punting-row .punting-row-right {
   width: 19.5122%;
   float: left;
@@ -1601,60 +1762,63 @@ table {
   text-align: center;
 }
 
-/* line 198, ../scss/partials/_home-page.scss */
+/* line 199, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-matches-title {
+  letter-spacing: 0.02em;
+  font-family: "cooper-hewitt-bold";
   text-align: center;
   padding: 0.625em;
   background: #000000;
   border: #343434 1px solid;
   padding-top: 13px;
 }
-/* line 205, ../scss/partials/_home-page.scss */
+/* line 208, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-matches-dropper {
   padding: 0.625em;
 }
-/* line 211, ../scss/partials/_home-page.scss */
+/* line 214, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr {
   margin-bottom: 1.875em;
   background: #1c1c1c;
   width: 100%;
 }
-/* line 217, ../scss/partials/_home-page.scss */
+/* line 220, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-title {
   font-family: "roboto-thin";
   font-size: 0.6875em;
   background: #262626;
   color: #fff;
   overflow: auto;
-  padding: 0.3125em;
+  padding: 0.625em;
+  letter-spacing: 0.04em;
 }
-/* line 226, ../scss/partials/_home-page.scss */
+/* line 230, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-team {
   padding-left: 5.3125em;
   width: 58.33333%;
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 226, ../scss/partials/_home-page.scss */
+  /* line 230, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-team {
     width: 60%;
     float: left;
   }
 }
-/* line 233, ../scss/partials/_home-page.scss */
+/* line 237, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-odd {
   width: 20.83333%;
   float: left;
   text-align: center;
 }
 @media screen and (max-width: 750px) {
-  /* line 233, ../scss/partials/_home-page.scss */
+  /* line 237, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-odd {
     width: 20%;
     float: left;
   }
 }
-/* line 240, ../scss/partials/_home-page.scss */
+/* line 244, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-proj {
   width: 20.83333%;
   float: left;
@@ -1663,7 +1827,7 @@ table {
   text-align: center;
 }
 @media screen and (max-width: 750px) {
-  /* line 240, ../scss/partials/_home-page.scss */
+  /* line 244, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-proj {
     width: 20%;
     float: left;
@@ -1671,18 +1835,18 @@ table {
     margin-right: 0;
   }
 }
-/* line 249, ../scss/partials/_home-page.scss */
+/* line 253, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-title .um-title-live {
   text-align: center;
 }
-/* line 254, ../scss/partials/_home-page.scss */
+/* line 258, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main {
   font-family: "cooper-hewitt-bold";
   font-size: 0.9375em;
   width: 100%;
   overflow: auto;
 }
-/* line 260, ../scss/partials/_home-page.scss */
+/* line 264, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right {
   overflow: auto;
   background: #1c1c1c;
@@ -1690,37 +1854,37 @@ table {
   float: left;
   float: right;
   margin-right: 0;
-  height: 155px;
+  height: 153px;
   text-align: center;
   position: relative;
 }
 @media screen and (max-width: 750px) {
-  /* line 260, ../scss/partials/_home-page.scss */
+  /* line 264, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right {
     display: none;
   }
 }
-/* line 274, ../scss/partials/_home-page.scss */
+/* line 278, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right p {
   margin-top: 30px;
   font-family: "roboto-thin";
 }
-/* line 279, ../scss/partials/_home-page.scss */
+/* line 283, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right div i {
   margin-top: 15px;
   font-size: 20px;
 }
-/* line 282, ../scss/partials/_home-page.scss */
+/* line 286, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right div i:first-child {
   margin-right: 15px;
 }
-/* line 285, ../scss/partials/_home-page.scss */
+/* line 289, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right div i:hover {
   transition: .3s;
   color: #fcaa35;
   cursor: pointer;
 }
-/* line 293, ../scss/partials/_home-page.scss */
+/* line 297, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-right .um-live-ctr {
   position: absolute;
   right: 0;
@@ -1728,21 +1892,22 @@ table {
   padding: 8px 17px 5px 17px;
   background: #61e063;
 }
-/* line 303, ../scss/partials/_home-page.scss */
+/* line 307, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left {
   width: 75%;
   float: left;
   background: #1c1c1c;
 }
 @media screen and (max-width: 750px) {
-  /* line 303, ../scss/partials/_home-page.scss */
+  /* line 307, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left {
     width: 100%;
     font-size: 12px;
   }
 }
-/* line 312, ../scss/partials/_home-page.scss */
+/* line 316, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team {
+  letter-spacing: 0.02em;
   background: #262626;
   width: 58.33333%;
   float: left;
@@ -1752,16 +1917,16 @@ table {
   background: #1c1c1c;
   border-right: 2px solid #000000;
 }
-/* line 325, ../scss/partials/_home-page.scss */
+/* line 330, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team:first-child {
   border-bottom: 2px solid #000000;
 }
-/* line 328, ../scss/partials/_home-page.scss */
+/* line 333, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team span {
   color: #fcaa35;
   margin-left: 0.1875em;
 }
-/* line 333, ../scss/partials/_home-page.scss */
+/* line 338, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team .um-team-color {
   float: left;
   width: 5px;
@@ -1772,33 +1937,33 @@ table {
   margin-top: -0.375em;
 }
 @media screen and (max-width: 750px) {
-  /* line 333, ../scss/partials/_home-page.scss */
+  /* line 338, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team .um-team-color {
     margin-right: 20px;
     margin-left: 22px;
   }
 }
 @media screen and (max-width: 330px) {
-  /* line 333, ../scss/partials/_home-page.scss */
+  /* line 338, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team .um-team-color {
     margin-right: 5px;
     margin-left: 5px;
   }
 }
-/* line 354, ../scss/partials/_home-page.scss */
+/* line 359, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team div {
   font-family: "roboto-thin";
   font-size: 0.6875em;
   margin-top: 0.25em;
   margin-bottom: 0.3125em;
 }
-/* line 359, ../scss/partials/_home-page.scss */
+/* line 364, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-team div span {
   color: #fff;
   margin-left: 0.3125em;
   font-family: "cooper-hewitt-bold";
 }
-/* line 366, ../scss/partials/_home-page.scss */
+/* line 371, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-odds {
   padding-top: 0.125em;
   height: 50px;
@@ -1810,7 +1975,7 @@ table {
   width: 20.83333%;
   float: left;
 }
-/* line 376, ../scss/partials/_home-page.scss */
+/* line 381, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-proj {
   padding-top: 0.125em;
   font-size: 1.25em;
@@ -1822,7 +1987,7 @@ table {
   width: 20.83333%;
   float: left;
 }
-/* line 390, ../scss/partials/_home-page.scss */
+/* line 395, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-orange-button {
   background: #fcaa35;
   font-size: 0.875em;
@@ -1833,19 +1998,19 @@ table {
   border-right: 2px solid #000000;
   clear: both;
 }
-/* line 400, ../scss/partials/_home-page.scss */
+/* line 405, ../scss/partials/_home-page.scss */
 .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-orange-button:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 330px) {
-  /* line 390, ../scss/partials/_home-page.scss */
+  /* line 395, ../scss/partials/_home-page.scss */
   .up-coming-matches-ctr .upcoming-match-ctr .um-main .um-left .um-orange-button {
     padding: 12px;
     height: 38px;
   }
 }
 
-/* line 413, ../scss/partials/_home-page.scss */
+/* line 418, ../scss/partials/_home-page.scss */
 .view-more-matches-ctr {
   text-align: center;
   padding: 10px;
@@ -1858,12 +2023,12 @@ table {
   font-size: 13px;
 }
 @media screen and (min-width: 750px) {
-  /* line 413, ../scss/partials/_home-page.scss */
+  /* line 418, ../scss/partials/_home-page.scss */
   .view-more-matches-ctr {
     display: none;
   }
 }
-/* line 424, ../scss/partials/_home-page.scss */
+/* line 429, ../scss/partials/_home-page.scss */
 .view-more-matches-ctr span {
   cursor: pointer;
   float: right;
@@ -1873,20 +2038,20 @@ table {
 }
 
 @media screen and (max-width: 750px) {
-  /* line 437, ../scss/partials/_home-page.scss */
+  /* line 442, ../scss/partials/_home-page.scss */
   .umc-responsive-display {
     display: none;
   }
 }
 
 @media screen and (max-width: 750px) {
-  /* line 442, ../scss/partials/_home-page.scss */
+  /* line 447, ../scss/partials/_home-page.scss */
   .umc-responsive-display-two {
     display: none;
   }
 }
 
-/* line 451, ../scss/partials/_home-page.scss */
+/* line 456, ../scss/partials/_home-page.scss */
 #vmm-btn1, #vmm-btn2 {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -1894,7 +2059,7 @@ table {
   transition-duration: 0.2s;
 }
 
-/* line 454, ../scss/partials/_home-page.scss */
+/* line 459, ../scss/partials/_home-page.scss */
 .rotate {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1909,88 +2074,93 @@ table {
   box-sizing: border-box;
 }
 
-/* line 23, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 43, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 .mb-zero {
   margin-bottom: 0px;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 .mb-50 {
   margin-bottom: 3.125em;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 .mb-20 {
   margin-bottom: 1.25em;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 .mb-35 {
   margin-bottom: 2.1875em;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 .mg-top2 {
   margin-top: 2px;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .rbt {
   font-family: "roboto-thin";
 }
 
-/* line 61, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 .subtext {
   font-family: 'roboto-thin';
 }
 
-/* line 64, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 .mg-top20 {
   margin-top: 1.25em;
 }
 
-/* line 79, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
+.pl-20 {
+  padding-left: 1.5625em;
+}
+
+/* line 83, ../scss/style.scss */
 body {
   font-family: "cooper-hewitt-medium";
   color: white;
   background: #0c0c0c;
 }
 
-/* line 87, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 90.625em;
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 87, ../scss/style.scss */
+  /* line 91, ../scss/style.scss */
   .container {
     padding: 5px;
   }
 }
-/* line 95, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .container .main-page-container {
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 95, ../scss/style.scss */
+  /* line 99, ../scss/style.scss */
   .container .main-page-container {
     width: 100%;
   }
 }
-/* line 104, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .container .main-page-container .page-container-right {
   margin-top: 1.25em;
   float: left;
@@ -2003,12 +2173,12 @@ body {
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 104, ../scss/style.scss */
+  /* line 108, ../scss/style.scss */
   .container .main-page-container .page-container-right {
     display: none;
   }
 }
-/* line 116, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 .container .main-page-container .page-container-left {
   margin-top: 1.25em;
   width: 74.80916%;
@@ -2018,88 +2188,88 @@ body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 116, ../scss/style.scss */
+  /* line 120, ../scss/style.scss */
   .container .main-page-container .page-container-left {
     width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 132, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .header {
   overflow: hidden;
   height: 17vh;
   padding-top: 30px;
 }
 @media screen and (max-width: 750px) {
-  /* line 132, ../scss/style.scss */
+  /* line 136, ../scss/style.scss */
   .header {
     display: none;
   }
 }
-/* line 139, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .header .header-left {
   width: 20%;
   margin-left: 25px;
   float: left;
 }
-/* line 143, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .header .header-left img {
   width: 100%;
   vertical-align: top;
 }
-/* line 148, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 .header .header-right {
   width: 50%;
   float: right;
 }
-/* line 151, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .header .header-right img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 158, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .left {
   float: left;
   padding: 0;
 }
 
-/* line 163, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .right {
   float: right;
   padding: 0;
 }
 
-/* line 173, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .nav {
   font-family: "cooper-hewitt-bold";
   background: #1c1c1c;
   font-size: 0.875em;
 }
 @media screen and (min-width: 750px) {
-  /* line 184, ../scss/style.scss */
+  /* line 188, ../scss/style.scss */
   .nav .inner-nav {
     height: 56px;
   }
 }
-/* line 193, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 750px) {
-  /* line 193, ../scss/style.scss */
+  /* line 197, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 193, ../scss/style.scss */
+  /* line 197, ../scss/style.scss */
   .nav .nav-right {
     display: none;
   }
 }
-/* line 204, ../scss/style.scss */
+/* line 208, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -2107,7 +2277,7 @@ body {
   line-height: 55px;
   cursor: pointer;
 }
-/* line 210, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #fcaa35;
   padding: 0 20px;
@@ -2116,28 +2286,28 @@ body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 210, ../scss/style.scss */
+  /* line 214, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 221, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 229, ../scss/style.scss */
+  /* line 233, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 235, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
   background: #0c0c0c;
 }
-/* line 240, ../scss/style.scss */
+/* line 244, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1c1c1c;
   border-bottom: #1c1c1c solid 1px;
@@ -2148,23 +2318,23 @@ body {
   padding-left: 1.5625em;
   cursor: pointer;
 }
-/* line 242, ../scss/style.scss */
+/* line 246, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
   background: #000000;
 }
-/* line 253, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #141414;
   border-bottom: #fcaa35 solid 1px;
 }
 @media screen and (max-width: 750px) {
-  /* line 260, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
     background: #fcaa35;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 240, ../scss/style.scss */
+  /* line 244, ../scss/style.scss */
   .nav .dropdown .dropbtn {
     height: 18.3vh;
     line-height: 18.3vh;
@@ -2172,15 +2342,15 @@ body {
     border: #fcaa35 1px solid;
   }
 }
-/* line 276, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 280, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 287, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -2193,12 +2363,12 @@ body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 287, ../scss/style.scss */
+  /* line 291, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 304, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -2209,24 +2379,24 @@ body {
   display: block;
   background-color: #363636;
 }
-/* line 314, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #292929;
 }
-/* line 317, ../scss/style.scss */
+/* line 321, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 750px) {
-  /* line 324, ../scss/style.scss */
+  /* line 328, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
     color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 333, ../scss/style.scss */
+  /* line 337, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -2234,7 +2404,7 @@ body {
   }
 }
 
-/* line 345, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   width: 100%;
@@ -2243,30 +2413,30 @@ body {
   padding-top: 13px;
   padding-bottom: 5px;
 }
-/* line 346, ../scss/style.scss */
+/* line 350, ../scss/style.scss */
 .burger-icon-ctr span {
   min-width: 30px;
 }
-/* line 348, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 .burger-icon-ctr span div {
   display: inline-block;
   min-width: 30px;
 }
 @media screen and (min-width: 750px) {
-  /* line 345, ../scss/style.scss */
+  /* line 349, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 362, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
-/* line 365, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 .burger-icon-ctr img {
   width: 80px;
 }
-/* line 368, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .burger-icon-ctr .n-sup {
   background: #fcaa35;
   cursor: pointer;
@@ -2280,7 +2450,7 @@ body {
   padding-top: 7px;
 }
 
-/* line 385, ../scss/style.scss */
+/* line 389, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   font-size: 0.625em;
@@ -2289,26 +2459,26 @@ body {
   line-height: 1.5625em;
 }
 @media screen and (max-width: 750px) {
-  /* line 385, ../scss/style.scss */
+  /* line 389, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 397, ../scss/style.scss */
+/* line 401, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   width: 77%;
   margin: 0 auto;
   font-size: 0.5em;
 }
-/* line 402, ../scss/style.scss */
+/* line 406, ../scss/style.scss */
 .inner-tweet-bar span {
   color: #fcaa35;
   cursor: help;
 }
 
-/* line 408, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
@@ -2316,110 +2486,110 @@ body {
   line-height: 5.625em;
 }
 
-/* line 416, ../scss/style.scss */
+/* line 420, ../scss/style.scss */
 .game-dropper {
-  padding-left: 1.5625em;
   font-family: "cooper-hewitt-bold";
   font-weight: bold;
   font-size: 0.9375em;
   vertical-align: top;
   margin-top: -0.625em;
   width: 8.85714%;
+  letter-spacing: 0.02em;
 }
 @media screen and (min-width: 750px) {
-  /* line 416, ../scss/style.scss */
+  /* line 420, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 416, ../scss/style.scss */
+  /* line 420, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
     display: none;
   }
 }
-/* line 435, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 .game-dropper i {
   margin-left: 8px;
   font-size: 1.375em;
   width: 0;
 }
-/* line 440, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 .game-dropper .ui.simple.dropdown .menu {
   margin-top: -25px;
   color: #fff;
   border: 1px #000000 solid !important;
 }
-/* line 445, ../scss/style.scss */
+/* line 450, ../scss/style.scss */
 .game-dropper .menu {
   border: 1px #fcaa35 solid;
 }
-/* line 453, ../scss/style.scss */
+/* line 458, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item, .game-dropper .ui.scrolling.dropdown .menu .item.item.item {
   color: white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   background: #000000;
 }
-/* line 458, ../scss/style.scss */
+/* line 463, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item:hover, .game-dropper .ui.scrolling.dropdown .menu .item.item.item:hover {
   color: #fcaa35 !important;
 }
 
-/* line 482, ../scss/style.scss */
+/* line 487, ../scss/style.scss */
 .main-left-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-right: 10px;
 }
-/* line 486, ../scss/style.scss */
+/* line 491, ../scss/style.scss */
 .main-left-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 486, ../scss/style.scss */
+  /* line 491, ../scss/style.scss */
   .main-left-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 501, ../scss/style.scss */
+/* line 506, ../scss/style.scss */
 .main-right-selector {
   cursor: pointer;
   float: left;
   width: 25px;
   padding-left: 10px;
 }
-/* line 506, ../scss/style.scss */
+/* line 511, ../scss/style.scss */
 .main-right-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 506, ../scss/style.scss */
+  /* line 511, ../scss/style.scss */
   .main-right-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 521, ../scss/style.scss */
+/* line 526, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   width: 100%;
 }
 @media screen and (max-width: 750px) {
-  /* line 521, ../scss/style.scss */
+  /* line 526, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     overflow: auto;
     padding-left: 10px;
   }
 }
-/* line 532, ../scss/style.scss */
+/* line 537, ../scss/style.scss */
 .sports-window-ctr .sports-window-inr-wrp {
   width: 90%;
   margin: 0 auto;
@@ -2427,13 +2597,13 @@ body {
   border: white 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 532, ../scss/style.scss */
+  /* line 537, ../scss/style.scss */
   .sports-window-ctr .sports-window-inr-wrp {
     width: 100%;
   }
 }
 
-/* line 545, ../scss/style.scss */
+/* line 550, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -2441,7 +2611,7 @@ body {
   line-height: 1em;
 }
 @media screen and (max-width: 750px) {
-  /* line 545, ../scss/style.scss */
+  /* line 550, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     margin: 0 auto;
@@ -2450,12 +2620,12 @@ body {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 545, ../scss/style.scss */
+  /* line 550, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 570, ../scss/style.scss */
+/* line 575, ../scss/style.scss */
 .sports-windows .sports-window {
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -2469,44 +2639,44 @@ body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 578, ../scss/style.scss */
+/* line 583, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fcaa35 1px solid;
 }
 @media screen and (max-width: 750px) {
-  /* line 570, ../scss/style.scss */
+  /* line 575, ../scss/style.scss */
   .sports-windows .sports-window {
     border: #fcaa35 1px solid;
   }
 }
-/* line 588, ../scss/style.scss */
+/* line 593, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.625em;
   color: darkgrey;
 }
 @media screen and (max-width: 750px) {
-  /* line 588, ../scss/style.scss */
+  /* line 593, ../scss/style.scss */
   .sports-windows .sports-window-inner-title {
     display: none;
   }
 }
-/* line 599, ../scss/style.scss */
+/* line 604, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.8125em;
   font-weight: bold;
 }
-/* line 601, ../scss/style.scss */
+/* line 606, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname:last-child span {
   color: #61e063;
 }
-/* line 607, ../scss/style.scss */
+/* line 612, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   margin-left: 6%;
   font-weight: normal;
   font-size: 0.75em;
 }
 
-/* line 617, ../scss/style.scss */
+/* line 622, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 5px 5px 0px black;
   -webkit-box-shadow: 0px 5px 5px 0px black;
@@ -2519,12 +2689,12 @@ body {
   font-size: 0.6875em;
   padding-bottom: 1.25em;
 }
-/* line 627, ../scss/style.scss */
+/* line 632, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 632, ../scss/style.scss */
+/* line 637, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -2536,12 +2706,12 @@ body {
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 632, ../scss/style.scss */
+  /* line 637, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr {
     width: 293px;
   }
 }
-/* line 649, ../scss/style.scss */
+/* line 654, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   float: left;
   margin-top: 2px;
@@ -2553,26 +2723,26 @@ body {
   border-radius: 1.25em;
   border: orange 2px solid;
 }
-/* line 657, ../scss/style.scss */
+/* line 662, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
   float: left;
   background: green;
   margin-left: 0.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 657, ../scss/style.scss */
+  /* line 662, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
     margin-left: 0px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 649, ../scss/style.scss */
+  /* line 654, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 677, ../scss/style.scss */
+/* line 682, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams div {
   margin-top: 2px;
   vertical-align: bottom;
@@ -2582,19 +2752,19 @@ body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 677, ../scss/style.scss */
+  /* line 682, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams div {
     font-size: 0.875em;
     margin: 0px 0.75em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 694, ../scss/style.scss */
+  /* line 699, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 95%;
   }
 }
-/* line 700, ../scss/style.scss */
+/* line 705, ../scss/style.scss */
 .predictions-title .underliner {
   clear: both;
   margin: 0 auto;
@@ -2603,7 +2773,7 @@ body {
   height: 1px;
   margin-bottom: 1.25em;
 }
-/* line 708, ../scss/style.scss */
+/* line 713, ../scss/style.scss */
 .predictions-title .game-date {
   margin: 0.625em auto;
   font-size: 0.5em;
@@ -2611,7 +2781,7 @@ body {
   text-align: center;
 }
 
-/* line 718, ../scss/style.scss */
+/* line 723, ../scss/style.scss */
 .how-to-bar-ctr {
   overflow: auto;
   padding-top: 0.25em;
@@ -2619,28 +2789,28 @@ body {
   padding-left: 1.875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 718, ../scss/style.scss */
+  /* line 723, ../scss/style.scss */
   .how-to-bar-ctr {
     display: none;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 718, ../scss/style.scss */
+  /* line 723, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 731, ../scss/style.scss */
+/* line 736, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   float: right;
   font-size: 0.5em;
 }
-/* line 734, ../scss/style.scss */
+/* line 739, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt:hover {
   cursor: help;
 }
 
-/* line 739, ../scss/style.scss */
+/* line 744, ../scss/style.scss */
 .games-round-title {
   width: 55%;
   font-size: 0.5625em;
@@ -2649,7 +2819,7 @@ body {
   font-size: 0.5625em;
 }
 
-/* line 749, ../scss/style.scss */
+/* line 754, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   clear: both;
   width: 65.42857%;
@@ -2657,31 +2827,31 @@ body {
   margin-right: 0.57143%;
   font-family: "cooper-hewitt-bold";
 }
-/* line 755, ../scss/style.scss */
+/* line 760, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg, .round-games-scrollbar-ctr .caret-right-svg {
   width: 4%;
   padding-top: 3px;
   float: left;
 }
-/* line 761, ../scss/style.scss */
+/* line 766, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg {
   margin-right: 10px;
   float: left;
 }
-/* line 766, ../scss/style.scss */
+/* line 771, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-right-svg {
   float: right;
 }
-/* line 772, ../scss/style.scss */
+/* line 777, ../scss/style.scss */
 .round-games-scrollbar-ctr img {
   width: 100%;
 }
-/* line 775, ../scss/style.scss */
+/* line 780, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr {
   float: left;
   width: 87%;
 }
-/* line 783, ../scss/style.scss */
+/* line 788, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller {
   width: 100%;
   float: left;
@@ -2689,12 +2859,12 @@ body {
   line-height: 20px;
 }
 @media screen and (max-width: 750px) {
-  /* line 785, ../scss/style.scss */
+  /* line 790, ../scss/style.scss */
   .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller .round-games-responsive {
     display: none;
   }
 }
-/* line 795, ../scss/style.scss */
+/* line 800, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
   cursor: pointer;
   text-align: center;
@@ -2706,33 +2876,33 @@ body {
   margin-right: 1.14943%;
 }
 @media screen and (max-width: 750px) {
-  /* line 795, ../scss/style.scss */
+  /* line 800, ../scss/style.scss */
   .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
     width: 23%;
     float: left;
   }
 }
-/* line 801, ../scss/style.scss */
+/* line 806, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:first-child {
   display: block;
   background: none;
   clear: both;
 }
-/* line 812, ../scss/style.scss */
+/* line 817, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 815, ../scss/style.scss */
+/* line 820, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div span {
   color: #000000;
 }
-/* line 818, ../scss/style.scss */
+/* line 823, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:hover {
   background: #fcaa35;
 }
 
-/* line 826, ../scss/style.scss */
+/* line 831, ../scss/style.scss */
 .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -2749,13 +2919,13 @@ body {
   margin-bottom: 7px;
 }
 
-/* line 839, ../scss/style.scss */
+/* line 844, ../scss/style.scss */
 .main-sports-section {
   clear: both;
   margin-bottom: 2.8125em;
   overflow: auto;
 }
-/* line 844, ../scss/style.scss */
+/* line 849, ../scss/style.scss */
 .main-sports-section .main-sports-title {
   font-size: 1.125em;
   background: #000000;
@@ -2766,14 +2936,14 @@ body {
   text-align: center;
   padding-top: 0.125em;
 }
-/* line 855, ../scss/style.scss */
+/* line 860, ../scss/style.scss */
 .main-sports-section .team-points-bar {
   border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 860, ../scss/style.scss */
+/* line 865, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
@@ -2781,7 +2951,7 @@ body {
   float: left;
   padding-left: 1.875em;
 }
-/* line 865, ../scss/style.scss */
+/* line 870, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -2791,7 +2961,7 @@ body {
   margin-right: 0;
   text-align: center;
 }
-/* line 874, ../scss/style.scss */
+/* line 879, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -2799,12 +2969,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 874, ../scss/style.scss */
+  /* line 879, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 880, ../scss/style.scss */
+/* line 885, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
   color: #fcaa35;
@@ -2818,33 +2988,33 @@ body {
   font-size: 0.75em;
   float: left;
 }
-/* line 890, ../scss/style.scss */
+/* line 895, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 897, ../scss/style.scss */
+/* line 902, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 901, ../scss/style.scss */
+/* line 906, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 905, ../scss/style.scss */
+/* line 910, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 901, ../scss/style.scss */
+  /* line 906, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 916, ../scss/style.scss */
+/* line 921, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -2852,12 +3022,12 @@ body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 916, ../scss/style.scss */
+  /* line 921, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 922, ../scss/style.scss */
+/* line 927, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
@@ -2870,30 +3040,30 @@ body {
   border: black 1px solid;
   float: left;
 }
-/* line 930, ../scss/style.scss */
+/* line 935, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 937, ../scss/style.scss */
+/* line 942, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 941, ../scss/style.scss */
+/* line 946, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 952, ../scss/style.scss */
+/* line 957, ../scss/style.scss */
 .main-sports-section .lmp-running-inner {
   margin-top: 1.125em;
   overflow: auto;
 }
-/* line 956, ../scss/style.scss */
+/* line 961, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-title {
   background: #000000;
   border: #343434 1px solid;
@@ -2903,7 +3073,7 @@ body {
   padding-top: 2px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 967, ../scss/style.scss */
+/* line 972, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title {
   background: #262626;
   height: 20px;
@@ -2911,14 +3081,14 @@ body {
   font-size: 0.75em;
   border-bottom: #000000 2px solid;
 }
-/* line 973, ../scss/style.scss */
+/* line 978, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div {
   font-family: "roboto-thin";
   padding-left: 75px;
   width: 66.66667%;
   float: left;
 }
-/* line 977, ../scss/style.scss */
+/* line 982, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div:last-child {
   width: 33.33333%;
   float: left;
@@ -2927,23 +3097,23 @@ body {
   text-align: center;
   padding-left: 0;
 }
-/* line 986, ../scss/style.scss */
+/* line 991, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-main:first-child {
   border-top: #000000 2px solid;
 }
-/* line 990, ../scss/style.scss */
+/* line 995, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team {
   background: #1c1c1c;
   overflow: auto;
   font-family: 'cooper-hewitt-bold';
 }
 @media screen and (max-width: 750px) {
-  /* line 990, ../scss/style.scss */
+  /* line 995, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team {
     font-size: 12px;
   }
 }
-/* line 1000, ../scss/style.scss */
+/* line 1005, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
   width: 66.66667%;
   float: left;
@@ -2951,15 +3121,16 @@ body {
   padding-top: 13px;
   border-right: #000000 2px solid;
   border-bottom: #000000 2px solid;
-  overflow: auto;
+  overflow: hidden;
+  letter-spacing: 0.02em;
 }
 @media screen and (max-width: 750px) {
-  /* line 1000, ../scss/style.scss */
+  /* line 1005, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
     padding-top: 9px;
   }
 }
-/* line 1011, ../scss/style.scss */
+/* line 1017, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left .lmp-team-color {
   float: left;
   width: 5px;
@@ -2969,23 +3140,23 @@ body {
   margin-left: 2.1875em;
   margin-top: -0.375em;
 }
-/* line 1021, ../scss/style.scss */
+/* line 1027, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left span:nth-child(2) {
   margin-left: 3px;
   color: #fcaa35;
 }
-/* line 1026, ../scss/style.scss */
+/* line 1032, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div {
   font-size: 0.6875em;
   font-family: 'roboto-thin';
 }
-/* line 1031, ../scss/style.scss */
+/* line 1037, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div span {
   margin-left: 3px;
   font-size: 14px;
   font-size: bold;
 }
-/* line 1038, ../scss/style.scss */
+/* line 1044, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right {
   overflow: hidden;
   width: 33.33333%;
@@ -2998,15 +3169,15 @@ body {
   padding: 2px;
   border-bottom: #000000 2px solid;
 }
-/* line 1049, ../scss/style.scss */
+/* line 1055, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score {
   text-align: center;
 }
-/* line 1057, ../scss/style.scss */
+/* line 1063, ../scss/style.scss */
 .main-sports-section .results-summary-ctr {
   margin-top: 30px;
 }
-/* line 1059, ../scss/style.scss */
+/* line 1065, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .results-summary-title {
   text-align: center;
   font-family: "cooper-hewitt-bold";
@@ -3017,36 +3188,36 @@ body {
   border: #343434 1px solid;
   padding-top: 2px;
 }
-/* line 1071, ../scss/style.scss */
+/* line 1077, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main {
   height: 5.625em;
   background: #1c1c1c;
 }
-/* line 1076, ../scss/style.scss */
+/* line 1082, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
   padding-top: 20px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 1076, ../scss/style.scss */
+  /* line 1082, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
     width: 99%;
     margin: 0 auto;
     padding-top: 18px;
   }
 }
-/* line 1088, ../scss/style.scss */
+/* line 1094, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div {
   width: 33.33333%;
   float: left;
 }
-/* line 1091, ../scss/style.scss */
+/* line 1097, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1094, ../scss/style.scss */
+/* line 1100, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
   text-align: right;
   margin-right: 10px;
@@ -3056,7 +3227,7 @@ body {
   color: #fcaa35;
 }
 @media screen and (max-width: 750px) {
-  /* line 1094, ../scss/style.scss */
+  /* line 1100, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
     text-align: left;
     padding-left: 5px;
@@ -3066,7 +3237,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1114, ../scss/style.scss */
+/* line 1120, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
   text-align: left;
   width: 50%;
@@ -3075,12 +3246,12 @@ body {
   font-family: "cooper-hewitt-bold";
 }
 @media screen and (max-width: 750px) {
-  /* line 1114, ../scss/style.scss */
+  /* line 1120, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat {
     font-size: 1.5em;
   }
 }
-/* line 1125, ../scss/style.scss */
+/* line 1131, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-sub {
   text-align: center;
   float: left;
@@ -3088,7 +3259,7 @@ body {
   font-size: 0.625em;
   margin-left: 56px;
 }
-/* line 1139, ../scss/style.scss */
+/* line 1145, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -3102,29 +3273,29 @@ body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 1150, ../scss/style.scss */
+/* line 1156, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 1154, ../scss/style.scss */
+/* line 1160, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1163, ../scss/style.scss */
+/* line 1169, ../scss/style.scss */
 .main-sports-section .simulations-ctr {
   margin-top: 30px;
   width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 1166, ../scss/style.scss */
+/* line 1172, ../scss/style.scss */
 .main-sports-section .simulations-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1163, ../scss/style.scss */
+  /* line 1169, ../scss/style.scss */
   .main-sports-section .simulations-ctr {
     width: 100%;
     float: left;
@@ -3132,11 +3303,11 @@ body {
     margin-right: 0;
   }
 }
-/* line 1188, ../scss/style.scss */
+/* line 1194, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 1192, ../scss/style.scss */
+/* line 1198, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -3145,11 +3316,11 @@ body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 1201, ../scss/style.scss */
+/* line 1207, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 1206, ../scss/style.scss */
+/* line 1212, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   text-align: center;
   background: #000000;
@@ -3159,18 +3330,18 @@ body {
   line-height: 2.1875em;
   border: solid 1px #343434;
 }
-/* line 1218, ../scss/style.scss */
+/* line 1224, ../scss/style.scss */
 .main-sports-section .sports-expander {
   overflow: auto;
   clear: both;
   padding-bottom: 10px;
 }
-/* line 1233, ../scss/style.scss */
+/* line 1239, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
   border: #1c1c1c 1px solid;
   overflow: auto;
 }
-/* line 1237, ../scss/style.scss */
+/* line 1243, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-title {
   text-align: center;
   font-family: "roboto-thin";
@@ -3179,7 +3350,7 @@ body {
   height: 4.375em;
   line-height: 4.375em;
 }
-/* line 1246, ../scss/style.scss */
+/* line 1252, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main {
   width: 100%;
   clear: both;
@@ -3188,49 +3359,49 @@ body {
   background-size: 105%;
   overflow: auto;
 }
-/* line 1255, ../scss/style.scss */
+/* line 1261, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
   width: 24.5%;
   text-align: right;
   float: left;
 }
-/* line 1264, ../scss/style.scss */
+/* line 1270, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
   float: left;
   width: 50%;
 }
-/* line 1273, ../scss/style.scss */
+/* line 1279, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr {
   width: 120px;
   margin: 0 auto;
 }
-/* line 1278, ../scss/style.scss */
+/* line 1284, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr .hc-pie {
   height: 5em;
 }
-/* line 1291, ../scss/style.scss */
+/* line 1297, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
   float: right;
   width: 24.5%;
   text-align: left;
   height: 5em;
 }
-/* line 1301, ../scss/style.scss */
+/* line 1307, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top {
   height: 3.75em;
 }
-/* line 1305, ../scss/style.scss */
+/* line 1311, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom {
   height: 5em;
 }
-/* line 1312, ../scss/style.scss */
+/* line 1318, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom {
   height: 3.4375em;
   border: #343434 1px solid;
   background: #1c1c1c;
   clear: both;
 }
-/* line 1318, ../scss/style.scss */
+/* line 1324, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats {
   font-family: "roboto-thin";
   text-align: center;
@@ -3238,16 +3409,16 @@ body {
   float: left;
   margin-top: 0.3125em;
 }
-/* line 1319, ../scss/style.scss */
+/* line 1325, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats:nth-child(2) {
   padding-top: 25px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 1327, ../scss/style.scss */
+/* line 1333, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats span {
   font-size: 0.75em;
 }
-/* line 1330, ../scss/style.scss */
+/* line 1336, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats div {
   font-family: "cooper-hewitt-bold";
   border: 1px solid #61e063;
@@ -3258,7 +3429,7 @@ body {
   padding: 2px;
 }
 
-/* line 1346, ../scss/style.scss */
+/* line 1352, ../scss/style.scss */
 .team-stats-ctr {
   margin-top: 30px;
   width: 49.61832%;
@@ -3266,13 +3437,13 @@ body {
   margin-right: 0.76336%;
   min-height: 200px;
 }
-/* line 1350, ../scss/style.scss */
+/* line 1356, ../scss/style.scss */
 .team-stats-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1346, ../scss/style.scss */
+  /* line 1352, ../scss/style.scss */
   .team-stats-ctr {
     width: 100%;
     float: left;
@@ -3280,7 +3451,7 @@ body {
     margin-right: 0;
   }
 }
-/* line 1361, ../scss/style.scss */
+/* line 1367, ../scss/style.scss */
 .team-stats-ctr .team-stats-title {
   background: #000000;
   height: 35px;
@@ -3288,12 +3459,12 @@ body {
   text-align: center;
   border: 1px solid #343434;
 }
-/* line 1369, ../scss/style.scss */
+/* line 1375, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title {
   background: #1c1c1c;
   overflow: auto;
 }
-/* line 1374, ../scss/style.scss */
+/* line 1380, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div {
   height: 25px;
   line-height: 25px;
@@ -3305,34 +3476,34 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1383, ../scss/style.scss */
+/* line 1389, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:first-child {
   padding-left: 10px;
   text-align: left;
   width: 33.33333%;
   float: left;
 }
-/* line 1389, ../scss/style.scss */
+/* line 1395, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1400, ../scss/style.scss */
+/* line 1406, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row {
   clear: both;
   font-size: 11px;
   font-family: "cooper-hewitt-bold";
   overflow: auto;
 }
-/* line 1408, ../scss/style.scss */
+/* line 1414, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(odd) {
   background: #0c0c0c;
 }
-/* line 1411, ../scss/style.scss */
+/* line 1417, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 1415, ../scss/style.scss */
+/* line 1421, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div {
   height: 30px;
   line-height: 30px;
@@ -3342,7 +3513,7 @@ body {
   width: 16.66667%;
   float: left;
 }
-/* line 1424, ../scss/style.scss */
+/* line 1430, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:first-child {
   padding-left: 10px;
   width: 33.33333%;
@@ -3351,14 +3522,14 @@ body {
   background: #262626;
   border-right: 2px #000000 solid;
 }
-/* line 1434, ../scss/style.scss */
+/* line 1440, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:last-child {
   float: right;
   margin-right: 0;
   border-right: none;
 }
 
-/* line 1448, ../scss/style.scss */
+/* line 1454, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -3366,7 +3537,7 @@ body {
   text-align: center;
 }
 
-/* line 1456, ../scss/style.scss */
+/* line 1462, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -3374,7 +3545,7 @@ body {
   background: skyblue;
 }
 
-/* line 1464, ../scss/style.scss */
+/* line 1470, ../scss/style.scss */
 .icon-footer {
   padding-top: 50px;
   height: 20vh;
@@ -3383,40 +3554,40 @@ body {
   clear: both;
   background: #000000;
 }
-/* line 1473, ../scss/style.scss */
+/* line 1479, ../scss/style.scss */
 .icon-footer div {
   width: 26.66667%;
   float: left;
 }
-/* line 1475, ../scss/style.scss */
+/* line 1481, ../scss/style.scss */
 .icon-footer div i {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1481, ../scss/style.scss */
+/* line 1487, ../scss/style.scss */
 .icon-footer div img {
   padding-top: 40px;
   width: 100px;
 }
 @media screen and (max-width: 750px) {
-  /* line 1481, ../scss/style.scss */
+  /* line 1487, ../scss/style.scss */
   .icon-footer div img {
     width: 85%;
   }
 }
-/* line 1489, ../scss/style.scss */
+/* line 1495, ../scss/style.scss */
 .icon-footer div p {
   font-size: 10px;
   font-family: "roboto-thin";
   margin-top: 20px;
 }
-/* line 1496, ../scss/style.scss */
+/* line 1502, ../scss/style.scss */
 .icon-footer div:nth-child(2) {
   width: 46.66667%;
   float: left;
 }
-/* line 1499, ../scss/style.scss */
+/* line 1505, ../scss/style.scss */
 .icon-footer div:last-child {
   float: right;
   margin-right: 0;

@@ -76,6 +76,10 @@ $break-medium: 850px;
 
 
     .rtmc-top{
+
+
+
+
       font-family: 'roboto-thin';
       font-size: em(11px);
       width: 100%;
@@ -83,14 +87,31 @@ $break-medium: 850px;
       margin-bottom: em(15px);
       // border: red 1px solid;
       div{
+
         padding-left: em(5px);
         // border: solid 1px blue;
         @include span (8 of 16);
         &:last-child{
           @include last();
+          // color: red;
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
         }
       }
     }
+    .rtmc-top-resp{
+      font-family: 'roboto-thin';
+      margin-bottom: em(15px);
+      font-size: em(11px);
+      width: 100%;
+      padding-left: em(5px);
+      @media screen and (min-width: $break-small) {
+        display: none
+      }
+
+    }
+
     .rtmc-selector-buttons{
       margin-top: em(20px);
       width: 100%;
@@ -112,6 +133,12 @@ $break-medium: 850px;
           background: $orange;
           cursor: pointer;
         }
+        @media screen and (max-width: $break-small) {
+          @include span(1 of 4);
+          &:nth-child(4){
+            @include last();
+          }
+        }
       }
     }
     .rtmc-tables{
@@ -119,7 +146,11 @@ $break-medium: 850px;
       width: 100%;
 
       border: 1px pink 1px;
-      .rtmc-table{
+
+      .rtmc-table-wrp{
+        @media screen and (max-width: $break-small) {
+          width: 100%;
+        }
 
 
         @include span(8 of 16);

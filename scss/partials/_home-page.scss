@@ -50,9 +50,9 @@ $break-medium: 850px;
 }
 
 .sports-icons-ctr{
-  overflow: auto;
+  overflow: hidden;
   border: 1px $dark-border solid;
-  background: purple;
+  background: $black;
   margin-bottom: em(20px);
 
   div{
@@ -60,8 +60,9 @@ $break-medium: 850px;
     width: 16.666666%;
     @include float-left();
     text-align: center;
-    height: em(47px);
+    min-height: 56px;
     padding-top: em(6px);
+    padding-bottom: em(6px);
     border-right: 1px solid $dark-border;
     &:last-child{
       border-right: 0px solid $dark-border;
@@ -196,6 +197,8 @@ $break-medium: 850px;
 .up-coming-matches-ctr{
   // background: yellow;
   .upcoming-matches-title{
+    letter-spacing: 0.02em;
+    font-family: "cooper-hewitt-bold";
     text-align: center;
     padding: em(10px);
     background: $black;
@@ -221,7 +224,8 @@ $break-medium: 850px;
       background: $nav-lighter;
       color: $white;
       overflow: auto;
-      padding: em(5px);
+      padding: em(10px);
+      letter-spacing: 0.04em;
 
       .um-title-team{
         padding-left: em(85px);
@@ -267,7 +271,7 @@ $break-medium: 850px;
         background: $nav-color;
         @include span(3 of 12 (gutters:0) );
         @include last();
-        height: 155px;
+        height: 153px;
         text-align: center;
         position: relative;
         // padding-top: 25px;
@@ -310,6 +314,7 @@ $break-medium: 850px;
         //  height: 190px;
 
         .um-team{
+          letter-spacing: 0.02em;
           // border: red 1px solid;
           background: $nav-lighter;
           @include span(7 of 12 (gutters:0) );
