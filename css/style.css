@@ -1143,6 +1143,7 @@ table {
 .projected-ladder-table .pl-main-table .pl-main-table-row {
   font-family: 'cooper-hewitt-bold';
   overflow: hidden;
+  letter-spacing: 0.02em;
   clear: both;
   background: blue;
   border-bottom: 1px solid #000000;
