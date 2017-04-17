@@ -8,21 +8,24 @@ $break-medium: 850px;
   color: $white;
   font-size: em(4px);
   text-align: left;
-  font-family: 'cooper-hewitt-bold';
+  font-family: 'roboto-bold';
   margin-bottom: em(15px);
   letter-spacing: 0.08em;
+  margin-top: -15px;
+}
+
+.sports-icon-ttl{
+  letter-spacing: 0.08em;
+  font-family: "cooper-hewitt-bold";
+  margin-bottom: 5px;
+  font-size: em(8px);
 }
 
 .projections-sport-icons-wrap{
 
   width: 40%;
   @include float-left();
-  h2{
-    letter-spacing: 0.08em;
-    font-family: "cooper-hewitt-bold";
-    margin-bottom: 5px;
-    font-size: em(12px);
-  }
+
 }
 .pro-main-orange-button-ctr{
   width: 40%;
@@ -35,6 +38,7 @@ $break-medium: 850px;
 
 .projected-ladder-table{
   margin-bottom: em(40px);
+  clear: both;
 
   .title-wrap{
     background: $black;
@@ -162,8 +166,7 @@ $break-medium: 850px;
       }
       .plmt-points-ctr{
 
-        // padding-top: em(3px);
-        font-size: em(14px);
+        font-size: em(10px);
         height: 36px;
         line-height: 36px;
 

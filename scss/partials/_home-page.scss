@@ -53,32 +53,39 @@ $break-medium: 850px;
   overflow: hidden;
   border: 1px $dark-border solid;
   background: $black;
+  display: flex;
   margin-bottom: em(20px);
-
-  div{
+  .sports-icon-individual{
     background: $black;
     width: 16.666666%;
+    overflow: auto;
+    align-items: stretch;
     @include float-left();
-    text-align: center;
-    min-height: 56px;
-    padding-top: em(6px);
-    padding-bottom: em(6px);
     border-right: 1px solid $dark-border;
     &:last-child{
       border-right: 0px solid $dark-border;
     }
+    div{
 
-    img{
-      max-width: 70%;
-      margin: 0 auto;
-      vertical-align: bottom;
+      width: 100%;
+      text-align: center;
+      padding-top: em(6px);
+      padding-bottom: em(6px);
+
+      img{
+        max-width: 70%;
+        margin: 0 auto;
+        vertical-align: bottom;
+      }
+
     }
     &:hover{
       background: $orange;
-      border: 1px $orange solid;
+      // border: 1px $orange solid;
       cursor: pointer;
     }
   }
+
 
 }
 
@@ -204,9 +211,10 @@ $break-medium: 850px;
     background: $black;
     border: $dark-border 1px solid;
     padding-top: 13px;
+    margin-bottom: 20px;
   }
   .upcoming-matches-dropper{
-    padding: em(10px);
+    // padding: em(10px);
   }
 
 
@@ -214,7 +222,7 @@ $break-medium: 850px;
   .upcoming-match-ctr{
 
     margin-bottom: em(30px);
-    background: $nav-color;
+    // background: $nav-color;
     width: 100%;
 
     .um-title{
@@ -228,10 +236,11 @@ $break-medium: 850px;
       letter-spacing: 0.04em;
 
       .um-title-team{
-        padding-left: em(85px);
+        padding-left: 46px;
         @include span(7 of 12 (gutters:0) );
         @media screen and (max-width: $break-small) {
           @include span(6 of 10 (gutters:0) );
+          padding-left: 57px;
         };
       }
       .um-title-odd{
@@ -280,28 +289,30 @@ $break-medium: 850px;
           font-family: "roboto-thin";
         }
         div{
-          i{
+          img{
             margin-top: 15px;
             font-size: 20px;
+            cursor: pointer;
+            width: 25px;
             &:first-child{
-              margin-right: 15px;
+              margin-right: 5px;
             }
-            &:hover{
-              transition: .3s;
-              color: $orange;
-              cursor: pointer;
-            }
+            // &:hover{
+            //   transition: .3s;
+            //   color: $orange;
+            //   cursor: pointer;
+            // }
           }
         }
 
         .um-live-ctr{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        // width: 20px;
-        // height: 10px;
-        padding: 8px 17px 5px 17px;
-        background: $green;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          letter-spacing: 0.02em;
+          // height: 10px;
+          padding: 8px 17px 5px 17px;
+          background: $green;
         }
       }
       .um-left{
@@ -346,12 +357,14 @@ $break-medium: 850px;
             };
             // $break-medium: 850px;
             float: left;
-            width: 5px;
-            height: 35px;
+            margin-left: em(15px);
+            margin-right: em(20px);
             background: $maroon;
-            margin-right: em(35px);
-            margin-left: em(35px);
-            margin-top: em(-6px);
+            // margin-right: em(35px);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            border: $orange 1px solid;
 
 
 

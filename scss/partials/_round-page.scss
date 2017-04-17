@@ -3,9 +3,14 @@ $break-small: 750px;
 $break-large: 1030px;
 $break-medium: 850px;
 
+.arrow-img{
+  width: 10px;
+  cursor:pointer;
+}
 
 
 .large-orange-button{
+  font-family: "roboto-thin";
   // clear:both;
   // color: blue;
   cursor: pointer;
@@ -74,7 +79,7 @@ $break-medium: 850px;
 
     // z-index: -10;
     .ps-ladder-top{
-      width: 50%;
+      width: 62%;
       position:relative;
       bottom:0px;
       background: black;
@@ -112,13 +117,17 @@ $break-medium: 850px;
       }
       .ps-team{
         // padding: em(2px);
+        letter-spacing: 0.02em;
+        color: orange;
         font-size: em(10px);
         padding-left: em(8px);
         height: 100%;
         background: $nav-lighter;
         // border: $nav-color 1px solid;
         @include span(10.5 of 16);
-
+        span{
+          color: white;
+        }
       }
       .ps-score{
         height: 100%;
@@ -145,16 +154,22 @@ $break-medium: 850px;
   }
 
   .project-season-title{
+    font-size: em(12px);
     border: $dark-border 1px solid;
     text-align: center;
-    padding-bottom: em(2px);
-    padding-top: em(6px);
+    padding-bottom: 6px;
+    padding-top: 10px;
   }
 
 
 .main-article-wrap{
+  max-height: 390px;
+  overflow:hidden;
+  position: relative;
+  font-family: 'cooper-hewitt-bold';
   @media screen and (max-width: $break-small) {
     width: 100%;
+    margin-bottom: 20px
   };
 
   @include span(13 of 16);
@@ -163,54 +178,78 @@ $break-medium: 850px;
     @media screen and (min-width: $break-small) {
       margin-right: em(10px);
     };
-    // width: 100%;
-    height: em(390px);
     margin: 0 auto;
+    // margin-bottom: em(20px);]
+    img{
+      width: 110%;
+    }
 
-    // z-index: -10;
-    // float: left;
-    background: $grey;
-    margin-bottom: em(20px);
-    // overflow: hidden;
+  }
+  .main-a-title{
+    font-size: em(22px);
+    color: white;
+    position: absolute;
+    width: 35%;
+    left: 15px;
+    bottom: 15px;
+    line-height: 25px;
+  }
+  .main-a-match-date{
+    border: $orange 1px solid;
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    bottom: 0;
+    right: 10px;
+    div{
+      padding-top: 7%;
+      text-align: center;
+      height: 100%;
+      color: $orange;
+      overflow: auto;
 
+      background: $white;
+      font-size: em(18px);
+      @include span(1 of 2 (gutters:0) );
+      &:last-child{
+        border-left: $orange 1px solid;
+        color:$white;
+        background: $black;
+        @include last();
+        // color: red;
+      }
 
-    // @include float-left;
+    }
 
   }
 
-
 }
-
-
 
   .article-left-btn{
     float:left;
     cursor: pointer;
     margin-top: em(50px);
-    margin-right: em(-20px);
+    // margin-right: em(-20px);
     padding-left: em(6px);
     font-size: em(40px);
-    color: black;
-    // @include border-radius(25px);
-    // background: grey;
+    color:$grey;
+
     z-index: 100;
-    position: relative;
+    position: absolute;
     &:hover{
       color:$orange;
         font-weight: bold;
     }
   }
   .article-right-btn{
-    // float:right;
-    // @include border-radius(25px);
-    color: black;
+
+    color:$grey;
     font-size: em(40px);
     cursor: pointer;
     z-index: 100;
-    top: em(50px);
-    margin-left: -30px;
-    // background: grey;
-    position: relative;
+    top: 36%;
+    right: 6%;
+    position: absolute;
     &:hover{
       color:$orange;
       font-weight: bold;
@@ -295,6 +334,7 @@ $break-medium: 850px;
       // padding-top: em(6px);
 
     .plbtn-inner{
+      font-family: "roboto-thin";
       height:em(50px);
       background: $orange;
       width: 100%;
@@ -327,24 +367,21 @@ $break-medium: 850px;
   }
   width: 85%;
   overflow: auto;
-  // background: red;
-  // height: 100px;
+
   margin: 0 auto;
-  // border: red 1px solid;
 }
 .round-button-container{
   @media screen and (max-width: $break-small) {
-    width: 80%;
+    width: 84%;
   };
 
-  // text-align: center;
+
   @include float-left();
-  // border: solid 1px blue;
-  height: 50px;
-  line-height: 50px;
-  //  @include span(14);
+  font-size: em(10px);
+
+
   width: 90%;
-  margin: 0 auto;
+  margin: 6px auto 0px auto;
   .rbc-resp{
     @media screen and (max-width: $break-small) {
       display: none;
@@ -352,6 +389,48 @@ $break-medium: 850px;
   }
 
 }
+
+.round-page-round-title{
+  letter-spacing: 0.02em;
+  width: 100%;
+  padding: 14px;
+  font-family: 'cooper-hewitt-bold';
+  background: $black;
+  clear: both;
+  border: 1px solid $grey;
+  font-size: em(19px);
+  .rprt-inner{
+    // margin-top: em(10px);
+    .rprt-round{
+      padding:em(6px);
+      // border: red 1px solid;
+      margin: 0 auto;
+      // width: 30%;
+      text-align: center;
+    }
+
+  }
+  .underliner{
+      width: 20px;
+      border-bottom: 1px solid $grey;
+      margin: 0 auto;
+
+      text-align: center;
+  }
+  .game-date{
+    font-size:12px;
+    font-family: 'roboto-thin';
+    // border: red 1px solid;
+    margin: 0 auto;
+    // width: 30%;
+    text-align: center;
+    padding:em(10px);
+
+
+  }
+}
+
+
 .rounds {
   @media screen and (max-width: $break-small) {
     @include span(1 of 10);
@@ -361,16 +440,14 @@ $break-medium: 850px;
     }
   };
   @include span(1 of 25);
-  // margin-left: 0.5%;
-  // margin-right: 0.5%;
-  // margin-top: em(10px);
+  font-family:'cooper-hewitt-bold';
   line-height: em(32px);
-  width: 3.3%;
+  width: 3%;
+  margin-right: 0.8%;
   height: em(27px);
-  // border: white 1px ;
-  // vertical-align: bottom;
+
   text-align: center;
-  // background: black;
+  background: $black;
   &:hover{
     // background: $orange;
     cursor: pointer;
@@ -387,10 +464,12 @@ $break-medium: 850px;
   @include float-left();
   margin-right: 5%;
     font-size: em(20px);
+    cursor:pointer;
 }
 
 .rounds-arrow-left, .rounds-arrow-right{
   margin-top: em(3px);
+
   &:hover{
     color: $orange;
     cursor:pointer;
@@ -420,7 +499,7 @@ $break-medium: 850px;
     font-size: em(11px);
     font-family: "roboto-thin";
     span:first-child{
-      font-family:'cooper-hewitt-bold';
+      font-family: "roboto-bold";
       margin-right: em(2px);
     }
     span:nth-child(2){
@@ -428,6 +507,26 @@ $break-medium: 850px;
       margin-top: em(2px);
       font-family:'cooper-hewitt-bold';
     }
+  }
+
+  .match-round-team-stats-ctr{
+    position: relative;
+    .mrt-in-progress{
+      width: 23%;
+      // border: white 2px solid;
+      top: 73px;
+      right: 8%;
+      position: absolute;
+      font-size: em(12px);
+      font-family: 'roboto-thin';
+      text-align: center;
+      @media screen and (max-width: $break-small) {
+        top: 91px;
+      }
+    }
+
+
+
   }
 
   .match-round-team-title{
@@ -438,6 +537,7 @@ $break-medium: 850px;
   }
 
   .mrt-team-ctr{
+    font-size: em(15px);
     letter-spacing: 0.02em;
     @media screen and (max-width: $break-small) {
      height: 80px;
@@ -485,7 +585,7 @@ $break-medium: 850px;
      padding-top: 5%;
     }
     // height:  100%;
-    padding-top: em(11px);
+    padding-top: em(14px);
     padding-left: em(23px);
     font-family: 'cooper-hewitt-bold';
     background: $nav-color;
@@ -526,8 +626,9 @@ $break-medium: 850px;
     text-align: center;
     font-family: 'cooper-hewitt-bold';
     padding-top: em(9px);
-    font-size: em(25px);
+    font-size: em(20px);
     height: 100%;
+    line-height: 40px;
   }
 
 
@@ -596,25 +697,37 @@ $break-medium: 850px;
   @include last();
 }
 
-.detailed-match-link-btn, .countdown-to-match{
+.detailed-match-link-btn{
+  border: $orange 1px solid;
+}
+
+.detailed-match-link-btn, .countdown-to-match,
+ .countdown-to-match-live, .countdown-to-match-starting{
   width: 50%;
+  cursor:pointer;
   @media screen and (max-width: $break-small) {
    width: 100%;
   }
 
   @include float-left();
-  // padding-top: em(13px);
-  line-height: em(45px);
-  height: em(45px);
-  border: $orange 1px solid;
+  line-height: 30px;
+  height: 35px;
+
   background: $main;
   text-align: center;
-  font-size: em(13px);
+  font-size: em(10px);
   font-family: "roboto-thin";
   font-weight: bold;
 }
+.countdown-to-match-live{
+  background: $green;
+}
+
 .countdown-to-match{
   background: $orange;
+}
+.countdown-to-match-starting{
+  background: $red;
 }
 
 .advert-full-width-ctr{
@@ -628,14 +741,12 @@ $break-medium: 850px;
   overflow: hidden;
   &:hover{
     cursor: pointer;
-    border: $orange 1px solid;
+    // border: $orange 1px solid;
   }
   clear: both;
-  background: grey;
   min-height: em(50px);
   margin-bottom: 35px;
   width: 100%;
-  border: #696969 solid 1px;
 
   img{
     width: 100%;

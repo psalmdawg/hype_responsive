@@ -87,7 +87,7 @@ $( window ).resize(function() {
         speed: 600,
         slidesToShow: 5,
         slidesToScroll: 2,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 9000,
 
         responsive: [

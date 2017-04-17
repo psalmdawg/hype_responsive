@@ -50,39 +50,48 @@
           font-family: "cooper-hewitt-bold";
           letter-spacing: 0.02em;
           @include span(7 of 12);
+
           .lr-team-color{
             @media screen and (max-width: $break-small) {
-              margin-right: 6px;
+              margin-right: 20px;
               margin-left: 6px;
             }
             float: left;
-            width: 5px;
-            height: 35px;
+            margin-left: em(15px);
+            margin-right: em(20px);
             background: $maroon;
-            margin-right: em(35px);
-            margin-left: em(35px);
-            margin-top: em(-5px);
+            // margin-right: em(35px);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            border: $orange 1px solid;
           }
-          span{
-            &:nth-child(2){
+          .lr-tt-team-inr{
+            float: left;
+            width: 74%;
+            // border: white 1px solid;
+            span{
               color: $orange;
             }
-          }
-          div{
-            @media screen and (max-width: $break-small) {
-              font-size: em(11px);
+            div{
+              @media screen and (max-width: $break-small) {
+                font-size: em(11px);
+                padding-left: 0px;
+              }
+              margin-top: em(6px);
+              font-family: 'roboto-thin';
+              font-size: em(12px);
+              // padding-left: 55px;
+              span{
+                font-weight: bold;
+                font-size: em(18px);
+                font-family: "cooper-hewitt-bold";
+                margin-left: em(5px);
+                vertical-align: middle;
+              }
             }
-            margin-top: em(6px);
-            font-family: 'roboto-thin';
-            font-size: em(12px);
-            span{
-              font-weight: bold;
-              font-size: em(18px);
-              font-family: "cooper-hewitt-bold";
-              margin-left: em(5px);
-              vertical-align: middle;
-            }
           }
+
         }
 
         .lr-tt-right{
@@ -261,7 +270,7 @@
     background: $grey;
     width: 100%;
     // height: em(100px);
-    margin-bottom: em(30px);
+    // margin-bottom: em(30px);
 
     div{
       color: $black;
@@ -281,6 +290,14 @@
         font-size: em(26px);
       }
     }
+  }
+  .countdown-red{
+    background: $red;
+    text-align: center;
+    font-family: 'roboto-thin';
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
   }
 }
 

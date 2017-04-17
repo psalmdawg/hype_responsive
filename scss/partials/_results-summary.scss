@@ -4,8 +4,14 @@ $break-small: 750px;
 $break-large: 1030px;
 $break-medium: 850px;
 
+
+.sports-icons-ctr-rswrap{
+  width: 30%;
+}
+
 .all-time-value-bet-smry{
-    font-family: "cooper-hewitt-bold";
+  font-family: "cooper-hewitt-bold";
+  clear: both;
   .atvb-inner{
     .atvb-title{
       text-align: center;
@@ -17,6 +23,7 @@ $break-medium: 850px;
       border: $dark-border 1px solid;
     }
     .atvb-main{
+
       padding-left: 15px;
       @media screen and (max-width: $break-small) {
         padding-left: 0;
@@ -37,7 +44,7 @@ $break-medium: 850px;
         }
         padding-top: em(12px);
         padding-left: 0.5%;
-        height: em(40px);
+        height: 90px;
         // line-height: em(40px);
         font-size: em(30px);
         // background:lighten(pink, 10%);
@@ -70,6 +77,11 @@ $break-medium: 850px;
         // border: 1px solid $white;
         padding-top: em(1px);
         overflow: auto;
+        .atvb-punt{
+          font-family: 'roboto-thin';
+          font-size: em(3px);
+          padding-bottom: 5px;
+        }
         .atvb-stat-sub{
           font-size: em(3px);
         }
@@ -167,6 +179,9 @@ $break-medium: 850px;
       border: 1px pink 1px;
 
       .rtmc-table-wrp{
+        height: 308px;
+        overflow: auto;
+
         @media screen and (max-width: $break-small) {
           width: 100%;
         }
