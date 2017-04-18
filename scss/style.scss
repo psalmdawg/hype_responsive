@@ -26,13 +26,9 @@ a{
   cursor: pointer;
 }
 
-// .clearfix {
-//   content: ".";
-//   display: block;
-//   height: 0;
-//   clear: both;
-//   visibility: hidden;
-// }
+.clearfix {
+  clear: both;
+}
 
 $break-small: 750px;
 $break-large: 1030px;
@@ -179,6 +175,7 @@ html,body {
 .page-help-link{
   font-size: 7px;
   font-family: "roboto-thin";
+  margin-top: 10px;
 }
 
 //***********************
@@ -402,9 +399,10 @@ html,body {
 
 .tweet-bar{
   clear: both;
+  overflow: auto;
   font-size: em(10px);
   margin-top: em(5px);
-  height: em(25px);
+  // height: em(25px);
   line-height: em(25px);
   // background-color: $main;
   @media screen and (max-width:  $break-small){
@@ -595,6 +593,7 @@ html,body {
       // }
 
     .sports-window {
+      position: relative;
       @include border-radius(em(2px));
       min-height: em(55px);
       border: solid black 1px;
@@ -612,7 +611,8 @@ html,body {
     }
 
     .sports-window-inner-title{
-      font-size: em(10px);
+      font-size: em(8px);
+      font-family: "roboto-thin";
       color: darkgrey;
       @media screen and (max-width: $break-small) {
         display: none;
@@ -635,10 +635,27 @@ html,body {
         margin-left: 6%;
         font-weight: normal;
         font-size:em(8px);
+        // color: $green;
       }
     }
 
+
+
 } //sports-windows
+
+.sports-window-ball-ctr{
+  @media screen and (max-width: $break-small) {
+    left: 69%;
+    top: 37%
+  }
+  position: absolute;
+  left: 78%;
+  top: 45%;
+  img{
+    width: 22px;
+
+  }
+}
 
 
 .predictions-title{
@@ -734,9 +751,11 @@ html,body {
   }
   .game-date{
     margin: em(10px) auto;
-    font-size: em(8px);
-    text-size: em(10px);
+    font-size: em(10px);
+    // text-size: em(10px);
+    letter-spacing: 0.03em;
     text-align: center;
+    font-family: "roboto-bold";
   }
 
 }
@@ -861,6 +880,10 @@ html,body {
   letter-spacing: 0.1em;
   font-family: "cooper-hewitt-bold";
   margin-bottom: 7px;
+  &:hover{
+    color: $white;
+    cursor: pointer;
+  }
 }
 
 .main-sports-section{

@@ -68,7 +68,8 @@ $break-medium: 850px;
 
   }
   .pl-title-headers{
-    padding-top: em(16px);
+    padding-top: 14px;
+    font-size: 11px;
     padding-bottom: em(10px);
     font-family: 'roboto-thin';
     @include span( 7 of 12 );

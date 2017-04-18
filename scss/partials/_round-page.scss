@@ -3,10 +3,7 @@ $break-small: 750px;
 $break-large: 1030px;
 $break-medium: 850px;
 
-.arrow-img{
-  width: 10px;
-  cursor:pointer;
-}
+
 
 
 .large-orange-button{
@@ -23,6 +20,9 @@ $break-medium: 850px;
   text-align: center;
   margin-bottom: em(20px);
   color: $white;
+  &:hover{
+    color: #000000;
+  }
 }
 
 .right-inner-custom-ctr{
@@ -228,7 +228,7 @@ $break-medium: 850px;
   .article-left-btn{
     float:left;
     cursor: pointer;
-    margin-top: em(50px);
+    top: 36%;
     // margin-right: em(-20px);
     padding-left: em(6px);
     font-size: em(40px);
@@ -319,6 +319,10 @@ $break-medium: 850px;
         margin-top: 10px;
         font-size: em(15px);
       }
+      &:hover{
+        color: $white;
+        cursor: pointer;
+      }
 
       color: $orange;
       font-family: "cooper-hewitt-bold";
@@ -342,6 +346,11 @@ $break-medium: 850px;
       text-align: center;
       font-size: em(10px);
       color: $white;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover{
+        color: $black;
+      }
     }
   }
 
@@ -397,7 +406,7 @@ $break-medium: 850px;
   font-family: 'cooper-hewitt-bold';
   background: $black;
   clear: both;
-  border: 1px solid $grey;
+  border: 1px solid $dark-border;
   font-size: em(19px);
   .rprt-inner{
     // margin-top: em(10px);
@@ -456,22 +465,30 @@ $break-medium: 850px;
 }
 
 .rounds-arrow-right{
-  @include float-right();
+  width: 0px;
+  // @include float-right();
   font-size: em(20px);
 
 }
+
+.arrow-img{
+  width: 12px;
+  cursor:pointer;
+}
+
 .rounds-arrow-left{
+  width: 0px;
   @include float-left();
-  margin-right: 5%;
+  margin-right: 3%;
     font-size: em(20px);
     cursor:pointer;
 }
 
 .rounds-arrow-left, .rounds-arrow-right{
-  margin-top: em(3px);
+  // margin-top: em(3px);
 
   &:hover{
-    color: $orange;
+    // color: $orange;
     cursor:pointer;
   }
 }
@@ -699,6 +716,11 @@ $break-medium: 850px;
 
 .detailed-match-link-btn{
   border: $orange 1px solid;
+  &:hover{
+    background: #ffffff;
+    color: #FCAA35;
+    border: 1px solid #ffffff;
+  }
 }
 
 .detailed-match-link-btn, .countdown-to-match,
