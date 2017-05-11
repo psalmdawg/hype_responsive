@@ -147,7 +147,7 @@ $break-medium: 850px;
       margin-top: em(20px);
       width: 100%;
       .rtmc-btn{
-         letter-spacing: 0.075em;
+        letter-spacing: 0.075em;
         text-align: center;
         padding-top: em(14px);
         padding-bottom: em(10px);
@@ -170,6 +170,9 @@ $break-medium: 850px;
             @include last();
           }
         }
+        &:active{
+          background: $orange;
+        }
       }
     }
     .rtmc-tables{
@@ -180,7 +183,7 @@ $break-medium: 850px;
 
       .rtmc-table-wrp{
         height: 308px;
-        overflow: auto;
+        overflow: hidden;
 
         @media screen and (max-width: $break-small) {
           width: 100%;

@@ -410,11 +410,12 @@ $break-medium: 850px;
           background: $orange;
           font-size: em(14px);
           text-align: center;
-          font-family: "roboto-thin";
+          font-family: "roboto-bold";
           padding: em(10px);
           height: em(35px);
           border-right: 2px solid $black;
           clear: both;
+          letter-spacing: 0.04em;
           &:hover{
             cursor: pointer;
             color: $black;

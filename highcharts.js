@@ -80,10 +80,10 @@ $(function() {
         }
     },
       title: {
-       text: '57% <br> <span class="donut-game-over">over</span>',
+       text: '57%<br><span class="donut-game-over">over</span>',
        floating: true,
        align: 'right',
-       x: -30,
+       x: -28,
        y: 48,
           style: {
               fontSize: '20px',

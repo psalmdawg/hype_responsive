@@ -85,7 +85,7 @@ $( window ).resize(function() {
         arrows: false,
         infinite: false,
         speed: 600,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 2,
         autoplay: false,
         autoplaySpeed: 9000,

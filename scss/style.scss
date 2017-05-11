@@ -75,6 +75,10 @@ $break-medium: 850px;
   @include float(right);
 }
 
+.bg-orange{
+  background: $orange !important;
+}
+
 // @mixin center($columns, $context: $total-columns) {
 //   width: columns($columns, $context);
 //   margin: 0 auto;
@@ -173,7 +177,9 @@ html,body {
 
 
 .page-help-link{
-  font-size: 7px;
+  // font-size: 7px;
+  font-size: em(8px);
+
   font-family: "roboto-thin";
   margin-top: 10px;
 }
@@ -184,6 +190,7 @@ html,body {
   // display: none;
 }
 .nav{
+  letter-spacing: 0.04em;
   font-family: "cooper-hewitt-bold";
   background: $nav-color;
   font-size: em(14px);
@@ -412,12 +419,18 @@ html,body {
 }
 .inner-tweet-bar{
   font-weight: normal;
-  width: 77%;
+  // width: 77%;
   margin: 0 auto;
   font-size: em(8px);
   span{
     color: $orange;
     cursor:help;
+  }
+  .right{
+    margin-right: 22px;
+  }
+  .left{
+    margin-left: 22px;
   }
 }
 
@@ -501,14 +514,15 @@ html,body {
 .main-left-selector{
   cursor: pointer;
   float: left;
-  width: 25px;
-  margin-left: -15px;
+  width: 21px;
+  // margin-left: -15px;
   @media screen and (max-width: $break-small) {
     margin-left: 0px;
   }
   img{
     width: 100%;
     vertical-align: middle;
+    cursor: pointer;
     // &:active{
     //   transform: scale(0.9,0.9);
     // }
@@ -526,7 +540,7 @@ html,body {
 .main-right-selector{
   cursor: pointer;
   float: left;
-  width: 25px;
+  width: 21px;
 
   img{
     width: 100%;
@@ -646,7 +660,8 @@ html,body {
 .sports-window-ball-ctr{
   @media screen and (max-width: $break-small) {
     left: 69%;
-    top: 37%
+    top: 37%;
+    display: none;
   }
   position: absolute;
   left: 78%;
@@ -785,9 +800,13 @@ html,body {
 .games-round-title{
   width: 55%;
   font-size: em(9px);
-  padding-left: 29px;
+  padding-left: 26px;
+  margin-bottom: 8px;
   text-align: left;
-  font-size: em(9px);
+  font-size: em(10px);
+  font-family: 'roboto-bold';
+  letter-spacing: 0.08em;
+  margin-top: -15px;
   // padding-top: 20px;
   // padding-bottom: 10px;
 }
@@ -799,8 +818,8 @@ html,body {
   // height: em(55px);
 
   .caret-left-svg, .caret-right-svg{
-    width: 4%;
-    padding-top: 3px;
+    width: 2.8%;
+    padding-top: 5px;
     // height: 30px;
     float: left;
   }
@@ -819,6 +838,7 @@ html,body {
     width: 100%;
   }
   .games-round-scroller-ctr{
+
     // padding-top: 20px;
 
 
@@ -849,6 +869,7 @@ html,body {
           background: none;
           clear: both;
         }
+        border: 1px solid $nav-color;
         cursor:pointer;
         text-align: center;
         font-size: em(8px);
@@ -859,7 +880,13 @@ html,body {
           @include last();
         }
         span{
-          color: $black;
+
+          color: $nav-color;
+
+          &:hover{
+            color: $black;
+          }
+
         }
         &:hover{
           background: $orange;
@@ -880,6 +907,7 @@ html,body {
   letter-spacing: 0.1em;
   font-family: "cooper-hewitt-bold";
   margin-bottom: 7px;
+  text-align: right;
   &:hover{
     color: $white;
     cursor: pointer;
@@ -1145,65 +1173,109 @@ html,body {
         width: 85%;
         margin: 0 auto;
 
+        @media screen and (max-width: 860px) {
+          width: 99%;
+          margin: 0 auto;
 
+        }
         @media screen and (max-width: $break-small) {
           width: 99%;
           margin: 0 auto;
           padding-top: 18px;
         };
         // padding-left: em(50px);
-        div{
+        .hrs-a{
+          // border: 1px yellow solid;
+          // @include span(1 of 3 (gutters: 0) );
+          width: 33%;
+          @include float-left();
+          // @media screen and (max-width: 950px) {
+          //   width: 33.33333333%
+          // }
 
-          @include span(1 of 3 (gutters: 0) );
+          @media screen and (max-width: $break-small) {
+            width: 33.33333333%
+          }
+
+          @media screen and (max-width: 400px) {
+            padding-left: 10px;
+            // width: 33.33333333%
+            // @include span(1 of 3 (gutters: 0) );
+          }
+        }
+        div{
+          // border: 1px yellow solid;
+          // @include span(1 of 3 (gutters: 0) );
           &:last-child{
-            @include last();
+            // @include last();
           }
           .hrs-icon{
             // text-align: center;
+            margin-top: -5px;
             text-align: right;
-            margin-right: 10px;
-            // padding-left: em(10px);
+            float: left;
+            padding-left: 20%;
             width: 30%;
-            @include float-left();
-            font-size: em(25px);
+            // @include float-left();
+            font-size: em(35px);
             color: $orange;
 
             @media screen and (max-width: $break-small) {
-              text-align: left;
-              padding-left: 5px;
-              width: 24%;
+              // text-align: left;
+              // padding-left: 5px;
+              padding-left: 0;
+              width: 15%;
               float: left;
-              font-size: 20px;
-              margin-right: 0;
+              // font-size: 20px;
+              margin-right: 10px;
             };
 
-          }
-          .hrs-stat{
-            text-align: left;
-            width: 50%;
-            @include float-left();
-            font-size: em(30px);
-            font-family: "cooper-hewitt-bold";
-            @media screen and (max-width: $break-small) {
-              font-size: em(24px);
-            };
-            .hrs-stat-punt{
-              font-family: 'roboto-thin';
-              font-size: 0.1875em;
-              padding-bottom: 5px;
-              width: 96%;
-              float: left;
+            @media screen and (max-width: 410px) {
+              display:none;
             }
-          }
 
-          .hrs-stat-sub{
-            text-align: center;
-            // background: blue;
-            @include float-left();
-            font-family: "roboto-thin";
-            font-size: em(10px);
-            margin-left: 56px;
           }
+          .hrs-stat-wrp{
+            // border: 1px red solid;
+            @include float-right();
+            @media screen and (max-width: $break-small) {
+              @include float-left();
+            };
+
+            .hrs-stat{
+              // text-align: left;
+              width: 100px;
+              // @include float-left();
+              font-size: em(30px);
+              font-family: "cooper-hewitt-bold";
+              @media screen and (max-width: $break-small) {
+                font-size: em(24px);
+                width: 73px;
+              };
+              .hrs-stat-punt{
+                font-family: 'roboto-thin';
+                font-size: 0.1875em;
+                padding-bottom: 5px;
+                width: 96%;
+                // float: left;
+              }
+            }
+
+            .hrs-stat-sub{
+              text-align: center;
+              // background: blue;
+              @include float-left();
+              font-family: "roboto-bold";
+              font-size: em(10px);
+              font-weight: bold;
+              // margin-left: 56px;
+              span{
+                font-weight: normal;
+                font-family: "roboto-thin";
+              }
+            }
+
+          } //.hrs-stat-wrp
 
         }
       }
@@ -1328,10 +1400,11 @@ html,body {
         height: 175px;
 
         .sei-inner-left{
-          font-size: 11px;
+          font-size: em(12px);
           font-family: "roboto-thin";
           width: 24.5%;
           text-align: left;
+          padding-left: 7%;
           @include float-left();
         }
 
@@ -1364,37 +1437,66 @@ html,body {
           float: right;
           width: 24.5%;
           text-align: left;
-          font-size: 11px;
-          height: em(80px);
+          font-size: em(12px);
+          // height: em(80px);
           div{
             margin-bottom: 2px;
           }
         }
         .sei-inr-top{
-          padding-left: 15px;
+          letter-spacing: 0.04em;
+          position: relative;
+          padding-left: 35%;
           height: em(60px);
+          i{
+            color: red;
+            position: absolute;
+            top: 66%;
+            left: 10%;
+          }
           div{
-            margin-bottom: 2px;
+            margin-bottom: 3px;
+            &:last-child{
+              margin-top: 5px;
+            }
           }
         }
         .sei-inr-bottom{
-          padding-left: 15px;
+          margin-top: 5px;
+          letter-spacing: 0.04em;
+          position: relative;
+          padding-left: 35%;
           height: em(80px);
+          i{
+            color: green;
+            position: absolute;
+            top: 49%;
+            left: 10%;
+          }
           div{
-            margin-bottom: 2px;
+            margin-bottom: 3px;
+            &:last-child{
+              margin-top: 5px;
+            }
+
           }
         }
 
       }
 
       .sei-top-bottom{
-        height: em(55px);
+        // height: em(55px);
         background: $nav-color;
         clear: both;
+        letter-spacing: 0.04em;
+        // padding-top: px;
+        padding-bottom: 8px;
+        overflow: auto;
+
 
         .sei-stats{
           &:nth-child(2){
-            padding-top: 25px;
+            padding-top: 18px;
             font-family: "cooper-hewitt-bold";
           }
           font-family: "roboto-thin";
@@ -1403,6 +1505,7 @@ html,body {
           margin-top: em(5px);
           span{
             font-size: em(12px);
+            margin-bottom: 2px;
           }
           div{
             font-family: "cooper-hewitt-bold";
@@ -1437,6 +1540,7 @@ html,body {
   // background: blue;
 
   .team-stats-title{
+    font-family: "cooper-hewitt-bold";
     background: $black;
     height: 31px;
     line-height: 35px;

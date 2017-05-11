@@ -7,9 +7,10 @@ $break-medium: 850px;
 
 
 .large-orange-button{
-  font-family: "roboto-thin";
+  font-family: "roboto-bold";
   // clear:both;
   // color: blue;
+  letter-spacing: 0.04em;
   cursor: pointer;
   min-height:em(60px);
   background: $orange;
@@ -338,7 +339,7 @@ $break-medium: 850px;
       // padding-top: em(6px);
 
     .plbtn-inner{
-      font-family: "roboto-thin";
+      font-family: "roboto-bold";
       height:em(50px);
       background: $orange;
       width: 100%;
@@ -348,6 +349,7 @@ $break-medium: 850px;
       color: $white;
       cursor: pointer;
       margin-top: 10px;
+      letter-spacing: 0.04em;
       &:hover{
         color: $black;
       }
@@ -756,6 +758,12 @@ $break-medium: 850px;
   clear: both;
   padding-top: em(35px);
 
+}
+.add-placeholder{
+  background: grey;
+  margin-top: 30px;
+  padding: 5%;
+  height: 50px;
 }
 
 .advert-full-width{

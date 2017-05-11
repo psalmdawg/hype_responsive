@@ -222,7 +222,7 @@
 }
 
 .previous-games-ctr{
-  color: $white;
+  color: $light-grey;
   // padding-top: em(50px);
 
   // color: #fff;
@@ -234,6 +234,7 @@
 
 
   .previous-game-title{
+    color: $white;
     font-family: "roboto-thin";
     margin-top: em(15px);
     margin-bottom: em(15px);
