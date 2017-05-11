@@ -139,8 +139,8 @@ $break-medium: 850px;
         font-size: em(14px);
         color: $orange;
         padding-top: em(3px);
-        // border-right: 2px solid $black;
-        @include span( 4.5 of 12 (gutters: 0));
+        border-right: 1px solid $black;
+        @include span( 4.533 of 12 (gutters: 0));
         height: 36px;
         line-height: 34px;
         padding-top: em(3px);
@@ -193,6 +193,10 @@ $break-medium: 850px;
             // padding-left: 10px;
             // margin-left: -5px;
             // margin-right: 5px;
+          }
+
+          &:nth-child(2){
+            border-left: 1px black solid;
           }
 
           height: 36px;

@@ -1425,7 +1425,8 @@ a {
   font-size: 0.875em;
   color: #fcaa35;
   padding-top: 0.1875em;
-  width: 37.5%;
+  border-right: 1px solid #000000;
+  width: 37.775%;
   float: left;
   height: 36px;
   line-height: 34px;
@@ -1480,9 +1481,12 @@ a {
   padding-top: 0px;
   height: 35px;
   margin-top: 0px;
-  outline: #1c1c1c;
 }
-/* line 203, ../scss/partials/_projected-season.scss */
+/* line 198, ../scss/partials/_projected-season.scss */
+.projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points:nth-child(2) {
+  border-left: 1px black solid;
+}
+/* line 207, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points:last-child {
   float: right;
   margin-right: 0;
