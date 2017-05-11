@@ -109,6 +109,7 @@ html,body {
 
     width: 85%;
     margin: 0 auto;
+    overflow: auto;
     // margin-top: em(20px);
 
     .page-container-right{
@@ -1652,6 +1653,7 @@ html,body {
 
 
 .icon-footer{
+  margin-top: 10px;
   padding-top: 50px;
   // border: red 1px solid;
   height: 20vh;

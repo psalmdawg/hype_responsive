@@ -249,7 +249,7 @@ $break-medium: 850px;
     cursor: pointer;
     z-index: 100;
     top: 36%;
-    right: 6%;
+    right: 5%;
     position: absolute;
     &:hover{
       color:$orange;
@@ -392,7 +392,7 @@ $break-medium: 850px;
 
 
   width: 90%;
-  margin: 6px auto 0px auto;
+  margin: 2px auto 0px auto;
   .rbc-resp{
     @media screen and (max-width: $break-small) {
       display: none;
@@ -468,22 +468,65 @@ $break-medium: 850px;
 
 .rounds-arrow-right{
   width: 0px;
-  // @include float-right();
+  @include float-left();
   font-size: em(20px);
+  &:hover{
+    color: $orange;
+  }
+  div{
+
+    &:hover{
+      background:url('../assets/orangeright.png') no-repeat;
+      background-size: 10px;
+      height: 25px;
+      width: 13px;
+    }
+
+    background:url('../assets/greyright.png') no-repeat;
+    background-size: 10px;
+    height: 25px;
+    width: 13px;
+    // border: red 1px solid;
+  }
 
 }
 
 .arrow-img{
-  width: 12px;
-  cursor:pointer;
+  // width: 12px;
+  // cursor:pointer;
+  // // src="../assets/greyleft.png
+  // background:url('assets/orangeright.png') no-repeat;
+  // background-size: 10px;
+  // height: 100px;
+  // width: 100px;
 }
 
 .rounds-arrow-left{
+
+  &:hover{
+    color: $orange;
+  }
+
   width: 0px;
   @include float-left();
   margin-right: 3%;
     font-size: em(20px);
     cursor:pointer;
+
+    div{
+
+      &:hover{
+        background:url('../assets/orageleft.png') no-repeat;
+        background-size: 10px;
+        height: 25px;
+        width: 13px;
+      }
+      background:url('../assets/greyleft.png') no-repeat;
+      background-size: 10px;
+      height: 25px;
+      width: 13px;
+      // border: red 1px solid;
+    }
 }
 
 .rounds-arrow-left, .rounds-arrow-right{
@@ -734,7 +777,7 @@ $break-medium: 850px;
   }
 
   @include float-left();
-  line-height: 30px;
+  line-height: 35px;
   height: 35px;
 
   background: $main;

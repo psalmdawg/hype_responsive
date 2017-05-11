@@ -17,8 +17,9 @@ $break-medium: 850px;
 .sports-icon-ttl{
   letter-spacing: 0.08em;
   font-family: "cooper-hewitt-bold";
-  margin-bottom: 5px;
+  margin-bottom:11px;
   font-size: em(8px);
+  // -bottom: 3px;
 }
 
 .projections-sport-icons-wrap{
@@ -44,7 +45,7 @@ $break-medium: 850px;
     background: $black;
     font-family: 'roboto-medium';
     font-size: em(13px);
-    max-height: em(55px);
+    max-height: 34px;
     margin-bottom: em(25px);
     border: 1px $dark-border solid;
     width: 100%;
@@ -52,8 +53,8 @@ $break-medium: 850px;
   }
 
   .pl-title{
-
-    padding-left: em(70px);
+    font-family: 'roboto-bold';
+    padding-left: 26px;
 
     @include span(5 of 12);
 
@@ -65,10 +66,12 @@ $break-medium: 850px;
     // border-right: 2px solid black;
     margin-bottom: em(20px);
     float: left;
+    font-size: 10px;
+    // letter-spacing: 0.04em;
 
   }
   .pl-title-headers{
-    padding-top: 14px;
+    padding-top: 10px;
     font-size: 11px;
     padding-bottom: em(10px);
     font-family: 'roboto-thin';
