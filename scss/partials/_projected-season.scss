@@ -105,7 +105,7 @@ $break-medium: 850px;
       overflow: hidden;
       letter-spacing: 0.02em;
       clear: both;
-      background: blue;
+      // background: blue;
       border-bottom: 1px solid $black;
 
       height: 36px;
@@ -172,7 +172,7 @@ $break-medium: 850px;
 
         font-size: em(10px);
         height: 36px;
-        line-height: 36px;
+        line-height: 38px;
 
         @include span( 7 of 12 );
         @include last();
@@ -185,10 +185,11 @@ $break-medium: 850px;
             @include span(1.50 of 11 (gutters: 0));
             background: $black;
             color: $orange;
-            border: $main 1px solid;
+            border: $nav-color 1px solid;
             padding-top: 0px;
-            height: 33px;
-            margin-top: 1px;
+            height: 35px;
+            margin-top: 0px;
+            // outline: $nav-color;
             // padding-left: 10px;
             // margin-left: -5px;
             // margin-right: 5px;

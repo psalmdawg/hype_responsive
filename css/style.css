@@ -1392,7 +1392,6 @@ a {
   overflow: hidden;
   letter-spacing: 0.02em;
   clear: both;
-  background: blue;
   border-bottom: 1px solid #000000;
   height: 36px;
   overflow: hidden;
@@ -1456,7 +1455,7 @@ a {
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr {
   font-size: 0.625em;
   height: 36px;
-  line-height: 36px;
+  line-height: 38px;
   width: 58.01527%;
   float: left;
   margin-right: 0.76336%;
@@ -1477,12 +1476,13 @@ a {
   float: left;
   background: #000000;
   color: #fcaa35;
-  border: #0c0c0c 1px solid;
+  border: #1c1c1c 1px solid;
   padding-top: 0px;
-  height: 33px;
-  margin-top: 1px;
+  height: 35px;
+  margin-top: 0px;
+  outline: #1c1c1c;
 }
-/* line 202, ../scss/partials/_projected-season.scss */
+/* line 203, ../scss/partials/_projected-season.scss */
 .projected-ladder-table .pl-main-table .pl-main-table-row .plmt-points-ctr .plmt-points:last-child {
   float: right;
   margin-right: 0;
