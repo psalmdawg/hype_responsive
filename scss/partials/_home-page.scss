@@ -200,6 +200,101 @@ $break-medium: 850px;
   }
 }
 
+.flc-articles-ctr{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: red;
+  clear: both;
+  // height: 100px;
+  width: 100%;
+
+  font-family: "cooper-hewitt-bold";
+    .flc-articles-inner{
+
+      .flc-article-row{
+        // margin-top: 10px;
+        overflow: auto;
+
+        .flc-article{
+          letter-spacing: 0.05em;
+          font-size: 13px;
+          padding-top: 10px;
+          // height: 45px;
+          @media screen and (max-width: $break-small) {
+            @include span(1 of 2 (gutters:0) );
+          };
+          &:last-child{
+            border-left: 1px $nav-color solid;
+            @media screen and (max-width: $break-small) {
+              display: none;
+            };
+          }
+          &:first-child{
+            border-right: 1px $nav-color solid;
+          }
+
+
+          @include span(1 of 3 (gutters:0) );
+
+            .flc-article-left{
+              position: relative;
+              float: left;
+              width: 39%;
+              height: 45px;
+              background-image: url(../assets/pexels-photo.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              margin-left: 1.6%;
+
+              // background-size: 50%;
+              .main-a-match-date{
+                border: $orange 1px solid;
+                position: absolute;
+                width: 79%;
+
+                @media screen and (max-width: $break-small) {
+                  width: 100%;
+                };
+
+                height: 40%;
+                bottom: 0;
+                right: 0;
+                font-size: 9px;
+
+                div{
+                  padding-top: 5px;
+                  text-align: center;
+                  height: 100%;
+                  color: $orange;
+                  overflow: auto;
+                  background: $white;
+                  font-size: em(18px);
+                  @include span(1 of 2 (gutters:0) );
+
+                  &:last-child{
+                    border-left: $orange 1px solid;
+                    color:$white;
+                    background: $black;
+                    @include last();
+                  }
+                }
+              }
+            }
+            .flc-article-right{
+              float: left;
+              width: 59%;
+              height: 45px;
+              padding: 5px;
+              padding-left: 10px;
+              font-size: 10px;
+              color: $white;
+              line-height: 12px;
+            }
+        }
+      }
+    }
+}
+
 
 .up-coming-matches-ctr{
   // background: yellow;
@@ -222,7 +317,6 @@ $break-medium: 850px;
   .upcoming-match-ctr{
 
     margin-bottom: em(30px);
-    // background: $nav-color;
     width: 100%;
 
     .um-title{
