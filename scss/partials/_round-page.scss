@@ -199,9 +199,15 @@ $break-medium: 850px;
     border: $orange 1px solid;
     position: absolute;
     width: 30%;
-    height: 10%;
+    // height: 10%;
     bottom: 0;
     right: 10px;
+
+    @media screen and (max-width: $break-small) {
+      width: 41%;
+      height: 15%;
+    };
+
     div{
       padding-top: 7%;
       text-align: center;
@@ -792,6 +798,9 @@ $break-medium: 850px;
 
 .countdown-to-match{
   background: $orange;
+  &:hover{
+    color:black;
+  }
 }
 .countdown-to-match-starting{
   background: $red;

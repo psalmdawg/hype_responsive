@@ -10,8 +10,8 @@ $(function() {
         backgroundColor:'lightgrey',
         type: 'pie',
         margin: [0,0,0,0],
-        height: 120,
-        width: 120,
+        height: 115,
+        width: 115,
         borderRadius: 60
       },
       tooltip: {
@@ -31,8 +31,8 @@ $(function() {
 
        floating: true,
        align: 'right',
-       x: -30,
-       y: 48,
+       x: -25,
+       y: 47,
           style: {
               fontSize: '20px',
               fontFamily: 'cooper-hewitt-bold'
@@ -63,12 +63,30 @@ $(function() {
         backgroundColor:'lightgrey',
         type: 'pie',
         margin: [0,0,0,0],
-        height: 120,
-        width: 120,
+        height: 115,
+        width: 115,
         borderRadius: 60
       },
+      // responsive: [
+      //   {
+      //     chart:{
+      //       breakpoint: 900,
+      //       settings: {
+      //         width: 100,
+      //         height: 100
+      //       }
+      //     }
+      //
+      //
+      //   }
+      //
+      //
+      //   // You can unslick at a given breakpoint now by adding:
+      //   // settings: "unslick"
+      //   // instead of a settings object
+      // ],
       tooltip: {
-          enabled: false,
+        enabled: false,
       },
       plotOptions: {
           pie: {
@@ -83,8 +101,8 @@ $(function() {
        text: '57%<br><span class="donut-game-over">over</span>',
        floating: true,
        align: 'right',
-       x: -28,
-       y: 48,
+       x: -25,
+       y: 47,
           style: {
               fontSize: '20px',
               fontFamily: 'cooper-hewitt-bold'

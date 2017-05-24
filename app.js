@@ -24,12 +24,14 @@
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
+      $(".end-drop-bar").toggle()
     });
     $(".menu-close").click(function(){
       // $('.dropdown-content').hide();
       $(".responsive-nav").toggle();
       $(".burger-icon").toggle();
       $(".menu-close").toggle();
+      $(".end-drop-bar").toggle()
     });
 
 // setInterval(function(){
@@ -48,6 +50,7 @@ $( window ).resize(function() {
         if($(window).width() < 700 ){
           $(".drop-btn").hide();
           $(".responsive-nav").hide();
+          $(".end-drop-bar").hide()
         }
 
       // if($(window).width() <  700 ) && ($window.width() -){

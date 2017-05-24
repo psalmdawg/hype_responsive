@@ -248,12 +248,19 @@ html,body {
   } //nav right end
 
 
+  .end-drop-bar{
+    height: 50vh;
+    display: none;
+    // @media screen and (min-width: $break-small) {
+    //   display: none;
+    // }
+  }
+
 
   .dropdown {
     @media screen and (min-width: $break-small) {
       float: left;
     }
-
 
     &:nth-child(1){
       margin-left: 0;
@@ -261,6 +268,7 @@ html,body {
     }
 
     .dropbtn {
+
       background: $nav-color;
       .black{
         background: $black;
@@ -285,10 +293,11 @@ html,body {
         }
       }
       @media screen and (max-width: $break-small) {
-        height: 18.3vh;
-        line-height: 18.3vh;
-        font-size: 20px;
-        border: $orange 1px solid;
+
+        height: 9vh;
+        line-height: 10vh;
+        font-size: 11px;
+        border-top: $orange 1px solid;
 
       }
 
@@ -316,7 +325,7 @@ html,body {
     // margin-top:em(64px);
     z-index: 1;
     @include box-shadow(3px 3px 6px 1px rgba(0,0,0,0.75));
-    // border:black 1px solid;
+    // border:black 1px solid
     border-top: orange 1px solid;
     // border
     @media screen and (min-width: $break-small) {position:absolute;}
@@ -431,7 +440,7 @@ html,body {
     margin-right: 22px;
   }
   .left{
-    margin-left: 13.5%;
+    margin-left: 10.3%;
   }
 }
 
@@ -1217,7 +1226,7 @@ html,body {
             margin-top: -5px;
             text-align: right;
             float: left;
-            padding-left: 20%;
+            padding-left: 13%;
             width: 30%;
             // @include float-left();
             font-size: em(35px);
@@ -1407,18 +1416,33 @@ html,body {
           font-family: "roboto-thin";
           width: 24.5%;
           text-align: left;
-          padding-left: 7%;
+          // padding-left: 7%;
           @include float-left();
+          @media screen and (max-width: 900px) {
+            font-size: 10px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: em(12px);
+          }
         }
 
         .hc-pie-ctr{
           @include float-left();
 
-          width:50%;
+          width: 51%;
+          // margin-left: 10%;
+          @media screen and (max-width: 900px) {
+            margin-left: 4%;
+            width: 10%;
+          }
+          @media screen and (max-width: $break-small) {
+            margin:0 auto;
+            width: 51%;
+          }
 
 
           .hc-pie-ctr-inr{
-            width: 120px;
+            width: 110px;
             margin: 0 auto;
 
 
@@ -1441,9 +1465,17 @@ html,body {
           width: 24.5%;
           text-align: left;
           font-size: em(12px);
+          @media screen and (max-width: 900px) {
+            font-size: 10px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: em(12px);
+          }
           // height: em(80px);
           div{
             margin-bottom: 2px;
+
+
           }
         }
         .sei-inr-top{
