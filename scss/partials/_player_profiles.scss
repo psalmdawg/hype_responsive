@@ -1,0 +1,46 @@
+@import "compass";
+
+.p-profile-innr{
+  background: $white;
+  border: 1px solid $orange;
+  height: 200px;
+}
+
+.p-profile-left{
+  @include span(6 of 10);
+  border: 1px $orange solid;
+  background: $white;
+  height: 150px;
+}
+
+.p-profile-right{
+  @include span(4 of 10);
+  @include last();
+  background: $white;
+  border: 1px $orange solid;
+  height: 150px;
+}
+
+.player-rating-wrp{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p-rating-left{
+  background: $white;
+  height: 300px;
+  @include span(7 of 10);
+}
+
+.p-rating-right{
+  background: $white;
+  height: 300px;
+  @include span(3 of 10);
+  @include last();
+}
+
+.people-also-viewed{
+  height: 300px;
+  background: $white;
+  margin-top: -20px;
+}

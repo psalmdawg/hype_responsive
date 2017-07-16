@@ -1,0 +1,47 @@
+@import "compass";
+
+.bp-betting-windows{
+  height: 200px;
+  border: red 1px solid;
+  @include span(1 of 5);
+
+  &:nth-child(5){
+    background: blue;
+    @include last();
+  }
+}
+
+.bp-odds-windows{
+
+  margin-bottom: 20px;
+  width: 49.5%;
+  @include float-left();
+  padding: em(10px);
+  background: $white;
+
+  &:nth-child(odd){
+  margin-left: 1%;
+
+  }
+}
+
+.bps-recommended-provider{
+  table{
+    width: 100%;
+  }
+  thead{
+    background: lighten($light-grey, 30%);
+  }
+  th, td{
+    // vertical-align:bottom;
+    text-align: center;
+    border: red 1px solid;
+    height: 65px;
+    // line-height: 67px;
+    @include span(3 of 14 (gutters:0) );
+    &:last-child{
+      @include span(2 of 14 (gutters:0) );
+      @include last();
+    }
+  }
+}

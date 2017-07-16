@@ -74,6 +74,12 @@ $break-medium: 850px;
         }
       }
       .atvb-stat{
+        @media screen and (max-width: 810px) {
+          font-size: 24px;
+        }
+        @media screen and (max-width: $break-small) {
+          font-size: 30px;
+        }
         // border: 1px solid $white;
         padding-top: em(2px);
         overflow: auto;

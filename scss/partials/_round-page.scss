@@ -198,7 +198,7 @@ $break-medium: 850px;
   .main-a-match-date{
     border: $orange 1px solid;
     position: absolute;
-    width: 30%;
+    width: 32%;
     // height: 10%;
     bottom: 0;
     right: 10px;
@@ -209,7 +209,14 @@ $break-medium: 850px;
     };
 
     div{
-      padding-top: 7%;
+      padding-bottom: 2%;
+      padding-top: 5%;
+      @media screen and (max-width: $break-small) {
+        padding-bottom: 2%;
+        padding-top: 5%;
+      };
+
+
       text-align: center;
       height: 100%;
       color: $orange;
@@ -222,6 +229,7 @@ $break-medium: 850px;
         border-left: $orange 1px solid;
         color:$white;
         background: $black;
+        min-width: 30%;
         @include last();
         // color: red;
       }

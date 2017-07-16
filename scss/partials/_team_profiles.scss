@@ -1,0 +1,46 @@
+@import 'compass';
+
+.t-profile-innr{
+  background: $white;
+  border: 1px solid $orange;
+  height: 200px;
+}
+
+.t-profile-left{
+  @include span(6.5 of 10);
+  border: 1px $orange solid;
+  background: $white;
+  height: 150px;
+}
+
+.t-profile-right{
+  @include span(3.5 of 10);
+  @include last();
+  background: $white;
+  border: 1px $orange solid;
+  height: 150px;
+}
+
+.upcoming-match-wrap{
+  margin-top: 15px;
+  background: $white;
+  @include span(6.5 of 10);
+  height: 340px;
+}
+
+.current-squad-wrp{
+  margin-top: 15px;
+  background: $white;
+  @include span(3.5 of 10);
+  @include last();
+  height: 695px;
+  margin-bottom: 15px;
+}
+
+.team-rating-ot-wrp{
+  margin-top: 15px;
+  @include span(6.5 of 10);
+  background: $white;
+  height: 340px;
+  margin-bottom: 15px;
+}

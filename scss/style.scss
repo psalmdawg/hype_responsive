@@ -12,12 +12,16 @@
 @import "partials/projected-season";
 @import "partials/in-running";
 @import "partials/home-page";
+@import "partials/blog-page";
+@import "partials/si_content";
+@import "partials/si_bonusbetting";
+@import "partials/player_profiles";
+@import "partials/team_profiles";
 
 *{
   // box-sizing: border-box;
    @include box-sizing(border-box);
   // color: white;
-
 }
 
 
@@ -97,9 +101,11 @@ html,body {
 .container{
   margin: 0 auto;
   max-width: em(1450px);
+  min-width: em(1095px);
   overflow: auto;
   @media screen and (max-width: $break-small) {
    padding: 5px;
+   min-width: 200px;
   }
 
   .main-page-container{
@@ -128,7 +134,7 @@ html,body {
       margin-top: em(20px);
       @include span(9 of 12);
       padding-right: em(9px);
-      @include float-left();
+      // @include float-left();
       @media screen and (max-width: $break-small) {
         width: 100%;
         padding-right:0;
@@ -226,7 +232,7 @@ html,body {
       float: left;
       padding-left: em(16px);
       font-size: em(16px);
-      line-height: 55px;
+      line-height: 59px;
       cursor: pointer;
       &:nth-child(2){
         background: $orange;
@@ -243,7 +249,6 @@ html,body {
       color: white;
       text-decoration: none;
     }
-
 
   } //nav right end
 
@@ -279,6 +284,12 @@ html,body {
       color: white;
       padding-right: em(25px);
       padding-left: em(25px);
+
+      @media screen and (max-width: 808px) {
+        padding-right: em(19px);
+        padding-left: em(19px);
+      }
+
       cursor: pointer;
       // box-sizing: content-box;
       &:hover{

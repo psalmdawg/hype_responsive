@@ -1,0 +1,28 @@
+@import "compass";
+
+
+.si-content-reviews{
+  border: 1px solid black;
+  // height: 50px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.si-c-left{
+  background-image: url(../images/small-ad.jpg);
+  background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-size: cover;
+  background-size: 100% 100%;
+  height: 75px;
+  @include span(1 of 3 );
+}
+
+.si-c-right{
+  background: red;
+  height: 75px;
+  @include span(2 of 3);
+  @include last();
+
+}
