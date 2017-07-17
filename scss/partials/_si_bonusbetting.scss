@@ -25,23 +25,23 @@
   }
 }
 
-.bps-recommended-provider{
-  table{
-    width: 100%;
-  }
-  thead{
-    background: lighten($light-grey, 30%);
-  }
-  th, td{
-    // vertical-align:bottom;
-    text-align: center;
-    border: red 1px solid;
-    height: 65px;
-    // line-height: 67px;
-    @include span(3 of 14 (gutters:0) );
-    &:last-child{
-      @include span(2 of 14 (gutters:0) );
-      @include last();
-    }
-  }
-}
+// .bps-recommended-provider{
+//   table{
+//     width: 100%;
+//   }
+//   thead{
+//     background: $v-light-grey;
+//   }
+//   th, td{
+//     // vertical-align:bottom;
+//     text-align: center;
+//     border: red 1px solid;
+//     height: 65px;
+//     // line-height: 67px;
+//     @include span(3 of 14 (gutters:0) );
+//     &:last-child{
+//       @include span(2 of 14 (gutters:0) );
+//       @include last();
+//     }
+//   }
+// }

@@ -6,41 +6,306 @@
   height: 200px;
 }
 
+
 .t-profile-left{
-  @include span(6.5 of 10);
+  @include span(6.4 of 10);
   border: 1px $orange solid;
   background: $white;
-  height: 150px;
+  // height: 150px;
+  padding: 15px;
+
+  .tp-jersey{
+    @include span(1.3 of 5);
+    img{
+      width: 100%;
+    }
+  }
+
+  .tp-team-info{
+    @include span(3.7 of 5);
+    @include last();
+    // border: 1px red solid;
+    padding-top: em(5px);
+    .tp-team-info-title{
+      width: 60%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      span{
+        color: $orange;
+      }
+
+      border-bottom: 1px solid $v-light-grey;
+      font-family: "roboto-bold";
+      letter-spacing: 0.06em;
+      font-size: em(14px);
+    }
+
+    .tp-team-info-sub{
+      font-family: "roboto-bold";
+      letter-spacing: 0.06em;
+      font-size: em(10px);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      span{
+        color: $orange;
+      }
+    }
+
+    .tp-team-info-chart{
+      // border: green 1px solid;
+      height: 123px;
+      background: $v-light-grey;
+    }
+  }
 }
+
 
 .t-profile-right{
   @include span(3.5 of 10);
   @include last();
   background: $white;
   border: 1px $orange solid;
-  height: 150px;
+  // height: 150px;
+  padding: em(20px) em(20px) 0 em(20px);
+  .tpr-stats{
+    padding: 3px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    height: 33px;
+    // line-height: 37px;
+    font-family: "roboto-bold";
+    font-size: em(12px);
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #e0e0e0;
+    &:last-child{
+      border-bottom: none;
+    }
+    span{
+      float: right;
+    }
+  }
 }
 
 .upcoming-match-wrap{
+
   margin-top: 15px;
   background: $white;
+  padding: 15px;
   @include span(6.5 of 10);
-  height: 340px;
+  .umw-title{
+    margin-bottom: 15px;
+    font-family: "roboto-bold";
+    font-size: em(12px);
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid $v-light-grey;
+    padding-bottom: 5px;
+
+  }
+
+.upcoming-match-table{
+  border: 1px solid $v-light-grey;
+}
+  .umt-title{
+    padding: em(10px);
+    font-family: 'roboto-bold';
+    font-size: em(11px);
+    border-bottom: 1px solid $v-light-grey;
+    span{
+      font-weight: bolder;
+      line-spacing: 0.08em;
+      &:last-child{
+        float:right;
+      }
+    }
+  }
+
+.upcoming-match-table{
+  table{
+    border: red 1px solid;
+    width: 100%;
+
+    thead{
+      height:100px;
+      background: $v-light-grey;
+      vertical-align: middle;
+      tr{
+
+        td{
+
+          height: 35px;
+          vertical-align: middle;
+              max-width: 5%;
+
+        }
+        .umt-p-o{
+          text-align: center;
+
+        }
+      }
+    }
+
+    tbody{
+
+      .umt-p-o{
+        text-align: center;
+        padding: 0;
+      }
+
+      tr{
+        td{
+          // width: 80%;
+          padding-left: 15px;
+          height: 50px;
+          vertical-align: middle;
+          margin: 5px;
+          border: $v-light-grey 1px solid;
+        }
+      }
+    }
+  }
+}
+  .umt-socials{
+    border: $v-light-grey 1px solid;
+    height: 50px;
+    width: 50%;
+    float: right;
+    background: red;
+  }
+  .umt-buttons{
+    clear: both;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+
+    .umt-button-dmp{
+      background: $orange;
+      color: $white;
+      @include span(1 of 2 (gutters: 0));
+      height: 40px;
+    }
+    .umt-button-vl{
+      background: $green_b;
+      color:$white;
+      @include span(1 of 2 (gutters: 0));
+      @include last();
+      height: 40px;
+    }
+  }
 }
 
 .current-squad-wrp{
+  padding: 15px;
   margin-top: 15px;
   background: $white;
   @include span(3.5 of 10);
   @include last();
-  height: 695px;
+  height: 613px;
   margin-bottom: 15px;
+  .current-sqd-title{
+    padding-bottom: 5px;
+    font-family: "roboto-bold";
+    font-size: em(12px);
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid $v-light-grey;
+    // padding-bottom: 5px;
+    margin-bottom: 10px;
+
+  }
+  .current-squad-lu{
+    height: 100%;
+    font-family: "roboto-medium";
+    font-size: em(10px);
+    letter-spacing: 0.06em;
+    .cslu-row{
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 34px;
+      line-height: 34px;
+      &:nth-child(1){
+        border: none;
+        // color: red;
+        background: $v-light-grey;
+
+      }
+      clear: both;
+      border-bottom: 1px solid $v-light-grey;
+      .cur-sq-lu-name-title{
+        float: left;
+      }
+      .cur-sq-lu-rating-title{
+        float: right;
+
+      }
+      .cur-sq-lu-name{
+        float: left;
+      }
+      .cur-sq-lu-rating{
+        float: right;
+        padding-right: 10px;
+      }
+    }
+  }
 }
 
 .team-rating-ot-wrp{
   margin-top: 15px;
   @include span(6.5 of 10);
   background: $white;
-  height: 340px;
+  // height: 340px;
+  padding: em(15px);
   margin-bottom: 15px;
+  .tr-ot-title{
+    font-family: "roboto-bold";
+    border-bottom: $v-light-grey 1px solid;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .tr-table{
+    height: 200px;
+    background: grey;
+    // width: 100%;
+  }
+}
+
+.people-also-viewed{
+  padding: em(15px);
+  overflow: hidden;
+  background: $white;
+  margin-top: -20px;
+
+  .pav-title{
+    margin-bottom: em(20px);
+    border-bottom: 1px solid $v-light-grey;
+    padding-bottom: 3px;
+    letter-spacing: 0.08em;
+    width: em(184px);
+  }
+  .pav-col-wrp{
+    // height: 100%;
+    .pav-col{
+      background: lighten(red, 50%);
+      &:nth-child(1){
+        border-right: 1px solid $v-light-grey;
+      }
+
+      // height: 100%;
+      @include span(0.9 of 3);
+
+      &:nth-child(2){
+        border-right: 1px solid $v-light-grey;
+      }
+
+      &:nth-child(3){
+        @include last();
+      }
+
+      .pav-people{
+        height: 27px;
+        line-height: 30px;
+        font-size: 10px;
+      }
+    }
+  }
+
 }

@@ -10,7 +10,49 @@
   @include span(6 of 10);
   border: 1px $orange solid;
   background: $white;
-  height: 150px;
+  // height: 150px;
+  padding: 15px;
+  .pp-jersey{
+    @include span(1.2 of 5);
+    // @include float-left();
+    // width: em(150px);
+
+    img{
+      width: 100%;
+    }
+  }
+  .pp-team-info{
+    @include span(3.8 of 5);
+    @include last();
+    // @include float-left();
+    border: 1px red solid;
+    height: 150px;
+    padding-top: em(5px);
+    .pp-team-info-title{
+      width: 60%;
+
+      span{
+        color: $orange;
+      }
+
+      border-bottom: 1px solid $v-light-grey;
+      font-family: "cooper-hewitt-bold";
+      letter-spacing: 0.08em;
+    }
+
+    .pp-team-info-sub{
+      span{
+        color: $orange;
+      }
+    }
+
+    .pp-team-info-chart{
+      border: green 1px solid;
+      height: 75px;
+
+    }
+
+  }
 }
 
 .p-profile-right{
@@ -37,10 +79,4 @@
   height: 300px;
   @include span(3 of 10);
   @include last();
-}
-
-.people-also-viewed{
-  height: 300px;
-  background: $white;
-  margin-top: -20px;
 }

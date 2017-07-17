@@ -1,4 +1,5 @@
 $green: #60dd63;
+$green_b: #61e063;
 $white: #ffffff;
 $grey: #aaaaaa;
 $black: #000000;
@@ -21,6 +22,7 @@ $dark-border:#343434;
 $nav-lighter:#262626;
 
 $light-grey: #939393;
+$v-light-grey: lighten($light-grey, 30%);
 
 
 .green{

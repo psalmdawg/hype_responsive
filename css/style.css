@@ -64,32 +64,32 @@ a {
   text-decoration: none;
 }
 
-/* line 26, ../scss/_colors.scss */
+/* line 28, ../scss/_colors.scss */
 .green {
   color: #60dd63;
 }
 
-/* line 29, ../scss/_colors.scss */
+/* line 31, ../scss/_colors.scss */
 .white {
   color: #ffffff;
 }
 
-/* line 33, ../scss/_colors.scss */
+/* line 35, ../scss/_colors.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 36, ../scss/_colors.scss */
+/* line 38, ../scss/_colors.scss */
 .orange {
   color: #fcaa35;
 }
 
-/* line 40, ../scss/_colors.scss */
+/* line 42, ../scss/_colors.scss */
 .black-bg {
   background: #000000;
 }
 
-/* line 44, ../scss/_colors.scss */
+/* line 46, ../scss/_colors.scss */
 .border-grey {
   border: 1px solid #343434;
 }
@@ -2795,30 +2795,6 @@ a {
   margin-left: 1%;
 }
 
-/* line 29, ../scss/partials/_si_bonusbetting.scss */
-.bps-recommended-provider table {
-  width: 100%;
-}
-/* line 32, ../scss/partials/_si_bonusbetting.scss */
-.bps-recommended-provider thead {
-  background: #e0e0e0;
-}
-/* line 35, ../scss/partials/_si_bonusbetting.scss */
-.bps-recommended-provider th, .bps-recommended-provider td {
-  text-align: center;
-  border: red 1px solid;
-  height: 65px;
-  width: 21.42857%;
-  float: left;
-}
-/* line 42, ../scss/partials/_si_bonusbetting.scss */
-.bps-recommended-provider th:last-child, .bps-recommended-provider td:last-child {
-  width: 14.28571%;
-  float: left;
-  float: right;
-  margin-right: 0;
-}
-
 /* line 3, ../scss/partials/_player_profiles.scss */
 .p-profile-innr {
   background: #ffffff;
@@ -2833,10 +2809,51 @@ a {
   margin-right: 0.91743%;
   border: 1px #fcaa35 solid;
   background: #ffffff;
+  padding: 15px;
+}
+/* line 15, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-jersey {
+  width: 22.59259%;
+  float: left;
+  margin-right: 1.85185%;
+}
+/* line 20, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-jersey img {
+  width: 100%;
+}
+/* line 24, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-team-info {
+  width: 75.55556%;
+  float: left;
+  margin-right: 1.85185%;
+  float: right;
+  margin-right: 0;
+  border: 1px red solid;
   height: 150px;
+  padding-top: 0.3125em;
+}
+/* line 31, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-team-info .pp-team-info-title {
+  width: 60%;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: "cooper-hewitt-bold";
+  letter-spacing: 0.08em;
+}
+/* line 34, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-team-info .pp-team-info-title span {
+  color: #fcaa35;
+}
+/* line 44, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-team-info .pp-team-info-sub span {
+  color: #fcaa35;
+}
+/* line 49, ../scss/partials/_player_profiles.scss */
+.p-profile-left .pp-team-info .pp-team-info-chart {
+  border: green 1px solid;
+  height: 75px;
 }
 
-/* line 16, ../scss/partials/_player_profiles.scss */
+/* line 58, ../scss/partials/_player_profiles.scss */
 .p-profile-right {
   width: 39.44954%;
   float: left;
@@ -2848,13 +2865,13 @@ a {
   height: 150px;
 }
 
-/* line 24, ../scss/partials/_player_profiles.scss */
+/* line 66, ../scss/partials/_player_profiles.scss */
 .player-rating-wrp {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 29, ../scss/partials/_player_profiles.scss */
+/* line 71, ../scss/partials/_player_profiles.scss */
 .p-rating-left {
   background: #ffffff;
   height: 300px;
@@ -2863,7 +2880,7 @@ a {
   margin-right: 0.91743%;
 }
 
-/* line 35, ../scss/partials/_player_profiles.scss */
+/* line 77, ../scss/partials/_player_profiles.scss */
 .p-rating-right {
   background: #ffffff;
   height: 300px;
@@ -2874,13 +2891,6 @@ a {
   margin-right: 0;
 }
 
-/* line 42, ../scss/partials/_player_profiles.scss */
-.people-also-viewed {
-  height: 300px;
-  background: #ffffff;
-  margin-top: -20px;
-}
-
 /* line 3, ../scss/partials/_team_profiles.scss */
 .t-profile-innr {
   background: #ffffff;
@@ -2888,17 +2898,67 @@ a {
   height: 200px;
 }
 
-/* line 9, ../scss/partials/_team_profiles.scss */
+/* line 10, ../scss/partials/_team_profiles.scss */
 .t-profile-left {
-  width: 64.6789%;
+  width: 63.66972%;
   float: left;
   margin-right: 0.91743%;
   border: 1px #fcaa35 solid;
   background: #ffffff;
-  height: 150px;
+  padding: 15px;
+}
+/* line 17, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-jersey {
+  width: 24.62963%;
+  float: left;
+  margin-right: 1.85185%;
+}
+/* line 19, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-jersey img {
+  width: 100%;
+}
+/* line 24, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info {
+  width: 73.51852%;
+  float: left;
+  margin-right: 1.85185%;
+  float: right;
+  margin-right: 0;
+  padding-top: 0.3125em;
+}
+/* line 29, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info .tp-team-info-title {
+  width: 60%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: "roboto-bold";
+  letter-spacing: 0.06em;
+  font-size: 0.875em;
+}
+/* line 34, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info .tp-team-info-title span {
+  color: #fcaa35;
+}
+/* line 44, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info .tp-team-info-sub {
+  font-family: "roboto-bold";
+  letter-spacing: 0.06em;
+  font-size: 0.625em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 50, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info .tp-team-info-sub span {
+  color: #fcaa35;
+}
+/* line 55, ../scss/partials/_team_profiles.scss */
+.t-profile-left .tp-team-info .tp-team-info-chart {
+  height: 123px;
+  background: #e0e0e0;
 }
 
-/* line 16, ../scss/partials/_team_profiles.scss */
+/* line 64, ../scss/partials/_team_profiles.scss */
 .t-profile-right {
   width: 34.40367%;
   float: left;
@@ -2907,21 +2967,137 @@ a {
   margin-right: 0;
   background: #ffffff;
   border: 1px #fcaa35 solid;
-  height: 150px;
+  padding: 1.25em 1.25em 0 1.25em;
+}
+/* line 71, ../scss/partials/_team_profiles.scss */
+.t-profile-right .tpr-stats {
+  padding: 3px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  height: 33px;
+  font-family: "roboto-bold";
+  font-size: 0.75em;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 81, ../scss/partials/_team_profiles.scss */
+.t-profile-right .tpr-stats:last-child {
+  border-bottom: none;
+}
+/* line 84, ../scss/partials/_team_profiles.scss */
+.t-profile-right .tpr-stats span {
+  float: right;
 }
 
-/* line 24, ../scss/partials/_team_profiles.scss */
+/* line 90, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap {
   margin-top: 15px;
   background: #ffffff;
+  padding: 15px;
   width: 64.6789%;
   float: left;
   margin-right: 0.91743%;
-  height: 340px;
+}
+/* line 96, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umw-title {
+  margin-bottom: 15px;
+  font-family: "roboto-bold";
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+/* line 106, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table {
+  border: 1px solid #e0e0e0;
+}
+/* line 109, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-title {
+  padding: 0.625em;
+  font-family: 'roboto-bold';
+  font-size: 0.6875em;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 114, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-title span {
+  font-weight: bolder;
+  line-spacing: 0.08em;
+}
+/* line 117, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-title span:last-child {
+  float: right;
+}
+/* line 124, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table {
+  border: red 1px solid;
+  width: 100%;
+}
+/* line 128, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table thead {
+  height: 100px;
+  background: #e0e0e0;
+  vertical-align: middle;
+}
+/* line 134, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table thead tr td {
+  height: 35px;
+  vertical-align: middle;
+  max-width: 5%;
+}
+/* line 141, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table thead tr .umt-p-o {
+  text-align: center;
+}
+/* line 150, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table tbody .umt-p-o {
+  text-align: center;
+  padding: 0;
+}
+/* line 156, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .upcoming-match-table table tbody tr td {
+  padding-left: 15px;
+  height: 50px;
+  vertical-align: middle;
+  margin: 5px;
+  border: #e0e0e0 1px solid;
+}
+/* line 168, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-socials {
+  border: #e0e0e0 1px solid;
+  height: 50px;
+  width: 50%;
+  float: right;
+  background: red;
+}
+/* line 175, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-buttons {
+  clear: both;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+}
+/* line 181, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-buttons .umt-button-dmp {
+  background: #fcaa35;
+  color: #ffffff;
+  width: 50%;
+  float: left;
+  height: 40px;
+}
+/* line 187, ../scss/partials/_team_profiles.scss */
+.upcoming-match-wrap .umt-buttons .umt-button-vl {
+  background: #61e063;
+  color: #ffffff;
+  width: 50%;
+  float: left;
+  float: right;
+  margin-right: 0;
+  height: 40px;
 }
 
-/* line 31, ../scss/partials/_team_profiles.scss */
+/* line 197, ../scss/partials/_team_profiles.scss */
 .current-squad-wrp {
+  padding: 15px;
   margin-top: 15px;
   background: #ffffff;
   width: 34.40367%;
@@ -2929,19 +3105,120 @@ a {
   margin-right: 0.91743%;
   float: right;
   margin-right: 0;
-  height: 695px;
+  height: 613px;
   margin-bottom: 15px;
 }
+/* line 205, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-sqd-title {
+  padding-bottom: 5px;
+  font-family: "roboto-bold";
+  font-size: 0.75em;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+/* line 215, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu {
+  height: 100%;
+  font-family: "roboto-medium";
+  font-size: 0.625em;
+  letter-spacing: 0.06em;
+}
+/* line 220, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 34px;
+  line-height: 34px;
+  clear: both;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 225, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row:nth-child(1) {
+  border: none;
+  background: #e0e0e0;
+}
+/* line 233, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row .cur-sq-lu-name-title {
+  float: left;
+}
+/* line 236, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row .cur-sq-lu-rating-title {
+  float: right;
+}
+/* line 240, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row .cur-sq-lu-name {
+  float: left;
+}
+/* line 243, ../scss/partials/_team_profiles.scss */
+.current-squad-wrp .current-squad-lu .cslu-row .cur-sq-lu-rating {
+  float: right;
+  padding-right: 10px;
+}
 
-/* line 40, ../scss/partials/_team_profiles.scss */
+/* line 251, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp {
   margin-top: 15px;
   width: 64.6789%;
   float: left;
   margin-right: 0.91743%;
   background: #ffffff;
-  height: 340px;
+  padding: 0.9375em;
   margin-bottom: 15px;
+}
+/* line 258, ../scss/partials/_team_profiles.scss */
+.team-rating-ot-wrp .tr-ot-title {
+  font-family: "roboto-bold";
+  border-bottom: #e0e0e0 1px solid;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* line 264, ../scss/partials/_team_profiles.scss */
+.team-rating-ot-wrp .tr-table {
+  height: 200px;
+  background: grey;
+}
+
+/* line 271, ../scss/partials/_team_profiles.scss */
+.people-also-viewed {
+  padding: 0.9375em;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: -20px;
+}
+/* line 277, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-title {
+  margin-bottom: 1.25em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 3px;
+  letter-spacing: 0.08em;
+  width: 11.5em;
+}
+/* line 286, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-col-wrp .pav-col {
+  background: white;
+  width: 27.8125%;
+  float: left;
+  margin-right: 3.125%;
+}
+/* line 288, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-col-wrp .pav-col:nth-child(1) {
+  border-right: 1px solid #e0e0e0;
+}
+/* line 295, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-col-wrp .pav-col:nth-child(2) {
+  border-right: 1px solid #e0e0e0;
+}
+/* line 299, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-col-wrp .pav-col:nth-child(3) {
+  float: right;
+  margin-right: 0;
+}
+/* line 303, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-col-wrp .pav-col .pav-people {
+  height: 27px;
+  line-height: 30px;
+  font-size: 10px;
 }
 
 /* line 21, ../scss/style.scss */
