@@ -2,8 +2,6 @@
 
 
 .si-content-reviews{
-  border: 1px solid black;
-  // height: 50px;
   overflow: hidden;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -12,17 +10,222 @@
 .si-c-left{
   background-image: url(../images/small-ad.jpg);
   background-repeat: no-repeat;
-  // background-size: 100%;
-  // background-size: cover;
   background-size: 100% 100%;
-  height: 75px;
-  @include span(1 of 3 );
+  height: 80px;
+  width: 22.21875%;
+  float:left;
+
+  .sic-art-thumb{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    height: 80px;
+
+    .sic-art-thumb-date{
+      border: $orange 1px solid;
+      position: absolute;
+      height: 27px;
+      width: 100px;
+      bottom: 0;
+      right: 0;
+
+
+      .sic-atd-left{
+        background: $white;
+        height: 25px;
+        border-right: $orange 1px solid;
+        @include span(1 of 2 (gutters: 0));
+        padding-top: 8px;
+      }
+      .sic-atd-right{
+        @include span(1 of 2 (gutters: 0));
+        @include last();
+        background: $black;
+        height: 25px;
+        color: $white;
+        padding-top: 8px;
+      }
+    }
+  }
+
 }
 
 .si-c-right{
-  background: red;
-  height: 75px;
+  margin-left: 22px;
+  font-size: em(12px);
+  letter-spacing: 0.06em;
   @include span(2 of 3);
-  @include last();
 
+  .si-c-title{
+    font-family: 'roboto-bold';
+    padding-bottom: 5px;
+  }
+
+  .si-c-sub{
+    color: $v-light-grey;
+    padding-bottom: 5px;
+  }
+  .si-c-body{
+    font-family: 'roboto-medium';
+    letter-spacing: 0.02em;
+
+  }
+
+}
+
+.bp-sports-wrp{
+
+  .bp-sports-title{
+    border-bottom: 1px solid $v-light-grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'cooper-hewitt-bold';
+  }
+  .bp-sports-sub{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'roboto-bold';
+  }
+  .blog-sec-img-ctr{
+    margin-bottom: 10px;
+    img{
+      vertical-align: bottom;
+    }
+  }
+  .bsec-img-text{
+    border: $orange 1px solid;
+    padding: 15px;
+    font-size: em(12px);
+  }
+}
+
+.bp-top-headlines-wrp{
+  // border: 1px solid red;
+  height: 100%;
+  .bp-top-headlines-title{
+    font-family: 'roboto-bold';
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $v-light-grey;
+    margin-bottom: 10px;
+  }
+  .si-c-sports-choices{
+    overflow: hidden;
+    .si-c-sports-choice-btn{
+      font-family: 'cooper-hewitt-bold';
+      font-size: em(12px);
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 2px;
+      margin-bottom: 10px;
+      @include span( 0.95 of 5 );
+      &:last-child{
+        @include span( 1.2 of 5 );
+        @include last();
+      }
+      border: 1px solid $black;
+    }
+  }
+  .btp-t-headlines-list{
+    clear: both;
+    margin-top: 5px;
+    // border: red 1px solid;
+    .btp-t-headline{
+      height: 12.5%;
+      font-size: em(10px);
+      padding: 5px;
+      span{
+        margin-right: 5px;
+        color: $v-light-grey;
+        font-size: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
+
+.sic-sports-prediction-wrp{
+  font-size: em(12px);
+  font-family: 'roboto-bold';
+  .sic-sports-prediction-title{
+    padding: 5px;
+    border-bottom: 1px solid $v-light-grey;
+  }
+  .sic-sports-prediction-date{
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    span{
+      font-weight: normal;
+      font-family: 'roboto-medium';
+    };
+  }
+  .sic-sports-prediction-teams{
+
+    .sic-sports-prediction-team{
+      padding: 20px;
+      background: $v-light-grey;
+      &:first-child{
+        border: 1px $green_b solid;
+        background: none;
+      }
+      .sic-spt-color{
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        background: maroon;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .sic-view-all-btn{
+    border: $black 1px solid;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'cooper-hewitt-bold';
+  }
+}
+
+.bp-newsletter-signup-wrp{
+  font-family: 'roboto-bold';
+  font-size: em(12px);
+
+  .bp-newsletter-title{
+    padding: 5px;
+    border-bottom: 1px solid $v-light-grey;
+  }
+
+  .bp-newsletter-text{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px
+  }
+
+  .bp-newsletter-input{
+    overflow: hidden;
+    input{
+      height: 30px;
+      background: lighten($v-light-grey, 5%);
+      border: none;
+      font-size: 12px;
+      float: left;
+      padding-left: 10px;
+      @include span(4 of 5 (gutters: 0));
+    };
+    .bp-newsletter-input-btn{
+      border: 1px solid $black;
+      text-align: center;
+      float: left;
+      height: 30px;
+      padding: 8px;
+      @include span(1 of 5 (gutters: 0));
+      @include last()
+    }
+  }
 }

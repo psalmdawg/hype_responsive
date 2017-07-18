@@ -12,6 +12,7 @@
   background: $white;
   // height: 150px;
   padding: 15px;
+
   .pp-jersey{
     @include span(1.2 of 5);
     // @include float-left();
@@ -21,46 +22,73 @@
       width: 100%;
     }
   }
-  .pp-team-info{
+  .pp-name-wrp{
     @include span(3.8 of 5);
     @include last();
-    // @include float-left();
-    border: 1px red solid;
-    height: 150px;
-    padding-top: em(5px);
-    .pp-team-info-title{
-      width: 60%;
-
-      span{
-        color: $orange;
-      }
-
+    // border: 1px solid red;
+    .pp-name{
+      color: $orange;
+      font-size: em(30px);
+      font-style: italic;
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+    .pp-team{
       border-bottom: 1px solid $v-light-grey;
-      font-family: "cooper-hewitt-bold";
-      letter-spacing: 0.08em;
     }
-
-    .pp-team-info-sub{
-      span{
-        color: $orange;
-      }
-    }
-
-    .pp-team-info-chart{
-      border: green 1px solid;
-      height: 75px;
-
-    }
-
   }
+
+  // .pp-team-info{
+  //   @include span(3.8 of 5);
+  //   @include last();
+  //   // @include float-left();
+  //   border: 1px red solid;
+  //   height: 150px;
+  //   padding-top: em(5px);
+  //   .pp-team-info-title{
+  //     width: 60%;
+  //
+  //     span{
+  //       color: $orange;
+  //     }
+  //
+  //     border-bottom: 1px solid $v-light-grey;
+  //     font-family: "cooper-hewitt-bold";
+  //     letter-spacing: 0.08em;
+  //   }
+  //
+  //   .pp-team-info-sub{
+  //     span{
+  //       color: $orange;
+  //     }
+  //   }
+  //
+  //   .pp-team-info-chart{
+  //     border: green 1px solid;
+  //     height: 75px;
+  //
+  //   }
+  //
+  // }
 }
 
 .p-profile-right{
   @include span(4 of 10);
   @include last();
+  padding: 15px;
   background: $white;
   border: 1px $orange solid;
-  height: 150px;
+  height: 186px;
+  padding-top: 82px;
+
+  .pp-ind-p-rating{
+    padding-bottom: 5px;
+    border-bottom: 1px solid $v-light-grey;
+    span{
+      float:right;
+    }
+  }
+
 }
 
 .player-rating-wrp{
@@ -69,14 +97,28 @@
 }
 
 .p-rating-left{
+  padding: 15px;
   background: $white;
   height: 300px;
   @include span(7 of 10);
 }
 
 .p-rating-right{
+  padding: 15px;
   background: $white;
-  height: 300px;
+
   @include span(3 of 10);
   @include last();
+  .current-sqd-title{
+    color: purple;
+  }
+  .current-squad-lu{
+    height: 242px;
+    .cu-sq-lu-name{
+      padding-top: 17px;
+      height: 16.6666666667%;
+      border-bottom: 1px solid $v-light-grey;
+    }
+
+  }
 }

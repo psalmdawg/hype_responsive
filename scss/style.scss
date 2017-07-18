@@ -71,6 +71,17 @@ $break-medium: 850px;
 .pl-20{
   padding-left: em(25px);
 }
+.bt-red{
+  border-top: 3px solid #f92c47;
+}
+
+.bt-blue{
+  border-top: 3px solid #1dafed;
+}
+
+.bt-violet{
+  border-top: 3px solid #b9add3;
+}
 @mixin float-left {
   @include float(left);
 }
