@@ -32,10 +32,14 @@
   border: $v-light-grey 1px solid;
 }
 
+.bp-img-caption{
+  color: $v-light-grey;
+  float: right;
+}
 .blog-sec-img-ctr{
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   img{
     width: 100%;
   }
@@ -43,11 +47,67 @@
 
 .blog-section-title{
   color: $orange;
+  font-family: 'cooper-hewitt-bold';
   font-weight: bold;
+  font-size: em(20px);
+  letter-spacing: 0.06em;
+  width: 505px;
+  line-height: 34px;
+}
+
+.blog-sec-title-socials{
+
+  overflow: hidden;
+  margin-top: 15px;
+  color: $v-light-grey;
+  clear: both;
+
+  .bsts-text{
+    font-size: 13px;
+    float: left;
+    padding-top: 7px;
+    margin-right: 16px;
+    font-family: 'roboto-medium';
+    letter-spacing: 0.04em;
+  }
+
+  .bsts-box{
+    border: 1px solid $v-light-grey;
+    width: 30px;
+    color: $grey;
+    float: left;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
 }
 
 .blog-section-title-sub{
   font-weight: bold;
+  font-family: "roboto-bold";
+  font-size: em(12px);
+}
+.blog-sec-article-text{
+  line-height: 1.3;
+  font-size: em(12px);
+  div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "roboto-bold";
+  }
+}
+.blog-sec-large-heading{
+  color: $orange;
+  margin-top: 15px;
+}
+.blog-sec-large-subheading{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "roboto-bold";
 }
 
 .bp-text-box{
@@ -81,13 +141,13 @@
         // border: red 1px solid;
         overflow: hidden;
         .bp-flc-a-article{
-          @include span(1 of 2);
+          @include span(1 of 2 (gutters:0));
           &:last-child{
             @include last();
           }
           .bpfa-left{
-            @include span(1 of 2);
-            max-width: 85px;
+            @include span(1 of 2 );
+            max-width: 92px;
             // background: yellow;
             min-height: 40px;
             position: relative;
@@ -133,9 +193,10 @@
           }
           .bpfa-right{
             @include span(1 of 2);
-            @include last();
+            // @include last();
 
             // background: orange;
+
             min-height: 35px;
             font-size: em(8px);
 
@@ -179,14 +240,20 @@
 .bp-insider-tips-author {
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  // border: 1px solid black;
+  overflow: hidden;
 }
 
+.bp-blog-author-inr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 540px;
+}
 
 .bp-avatar-ctr{
   border-radius: 50%;
-  width:100px;
-  height:100px;
+  width:85px;
+  height:85px;
   background: pink;
   float: left;
   margin-right: 20px;
@@ -195,13 +262,14 @@
 .bp-i-t-name{
   // float: left;
 
-
+  margin-bottom: 16px;
   margin-left: 20px;
 }
 
 .bp-i-t-body{
   margin: 20px;
   margin-right: 20%;
+
   // margin-left: 20px;
   // margin-bottom: 20px;
   // float: left;
@@ -211,8 +279,9 @@
 .bp-table{
   // height: 400px;
   // background: lightgrey;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  // margin-bottom: 30px;
+  // margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .bp-table-inner{
@@ -245,11 +314,13 @@
 
   .bpt-heading{
     font-weight: bold;
-    font-size: 14px;
+    font-family: 'roboto-bold';
+    font-size: em(12px);
+    padding-top: 5px;
   }
 
   .bpt-text{
-    // font-weight: bold;
+    padding-top: 10px;
     font-size: 12px;
   }
 
@@ -260,4 +331,52 @@
   font-family: "cooper-hewitt-bold";
   font-size: em(10px);
   cursor: pointer;
+}
+
+.bp-trending-articles{
+
+}
+
+.bp-t-art-title{
+  padding-bottom: 5px;
+  font-family: "roboto-bold";
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 10px;
+}
+
+.bp-t-art-sub{
+  padding-bottom: 5px;
+  font-family: "roboto-bold";
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid $v-light-grey;
+  margin-bottom: 10px;
+}
+
+.bp-t-art-text{
+  font-family: 'cooper-hewitt-bold';
+  font-size: em(16px);
+  // letter-spacing: 0.02em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bp-t-art-minor-text{
+  color: $v-light-grey;
+  font-family: 'roboto-bold';
+  font-size: em(12px);
+  // letter-spacing: 0.02em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.bp-t-art-wrp{
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $v-light-grey;
 }

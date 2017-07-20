@@ -1,0 +1,173 @@
+@import 'compass';
+
+.login-main-ctr{
+  border: 1px $orange solid;
+  width: 550px;
+  margin: 10px auto;
+}
+
+.login-header{
+  position: relative;
+  height: 70px;
+  background: $orange;
+  color: white;
+  font-family: 'cooper-hewitt-bold';
+  line-height: 74px;
+  text-align: center;
+  font-size: 22px;
+  .login-close{
+    // float: right;
+    // margin-right: 20px;
+    font-size: 36px;
+    position: absolute;
+    right: 25px;
+    bottom: -5px;
+    cursor: pointer;
+    &:hover{
+      color: $v-light-grey;
+    }
+
+  }
+}
+
+.fb-login{
+  cursor: pointer;
+  background: #5d78a8;
+  height: 30px;
+  line-height: 32px;
+  width: 70%;
+  margin: 50px auto 25px auto;
+  border-radius: 2px;
+  text-align: center;
+  font-family:'roboto-thin';
+  .fb-login-i{
+    font-size: 30px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-right: 1px grey solid;
+    line-height: 30px;
+  }
+}
+
+.ggle-login{
+  cursor: pointer;
+  background: #4c8ef3;
+  height: 30px;
+  line-height: 32px;
+  width: 70%;
+  margin: 20px auto 30px auto;
+  border-radius: 2px;
+  text-align: center;
+  font-family:'roboto-thin';
+  .ggl-login-i{
+    line-height: 30px;
+    height: 30px;
+    font-size: 26px;
+    float: left;
+    width: 30px;
+    border-right: 1px grey solid;
+  }
+}
+
+.lg-alt-text{
+
+  margin: 65px auto 12px auto;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  font-family: 'roboto-bold';
+}
+
+.login-form-wrp{
+  margin: 0 auto;
+  width: 70%;
+
+  input{
+    float: left;
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    padding-left: 22px;
+    font-size: 18px;
+    background: #1a191a;
+    color: $white;
+    border: $dark-border 1px solid;
+    font-family:'roboto-thin';
+  }
+
+  .login-btn-wrap{
+    padding-bottom: 35px;
+    padding-top: 35px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+      border: 1px solid $orange;
+      background: $orange;
+      color: $white;
+      width: 100px;
+      border-radius: 10px;
+      height: 37px;
+      text-align: center;
+      font-size: em(14px);
+      cursor: pointer;
+    }
+  }
+}
+
+
+.signup-wrp{
+  padding-top: 50px;
+  width: 90%;
+  border-top: $orange 1px solid;
+  margin: 0 auto;
+
+  .forgot-pword{
+    @include span(1 of 2 (gutters:0));
+    text-align: right;
+    padding-right: 10px;
+    line-height: 39px;
+    height: 35px;
+    border-right: $orange 1px solid;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    font-family: 'roboto-bold';
+    cursor: pointer;
+  }
+
+  .signup-select{
+    line-height: 39px;
+    @include span(1 of 2 (gutters:0));
+    @include last();
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    font-family: 'roboto-bold';
+    cursor: pointer;
+  }
+
+  .signup-button-wrap{
+    margin-top: 66px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+      border: 1px solid $orange;
+      background: $white;
+      color: $orange;
+      width: 100px;
+      border-radius: 10px;
+      height: 37px;
+      text-align: center;
+      font-size: em(14px);
+      margin-bottom: 60px;
+      cursor: pointer;
+    }
+  }
+
+}

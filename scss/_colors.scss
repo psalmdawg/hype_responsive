@@ -28,6 +28,27 @@ $light-grey: #939393;
 $v-light-grey: lighten($light-grey, 30%);
 $light-grey-bg: #f2f2f2;
 
+$william-hill: #033156;
+$sportsbet: #1dafed;
+$crownbet: #933e8d;
+$luxbet: #b0223f;
+$ladbrokes: #e8212d;
+
+.bg-wh{
+  background:$william-hill;
+}
+.bg-sportsbet{
+  background:$sportsbet;
+}
+.bg-crownBet{
+  background:$crownbet;
+}
+.bg-luxbet{
+  background:$luxbet;
+}
+.bg-ladbrokes{
+  background:$ladbrokes;
+}
 
 
 .green{

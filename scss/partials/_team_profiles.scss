@@ -57,6 +57,10 @@
       // border: green 1px solid;
       height: 110px;
       background: $v-light-grey;
+      img{
+        width: 100%;
+        height: 110px;
+      }
     }
   }
 }
@@ -156,37 +160,42 @@
       height: 50px;
       // line-height: 50px;
       &:nth-child(1){
-        background: $grey_2;
+        background: #e6e5e6;
         margin-bottom: 0;
         .umt-mt-predicted, .umt-mt-team, .umt-mt-outcome{
           border: none;
         }
       }
 
+
       .umt-mt-team{
         padding-top: 16px;
         padding-left: 14px;
-        // background: $v-light-grey;
+
         border: lighten($v-light-grey, 7%) 1px solid;
         height: 100%;
         @include span(7.4 of 10 (gutters: 0.03));
+
 
         .umt-team-color{
           // margin-top: 7px;
           background: red;
           border-radius: 50%;
-          height: 30px;
-          width: 30px;
+          height: 17px;
+          width: 17px;
           float: left;
           margin-top: -6px;
+          border: 1px solid yellow;
 
 
         }
         .umt-team-right{
-          letter-spacing: 0.08em;
+          font-family: 'roboto-bold';
+          letter-spacing: 0.01em;
           float: left;
           margin-left: 14px;
           height: 100%;
+          font-size: 14px;
           .umt-team-title{
             margin-top: -6px;
             span{
@@ -195,7 +204,10 @@
           }
           .umt-team-pr{
             margin-top: 2px;
-            font-size: 14px;
+            font-size: 12px;
+            span{
+              font-family: 'cooper-hewitt-heavy';
+            }
           }
         }
       }
@@ -223,12 +235,31 @@
   }
   .umt-socials{
     border: lighten($v-light-grey, 7%) 1px solid;
-    height: 50px;
-
     float: right;
-    // background: red;
     @include span(2.6 of 10 (gutters: 0.03));
-    @include last()
+    @include last();
+    padding: 15px;
+    font-size: 13px;
+
+    .umt-socials-title{
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .umt-socials-icons{
+      overflow: auto;
+      width: 73px;
+      margin: 0 auto;
+      img{
+        width: 18px;
+        float: left;
+        margin-left: 5px;
+        cursor: pointer;
+        &:hover{
+          background: orange;
+        }
+      }
+    }
   }
   .umt-buttons{
     font-family: 'cooper-hewitt-bold';
@@ -260,8 +291,8 @@
   background: $white;
   @include span(3.5 of 10);
   @include last();
-  height: 613px;
   margin-bottom: 15px;
+  height: 657px
 
 }
   .current-sqd-title{
@@ -270,25 +301,24 @@
     font-size: em(12px);
     letter-spacing: 0.06em;
     border-bottom: 1px solid $v-light-grey;
-    // padding-bottom: 5px;
     margin-bottom: 10px;
 
   }
   .current-squad-lu{
     height: 100%;
-    font-family: "roboto-medium";
-    font-size: em(10px);
-    letter-spacing: 0.06em;
+    font-family: "roboto-bold";
+    font-size: em(13px);
+    letter-spacing: 0.04em;
     .cslu-row{
       padding-left: 10px;
       padding-right: 10px;
-      height: 34px;
+      height: 38px;
       line-height: 34px;
+      padding-top: 5px;
+      font-family: 'roboto-medium';
       &:nth-child(1){
         border: none;
-        // color: red;
         background: $v-light-grey;
-
       }
       clear: both;
       border-bottom: 1px solid $v-light-grey;
@@ -314,6 +344,7 @@
   margin-top: 15px;
   @include span(6.5 of 10);
   background: $white;
+  font-size: 0.8125em;
   // height: 340px;
   padding: em(15px);
   margin-bottom: 15px;
@@ -324,14 +355,19 @@
     margin-bottom: 10px;
   }
   .tr-table{
-    height: 200px;
+
+    overflow: hidden;
     background: grey;
-    // width: 100%;
+
+    img{
+      width: 100%;
+      vertical-align: bottom;
+    }
   }
 }
 
 .people-also-viewed{
-  padding: em(15px);
+  padding: 25px;
   overflow: hidden;
   background: $white;
   margin-top: -20px;
@@ -342,32 +378,48 @@
     padding-bottom: 3px;
     letter-spacing: 0.08em;
     width: em(184px);
+    font-family: 'roboto-bold';
+    letter-spacing: 0.04em;
+    font-size: 0.8125em;
   }
   .pav-col-wrp{
-    // height: 100%;
+
     .pav-col{
       background: lighten(red, 50%);
+
       &:nth-child(1){
         border-right: 1px solid $v-light-grey;
+        text-align: left;
       }
 
-      // height: 100%;
-      @include span(0.9 of 3);
+      @include span(1 of 3);
 
       &:nth-child(2){
         border-right: 1px solid $v-light-grey;
+        padding-left: 7%;
       }
 
       &:nth-child(3){
         @include last();
+        padding-left: 7%;
       }
 
       .pav-people{
-        height: 27px;
+        height: 31px;
         line-height: 30px;
-        font-size: 10px;
+        font-family: 'roboto-bold';
+        letter-spacing: 0.04em;
+        font-size: 0.8125em;
       }
     }
   }
 
+}
+
+.umtmt-bg{
+  background: #e6e5e6;
+}
+
+.umtmt-bg_b{
+  background: #f2f2f2;
 }

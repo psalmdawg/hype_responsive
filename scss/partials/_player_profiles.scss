@@ -15,9 +15,6 @@
 
   .pp-jersey{
     @include span(1.2 of 5);
-    // @include float-left();
-    // width: em(150px);
-
     img{
       width: 100%;
     }
@@ -27,49 +24,22 @@
     @include last();
     // border: 1px solid red;
     .pp-name{
+      font-family: 'cooper-hewitt-bold';
       color: $orange;
       font-size: em(30px);
       font-style: italic;
-      margin-bottom: 15px;
-      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-top: 37px;
     }
     .pp-team{
       border-bottom: 1px solid $v-light-grey;
+      font-family: 'roboto-bold';
+      font-size: em(22px);
+      letter-spacing: 0.04em;
     }
   }
 
-  // .pp-team-info{
-  //   @include span(3.8 of 5);
-  //   @include last();
-  //   // @include float-left();
-  //   border: 1px red solid;
-  //   height: 150px;
-  //   padding-top: em(5px);
-  //   .pp-team-info-title{
-  //     width: 60%;
-  //
-  //     span{
-  //       color: $orange;
-  //     }
-  //
-  //     border-bottom: 1px solid $v-light-grey;
-  //     font-family: "cooper-hewitt-bold";
-  //     letter-spacing: 0.08em;
-  //   }
-  //
-  //   .pp-team-info-sub{
-  //     span{
-  //       color: $orange;
-  //     }
-  //   }
-  //
-  //   .pp-team-info-chart{
-  //     border: green 1px solid;
-  //     height: 75px;
-  //
-  //   }
-  //
-  // }
+
 }
 
 .p-profile-right{
@@ -79,11 +49,14 @@
   background: $white;
   border: 1px $orange solid;
   height: 186px;
-  padding-top: 82px;
+  padding-top: 72px;
 
   .pp-ind-p-rating{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-bottom: 1px solid $v-light-grey;
+    font-family: 'roboto-bold';
+    letter-spacing: 0.04em;
+    font-size: em(13px);
     span{
       float:right;
     }
@@ -99,25 +72,50 @@
 .p-rating-left{
   padding: 15px;
   background: $white;
-  height: 300px;
   @include span(7 of 10);
+}
+.p-rating-ot{
+  .p-rating-ot-title{
+    font-family: 'roboto-bold';
+    letter-spacing: 0.04em;
+    font-size: em(13px);
+    border-bottom: 1px solid $v-light-grey;
+    width: 200px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .prot-table{
+
+    overflow: hidden;
+    background: grey;
+
+    img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
 }
 
 .p-rating-right{
+  font-family: 'roboto-bold';
+  letter-spacing: 0.04em;
+  font-size: 1em;
   padding: 15px;
   background: $white;
-
   @include span(3 of 10);
   @include last();
+
   .current-sqd-title{
-    color: purple;
+    width: 80%;
   }
   .current-squad-lu{
     height: 242px;
     .cu-sq-lu-name{
       padding-top: 17px;
-      height: 16.6666666667%;
-      border-bottom: 1px solid $v-light-grey;
+      padding-bottom: 8px;
+      margin-left: 10px;
+      border-bottom: 1px solid #e0e0e0;
     }
 
   }

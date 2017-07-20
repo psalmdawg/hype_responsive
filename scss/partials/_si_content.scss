@@ -47,7 +47,6 @@
       }
     }
   }
-
 }
 
 .si-c-right{
@@ -58,7 +57,7 @@
 
   .si-c-title{
     font-family: 'roboto-bold';
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
 
   .si-c-sub{
@@ -66,11 +65,11 @@
     padding-bottom: 5px;
   }
   .si-c-body{
-    font-family: 'roboto-medium';
+    font-family: 'roboto-thin';
     letter-spacing: 0.02em;
-
+    line-height: 1.3;
+    font-size: 12px;
   }
-
 }
 
 .bp-sports-wrp{
@@ -79,12 +78,19 @@
     border-bottom: 1px solid $v-light-grey;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: 'cooper-hewitt-bold';
+    font-family: 'roboto-bold';
+    font-size: em(12px);
+    img{
+      vertical-align: sub;
+      width: 22px;
+      margin-right: 5px;
+    }
   }
   .bp-sports-sub{
     margin-top: 15px;
     font-size: 14px;
     font-family: 'roboto-bold';
+    margin-bottom: 20px;
   }
   .blog-sec-img-ctr{
     margin-bottom: 10px;
@@ -95,7 +101,9 @@
   .bsec-img-text{
     border: $orange 1px solid;
     padding: 15px;
-    font-size: em(12px);
+
+    line-height: 1.3;
+    font-size: 0.75em
   }
 }
 
@@ -107,23 +115,28 @@
     padding-top: 10px;
     padding-bottom: 3px;
     border-bottom: 1px solid $v-light-grey;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .si-c-sports-choices{
     overflow: hidden;
     .si-c-sports-choice-btn{
       font-family: 'cooper-hewitt-bold';
-      font-size: em(12px);
+      font-size: em(13px);
       text-align: center;
-      padding-top: 5px;
-      padding-bottom: 2px;
+      padding-top: 7px;
+      padding-bottom: 3px;
       margin-bottom: 10px;
+      cursor: pointer;
+      border: 1px solid $black;
       @include span( 0.95 of 5 );
       &:last-child{
         @include span( 1.2 of 5 );
         @include last();
       }
-      border: 1px solid $black;
+      &:hover{
+        background: $orange;
+      }
+
     }
   }
   .btp-t-headlines-list{
@@ -132,7 +145,7 @@
     // border: red 1px solid;
     .btp-t-headline{
       height: 12.5%;
-      font-size: em(10px);
+      font-size: em(11px);
       padding: 5px;
       span{
         margin-right: 5px;
@@ -197,14 +210,18 @@
   font-size: em(12px);
 
   .bp-newsletter-title{
-    padding: 5px;
+    padding-bottom: 7px;
     border-bottom: 1px solid $v-light-grey;
   }
 
   .bp-newsletter-text{
-    padding: 5px;
+    padding-top: 10px;
     margin-top: 5px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-family: 'roboto-thin';
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    font-size: 12px;
   }
 
   .bp-newsletter-input{

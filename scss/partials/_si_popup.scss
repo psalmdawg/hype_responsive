@@ -1,0 +1,81 @@
+@import 'compass';
+
+.popup-ctr{
+  font-family: 'cooper-hewitt-medium';
+  border: 1px solid $orange;
+  width: 500px;
+  height: 600px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.popup-close{
+  font-size: 26px;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  color: $grey;
+  cursor: pointer;
+  &:hover{
+    color: darken($grey, 6%);
+  }
+}
+
+.popup-inr{
+  margin: 50px 20px 20px 20px;
+}
+
+.popup-header{
+  font-size: 28px;
+  color: $white;
+  font-family: 'roboto-bold';
+}
+
+.popup-form-wrp{
+  width: 100%;
+}
+
+.checkbox-wrp{
+  overflow: auto;
+  margin: 20px;
+  margin-bottom: 25px;
+  color: $grey;
+  padding: 20px;
+
+  label{
+    @include float-left();
+  }
+  input{
+    @include float-right();
+  }
+}
+
+.popup-text-wrp{
+  margin: 0px 20px;
+  padding: 0px 20px;
+}
+
+.popup-input-section{
+  margin: 20px;
+  padding: 20px;
+  label{
+    line-height: 20px;
+    color: $grey;
+    @include span( 1 of 2);
+  }
+  input{
+    border: none;
+    height: 25px;
+    @include span( 1 of 2);
+    @include last();
+    padding: 8px;
+  }
+}
+
+.popup-text-body{
+  margin-top: 20px;
+  font-family: 'roboto-thin';
+  line-height: 1.4;
+  font-size: em(12px);
+  color: $grey;
+}

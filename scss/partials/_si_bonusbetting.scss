@@ -1,19 +1,68 @@
 @import "compass";
 
 .bp-betting-windows{
-  height: 200px;
+  text-align: center;
+  height: 310px;
   border: red 1px solid;
   @include span(1 of 5);
 
   &:nth-child(5){
-    background: blue;
     @include last();
   }
+
+  .bp-bw-title{
+    padding: 18px;
+
+    background: lightgrey;
+    margin: 0 auto;
+    text-align: center;
+    height: 55px;
+    font-size: em(16px);
+    font-family: 'cooper-hewitt-bold';
+  }
+
+  .bp-first-bet-match{
+    line-height: 1.35;
+    text-align: center;
+    color: $v-light-grey;
+    letter-spacing: 0.04em;
+    width: 65%;
+    font-size: em(12px);
+    margin: 30px auto 20px auto;
+  }
+
+  .bp-main-bet{
+    margin: 0 auto;
+    width: 65%;
+    font-family: 'roboto-bold';
+    div{
+      text-align: center;
+      font-size: em(45px);
+      &:last-child{
+        text-align: center;
+        margin-top: 7px;
+        font-size: em(13px);
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+
+  .bp-bw-btn{
+    font-size: em(13px);
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    border: 1px solid $black;
+    font-family: 'cooper-hewitt-bold';
+  }
+
 }
 
 .bp-odds-windows{
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 49.5%;
   @include float-left();
   padding: em(10px);
@@ -25,23 +74,74 @@
   }
 }
 
-// .bps-recommended-provider{
-//   table{
-//     width: 100%;
-//   }
-//   thead{
-//     background: $v-light-grey;
-//   }
-//   th, td{
-//     // vertical-align:bottom;
-//     text-align: center;
-//     border: red 1px solid;
-//     height: 65px;
-//     // line-height: 67px;
-//     @include span(3 of 14 (gutters:0) );
-//     &:last-child{
-//       @include span(2 of 14 (gutters:0) );
-//       @include last();
-//     }
-//   }
-// }
+.bps-recommended-provider{
+  .bps-r-p-header{
+    color: $white;
+    font-family: 'cooper-hewitt-bold';
+    padding: 10px;
+    letter-spacing: 0.06em;
+  }
+  table{
+    width: 100%;
+  }
+  thead{
+    background: $v-light-grey;
+
+  }
+  th{
+    font-family: 'cooper-hewitt-heavy';
+    height: 40px;
+    border: $v-light-grey 1px solid;
+    padding-top: 17px;
+    &:nth-child(4){
+
+      color: $red;
+    }
+  }
+
+  tr{
+
+    td{
+
+      &:nth-child(5){
+        color: white;
+        padding-top: 18px;
+        div{
+          margin: 0 auto;
+          height: 20px;
+          width: 65px;
+          padding-top: 5px;
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  td{
+    height: 60px;
+    padding-top: 25px;
+    font-family: 'roboto-medium';
+  }
+  th, td{
+    font-size: em(12px);
+    text-align: center;
+    border: $v-light-grey 1px solid;
+
+    @include span(3 of 14 (gutters:0) );
+    &:last-child{
+      @include span(2 of 14 (gutters:0) );
+      @include last();
+    }
+  }
+}
+
+.bsls-custom-title{
+  width: 350px;
+  border-bottom: 1px solid $v-light-grey;
+}
+
+.bsls-custom-wrp{
+  p{
+    margin-top: 10px;
+    font-family: 'roboto-medium';
+  }
+}
