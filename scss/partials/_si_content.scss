@@ -14,6 +14,11 @@
   height: 80px;
   width: 22.21875%;
   float:left;
+  @media screen and (max-width: $break-small) {
+    // @include span(1 of 1);
+    width: 150px;
+    float: left;
+  }
 
   .sic-art-thumb{
     font-size: 12px;
@@ -55,6 +60,12 @@
   letter-spacing: 0.06em;
   @include span(2 of 3);
 
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    clear: both;
+    padding-top: 10px;
+  }
+
   .si-c-title{
     font-family: 'roboto-bold';
     padding-bottom: 7px;
@@ -65,7 +76,7 @@
     padding-bottom: 5px;
   }
   .si-c-body{
-    font-family: 'roboto-thin';
+    font-family: 'roboto-medium';
     letter-spacing: 0.02em;
     line-height: 1.3;
     font-size: 12px;
@@ -101,7 +112,7 @@
   .bsec-img-text{
     border: $orange 1px solid;
     padding: 15px;
-
+    margin-bottom: 20px;
     line-height: 1.3;
     font-size: 0.75em
   }
@@ -111,8 +122,10 @@
   // border: 1px solid red;
   height: 100%;
   .bp-top-headlines-title{
-    font-family: 'roboto-bold';
-    padding-top: 10px;
+    font-family: 'cooper-hewitt-bold';
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    // padding-top: 10px;
     padding-bottom: 3px;
     border-bottom: 1px solid $v-light-grey;
     margin-bottom: 15px;
@@ -135,6 +148,8 @@
       }
       &:hover{
         background: $orange;
+        color: white;
+        border:none;
       }
 
     }

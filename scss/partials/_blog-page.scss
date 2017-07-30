@@ -6,6 +6,11 @@
 }
 
 .blog-page-inner-ctr{
+  @media screen and (max-width: $break-small) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   margin-left: 8em;
   margin-right: 8em;
   color: $black;
@@ -15,9 +20,21 @@
   min-height: 100vh;
   width: 100%;
   @include span(8.2 of 12);
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
 }
 
 .blog-page-right{
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
   min-height: 100vh;
   width: 100%;
   @include span(3.7 of 12);
@@ -26,10 +43,17 @@
 
 .blog-page-section{
   background: white;
-  padding: 20px;
+  padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: $v-light-grey 1px solid;
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
 }
 
 .bp-img-caption{
@@ -44,6 +68,92 @@
     width: 100%;
   }
 }
+
+.blog-img-date-ctr-large{
+  position: relative;
+  background-image: url(../assets/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 337px;
+
+  .bidc-date-large{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    // background: red;
+    // height: 30px;
+    width: 163px;
+    .bidc-d-left-large{
+      @include span(1 of 2 (gutters:0));
+      background: white;
+      height: 40px;
+      color: $orange;
+      text-align: center;
+      line-height: 44px;
+      font-family: 'cooper-hewitt-bold';
+      border-top:1px solid $orange;
+      border-left:1px solid $orange;
+      // border-bottom:1px solid $orange;
+    }
+    .bidc-d-right-large{
+      border-top:1px solid $orange;
+      border-left:1px solid $orange;
+      border-right:1px solid $orange;
+      @include span(1 of 2 (gutters:0));
+      @include last();
+      background: $black;
+      height: 40px;
+      color: $white;
+      text-align: center;
+      line-height: 44px;
+      font-family: 'cooper-hewitt-bold';
+    }
+  }
+}
+
+.blog-img-date-ctr{
+  position: relative;
+  background-image: url(../assets/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 130px;
+
+  .bidc-date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 13px;
+    // background: red;
+    // height: 30px;
+    width: 118px;
+    .bidc-d-left{
+      @include span(1 of 2 (gutters:0));
+      background: white;
+      height: 27px;
+      color: $orange;
+      text-align: center;
+      line-height: 30px;
+      font-family: 'cooper-hewitt-bold';
+      border-top:1px solid $orange;
+      border-left:1px solid $orange;
+      border-bottom:1px solid $orange;
+    }
+    .bidc-d-right{
+      border:1px solid $orange;
+      @include span(1 of 2 (gutters:0));
+      @include last();
+      background: $black;
+      height: 27px;
+      color: $white;
+      text-align: center;
+      line-height: 30px;
+      font-family: 'cooper-hewitt-bold';
+    }
+  }
+}
+
+
 
 .blog-section-title{
   color: $orange;
@@ -61,26 +171,28 @@
   margin-top: 15px;
   color: $v-light-grey;
   clear: both;
+  margin-bottom: 5px;
 
   .bsts-text{
-    font-size: 13px;
+    font-size: em(12px);
     float: left;
-    padding-top: 7px;
+    line-height: 20px;
     margin-right: 16px;
     font-family: 'roboto-medium';
     letter-spacing: 0.04em;
+    margin-top: 2px;
   }
 
   .bsts-box{
     border: 1px solid $v-light-grey;
-    width: 30px;
+    width: 25px;
     color: $grey;
     float: left;
     text-align: center;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 3px;
-    font-size: 12px;
+    padding: 3px 0px;
+    font-size: 15px;
     border-radius: 2px;
   }
 }
@@ -101,12 +213,15 @@
 }
 .blog-sec-large-heading{
   color: $orange;
-  margin-top: 15px;
+  margin-top: 23px;
+  font-size: em(20px);
+  font-family: "roboto-bold";
 }
 .blog-sec-large-subheading{
-  font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+  margin-bottom: 12px;
   font-family: "roboto-bold";
 }
 
@@ -133,7 +248,7 @@
 
     .bp-flc-articles-inr{
       padding: 2px;
-      margin-right: 20%;
+      margin-right: 15%;
       // border: blue 1px solid;
       // min-height: 20px;
       .bp-flc-a-row{
@@ -146,9 +261,9 @@
             @include last();
           }
           .bpfa-left{
-            @include span(1 of 2 );
+            @include span(1 of 2 (gutters:0));
+            margin-right: 10px;
             max-width: 92px;
-            // background: yellow;
             min-height: 40px;
             position: relative;
             background-image: url(../assets/pexels-photo.png);
@@ -162,14 +277,15 @@
               // border: 1px solid red;
               bottom: 0;
               right: 0;
-              font-size: 10px;
+              font-size: 9px;
 
 
               .bpfa-date-left{
 
                 height: 17px;
                 background: $white;
-                color: $black;
+                font-family: 'cooper-hewitt-bold';
+                color: $orange;
                 line-height: 19px;
                 text-align: center;
                 border: $orange 1px solid;
@@ -181,22 +297,24 @@
               .bpfa-date-right{
                 @include span(1 of 2 (gutters:0) ) ;
                 @include last();
+                font-family: 'cooper-hewitt-bold';
                 // @include float-left();
                 line-height: 19px;
                 height: 17px;
                 background: $black;
-                color: $orange;
+                color: $white;
                 text-align: center;
+
               }
             }
 
           }
           .bpfa-right{
             @include span(1 of 2);
-            // @include last();
-
-            // background: orange;
-
+            padding-top: 2px;
+            font-family: 'cooper-hewitt-bold';
+            font-size: 10px;
+            letter-spacing: 0.04em;
             min-height: 35px;
             font-size: em(8px);
 
@@ -212,7 +330,7 @@
   display: table;
   width: 100%;
   height: 40px;
-  padding-top: em(5px);
+  padding-top: em(3px);
   cursor: pointer;
 
   &:hover{
@@ -220,9 +338,10 @@
     color: $orange;
   }
   .bp-big-btn-inr{
-    display: table-cell;
-    vertical-align: middle;
+    font-size: em(11px);
+    font-family: 'cooper-hewitt-bold';
     text-align: center;
+    line-height: 35px;
   }
 }
 
@@ -302,14 +421,17 @@
 
   th{
     border: 1px solid $v-light-grey;
-    height: 50px;
+    height: 40px;
     vertical-align: middle;
+    font-family: 'roboto-bold';
+    font-size: em(14px);
   }
 
   td{
     height: 60px;
     border: 1px solid $v-light-grey;
-    padding: em(15px);
+    padding: em(12px);
+    letter-spacing: 0.04em;
   }
 
   .bpt-heading{
@@ -340,10 +462,10 @@
 .bp-t-art-title{
   padding-bottom: 5px;
   font-family: "roboto-bold";
-  font-size: 0.8em;
+  font-size: 0.9em;
   letter-spacing: 0.05em;
-
-  margin-bottom: 10px;
+  border-bottom: 1px solid $v-light-grey;
+  margin-bottom: 15px;
 }
 
 .bp-t-art-sub{
@@ -351,8 +473,8 @@
   font-family: "roboto-bold";
   font-size: 0.8em;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid $v-light-grey;
-  margin-bottom: 10px;
+
+  margin-bottom: 15px;
 }
 
 .bp-t-art-text{
@@ -379,4 +501,42 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid $v-light-grey;
+}
+
+.bps-share-convo-ctr{
+  .bps-sh-title{
+    font-size: em(12px);
+    text-align: center;
+    color: $black;;
+    margin: 0 auto;
+    padding-bottom: 7px;
+  }
+  .bps-sh-boxes{
+    overflow: auto;
+    width: 35%;
+    margin: 10px auto;
+  }
+
+  .bps-sh-box{
+    @include span( 1 of 3);
+    border: 1px solid $v-light-grey;
+    // width: 25px;
+    color: $black;
+    float: left;
+    text-align: center;
+    // margin-left: 1px;
+    // margin-right: 1px;
+    padding: 3px 0px;
+    font-size: 15px;
+    border-radius: 2px;
+    &:last-child{
+      @include last();
+    }
+  }
+  .bps-sh-title-underline{
+    width: 114px;
+    height: 3px;
+    border-bottom: 1px solid $v-light-grey;
+    margin: 0 auto;
+  }
 }

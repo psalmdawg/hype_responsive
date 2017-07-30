@@ -7,6 +7,12 @@
 }
 
 .p-profile-left{
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
   @include span(6 of 10);
   border: 1px $orange solid;
   background: $white;
@@ -17,6 +23,9 @@
     @include span(1.2 of 5);
     img{
       width: 100%;
+      @media screen and (max-width: $break-small) {
+        margin-top: 31px;
+      }
     }
   }
   .pp-name-wrp{
@@ -43,6 +52,12 @@
 }
 
 .p-profile-right{
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
   @include span(4 of 10);
   @include last();
   padding: 15px;
@@ -67,9 +82,22 @@
 .player-rating-wrp{
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: $break-small) {
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
 }
 
 .p-rating-left{
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
   padding: 15px;
   background: $white;
   @include span(7 of 10);
@@ -98,6 +126,12 @@
 }
 
 .p-rating-right{
+
+  @media screen and (max-width: $break-small) {
+    @include span(1 of 1);
+    margin-bottom: 5px;
+  }
+
   font-family: 'roboto-bold';
   letter-spacing: 0.04em;
   font-size: 1em;

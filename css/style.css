@@ -2504,8 +2504,15 @@ a {
   margin-right: 8em;
   color: #000000;
 }
+@media screen and (max-width: 750px) {
+  /* line 8, ../scss/partials/_blog-page.scss */
+  .blog-page-inner-ctr {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 
-/* line 14, ../scss/partials/_blog-page.scss */
+/* line 19, ../scss/partials/_blog-page.scss */
 .blog-page-left {
   min-height: 100vh;
   width: 100%;
@@ -2513,8 +2520,18 @@ a {
   float: left;
   margin-right: 0.76336%;
 }
+@media screen and (max-width: 750px) {
+  /* line 19, ../scss/partials/_blog-page.scss */
+  .blog-page-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
 
-/* line 20, ../scss/partials/_blog-page.scss */
+/* line 31, ../scss/partials/_blog-page.scss */
 .blog-page-right {
   min-height: 100vh;
   width: 100%;
@@ -2524,34 +2541,146 @@ a {
   float: right;
   margin-right: 0;
 }
+@media screen and (max-width: 750px) {
+  /* line 31, ../scss/partials/_blog-page.scss */
+  .blog-page-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
 
-/* line 27, ../scss/partials/_blog-page.scss */
+/* line 44, ../scss/partials/_blog-page.scss */
 .blog-page-section {
   background: white;
-  padding: 20px;
+  padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: #e0e0e0 1px solid;
 }
+@media screen and (max-width: 750px) {
+  /* line 44, ../scss/partials/_blog-page.scss */
+  .blog-page-section {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 
-/* line 35, ../scss/partials/_blog-page.scss */
+/* line 59, ../scss/partials/_blog-page.scss */
 .bp-img-caption {
   color: #e0e0e0;
   float: right;
 }
 
-/* line 39, ../scss/partials/_blog-page.scss */
+/* line 63, ../scss/partials/_blog-page.scss */
 .blog-sec-img-ctr {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 43, ../scss/partials/_blog-page.scss */
+/* line 67, ../scss/partials/_blog-page.scss */
 .blog-sec-img-ctr img {
   width: 100%;
 }
 
-/* line 48, ../scss/partials/_blog-page.scss */
+/* line 72, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr-large {
+  position: relative;
+  background-image: url(../assets/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 337px;
+}
+/* line 79, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr-large .bidc-date-large {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 18px;
+  width: 163px;
+}
+/* line 87, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr-large .bidc-date-large .bidc-d-left-large {
+  width: 50%;
+  float: left;
+  background: white;
+  height: 40px;
+  color: #fcaa35;
+  text-align: center;
+  line-height: 44px;
+  font-family: 'cooper-hewitt-bold';
+  border-top: 1px solid #fcaa35;
+  border-left: 1px solid #fcaa35;
+}
+/* line 99, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr-large .bidc-date-large .bidc-d-right-large {
+  border-top: 1px solid #fcaa35;
+  border-left: 1px solid #fcaa35;
+  border-right: 1px solid #fcaa35;
+  width: 50%;
+  float: left;
+  float: right;
+  margin-right: 0;
+  background: #000000;
+  height: 40px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 44px;
+  font-family: 'cooper-hewitt-bold';
+}
+
+/* line 115, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr {
+  position: relative;
+  background-image: url(../assets/pexels-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 130px;
+}
+/* line 122, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr .bidc-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 13px;
+  width: 118px;
+}
+/* line 130, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr .bidc-date .bidc-d-left {
+  width: 50%;
+  float: left;
+  background: white;
+  height: 27px;
+  color: #fcaa35;
+  text-align: center;
+  line-height: 30px;
+  font-family: 'cooper-hewitt-bold';
+  border-top: 1px solid #fcaa35;
+  border-left: 1px solid #fcaa35;
+  border-bottom: 1px solid #fcaa35;
+}
+/* line 142, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr .bidc-date .bidc-d-right {
+  border: 1px solid #fcaa35;
+  width: 50%;
+  float: left;
+  float: right;
+  margin-right: 0;
+  background: #000000;
+  height: 27px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-family: 'cooper-hewitt-bold';
+}
+
+/* line 158, ../scss/partials/_blog-page.scss */
 .blog-section-title {
   color: #fcaa35;
   font-family: 'cooper-hewitt-bold';
@@ -2562,77 +2691,82 @@ a {
   line-height: 34px;
 }
 
-/* line 58, ../scss/partials/_blog-page.scss */
+/* line 168, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials {
   overflow: hidden;
   margin-top: 15px;
   color: #e0e0e0;
   clear: both;
+  margin-bottom: 5px;
 }
-/* line 65, ../scss/partials/_blog-page.scss */
+/* line 176, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials .bsts-text {
-  font-size: 13px;
+  font-size: 0.75em;
   float: left;
-  padding-top: 7px;
+  line-height: 20px;
   margin-right: 16px;
   font-family: 'roboto-medium';
   letter-spacing: 0.04em;
+  margin-top: 2px;
 }
-/* line 74, ../scss/partials/_blog-page.scss */
+/* line 186, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials .bsts-box {
   border: 1px solid #e0e0e0;
-  width: 30px;
+  width: 25px;
   color: #aaaaaa;
   float: left;
   text-align: center;
   margin-left: 1px;
   margin-right: 1px;
-  padding: 3px;
-  font-size: 12px;
+  padding: 3px 0px;
+  font-size: 15px;
   border-radius: 2px;
 }
 
-/* line 88, ../scss/partials/_blog-page.scss */
+/* line 200, ../scss/partials/_blog-page.scss */
 .blog-section-title-sub {
   font-weight: bold;
   font-family: "roboto-bold";
   font-size: 0.75em;
 }
 
-/* line 93, ../scss/partials/_blog-page.scss */
+/* line 205, ../scss/partials/_blog-page.scss */
 .blog-sec-article-text {
   line-height: 1.3;
   font-size: 0.75em;
 }
-/* line 96, ../scss/partials/_blog-page.scss */
+/* line 208, ../scss/partials/_blog-page.scss */
 .blog-sec-article-text div {
   margin-top: 15px;
   margin-bottom: 15px;
   font-family: "roboto-bold";
 }
 
-/* line 102, ../scss/partials/_blog-page.scss */
+/* line 214, ../scss/partials/_blog-page.scss */
 .blog-sec-large-heading {
   color: #fcaa35;
-  margin-top: 15px;
-}
-
-/* line 106, ../scss/partials/_blog-page.scss */
-.blog-sec-large-subheading {
-  font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 23px;
+  font-size: 1.25em;
   font-family: "roboto-bold";
 }
 
-/* line 113, ../scss/partials/_blog-page.scss */
+/* line 220, ../scss/partials/_blog-page.scss */
+.blog-sec-large-subheading {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-family: "roboto-bold";
+}
+
+/* line 228, ../scss/partials/_blog-page.scss */
 .bp-text-box {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 119, ../scss/partials/_blog-page.scss */
+/* line 234, ../scss/partials/_blog-page.scss */
 .bp-underliner {
   border-bottom: 1px solid #e0e0e0;
   height: 2px;
@@ -2640,35 +2774,35 @@ a {
   margin-bottom: 10px;
 }
 
-/* line 127, ../scss/partials/_blog-page.scss */
+/* line 242, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr {
   padding: 2px;
 }
-/* line 134, ../scss/partials/_blog-page.scss */
+/* line 249, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr {
   padding: 2px;
-  margin-right: 20%;
+  margin-right: 15%;
 }
-/* line 139, ../scss/partials/_blog-page.scss */
+/* line 254, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 143, ../scss/partials/_blog-page.scss */
+/* line 258, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article {
   width: 50%;
   float: left;
 }
-/* line 145, ../scss/partials/_blog-page.scss */
+/* line 260, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 148, ../scss/partials/_blog-page.scss */
+/* line 263, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left {
-  width: 47.61905%;
+  width: 50%;
   float: left;
-  margin-right: 4.7619%;
+  margin-right: 10px;
   max-width: 92px;
   min-height: 40px;
   position: relative;
@@ -2676,20 +2810,21 @@ a {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-/* line 158, ../scss/partials/_blog-page.scss */
+/* line 273, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date {
   position: absolute;
   width: 75%;
   max-width: 65px;
   bottom: 0;
   right: 0;
-  font-size: 10px;
+  font-size: 9px;
 }
-/* line 168, ../scss/partials/_blog-page.scss */
+/* line 283, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date .bpfa-date-left {
   height: 17px;
   background: #ffffff;
-  color: #000000;
+  font-family: 'cooper-hewitt-bold';
+  color: #fcaa35;
   line-height: 19px;
   text-align: center;
   border: #fcaa35 1px solid;
@@ -2697,77 +2832,83 @@ a {
   float: left;
   float: left;
 }
-/* line 181, ../scss/partials/_blog-page.scss */
+/* line 297, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date .bpfa-date-right {
   width: 50%;
   float: left;
   float: right;
   margin-right: 0;
+  font-family: 'cooper-hewitt-bold';
   line-height: 19px;
   height: 17px;
   background: #000000;
-  color: #fcaa35;
+  color: #ffffff;
   text-align: center;
 }
-/* line 194, ../scss/partials/_blog-page.scss */
+/* line 312, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-right {
   width: 47.61905%;
   float: left;
   margin-right: 4.7619%;
+  padding-top: 2px;
+  font-family: 'cooper-hewitt-bold';
+  font-size: 10px;
+  letter-spacing: 0.04em;
   min-height: 35px;
   font-size: 0.5em;
 }
 
-/* line 210, ../scss/partials/_blog-page.scss */
+/* line 328, ../scss/partials/_blog-page.scss */
 .bp-big-btn {
   border: 1px solid #000000;
   display: table;
   width: 100%;
   height: 40px;
-  padding-top: 0.3125em;
+  padding-top: 0.1875em;
   cursor: pointer;
 }
-/* line 218, ../scss/partials/_blog-page.scss */
+/* line 336, ../scss/partials/_blog-page.scss */
 .bp-big-btn:hover {
   border: #fcaa35 1px solid;
   color: #fcaa35;
 }
-/* line 222, ../scss/partials/_blog-page.scss */
+/* line 340, ../scss/partials/_blog-page.scss */
 .bp-big-btn .bp-big-btn-inr {
-  display: table-cell;
-  vertical-align: middle;
+  font-size: 0.6875em;
+  font-family: 'cooper-hewitt-bold';
   text-align: center;
+  line-height: 35px;
 }
 
-/* line 229, ../scss/partials/_blog-page.scss */
+/* line 348, ../scss/partials/_blog-page.scss */
 .bp-posted-date {
   margin-bottom: 20px;
 }
 
-/* line 233, ../scss/partials/_blog-page.scss */
+/* line 352, ../scss/partials/_blog-page.scss */
 .bp-share-socials {
   margin-bottom: 20px;
 }
-/* line 235, ../scss/partials/_blog-page.scss */
+/* line 354, ../scss/partials/_blog-page.scss */
 .bp-share-socials span {
   margin-left: 10px;
 }
 
-/* line 240, ../scss/partials/_blog-page.scss */
+/* line 359, ../scss/partials/_blog-page.scss */
 .bp-insider-tips-author {
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-/* line 247, ../scss/partials/_blog-page.scss */
+/* line 366, ../scss/partials/_blog-page.scss */
 .bp-blog-author-inr {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 540px;
 }
 
-/* line 253, ../scss/partials/_blog-page.scss */
+/* line 372, ../scss/partials/_blog-page.scss */
 .bp-avatar-ctr {
   border-radius: 50%;
   width: 85px;
@@ -2777,60 +2918,63 @@ a {
   margin-right: 20px;
 }
 
-/* line 262, ../scss/partials/_blog-page.scss */
+/* line 381, ../scss/partials/_blog-page.scss */
 .bp-i-t-name {
   margin-bottom: 16px;
   margin-left: 20px;
 }
 
-/* line 269, ../scss/partials/_blog-page.scss */
+/* line 388, ../scss/partials/_blog-page.scss */
 .bp-i-t-body {
   margin: 20px;
   margin-right: 20%;
 }
 
-/* line 279, ../scss/partials/_blog-page.scss */
+/* line 398, ../scss/partials/_blog-page.scss */
 .bp-table {
   margin-bottom: 25px;
 }
 
-/* line 287, ../scss/partials/_blog-page.scss */
+/* line 406, ../scss/partials/_blog-page.scss */
 .bp-table-inner {
   border: 1px solid black;
   width: 100%;
   overflow: auto;
 }
-/* line 293, ../scss/partials/_blog-page.scss */
+/* line 412, ../scss/partials/_blog-page.scss */
 .bp-table-inner thead {
   background: #e0e0e0;
   text-align: center;
 }
-/* line 303, ../scss/partials/_blog-page.scss */
+/* line 422, ../scss/partials/_blog-page.scss */
 .bp-table-inner th {
   border: 1px solid #e0e0e0;
-  height: 50px;
+  height: 40px;
   vertical-align: middle;
+  font-family: 'roboto-bold';
+  font-size: 0.875em;
 }
-/* line 309, ../scss/partials/_blog-page.scss */
+/* line 430, ../scss/partials/_blog-page.scss */
 .bp-table-inner td {
   height: 60px;
   border: 1px solid #e0e0e0;
-  padding: 0.9375em;
+  padding: 0.75em;
+  letter-spacing: 0.04em;
 }
-/* line 315, ../scss/partials/_blog-page.scss */
+/* line 437, ../scss/partials/_blog-page.scss */
 .bp-table-inner .bpt-heading {
   font-weight: bold;
   font-family: 'roboto-bold';
   font-size: 0.75em;
   padding-top: 5px;
 }
-/* line 322, ../scss/partials/_blog-page.scss */
+/* line 444, ../scss/partials/_blog-page.scss */
 .bp-table-inner .bpt-text {
   padding-top: 10px;
   font-size: 12px;
 }
 
-/* line 329, ../scss/partials/_blog-page.scss */
+/* line 451, ../scss/partials/_blog-page.scss */
 .bp-vma {
   color: #fcaa35;
   font-family: "cooper-hewitt-bold";
@@ -2838,26 +2982,26 @@ a {
   cursor: pointer;
 }
 
-/* line 340, ../scss/partials/_blog-page.scss */
+/* line 462, ../scss/partials/_blog-page.scss */
 .bp-t-art-title {
   padding-bottom: 5px;
   font-family: "roboto-bold";
-  font-size: 0.8em;
+  font-size: 0.9em;
   letter-spacing: 0.05em;
-  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
 }
 
-/* line 349, ../scss/partials/_blog-page.scss */
+/* line 471, ../scss/partials/_blog-page.scss */
 .bp-t-art-sub {
   padding-bottom: 5px;
   font-family: "roboto-bold";
   font-size: 0.8em;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* line 358, ../scss/partials/_blog-page.scss */
+/* line 480, ../scss/partials/_blog-page.scss */
 .bp-t-art-text {
   font-family: 'cooper-hewitt-bold';
   font-size: 1em;
@@ -2865,7 +3009,7 @@ a {
   margin-bottom: 5px;
 }
 
-/* line 366, ../scss/partials/_blog-page.scss */
+/* line 488, ../scss/partials/_blog-page.scss */
 .bp-t-art-minor-text {
   color: #e0e0e0;
   font-family: 'roboto-bold';
@@ -2874,7 +3018,7 @@ a {
   margin-bottom: 4px;
 }
 
-/* line 375, ../scss/partials/_blog-page.scss */
+/* line 497, ../scss/partials/_blog-page.scss */
 .bp-t-art-wrp {
   cursor: pointer;
   margin-top: 5px;
@@ -2882,6 +3026,46 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+/* line 507, ../scss/partials/_blog-page.scss */
+.bps-share-convo-ctr .bps-sh-title {
+  font-size: 0.75em;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+  padding-bottom: 7px;
+}
+/* line 514, ../scss/partials/_blog-page.scss */
+.bps-share-convo-ctr .bps-sh-boxes {
+  overflow: auto;
+  width: 35%;
+  margin: 10px auto;
+}
+/* line 520, ../scss/partials/_blog-page.scss */
+.bps-share-convo-ctr .bps-sh-box {
+  width: 31.25%;
+  float: left;
+  margin-right: 3.125%;
+  border: 1px solid #e0e0e0;
+  color: #000000;
+  float: left;
+  text-align: center;
+  padding: 3px 0px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 532, ../scss/partials/_blog-page.scss */
+.bps-share-convo-ctr .bps-sh-box:last-child {
+  float: right;
+  margin-right: 0;
+}
+/* line 536, ../scss/partials/_blog-page.scss */
+.bps-share-convo-ctr .bps-sh-title-underline {
+  width: 114px;
+  height: 3px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 auto;
 }
 
 /* line 4, ../scss/partials/_si_content.scss */
@@ -2900,14 +3084,21 @@ a {
   width: 22.21875%;
   float: left;
 }
-/* line 18, ../scss/partials/_si_content.scss */
+@media screen and (max-width: 750px) {
+  /* line 10, ../scss/partials/_si_content.scss */
+  .si-c-left {
+    width: 150px;
+    float: left;
+  }
+}
+/* line 23, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb {
   font-size: 12px;
   text-align: center;
   position: relative;
   height: 80px;
 }
-/* line 24, ../scss/partials/_si_content.scss */
+/* line 29, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date {
   border: #fcaa35 1px solid;
   position: absolute;
@@ -2916,7 +3107,7 @@ a {
   bottom: 0;
   right: 0;
 }
-/* line 33, ../scss/partials/_si_content.scss */
+/* line 38, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date .sic-atd-left {
   background: #ffffff;
   height: 25px;
@@ -2925,7 +3116,7 @@ a {
   float: left;
   padding-top: 8px;
 }
-/* line 40, ../scss/partials/_si_content.scss */
+/* line 45, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date .sic-atd-right {
   width: 50%;
   float: left;
@@ -2937,7 +3128,7 @@ a {
   padding-top: 8px;
 }
 
-/* line 52, ../scss/partials/_si_content.scss */
+/* line 57, ../scss/partials/_si_content.scss */
 .si-c-right {
   margin-left: 22px;
   font-size: 0.75em;
@@ -2946,25 +3137,36 @@ a {
   float: left;
   margin-right: 3.125%;
 }
-/* line 58, ../scss/partials/_si_content.scss */
+@media screen and (max-width: 750px) {
+  /* line 57, ../scss/partials/_si_content.scss */
+  .si-c-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+    padding-top: 10px;
+  }
+}
+/* line 69, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-title {
   font-family: 'roboto-bold';
   padding-bottom: 7px;
 }
-/* line 63, ../scss/partials/_si_content.scss */
+/* line 74, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-sub {
   color: #e0e0e0;
   padding-bottom: 5px;
 }
-/* line 67, ../scss/partials/_si_content.scss */
+/* line 78, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-body {
-  font-family: 'roboto-thin';
+  font-family: 'roboto-medium';
   letter-spacing: 0.02em;
   line-height: 1.3;
   font-size: 12px;
 }
 
-/* line 77, ../scss/partials/_si_content.scss */
+/* line 88, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-title {
   border-bottom: 1px solid #e0e0e0;
   padding-top: 5px;
@@ -2972,52 +3174,54 @@ a {
   font-family: 'roboto-bold';
   font-size: 0.75em;
 }
-/* line 83, ../scss/partials/_si_content.scss */
+/* line 94, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-title img {
   vertical-align: sub;
   width: 22px;
   margin-right: 5px;
 }
-/* line 89, ../scss/partials/_si_content.scss */
+/* line 100, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-sub {
   margin-top: 15px;
   font-size: 14px;
   font-family: 'roboto-bold';
   margin-bottom: 20px;
 }
-/* line 95, ../scss/partials/_si_content.scss */
+/* line 106, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .blog-sec-img-ctr {
   margin-bottom: 10px;
 }
-/* line 97, ../scss/partials/_si_content.scss */
+/* line 108, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .blog-sec-img-ctr img {
   vertical-align: bottom;
 }
-/* line 101, ../scss/partials/_si_content.scss */
+/* line 112, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bsec-img-text {
   border: #fcaa35 1px solid;
   padding: 15px;
+  margin-bottom: 20px;
   line-height: 1.3;
   font-size: 0.75em;
 }
 
-/* line 110, ../scss/partials/_si_content.scss */
+/* line 121, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp {
   height: 100%;
 }
-/* line 113, ../scss/partials/_si_content.scss */
+/* line 124, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .bp-top-headlines-title {
-  font-family: 'roboto-bold';
-  padding-top: 10px;
+  font-family: 'cooper-hewitt-bold';
+  font-size: 12px;
+  letter-spacing: 0.06em;
   padding-bottom: 3px;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 15px;
 }
-/* line 120, ../scss/partials/_si_content.scss */
+/* line 133, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices {
   overflow: hidden;
 }
-/* line 122, ../scss/partials/_si_content.scss */
+/* line 135, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn {
   font-family: 'cooper-hewitt-bold';
   font-size: 0.8125em;
@@ -3031,7 +3235,7 @@ a {
   float: left;
   margin-right: 1.85185%;
 }
-/* line 132, ../scss/partials/_si_content.scss */
+/* line 145, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn:last-child {
   width: 22.59259%;
   float: left;
@@ -3039,22 +3243,24 @@ a {
   float: right;
   margin-right: 0;
 }
-/* line 136, ../scss/partials/_si_content.scss */
+/* line 149, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn:hover {
   background: #fcaa35;
+  color: white;
+  border: none;
 }
-/* line 142, ../scss/partials/_si_content.scss */
+/* line 157, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list {
   clear: both;
   margin-top: 5px;
 }
-/* line 146, ../scss/partials/_si_content.scss */
+/* line 161, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list .btp-t-headline {
   height: 12.5%;
   font-size: 0.6875em;
   padding: 5px;
 }
-/* line 150, ../scss/partials/_si_content.scss */
+/* line 165, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list .btp-t-headline span {
   margin-right: 5px;
   color: #e0e0e0;
@@ -3062,39 +3268,39 @@ a {
   vertical-align: middle;
 }
 
-/* line 161, ../scss/partials/_si_content.scss */
+/* line 176, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp {
   font-size: 0.75em;
   font-family: 'roboto-bold';
 }
-/* line 164, ../scss/partials/_si_content.scss */
+/* line 179, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-title {
   padding: 5px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 168, ../scss/partials/_si_content.scss */
+/* line 183, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-date {
   padding: 5px;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 173, ../scss/partials/_si_content.scss */
+/* line 188, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-date span {
   font-weight: normal;
   font-family: 'roboto-medium';
 }
-/* line 180, ../scss/partials/_si_content.scss */
+/* line 195, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team {
   padding: 20px;
   background: #e0e0e0;
 }
-/* line 183, ../scss/partials/_si_content.scss */
+/* line 198, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team:first-child {
   border: 1px #61e063 solid;
   background: none;
 }
-/* line 187, ../scss/partials/_si_content.scss */
+/* line 202, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team .sic-spt-color {
   border-radius: 50%;
   height: 15px;
@@ -3103,7 +3309,7 @@ a {
   float: left;
   margin-right: 10px;
 }
-/* line 198, ../scss/partials/_si_content.scss */
+/* line 213, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-view-all-btn {
   border: #000000 1px solid;
   padding-top: 15px;
@@ -3113,17 +3319,17 @@ a {
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 208, ../scss/partials/_si_content.scss */
+/* line 223, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp {
   font-family: 'roboto-bold';
   font-size: 0.75em;
 }
-/* line 212, ../scss/partials/_si_content.scss */
+/* line 227, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-title {
   padding-bottom: 7px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 217, ../scss/partials/_si_content.scss */
+/* line 232, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-text {
   padding-top: 10px;
   margin-top: 5px;
@@ -3133,11 +3339,11 @@ a {
   line-height: 1.3;
   font-size: 12px;
 }
-/* line 227, ../scss/partials/_si_content.scss */
+/* line 242, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input {
   overflow: hidden;
 }
-/* line 229, ../scss/partials/_si_content.scss */
+/* line 244, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input input {
   height: 30px;
   background: #ececec;
@@ -3148,7 +3354,7 @@ a {
   width: 80%;
   float: left;
 }
-/* line 238, ../scss/partials/_si_content.scss */
+/* line 253, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input .bp-newsletter-input-btn {
   border: 1px solid #000000;
   text-align: center;
@@ -3327,17 +3533,33 @@ a {
   background: #ffffff;
   padding: 15px;
 }
-/* line 16, ../scss/partials/_player_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 9, ../scss/partials/_player_profiles.scss */
+  .p-profile-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 22, ../scss/partials/_player_profiles.scss */
 .p-profile-left .pp-jersey {
   width: 22.59259%;
   float: left;
   margin-right: 1.85185%;
 }
-/* line 18, ../scss/partials/_player_profiles.scss */
+/* line 24, ../scss/partials/_player_profiles.scss */
 .p-profile-left .pp-jersey img {
   width: 100%;
 }
-/* line 22, ../scss/partials/_player_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 24, ../scss/partials/_player_profiles.scss */
+  .p-profile-left .pp-jersey img {
+    margin-top: 31px;
+  }
+}
+/* line 31, ../scss/partials/_player_profiles.scss */
 .p-profile-left .pp-name-wrp {
   width: 75.55556%;
   float: left;
@@ -3345,7 +3567,7 @@ a {
   float: right;
   margin-right: 0;
 }
-/* line 26, ../scss/partials/_player_profiles.scss */
+/* line 35, ../scss/partials/_player_profiles.scss */
 .p-profile-left .pp-name-wrp .pp-name {
   font-family: 'cooper-hewitt-bold';
   color: #fcaa35;
@@ -3354,7 +3576,7 @@ a {
   margin-bottom: 10px;
   margin-top: 37px;
 }
-/* line 34, ../scss/partials/_player_profiles.scss */
+/* line 43, ../scss/partials/_player_profiles.scss */
 .p-profile-left .pp-name-wrp .pp-team {
   border-bottom: 1px solid #e0e0e0;
   font-family: 'roboto-bold';
@@ -3362,7 +3584,7 @@ a {
   letter-spacing: 0.04em;
 }
 
-/* line 45, ../scss/partials/_player_profiles.scss */
+/* line 54, ../scss/partials/_player_profiles.scss */
 .p-profile-right {
   width: 39.44954%;
   float: left;
@@ -3375,7 +3597,17 @@ a {
   height: 186px;
   padding-top: 72px;
 }
-/* line 54, ../scss/partials/_player_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 54, ../scss/partials/_player_profiles.scss */
+  .p-profile-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 69, ../scss/partials/_player_profiles.scss */
 .p-profile-right .pp-ind-p-rating {
   padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
@@ -3383,18 +3615,25 @@ a {
   letter-spacing: 0.04em;
   font-size: 0.8125em;
 }
-/* line 60, ../scss/partials/_player_profiles.scss */
+/* line 75, ../scss/partials/_player_profiles.scss */
 .p-profile-right .pp-ind-p-rating span {
   float: right;
 }
 
-/* line 67, ../scss/partials/_player_profiles.scss */
+/* line 82, ../scss/partials/_player_profiles.scss */
 .player-rating-wrp {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 750px) {
+  /* line 82, ../scss/partials/_player_profiles.scss */
+  .player-rating-wrp {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 
-/* line 72, ../scss/partials/_player_profiles.scss */
+/* line 94, ../scss/partials/_player_profiles.scss */
 .p-rating-left {
   padding: 15px;
   background: #ffffff;
@@ -3402,8 +3641,18 @@ a {
   float: left;
   margin-right: 0.91743%;
 }
+@media screen and (max-width: 750px) {
+  /* line 94, ../scss/partials/_player_profiles.scss */
+  .p-rating-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
 
-/* line 78, ../scss/partials/_player_profiles.scss */
+/* line 106, ../scss/partials/_player_profiles.scss */
 .p-rating-ot .p-rating-ot-title {
   font-family: 'roboto-bold';
   letter-spacing: 0.04em;
@@ -3414,18 +3663,18 @@ a {
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 88, ../scss/partials/_player_profiles.scss */
+/* line 116, ../scss/partials/_player_profiles.scss */
 .p-rating-ot .prot-table {
   overflow: hidden;
   background: grey;
 }
-/* line 93, ../scss/partials/_player_profiles.scss */
+/* line 121, ../scss/partials/_player_profiles.scss */
 .p-rating-ot .prot-table img {
   width: 100%;
   vertical-align: bottom;
 }
 
-/* line 100, ../scss/partials/_player_profiles.scss */
+/* line 128, ../scss/partials/_player_profiles.scss */
 .p-rating-right {
   font-family: 'roboto-bold';
   letter-spacing: 0.04em;
@@ -3438,15 +3687,25 @@ a {
   float: right;
   margin-right: 0;
 }
-/* line 109, ../scss/partials/_player_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 128, ../scss/partials/_player_profiles.scss */
+  .p-rating-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 143, ../scss/partials/_player_profiles.scss */
 .p-rating-right .current-sqd-title {
   width: 80%;
 }
-/* line 112, ../scss/partials/_player_profiles.scss */
+/* line 146, ../scss/partials/_player_profiles.scss */
 .p-rating-right .current-squad-lu {
   height: 242px;
 }
-/* line 114, ../scss/partials/_player_profiles.scss */
+/* line 148, ../scss/partials/_player_profiles.scss */
 .p-rating-right .current-squad-lu .cu-sq-lu-name {
   padding-top: 17px;
   padding-bottom: 8px;
@@ -3470,18 +3729,34 @@ a {
   background: #ffffff;
   padding: 15px;
 }
-/* line 17, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 10, ../scss/partials/_team_profiles.scss */
+  .t-profile-left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 23, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-jersey {
   width: 22.59259%;
   float: left;
   margin-right: 1.85185%;
   margin-left: -10px;
 }
-/* line 20, ../scss/partials/_team_profiles.scss */
+/* line 26, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-jersey img {
   width: 100%;
 }
-/* line 25, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 26, ../scss/partials/_team_profiles.scss */
+  .t-profile-left .tp-jersey img {
+    margin-top: 31px;
+  }
+}
+/* line 34, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info {
   width: 75.55556%;
   float: left;
@@ -3490,7 +3765,7 @@ a {
   margin-right: 0;
   padding-top: 0.3125em;
 }
-/* line 30, ../scss/partials/_team_profiles.scss */
+/* line 39, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-title {
   width: 60%;
   margin-top: 5px;
@@ -3500,11 +3775,11 @@ a {
   letter-spacing: 0.06em;
   font-size: 0.875em;
 }
-/* line 35, ../scss/partials/_team_profiles.scss */
+/* line 44, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-title span {
   color: #fcaa35;
 }
-/* line 45, ../scss/partials/_team_profiles.scss */
+/* line 54, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-sub {
   font-family: "roboto-bold";
   letter-spacing: 0.06em;
@@ -3512,22 +3787,22 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 51, ../scss/partials/_team_profiles.scss */
+/* line 60, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-sub span {
   color: #fcaa35;
 }
-/* line 56, ../scss/partials/_team_profiles.scss */
+/* line 65, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-chart {
   height: 110px;
   background: #e0e0e0;
 }
-/* line 60, ../scss/partials/_team_profiles.scss */
+/* line 69, ../scss/partials/_team_profiles.scss */
 .t-profile-left .tp-team-info .tp-team-info-chart img {
   width: 100%;
   height: 110px;
 }
 
-/* line 69, ../scss/partials/_team_profiles.scss */
+/* line 78, ../scss/partials/_team_profiles.scss */
 .t-profile-right {
   width: 34.40367%;
   float: left;
@@ -3539,7 +3814,17 @@ a {
   height: 200px;
   padding: 1.25em 1.25em 0 1.25em;
 }
-/* line 76, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 78, ../scss/partials/_team_profiles.scss */
+  .t-profile-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 90, ../scss/partials/_team_profiles.scss */
 .t-profile-right .tpr-stats {
   padding: 3px;
   padding-top: 5px;
@@ -3550,16 +3835,16 @@ a {
   letter-spacing: 0.06em;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 86, ../scss/partials/_team_profiles.scss */
+/* line 100, ../scss/partials/_team_profiles.scss */
 .t-profile-right .tpr-stats:last-child {
   border-bottom: none;
 }
-/* line 89, ../scss/partials/_team_profiles.scss */
+/* line 103, ../scss/partials/_team_profiles.scss */
 .t-profile-right .tpr-stats span {
   float: right;
 }
 
-/* line 95, ../scss/partials/_team_profiles.scss */
+/* line 109, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap {
   margin-top: 15px;
   background: #ffffff;
@@ -3568,7 +3853,18 @@ a {
   float: left;
   margin-right: 0.91743%;
 }
-/* line 101, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 109, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+}
+/* line 121, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umw-title {
   margin-bottom: 15px;
   font-family: "roboto-bold";
@@ -3577,61 +3873,67 @@ a {
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 5px;
 }
-/* line 112, ../scss/partials/_team_profiles.scss */
+/* line 132, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-title {
   padding: 0.625em;
   font-family: 'roboto-bold';
   font-size: 0.6875em;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 118, ../scss/partials/_team_profiles.scss */
+/* line 137, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-title span {
   font-weight: bolder;
   line-spacing: 0.08em;
 }
-/* line 121, ../scss/partials/_team_profiles.scss */
+/* line 140, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-title span:last-child {
   float: right;
 }
-/* line 127, ../scss/partials/_team_profiles.scss */
+/* line 146, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table {
   overflow: auto;
 }
-/* line 132, ../scss/partials/_team_profiles.scss */
+/* line 151, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-date-header {
   font-size: 0.8125em;
   padding: 15px;
   border: 1px solid #e0e0e0;
   font-family: 'roboto-bold';
 }
-/* line 138, ../scss/partials/_team_profiles.scss */
+/* line 156, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-date-header span {
   font-family: 'roboto-medium';
   font-size: 0.75em;
 }
-/* line 141, ../scss/partials/_team_profiles.scss */
+/* line 159, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-date-header span:last-child {
   font-size: 0.8125em;
   float: right;
   font-family: 'roboto-bold';
 }
-/* line 154, ../scss/partials/_team_profiles.scss */
+/* line 172, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row {
   font-family: 'roboto-medium';
   overflow: hidden;
   margin-bottom: 2px;
   height: 50px;
 }
-/* line 162, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 173, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .upcoming-match-table .umt-mt-row:first-child {
+    font-size: 10px;
+  }
+}
+/* line 185, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row:nth-child(1) {
   background: #e6e5e6;
   margin-bottom: 0;
 }
-/* line 165, ../scss/partials/_team_profiles.scss */
+/* line 188, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row:nth-child(1) .umt-mt-predicted, .upcoming-match-wrap .upcoming-match-table .umt-mt-row:nth-child(1) .umt-mt-team, .upcoming-match-wrap .upcoming-match-table .umt-mt-row:nth-child(1) .umt-mt-outcome {
   border: none;
 }
-/* line 171, ../scss/partials/_team_profiles.scss */
+/* line 194, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team {
   padding-top: 16px;
   padding-left: 14px;
@@ -3641,7 +3943,17 @@ a {
   float: left;
   margin-right: 0.29211%;
 }
-/* line 180, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 194, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team {
+    width: 59.88315%;
+    float: left;
+    margin-right: 0.29211%;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+/* line 207, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-color {
   background: red;
   border-radius: 50%;
@@ -3651,7 +3963,7 @@ a {
   margin-top: -6px;
   border: 1px solid yellow;
 }
-/* line 192, ../scss/partials/_team_profiles.scss */
+/* line 219, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right {
   font-family: 'roboto-bold';
   letter-spacing: 0.01em;
@@ -3660,24 +3972,30 @@ a {
   height: 100%;
   font-size: 14px;
 }
-/* line 199, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 219, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right {
+    font-size: 11px;
+  }
+}
+/* line 230, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right .umt-team-title {
   margin-top: -6px;
 }
-/* line 201, ../scss/partials/_team_profiles.scss */
+/* line 232, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right .umt-team-title span {
   color: #fcaa35;
 }
-/* line 205, ../scss/partials/_team_profiles.scss */
+/* line 236, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right .umt-team-pr {
   margin-top: 2px;
   font-size: 12px;
 }
-/* line 208, ../scss/partials/_team_profiles.scss */
+/* line 239, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-team .umt-team-right .umt-team-pr span {
   font-family: 'cooper-hewitt-heavy';
 }
-/* line 214, ../scss/partials/_team_profiles.scss */
+/* line 246, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-predicted {
   font-family: 'cooper-hewitt-bold';
   padding-top: 16px;
@@ -3689,7 +4007,15 @@ a {
   text-align: center;
   font-size: 0.8125em;
 }
-/* line 223, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 246, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-predicted {
+    width: 19.76631%;
+    float: left;
+    margin-right: 0.29211%;
+  }
+}
+/* line 259, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-outcome {
   font-family: 'cooper-hewitt-bold';
   padding-top: 16px;
@@ -3703,7 +4029,17 @@ a {
   margin-right: 0;
   font-size: 0.8125em;
 }
-/* line 236, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 259, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .upcoming-match-table .umt-mt-row .umt-mt-outcome {
+    width: 19.76631%;
+    float: left;
+    margin-right: 0.29211%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 278, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials {
   border: #f1f1f1 1px solid;
   float: right;
@@ -3715,29 +4051,35 @@ a {
   padding: 15px;
   font-size: 13px;
 }
-/* line 244, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 278, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .umt-socials {
+    width: 39.6%;
+  }
+}
+/* line 290, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials .umt-socials-title {
   text-align: center;
   margin-bottom: 6px;
 }
-/* line 249, ../scss/partials/_team_profiles.scss */
+/* line 295, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials .umt-socials-icons {
   overflow: auto;
   width: 73px;
   margin: 0 auto;
 }
-/* line 253, ../scss/partials/_team_profiles.scss */
+/* line 299, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials .umt-socials-icons img {
   width: 18px;
   float: left;
   margin-left: 5px;
   cursor: pointer;
 }
-/* line 258, ../scss/partials/_team_profiles.scss */
+/* line 304, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials .umt-socials-icons img:hover {
   background: orange;
 }
-/* line 264, ../scss/partials/_team_profiles.scss */
+/* line 310, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons {
   font-family: 'cooper-hewitt-bold';
   clear: both;
@@ -3746,7 +4088,13 @@ a {
   cursor: pointer;
   font-size: 0.8125em;
 }
-/* line 272, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 310, ../scss/partials/_team_profiles.scss */
+  .upcoming-match-wrap .umt-buttons {
+    font-size: 10px;
+  }
+}
+/* line 321, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons .umt-button-dmp {
   background: #fcaa35;
   color: #ffffff;
@@ -3754,7 +4102,7 @@ a {
   float: left;
   height: 37px;
 }
-/* line 278, ../scss/partials/_team_profiles.scss */
+/* line 328, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons .umt-button-vl {
   background: #61e063;
   color: #ffffff;
@@ -3765,7 +4113,7 @@ a {
   height: 37px;
 }
 
-/* line 288, ../scss/partials/_team_profiles.scss */
+/* line 338, ../scss/partials/_team_profiles.scss */
 .current-squad-wrp {
   padding: 15px;
   margin-top: 15px;
@@ -3778,8 +4126,19 @@ a {
   margin-bottom: 15px;
   height: 657px;
 }
+@media screen and (max-width: 750px) {
+  /* line 338, ../scss/partials/_team_profiles.scss */
+  .current-squad-wrp {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+}
 
-/* line 298, ../scss/partials/_team_profiles.scss */
+/* line 355, ../scss/partials/_team_profiles.scss */
 .current-sqd-title {
   padding-bottom: 5px;
   font-family: "roboto-bold";
@@ -3789,14 +4148,14 @@ a {
   margin-bottom: 10px;
 }
 
-/* line 307, ../scss/partials/_team_profiles.scss */
+/* line 364, ../scss/partials/_team_profiles.scss */
 .current-squad-lu {
   height: 100%;
   font-family: "roboto-bold";
   font-size: 0.8125em;
   letter-spacing: 0.04em;
 }
-/* line 312, ../scss/partials/_team_profiles.scss */
+/* line 369, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row {
   padding-left: 10px;
   padding-right: 10px;
@@ -3807,30 +4166,30 @@ a {
   clear: both;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 319, ../scss/partials/_team_profiles.scss */
+/* line 376, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row:nth-child(1) {
   border: none;
   background: #e0e0e0;
 }
-/* line 325, ../scss/partials/_team_profiles.scss */
+/* line 382, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-name-title {
   float: left;
 }
-/* line 328, ../scss/partials/_team_profiles.scss */
+/* line 385, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-rating-title {
   float: right;
 }
-/* line 332, ../scss/partials/_team_profiles.scss */
+/* line 389, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-name {
   float: left;
 }
-/* line 335, ../scss/partials/_team_profiles.scss */
+/* line 392, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-rating {
   float: right;
   padding-right: 10px;
 }
 
-/* line 343, ../scss/partials/_team_profiles.scss */
+/* line 402, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp {
   margin-top: 15px;
   width: 64.6789%;
@@ -3841,32 +4200,43 @@ a {
   padding: 0.9375em;
   margin-bottom: 15px;
 }
-/* line 351, ../scss/partials/_team_profiles.scss */
+@media screen and (max-width: 750px) {
+  /* line 402, ../scss/partials/_team_profiles.scss */
+  .team-rating-ot-wrp {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+}
+/* line 417, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-ot-title {
   font-family: "roboto-bold";
   border-bottom: #e0e0e0 1px solid;
   padding: 5px;
   margin-bottom: 10px;
 }
-/* line 357, ../scss/partials/_team_profiles.scss */
+/* line 423, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-table {
   overflow: hidden;
   background: grey;
 }
-/* line 362, ../scss/partials/_team_profiles.scss */
+/* line 428, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-table img {
   width: 100%;
   vertical-align: bottom;
 }
 
-/* line 369, ../scss/partials/_team_profiles.scss */
+/* line 435, ../scss/partials/_team_profiles.scss */
 .people-also-viewed {
   padding: 25px;
   overflow: hidden;
   background: #ffffff;
   margin-top: -20px;
 }
-/* line 375, ../scss/partials/_team_profiles.scss */
+/* line 441, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-title {
   margin-bottom: 1.25em;
   border-bottom: 1px solid #e0e0e0;
@@ -3877,30 +4247,49 @@ a {
   letter-spacing: 0.04em;
   font-size: 0.8125em;
 }
-/* line 387, ../scss/partials/_team_profiles.scss */
+/* line 452, ../scss/partials/_team_profiles.scss */
+.people-also-viewed .pav-select {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  /* line 452, ../scss/partials/_team_profiles.scss */
+  .people-also-viewed .pav-select {
+    display: block;
+    height: 30px;
+    border: 1px solid black;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 463, ../scss/partials/_team_profiles.scss */
+  .people-also-viewed .pav-col-wrp {
+    display: none;
+  }
+}
+/* line 468, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col {
   background: white;
   width: 31.25%;
   float: left;
   margin-right: 3.125%;
 }
-/* line 390, ../scss/partials/_team_profiles.scss */
+/* line 471, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(1) {
   border-right: 1px solid #e0e0e0;
   text-align: left;
 }
-/* line 397, ../scss/partials/_team_profiles.scss */
+/* line 478, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(2) {
   border-right: 1px solid #e0e0e0;
   padding-left: 7%;
 }
-/* line 402, ../scss/partials/_team_profiles.scss */
+/* line 483, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(3) {
   float: right;
   margin-right: 0;
   padding-left: 7%;
 }
-/* line 407, ../scss/partials/_team_profiles.scss */
+/* line 488, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col .pav-people {
   height: 31px;
   line-height: 30px;
@@ -3909,12 +4298,12 @@ a {
   font-size: 0.8125em;
 }
 
-/* line 419, ../scss/partials/_team_profiles.scss */
+/* line 500, ../scss/partials/_team_profiles.scss */
 .umtmt-bg {
   background: #e6e5e6;
 }
 
-/* line 423, ../scss/partials/_team_profiles.scss */
+/* line 504, ../scss/partials/_team_profiles.scss */
 .umtmt-bg_b {
   background: #f2f2f2;
 }
@@ -4281,29 +4670,36 @@ a {
   border-top: 3px solid #1dafed;
 }
 
-/* line 84, ../scss/style.scss */
+@media screen and (max-width: 750px) {
+  /* line 84, ../scss/style.scss */
+  .dp-none-small {
+    display: none;
+  }
+}
+
+/* line 90, ../scss/style.scss */
 .bt-violet {
   border-top: 3px solid #b9add3;
 }
 
-/* line 95, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .bg-orange {
   background: #fcaa35 !important;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 body {
   font-family: "cooper-hewitt-medium";
   color: white;
   background: #0c0c0c;
 }
 
-/* line 109, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 90.625em;
@@ -4311,25 +4707,25 @@ html, body {
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 114, ../scss/style.scss */
+  /* line 120, ../scss/style.scss */
   .container {
     padding: 5px;
     min-width: 200px;
   }
 }
-/* line 124, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .container .main-page-container {
   width: 85%;
   margin: 0 auto;
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 124, ../scss/style.scss */
+  /* line 130, ../scss/style.scss */
   .container .main-page-container {
     width: 100%;
   }
 }
-/* line 134, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .container .main-page-container .page-container-right {
   margin-top: 1.25em;
   float: left;
@@ -4342,12 +4738,12 @@ html, body {
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 134, ../scss/style.scss */
+  /* line 140, ../scss/style.scss */
   .container .main-page-container .page-container-right {
     display: none;
   }
 }
-/* line 146, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 .container .main-page-container .page-container-left {
   margin-top: 1.25em;
   width: 74.80916%;
@@ -4356,67 +4752,67 @@ html, body {
   padding-right: 0.5625em;
 }
 @media screen and (max-width: 750px) {
-  /* line 146, ../scss/style.scss */
+  /* line 152, ../scss/style.scss */
   .container .main-page-container .page-container-left {
     width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 162, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .header {
   overflow: hidden;
   padding-bottom: 2%;
   padding-top: 30px;
 }
 @media screen and (max-width: 750px) {
-  /* line 162, ../scss/style.scss */
+  /* line 168, ../scss/style.scss */
   .header {
     display: none;
   }
 }
-/* line 169, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .header .header-left {
   width: 18%;
   margin-left: 25px;
   float: left;
 }
-/* line 173, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .header .header-left img {
   width: 100%;
   vertical-align: top;
 }
-/* line 178, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
 .header .header-right {
   width: 50%;
   float: right;
 }
-/* line 181, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .header .header-right img {
   width: 100%;
   vertical-align: top;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .left {
   float: left;
   padding: 0;
 }
 
-/* line 193, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .right {
   float: right;
   padding: 0;
 }
 
-/* line 199, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 .page-help-link {
   font-size: 0.5em;
   font-family: "roboto-thin";
   margin-top: 10px;
 }
 
-/* line 212, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .nav {
   letter-spacing: 0.04em;
   font-family: "cooper-hewitt-bold";
@@ -4424,28 +4820,28 @@ html, body {
   font-size: 0.875em;
 }
 @media screen and (min-width: 750px) {
-  /* line 224, ../scss/style.scss */
+  /* line 230, ../scss/style.scss */
   .nav .inner-nav {
     height: 56px;
   }
 }
-/* line 233, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .nav .nav-right {
   color: white;
 }
 @media screen and (min-width: 750px) {
-  /* line 233, ../scss/style.scss */
+  /* line 239, ../scss/style.scss */
   .nav .nav-right {
     float: right;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 233, ../scss/style.scss */
+  /* line 239, ../scss/style.scss */
   .nav .nav-right {
     display: none;
   }
 }
-/* line 244, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .nav .nav-right div {
   float: left;
   padding-left: 1em;
@@ -4453,7 +4849,7 @@ html, body {
   line-height: 59px;
   cursor: pointer;
 }
-/* line 250, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .nav .nav-right div:nth-child(2) {
   background: #fcaa35;
   padding: 0 20px;
@@ -4462,33 +4858,33 @@ html, body {
   margin-left: 2.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 250, ../scss/style.scss */
+  /* line 256, ../scss/style.scss */
   .nav .nav-right div:nth-child(2) {
     margin-left: 0;
   }
 }
-/* line 261, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .nav .nav-right a {
   color: white;
   text-decoration: none;
 }
-/* line 269, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .nav .end-drop-bar {
   height: 50vh;
   display: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 278, ../scss/style.scss */
+  /* line 284, ../scss/style.scss */
   .nav .dropdown {
     float: left;
   }
 }
-/* line 283, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   margin-left: 0;
   background: #0c0c0c;
 }
-/* line 288, ../scss/style.scss */
+/* line 294, ../scss/style.scss */
 .nav .dropdown .dropbtn {
   background: #1c1c1c;
   border-bottom: #1c1c1c solid 1px;
@@ -4499,30 +4895,30 @@ html, body {
   padding-left: 1.5625em;
   cursor: pointer;
 }
-/* line 291, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 .nav .dropdown .dropbtn .black {
   background: #000000;
 }
 @media screen and (max-width: 808px) {
-  /* line 288, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .nav .dropdown .dropbtn {
     padding-right: 1.1875em;
     padding-left: 1.1875em;
   }
 }
-/* line 308, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .nav .dropdown .dropbtn:hover {
   background: #141414;
   border-bottom: #fcaa35 solid 1px;
 }
 @media screen and (max-width: 750px) {
-  /* line 315, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .nav .dropdown .dropbtn:hover {
     background: #fcaa35;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 288, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .nav .dropdown .dropbtn {
     height: 9vh;
     line-height: 10vh;
@@ -4530,15 +4926,15 @@ html, body {
     border-top: #fcaa35 1px solid;
   }
 }
-/* line 332, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 .nav .dropdown:nth-child(1) {
   padding-left: 0;
 }
-/* line 336, ../scss/style.scss */
+/* line 342, ../scss/style.scss */
 .nav .dropdown:hover .dropdown-content {
   display: block;
 }
-/* line 343, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 .nav .dropdown-content {
   display: none;
   overflow: hidden;
@@ -4551,12 +4947,12 @@ html, body {
   border-top: orange 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 343, ../scss/style.scss */
+  /* line 349, ../scss/style.scss */
   .nav .dropdown-content {
     position: absolute;
   }
 }
-/* line 360, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 .nav .dropdown-content a {
   font-size: 1.0625em;
   color: white;
@@ -4567,24 +4963,24 @@ html, body {
   display: block;
   background-color: #363636;
 }
-/* line 370, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .nav .dropdown-content a:hover {
   background-color: #292929;
 }
-/* line 373, ../scss/style.scss */
+/* line 379, ../scss/style.scss */
 .nav .dropdown-content a:hover .dropbtn {
   color: blue;
   font-size: 50px;
 }
 @media screen and (max-width: 750px) {
-  /* line 380, ../scss/style.scss */
+  /* line 386, ../scss/style.scss */
   .nav .dropdown-content a:hover .dropbtn {
     color: #fcaa35;
     font-size: 1.0625em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 389, ../scss/style.scss */
+  /* line 395, ../scss/style.scss */
   .nav .responsive-nav {
     display: none;
     clear: both;
@@ -4592,7 +4988,7 @@ html, body {
   }
 }
 
-/* line 401, ../scss/style.scss */
+/* line 407, ../scss/style.scss */
 .burger-icon-ctr {
   float: left;
   width: 100%;
@@ -4601,30 +4997,30 @@ html, body {
   padding-top: 13px;
   padding-bottom: 5px;
 }
-/* line 402, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 .burger-icon-ctr span {
   min-width: 30px;
 }
-/* line 404, ../scss/style.scss */
+/* line 410, ../scss/style.scss */
 .burger-icon-ctr span div {
   display: inline-block;
   min-width: 30px;
 }
 @media screen and (min-width: 750px) {
-  /* line 401, ../scss/style.scss */
+  /* line 407, ../scss/style.scss */
   .burger-icon-ctr {
     display: none;
   }
 }
-/* line 418, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .burger-icon-ctr .menu-close {
   display: none;
 }
-/* line 421, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .burger-icon-ctr img {
   width: 80px;
 }
-/* line 424, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 .burger-icon-ctr .n-sup {
   background: #fcaa35;
   cursor: pointer;
@@ -4638,7 +5034,7 @@ html, body {
   padding-top: 7px;
 }
 
-/* line 441, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 .tweet-bar {
   clear: both;
   overflow: auto;
@@ -4647,33 +5043,33 @@ html, body {
   line-height: 1.5625em;
 }
 @media screen and (max-width: 750px) {
-  /* line 441, ../scss/style.scss */
+  /* line 447, ../scss/style.scss */
   .tweet-bar {
     display: none;
   }
 }
 
-/* line 454, ../scss/style.scss */
+/* line 460, ../scss/style.scss */
 .inner-tweet-bar {
   font-weight: normal;
   margin: 0 auto;
   font-size: 0.5em;
 }
-/* line 459, ../scss/style.scss */
+/* line 465, ../scss/style.scss */
 .inner-tweet-bar span {
   color: #fcaa35;
   cursor: help;
 }
-/* line 463, ../scss/style.scss */
+/* line 469, ../scss/style.scss */
 .inner-tweet-bar .right {
   margin-right: 22px;
 }
-/* line 466, ../scss/style.scss */
+/* line 472, ../scss/style.scss */
 .inner-tweet-bar .left {
   margin-left: 10.3%;
 }
 
-/* line 471, ../scss/style.scss */
+/* line 477, ../scss/style.scss */
 .game-scroll-bar {
   border-bottom: 1px #fcaa35 solid;
   height: 5.625em;
@@ -4681,12 +5077,12 @@ html, body {
   line-height: 5.625em;
 }
 
-/* line 479, ../scss/style.scss */
+/* line 485, ../scss/style.scss */
 .mp-gd-wrp {
   margin-left: 20px;
 }
 
-/* line 483, ../scss/style.scss */
+/* line 489, ../scss/style.scss */
 .game-dropper {
   font-family: "cooper-hewitt-bold";
   font-weight: bold;
@@ -4696,48 +5092,48 @@ html, body {
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 750px) {
-  /* line 483, ../scss/style.scss */
+  /* line 489, ../scss/style.scss */
   .game-dropper {
     float: left;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 483, ../scss/style.scss */
+  /* line 489, ../scss/style.scss */
   .game-dropper {
     width: 100%;
     margin-right: 0.625em;
     display: none;
   }
 }
-/* line 501, ../scss/style.scss */
+/* line 507, ../scss/style.scss */
 .game-dropper i {
   margin-left: 8px;
   font-size: 1.375em;
   width: 0;
 }
-/* line 506, ../scss/style.scss */
+/* line 512, ../scss/style.scss */
 .game-dropper .ui.simple.dropdown .menu {
   margin-top: -25px;
   color: #ffffff;
   border: 1px #000000 solid !important;
 }
-/* line 511, ../scss/style.scss */
+/* line 517, ../scss/style.scss */
 .game-dropper .menu {
   border: 1px #fcaa35 solid;
 }
-/* line 519, ../scss/style.scss */
+/* line 525, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item, .game-dropper .ui.scrolling.dropdown .menu .item.item.item {
   color: white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   background: #000000;
 }
-/* line 524, ../scss/style.scss */
+/* line 530, ../scss/style.scss */
 .game-dropper .ui.dropdown .scrolling.menu > .item.item.item:hover, .game-dropper .ui.scrolling.dropdown .menu .item.item.item:hover {
   color: #fcaa35 !important;
 }
 
-/* line 548, ../scss/style.scss */
+/* line 554, ../scss/style.scss */
 .main-left-selector {
   cursor: pointer;
   float: left;
@@ -4745,51 +5141,51 @@ html, body {
   padding-right: 10px;
 }
 @media screen and (max-width: 750px) {
-  /* line 548, ../scss/style.scss */
+  /* line 554, ../scss/style.scss */
   .main-left-selector {
     margin-left: 0px;
   }
 }
-/* line 556, ../scss/style.scss */
+/* line 562, ../scss/style.scss */
 .main-left-selector img {
   width: 100%;
   vertical-align: middle;
   cursor: pointer;
 }
 @media screen and (max-width: 750px) {
-  /* line 556, ../scss/style.scss */
+  /* line 562, ../scss/style.scss */
   .main-left-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 574, ../scss/style.scss */
+/* line 580, ../scss/style.scss */
 .main-right-selector {
   cursor: pointer;
   float: left;
   width: 21px;
   padding-left: 10px;
 }
-/* line 579, ../scss/style.scss */
+/* line 585, ../scss/style.scss */
 .main-right-selector img {
   width: 100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 750px) {
-  /* line 579, ../scss/style.scss */
+  /* line 585, ../scss/style.scss */
   .main-right-selector img {
     vertical-align: baseline;
   }
 }
 
-/* line 594, ../scss/style.scss */
+/* line 600, ../scss/style.scss */
 .sports-window-ctr {
   background: #333333;
   margin-left: 8%;
   width: 100%;
 }
 @media screen and (max-width: 750px) {
-  /* line 594, ../scss/style.scss */
+  /* line 600, ../scss/style.scss */
   .sports-window-ctr {
     float: left;
     margin-left: 0;
@@ -4797,7 +5193,7 @@ html, body {
     padding-left: 10px;
   }
 }
-/* line 607, ../scss/style.scss */
+/* line 613, ../scss/style.scss */
 .sports-window-ctr .sports-window-inr-wrp {
   width: 90%;
   margin: 0 auto;
@@ -4805,13 +5201,13 @@ html, body {
   border: white 1px solid;
 }
 @media screen and (min-width: 750px) {
-  /* line 607, ../scss/style.scss */
+  /* line 613, ../scss/style.scss */
   .sports-window-ctr .sports-window-inr-wrp {
     width: 100%;
   }
 }
 
-/* line 620, ../scss/style.scss */
+/* line 626, ../scss/style.scss */
 .sports-windows {
   visibility: hidden;
   background-color: #333333;
@@ -4819,7 +5215,7 @@ html, body {
   line-height: 1em;
 }
 @media screen and (max-width: 750px) {
-  /* line 620, ../scss/style.scss */
+  /* line 626, ../scss/style.scss */
   .sports-windows {
     margin-bottom: 0.375em;
     margin: 0 auto;
@@ -4828,12 +5224,12 @@ html, body {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 620, ../scss/style.scss */
+  /* line 626, ../scss/style.scss */
   .sports-windows {
     float: left;
   }
 }
-/* line 645, ../scss/style.scss */
+/* line 651, ../scss/style.scss */
 .sports-windows .sports-window {
   position: relative;
   -moz-border-radius: 0.125em;
@@ -4845,38 +5241,38 @@ html, body {
   padding: 0.5em;
   margin: 10px;
 }
-/* line 653, ../scss/style.scss */
+/* line 659, ../scss/style.scss */
 .sports-windows .sports-window:hover {
   outline: #fcaa35 1px solid;
 }
 @media screen and (max-width: 750px) {
-  /* line 645, ../scss/style.scss */
+  /* line 651, ../scss/style.scss */
   .sports-windows .sports-window {
     border: #fcaa35 1px solid;
   }
 }
-/* line 663, ../scss/style.scss */
+/* line 669, ../scss/style.scss */
 .sports-windows .sports-window-inner-title {
   font-size: 0.5em;
   font-family: "roboto-thin";
   color: darkgrey;
 }
 @media screen and (max-width: 750px) {
-  /* line 663, ../scss/style.scss */
+  /* line 669, ../scss/style.scss */
   .sports-windows .sports-window-inner-title {
     display: none;
   }
 }
-/* line 675, ../scss/style.scss */
+/* line 681, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname {
   font-size: 0.5625em;
   font-weight: bold;
 }
-/* line 677, ../scss/style.scss */
+/* line 683, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname:last-child span {
   color: #60dd63;
 }
-/* line 683, ../scss/style.scss */
+/* line 689, ../scss/style.scss */
 .sports-windows .sports-window-inner-teamname span {
   font-family: "roboto-thin";
   margin-left: 6%;
@@ -4884,26 +5280,26 @@ html, body {
   font-size: 0.5em;
 }
 
-/* line 696, ../scss/style.scss */
+/* line 702, ../scss/style.scss */
 .sports-window-ball-ctr {
   position: absolute;
   left: 78%;
   top: 45%;
 }
 @media screen and (max-width: 750px) {
-  /* line 696, ../scss/style.scss */
+  /* line 702, ../scss/style.scss */
   .sports-window-ball-ctr {
     left: 69%;
     top: 37%;
     display: none;
   }
 }
-/* line 705, ../scss/style.scss */
+/* line 711, ../scss/style.scss */
 .sports-window-ball-ctr img {
   width: 22px;
 }
 
-/* line 712, ../scss/style.scss */
+/* line 718, ../scss/style.scss */
 .predictions-title {
   -moz-box-shadow: 0px 5px 5px 0px black;
   -webkit-box-shadow: 0px 5px 5px 0px black;
@@ -4916,12 +5312,12 @@ html, body {
   font-size: 0.6875em;
   padding-bottom: 1.25em;
 }
-/* line 722, ../scss/style.scss */
+/* line 728, ../scss/style.scss */
 .predictions-title .predictions-main {
   text-align: center;
   margin: 0 auto;
 }
-/* line 727, ../scss/style.scss */
+/* line 733, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr {
   clear: both;
   margin: 0 auto;
@@ -4933,12 +5329,12 @@ html, body {
   overflow: auto;
 }
 @media screen and (max-width: 750px) {
-  /* line 727, ../scss/style.scss */
+  /* line 733, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr {
     width: 293px;
   }
 }
-/* line 744, ../scss/style.scss */
+/* line 750, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color {
   float: left;
   margin-top: 2px;
@@ -4950,26 +5346,26 @@ html, body {
   border-radius: 1.25em;
   border: orange 2px solid;
 }
-/* line 752, ../scss/style.scss */
+/* line 758, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
   float: left;
   background: green;
   margin-left: 0.5em;
 }
 @media screen and (max-width: 750px) {
-  /* line 752, ../scss/style.scss */
+  /* line 758, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color:last-child {
     margin-left: 0px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 744, ../scss/style.scss */
+  /* line 750, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .team-circle-color {
     width: 20px;
     height: 20px;
   }
 }
-/* line 772, ../scss/style.scss */
+/* line 778, ../scss/style.scss */
 .predictions-title .predictions-main .team-title-cntr .teams div {
   margin-top: 2px;
   vertical-align: bottom;
@@ -4979,19 +5375,19 @@ html, body {
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 772, ../scss/style.scss */
+  /* line 778, ../scss/style.scss */
   .predictions-title .predictions-main .team-title-cntr .teams div {
     font-size: 0.875em;
     margin: 0px 0.75em;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 789, ../scss/style.scss */
+  /* line 795, ../scss/style.scss */
   .predictions-title .predictions-main {
     width: 95%;
   }
 }
-/* line 795, ../scss/style.scss */
+/* line 801, ../scss/style.scss */
 .predictions-title .underliner {
   clear: both;
   margin: 0 auto;
@@ -5000,7 +5396,7 @@ html, body {
   height: 1px;
   margin-bottom: 1.25em;
 }
-/* line 803, ../scss/style.scss */
+/* line 809, ../scss/style.scss */
 .predictions-title .game-date {
   margin: 0.625em auto;
   font-size: 0.625em;
@@ -5009,7 +5405,7 @@ html, body {
   font-family: "roboto-bold";
 }
 
-/* line 815, ../scss/style.scss */
+/* line 821, ../scss/style.scss */
 .how-to-bar-ctr {
   overflow: auto;
   padding-top: 0.25em;
@@ -5017,28 +5413,28 @@ html, body {
   padding-left: 1.875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 815, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   .how-to-bar-ctr {
     display: none;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 815, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   .how-to-bar-ctr {
     padding-left: 0em;
   }
 }
-/* line 828, ../scss/style.scss */
+/* line 834, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt {
   float: right;
   font-size: 0.5em;
 }
-/* line 831, ../scss/style.scss */
+/* line 837, ../scss/style.scss */
 .how-to-bar-ctr .how-to-txt:hover {
   cursor: help;
 }
 
-/* line 836, ../scss/style.scss */
+/* line 842, ../scss/style.scss */
 .games-round-title {
   width: 55%;
   font-size: 0.5625em;
@@ -5051,7 +5447,7 @@ html, body {
   margin-top: -15px;
 }
 
-/* line 850, ../scss/style.scss */
+/* line 856, ../scss/style.scss */
 .round-games-scrollbar-ctr {
   clear: both;
   width: 65.42857%;
@@ -5059,31 +5455,31 @@ html, body {
   margin-right: 0.57143%;
   font-family: "cooper-hewitt-bold";
 }
-/* line 856, ../scss/style.scss */
+/* line 862, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg, .round-games-scrollbar-ctr .caret-right-svg {
   width: 2.8%;
   padding-top: 5px;
   float: left;
 }
-/* line 862, ../scss/style.scss */
+/* line 868, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-left-svg {
   margin-right: 10px;
   float: left;
 }
-/* line 867, ../scss/style.scss */
+/* line 873, ../scss/style.scss */
 .round-games-scrollbar-ctr .caret-right-svg {
   float: right;
 }
-/* line 873, ../scss/style.scss */
+/* line 879, ../scss/style.scss */
 .round-games-scrollbar-ctr img {
   width: 100%;
 }
-/* line 876, ../scss/style.scss */
+/* line 882, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr {
   float: left;
   width: 87%;
 }
-/* line 885, ../scss/style.scss */
+/* line 891, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller {
   width: 100%;
   float: left;
@@ -5091,12 +5487,12 @@ html, body {
   line-height: 20px;
 }
 @media screen and (max-width: 750px) {
-  /* line 887, ../scss/style.scss */
+  /* line 893, ../scss/style.scss */
   .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller .round-games-responsive {
     display: none;
   }
 }
-/* line 897, ../scss/style.scss */
+/* line 903, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
   border: 1px solid #1c1c1c;
   cursor: pointer;
@@ -5109,37 +5505,37 @@ html, body {
   margin-right: 1.14943%;
 }
 @media screen and (max-width: 750px) {
-  /* line 897, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div {
     width: 23%;
     float: left;
   }
 }
-/* line 903, ../scss/style.scss */
+/* line 909, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:first-child {
   display: block;
   background: none;
   clear: both;
 }
-/* line 915, ../scss/style.scss */
+/* line 921, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 918, ../scss/style.scss */
+/* line 924, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div span {
   color: #1c1c1c;
 }
-/* line 922, ../scss/style.scss */
+/* line 928, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div span:hover {
   color: #000000;
 }
-/* line 927, ../scss/style.scss */
+/* line 933, ../scss/style.scss */
 .round-games-scrollbar-ctr .games-round-scroller-ctr .games-round-scroller div:hover {
   background: #fcaa35;
 }
 
-/* line 935, ../scss/style.scss */
+/* line 941, ../scss/style.scss */
 .projected-ladder-title {
   width: 24.57143%;
   float: left;
@@ -5156,19 +5552,19 @@ html, body {
   margin-bottom: 7px;
   text-align: right;
 }
-/* line 947, ../scss/style.scss */
+/* line 953, ../scss/style.scss */
 .projected-ladder-title:hover {
   color: #ffffff;
   cursor: pointer;
 }
 
-/* line 953, ../scss/style.scss */
+/* line 959, ../scss/style.scss */
 .main-sports-section {
   clear: both;
   margin-bottom: 2.8125em;
   overflow: auto;
 }
-/* line 958, ../scss/style.scss */
+/* line 964, ../scss/style.scss */
 .main-sports-section .main-sports-title {
   font-size: 1.125em;
   background: #000000;
@@ -5179,14 +5575,14 @@ html, body {
   text-align: center;
   padding-top: 0.125em;
 }
-/* line 969, ../scss/style.scss */
+/* line 975, ../scss/style.scss */
 .main-sports-section .team-points-bar {
   border: 1px #1c1c1c solid;
   height: 2.1875em;
   line-height: 2.1875em;
   background: black;
 }
-/* line 974, ../scss/style.scss */
+/* line 980, ../scss/style.scss */
 .main-sports-section .team-points-bar .team {
   width: 49.71429%;
   float: left;
@@ -5194,7 +5590,7 @@ html, body {
   float: left;
   padding-left: 1.875em;
 }
-/* line 979, ../scss/style.scss */
+/* line 985, ../scss/style.scss */
 .main-sports-section .team-points-bar .points {
   width: 49.71429%;
   float: left;
@@ -5204,7 +5600,7 @@ html, body {
   margin-right: 0;
   text-align: center;
 }
-/* line 988, ../scss/style.scss */
+/* line 994, ../scss/style.scss */
 .main-sports-section .team-match-ctr {
   width: 100%;
   float: left;
@@ -5212,12 +5608,12 @@ html, body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 988, ../scss/style.scss */
+  /* line 994, ../scss/style.scss */
   .main-sports-section .team-match-ctr {
     margin-bottom: 3.4375em;
   }
 }
-/* line 994, ../scss/style.scss */
+/* line 1000, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match {
   font-weight: bold;
   color: #fcaa35;
@@ -5231,33 +5627,33 @@ html, body {
   font-size: 0.75em;
   float: left;
 }
-/* line 1004, ../scss/style.scss */
+/* line 1010, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1011, ../scss/style.scss */
+/* line 1017, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner span {
   color: white;
 }
-/* line 1015, ../scss/style.scss */
+/* line 1021, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
   color: white;
   font-weight: normal;
   font-weight: 0.5em;
 }
-/* line 1019, ../scss/style.scss */
+/* line 1025, ../scss/style.scss */
 .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large span {
   font-weight: bold;
   font-size: 1.1875em;
 }
 @media screen and (max-width: 750px) {
-  /* line 1015, ../scss/style.scss */
+  /* line 1021, ../scss/style.scss */
   .main-sports-section .team-match-ctr .team-match .team-match-inner .power-rankings-large {
     display: none;
   }
 }
-/* line 1030, ../scss/style.scss */
+/* line 1036, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr {
   width: 100%;
   float: left;
@@ -5265,12 +5661,12 @@ html, body {
   margin-right: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 1030, ../scss/style.scss */
+  /* line 1036, ../scss/style.scss */
   .main-sports-section .power-ranking-ctr {
     display: none;
   }
 }
-/* line 1036, ../scss/style.scss */
+/* line 1042, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings {
   text-align: middle;
   color: white;
@@ -5283,30 +5679,30 @@ html, body {
   border: black 1px solid;
   float: left;
 }
-/* line 1044, ../scss/style.scss */
+/* line 1050, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1051, ../scss/style.scss */
+/* line 1057, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div {
   padding-left: 30px;
   color: grey;
   font-size: 0.5em;
 }
-/* line 1055, ../scss/style.scss */
+/* line 1061, ../scss/style.scss */
 .main-sports-section .power-ranking-ctr .power-rankings div span {
   margin-left: 10px;
   color: white;
   font-weight: bold;
   font-size: 0.625em;
 }
-/* line 1066, ../scss/style.scss */
+/* line 1072, ../scss/style.scss */
 .main-sports-section .lmp-running-inner {
   margin-top: 1.125em;
   overflow: auto;
 }
-/* line 1070, ../scss/style.scss */
+/* line 1076, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-title {
   background: #000000;
   border: #343434 1px solid;
@@ -5316,7 +5712,7 @@ html, body {
   padding-top: 2px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 1081, ../scss/style.scss */
+/* line 1087, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title {
   background: #262626;
   height: 24px;
@@ -5324,14 +5720,14 @@ html, body {
   font-size: 0.75em;
   border-bottom: #000000 2px solid;
 }
-/* line 1087, ../scss/style.scss */
+/* line 1093, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div {
   font-family: "roboto-thin";
   padding-left: 75px;
   width: 66.66667%;
   float: left;
 }
-/* line 1091, ../scss/style.scss */
+/* line 1097, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-title div:last-child {
   width: 33.33333%;
   float: left;
@@ -5340,23 +5736,23 @@ html, body {
   text-align: center;
   padding-left: 0;
 }
-/* line 1100, ../scss/style.scss */
+/* line 1106, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-main:first-child {
   border-top: #000000 2px solid;
 }
-/* line 1104, ../scss/style.scss */
+/* line 1110, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team {
   background: #1c1c1c;
   overflow: auto;
   font-family: 'cooper-hewitt-bold';
 }
 @media screen and (max-width: 750px) {
-  /* line 1104, ../scss/style.scss */
+  /* line 1110, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team {
     font-size: 12px;
   }
 }
-/* line 1115, ../scss/style.scss */
+/* line 1121, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
   width: 66.66667%;
   float: left;
@@ -5368,12 +5764,12 @@ html, body {
   letter-spacing: 0.02em;
 }
 @media screen and (max-width: 750px) {
-  /* line 1115, ../scss/style.scss */
+  /* line 1121, ../scss/style.scss */
   .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left {
     padding-top: 9px;
   }
 }
-/* line 1127, ../scss/style.scss */
+/* line 1133, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left .lmp-team-color {
   float: left;
   margin-left: 0.9375em;
@@ -5384,23 +5780,23 @@ html, body {
   height: 20px;
   border: #fcaa35 1px solid;
 }
-/* line 1139, ../scss/style.scss */
+/* line 1145, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left span:nth-child(2) {
   margin-left: 3px;
   color: #fcaa35;
 }
-/* line 1144, ../scss/style.scss */
+/* line 1150, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div {
   font-size: 0.625em;
   font-family: 'roboto-thin';
 }
-/* line 1149, ../scss/style.scss */
+/* line 1155, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-left div span {
   margin-left: 3px;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 1156, ../scss/style.scss */
+/* line 1162, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right {
   overflow: hidden;
   width: 33.33333%;
@@ -5414,25 +5810,25 @@ html, body {
   position: relative;
   border-bottom: #000000 2px solid;
 }
-/* line 1168, ../scss/style.scss */
+/* line 1174, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score {
   text-align: center;
 }
-/* line 1172, ../scss/style.scss */
+/* line 1178, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score .lmp-score-ball {
   position: absolute;
   right: 80%;
   top: 10%;
 }
-/* line 1176, ../scss/style.scss */
+/* line 1182, ../scss/style.scss */
 .main-sports-section .lmp-running-inner .lmp-table-team .lmp-tt-right .lmp-score .lmp-score-ball img {
   width: 18px;
 }
-/* line 1188, ../scss/style.scss */
+/* line 1194, ../scss/style.scss */
 .main-sports-section .results-summary-ctr {
   margin-top: 30px;
 }
-/* line 1190, ../scss/style.scss */
+/* line 1196, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .results-summary-title {
   text-align: center;
   font-family: "cooper-hewitt-bold";
@@ -5443,50 +5839,50 @@ html, body {
   border: #343434 1px solid;
   padding-top: 2px;
 }
-/* line 1202, ../scss/style.scss */
+/* line 1208, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main {
   height: 5.625em;
   background: #1c1c1c;
 }
-/* line 1207, ../scss/style.scss */
+/* line 1213, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
   padding-top: 20px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (max-width: 860px) {
-  /* line 1207, ../scss/style.scss */
+  /* line 1213, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
     width: 99%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 1207, ../scss/style.scss */
+  /* line 1213, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers {
     width: 99%;
     margin: 0 auto;
     padding-top: 18px;
   }
 }
-/* line 1223, ../scss/style.scss */
+/* line 1229, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers .hrs-a {
   width: 33%;
   float: left;
 }
 @media screen and (max-width: 750px) {
-  /* line 1223, ../scss/style.scss */
+  /* line 1229, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers .hrs-a {
     width: 33.33333%;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 1223, ../scss/style.scss */
+  /* line 1229, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers .hrs-a {
     padding-left: 10px;
   }
 }
-/* line 1248, ../scss/style.scss */
+/* line 1254, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
   margin-top: -5px;
   text-align: right;
@@ -5497,7 +5893,7 @@ html, body {
   color: #fcaa35;
 }
 @media screen and (max-width: 750px) {
-  /* line 1248, ../scss/style.scss */
+  /* line 1254, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
     padding-left: 0;
     width: 15%;
@@ -5506,42 +5902,42 @@ html, body {
   }
 }
 @media screen and (max-width: 410px) {
-  /* line 1248, ../scss/style.scss */
+  /* line 1254, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-icon {
     display: none;
   }
 }
-/* line 1274, ../scss/style.scss */
+/* line 1280, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp {
   float: right;
 }
 @media screen and (max-width: 750px) {
-  /* line 1274, ../scss/style.scss */
+  /* line 1280, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp {
     float: left;
   }
 }
-/* line 1281, ../scss/style.scss */
+/* line 1287, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp .hrs-stat {
   width: 100px;
   font-size: 1.875em;
   font-family: "cooper-hewitt-bold";
 }
 @media screen and (max-width: 750px) {
-  /* line 1281, ../scss/style.scss */
+  /* line 1287, ../scss/style.scss */
   .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp .hrs-stat {
     font-size: 1.5em;
     width: 73px;
   }
 }
-/* line 1291, ../scss/style.scss */
+/* line 1297, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp .hrs-stat .hrs-stat-punt {
   font-family: 'roboto-thin';
   font-size: 0.1875em;
   padding-bottom: 5px;
   width: 96%;
 }
-/* line 1300, ../scss/style.scss */
+/* line 1306, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp .hrs-stat-sub {
   text-align: center;
   float: left;
@@ -5549,12 +5945,12 @@ html, body {
   font-size: 0.625em;
   font-weight: bold;
 }
-/* line 1308, ../scss/style.scss */
+/* line 1314, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .home-results-summary-main .hrs-containers div .hrs-stat-wrp .hrs-stat-sub span {
   font-weight: normal;
   font-family: "roboto-thin";
 }
-/* line 1321, ../scss/style.scss */
+/* line 1327, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores {
   float: left;
   background: gray;
@@ -5568,29 +5964,29 @@ html, body {
   float: left;
   margin-right: 0.57143%;
 }
-/* line 1332, ../scss/style.scss */
+/* line 1338, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores .score {
   margin-left: 0.9375em;
 }
-/* line 1336, ../scss/style.scss */
+/* line 1342, ../scss/style.scss */
 .main-sports-section .results-summary-ctr .team-scores-inner .team-scores:nth-child(2) {
   float: right;
   margin-right: 0;
 }
-/* line 1345, ../scss/style.scss */
+/* line 1351, ../scss/style.scss */
 .main-sports-section .simulations-ctr {
   margin-top: 30px;
   width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 1348, ../scss/style.scss */
+/* line 1354, ../scss/style.scss */
 .main-sports-section .simulations-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1345, ../scss/style.scss */
+  /* line 1351, ../scss/style.scss */
   .main-sports-section .simulations-ctr {
     width: 100%;
     float: left;
@@ -5598,11 +5994,11 @@ html, body {
     margin-right: 0;
   }
 }
-/* line 1370, ../scss/style.scss */
+/* line 1376, ../scss/style.scss */
 .main-sports-section .sports-expander-btn i {
   font-size: 0.75em;
 }
-/* line 1374, ../scss/style.scss */
+/* line 1380, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-plus, .main-sports-section .sports-expander-btn .seb-minus {
   font-size: 1.25em;
   color: lightgrey;
@@ -5611,11 +6007,11 @@ html, body {
   margin-top: -0.125em;
   cursor: pointer;
 }
-/* line 1383, ../scss/style.scss */
+/* line 1389, ../scss/style.scss */
 .main-sports-section .sports-expander-btn .seb-minus {
   display: none;
 }
-/* line 1388, ../scss/style.scss */
+/* line 1394, ../scss/style.scss */
 .main-sports-section .expander-box-text {
   text-align: center;
   background: #000000;
@@ -5625,18 +6021,18 @@ html, body {
   line-height: 2.1875em;
   border: solid 1px #343434;
 }
-/* line 1400, ../scss/style.scss */
+/* line 1406, ../scss/style.scss */
 .main-sports-section .sports-expander {
   overflow: auto;
   clear: both;
   padding-bottom: 10px;
 }
-/* line 1415, ../scss/style.scss */
+/* line 1421, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner {
   border: #1c1c1c 1px solid;
   overflow: auto;
 }
-/* line 1419, ../scss/style.scss */
+/* line 1425, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-title {
   text-align: center;
   font-family: "roboto-thin";
@@ -5645,7 +6041,7 @@ html, body {
   height: 4.375em;
   line-height: 4.375em;
 }
-/* line 1428, ../scss/style.scss */
+/* line 1434, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main {
   width: 100%;
   clear: both;
@@ -5655,7 +6051,7 @@ html, body {
   overflow: auto;
   height: 175px;
 }
-/* line 1438, ../scss/style.scss */
+/* line 1444, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
   font-size: 0.75em;
   font-family: "roboto-thin";
@@ -5664,46 +6060,46 @@ html, body {
   float: left;
 }
 @media screen and (max-width: 900px) {
-  /* line 1438, ../scss/style.scss */
+  /* line 1444, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 1438, ../scss/style.scss */
+  /* line 1444, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-left {
     font-size: 0.75em;
   }
 }
-/* line 1453, ../scss/style.scss */
+/* line 1459, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
   float: left;
   width: 51%;
 }
 @media screen and (max-width: 900px) {
-  /* line 1453, ../scss/style.scss */
+  /* line 1459, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
     margin-left: 4%;
     width: 10%;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 1453, ../scss/style.scss */
+  /* line 1459, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr {
     margin: 0 auto;
     width: 51%;
   }
 }
-/* line 1468, ../scss/style.scss */
+/* line 1474, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr {
   width: 110px;
   margin: 0 auto;
 }
-/* line 1473, ../scss/style.scss */
+/* line 1479, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .hc-pie-ctr .hc-pie-ctr-inr .hc-pie {
   height: 5em;
 }
-/* line 1486, ../scss/style.scss */
+/* line 1492, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
   font-family: "roboto-thin";
   float: right;
@@ -5712,44 +6108,44 @@ html, body {
   font-size: 0.75em;
 }
 @media screen and (max-width: 900px) {
-  /* line 1486, ../scss/style.scss */
+  /* line 1492, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 1486, ../scss/style.scss */
+  /* line 1492, ../scss/style.scss */
   .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right {
     font-size: 0.75em;
   }
 }
-/* line 1499, ../scss/style.scss */
+/* line 1505, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inner-right div {
   margin-bottom: 2px;
 }
-/* line 1505, ../scss/style.scss */
+/* line 1511, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top {
   letter-spacing: 0.04em;
   position: relative;
   padding-left: 35%;
   height: 3.75em;
 }
-/* line 1510, ../scss/style.scss */
+/* line 1516, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top i {
   color: red;
   position: absolute;
   top: 66%;
   left: 10%;
 }
-/* line 1516, ../scss/style.scss */
+/* line 1522, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top div {
   margin-bottom: 3px;
 }
-/* line 1518, ../scss/style.scss */
+/* line 1524, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-top div:last-child {
   margin-top: 5px;
 }
-/* line 1523, ../scss/style.scss */
+/* line 1529, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom {
   margin-top: 5px;
   letter-spacing: 0.04em;
@@ -5757,22 +6153,22 @@ html, body {
   padding-left: 35%;
   height: 5em;
 }
-/* line 1529, ../scss/style.scss */
+/* line 1535, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom i {
   color: green;
   position: absolute;
   top: 49%;
   left: 10%;
 }
-/* line 1535, ../scss/style.scss */
+/* line 1541, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom div {
   margin-bottom: 3px;
 }
-/* line 1537, ../scss/style.scss */
+/* line 1543, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-main .sei-inr-bottom div:last-child {
   margin-top: 5px;
 }
-/* line 1546, ../scss/style.scss */
+/* line 1552, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom {
   background: #1c1c1c;
   clear: both;
@@ -5780,7 +6176,7 @@ html, body {
   padding-bottom: 8px;
   overflow: auto;
 }
-/* line 1556, ../scss/style.scss */
+/* line 1562, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats {
   font-family: "roboto-thin";
   text-align: center;
@@ -5788,17 +6184,17 @@ html, body {
   float: left;
   margin-top: 0.3125em;
 }
-/* line 1557, ../scss/style.scss */
+/* line 1563, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats:nth-child(2) {
   padding-top: 18px;
   font-family: "cooper-hewitt-bold";
 }
-/* line 1565, ../scss/style.scss */
+/* line 1571, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats span {
   font-size: 0.75em;
   margin-bottom: 2px;
 }
-/* line 1569, ../scss/style.scss */
+/* line 1575, ../scss/style.scss */
 .main-sports-section .sports-expander .sports-expander-inner .sei-top-bottom .sei-stats div {
   font-family: "cooper-hewitt-bold";
   border: 1px solid #60dd63;
@@ -5810,7 +6206,7 @@ html, body {
   padding-top: 6px;
 }
 
-/* line 1586, ../scss/style.scss */
+/* line 1592, ../scss/style.scss */
 .team-stats-ctr {
   margin-top: 30px;
   width: 49.61832%;
@@ -5818,13 +6214,13 @@ html, body {
   margin-right: 0.76336%;
   min-height: 200px;
 }
-/* line 1590, ../scss/style.scss */
+/* line 1596, ../scss/style.scss */
 .team-stats-ctr:last-child {
   float: right;
   margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 1586, ../scss/style.scss */
+  /* line 1592, ../scss/style.scss */
   .team-stats-ctr {
     width: 100%;
     float: left;
@@ -5832,7 +6228,7 @@ html, body {
     margin-right: 0;
   }
 }
-/* line 1601, ../scss/style.scss */
+/* line 1607, ../scss/style.scss */
 .team-stats-ctr .team-stats-title {
   font-family: "cooper-hewitt-bold";
   background: #000000;
@@ -5841,13 +6237,13 @@ html, body {
   text-align: center;
   border: 1px solid #343434;
 }
-/* line 1610, ../scss/style.scss */
+/* line 1616, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title {
   background: #1c1c1c;
   overflow: auto;
   border-bottom: #000000 2px solid;
 }
-/* line 1617, ../scss/style.scss */
+/* line 1623, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div {
   height: 25px;
   line-height: 25px;
@@ -5859,34 +6255,34 @@ html, body {
   width: 16.66667%;
   float: left;
 }
-/* line 1626, ../scss/style.scss */
+/* line 1632, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:first-child {
   padding-left: 10px;
   text-align: left;
   width: 33.33333%;
   float: left;
 }
-/* line 1632, ../scss/style.scss */
+/* line 1638, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr .team-stats-int-title div:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 1643, ../scss/style.scss */
+/* line 1649, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row {
   clear: both;
   font-size: 10px;
   font-family: "cooper-hewitt-bold";
   overflow: auto;
 }
-/* line 1651, ../scss/style.scss */
+/* line 1657, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(odd) {
   background: #0c0c0c;
 }
-/* line 1654, ../scss/style.scss */
+/* line 1660, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row:nth-child(even) {
   background: #1c1c1c;
 }
-/* line 1658, ../scss/style.scss */
+/* line 1664, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div {
   height: 30px;
   line-height: 30px;
@@ -5896,7 +6292,7 @@ html, body {
   width: 16.66667%;
   float: left;
 }
-/* line 1667, ../scss/style.scss */
+/* line 1673, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:first-child {
   font-family: 'cooper-hewitt-medium';
   padding-left: 10px;
@@ -5906,20 +6302,20 @@ html, body {
   background: #262626;
   border-right: 2px #000000 solid;
 }
-/* line 1674, ../scss/style.scss */
+/* line 1680, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:first-child span {
   font-family: 'cooper-hewitt-bold';
   font-weight: bold;
   font-size: 11px;
 }
-/* line 1683, ../scss/style.scss */
+/* line 1689, ../scss/style.scss */
 .team-stats-ctr .team-stats-inr-body .team-stats-row div:last-child {
   float: right;
   margin-right: 0;
   border-right: none;
 }
 
-/* line 1697, ../scss/style.scss */
+/* line 1703, ../scss/style.scss */
 .inner-ctr-right {
   font-size: 2.5em;
   color: black;
@@ -5927,7 +6323,7 @@ html, body {
   text-align: center;
 }
 
-/* line 1705, ../scss/style.scss */
+/* line 1711, ../scss/style.scss */
 .fantasy-articles {
   height: 6.25em;
   margin-bottom: 0.375em;
@@ -5935,7 +6331,7 @@ html, body {
   background: skyblue;
 }
 
-/* line 1713, ../scss/style.scss */
+/* line 1719, ../scss/style.scss */
 .icon-footer {
   margin-top: 10px;
   padding-top: 50px;
@@ -5945,40 +6341,40 @@ html, body {
   clear: both;
   background: #000000;
 }
-/* line 1723, ../scss/style.scss */
+/* line 1729, ../scss/style.scss */
 .icon-footer div {
   width: 26.66667%;
   float: left;
 }
-/* line 1725, ../scss/style.scss */
+/* line 1731, ../scss/style.scss */
 .icon-footer div i {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1731, ../scss/style.scss */
+/* line 1737, ../scss/style.scss */
 .icon-footer div img {
   padding-top: 40px;
   width: 100px;
 }
 @media screen and (max-width: 750px) {
-  /* line 1731, ../scss/style.scss */
+  /* line 1737, ../scss/style.scss */
   .icon-footer div img {
     width: 85%;
   }
 }
-/* line 1739, ../scss/style.scss */
+/* line 1745, ../scss/style.scss */
 .icon-footer div p {
   font-size: 10px;
   font-family: "roboto-thin";
   margin-top: 20px;
 }
-/* line 1746, ../scss/style.scss */
+/* line 1752, ../scss/style.scss */
 .icon-footer div:nth-child(2) {
   width: 46.66667%;
   float: left;
 }
-/* line 1749, ../scss/style.scss */
+/* line 1755, ../scss/style.scss */
 .icon-footer div:last-child {
   float: right;
   margin-right: 0;

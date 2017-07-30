@@ -81,6 +81,12 @@ $break-medium: 850px;
   border-top: 3px solid #1dafed;
 }
 
+.dp-none-small{
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
 .bt-violet{
   border-top: 3px solid #b9add3;
 }
