@@ -8,15 +8,20 @@
 }
 
 .si-c-left{
-  background-image: url(../images/small-ad.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  @include span(1 of 4 (gutters: 0));
+  // background-image: url(../images/small-ad.jpg);
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
   height: 80px;
-  width: 22.21875%;
+  // width: 22.21875%;
   float:left;
+  img{
+    width: 100%;
+  }
   @media screen and (max-width: $break-small) {
-    // @include span(1 of 1);
-    width: 150px;
+    @include span(1 of 1);
+    // width: 150px;
+    height: auto;
     float: left;
   }
 
@@ -25,6 +30,10 @@
     text-align: center;
     position: relative;
     height: 80px;
+    overflow: hidden;
+    @media screen and (max-width: $break-small) {
+      height: 150px;
+    }
 
     .sic-art-thumb-date{
       border: $orange 1px solid;
@@ -41,6 +50,7 @@
         border-right: $orange 1px solid;
         @include span(1 of 2 (gutters: 0));
         padding-top: 8px;
+
       }
       .sic-atd-right{
         @include span(1 of 2 (gutters: 0));
@@ -55,15 +65,18 @@
 }
 
 .si-c-right{
-  margin-left: 22px;
+  // margin-left: 22px;
+  padding-left: 20px;
   font-size: em(12px);
   letter-spacing: 0.06em;
-  @include span(2 of 3);
+  @include span(3 of 4 (gutters: 0));
+  @include last();
 
   @media screen and (max-width: $break-small) {
     @include span(1 of 1);
     clear: both;
     padding-top: 10px;
+    padding-left: 0px;
   }
 
   .si-c-title{
@@ -78,8 +91,8 @@
   .si-c-body{
     font-family: 'roboto-medium';
     letter-spacing: 0.02em;
-    line-height: 1.3;
-    font-size: 12px;
+    line-height: 1.4;
+    // font-size: 12px;
   }
 }
 
@@ -193,11 +206,22 @@
   .sic-sports-prediction-teams{
 
     .sic-sports-prediction-team{
+      font-size: 13px;
+      letter-spacing: 0.06em;
       padding: 20px;
       background: $v-light-grey;
+      vertical-align: bottom;
       &:first-child{
         border: 1px $green_b solid;
         background: none;
+      }
+      span{
+        color: $orange;
+      }
+      img{
+        float: right;
+        margin-top: -4px;
+        width: 20px;
       }
       .sic-spt-color{
         border-radius: 50%;

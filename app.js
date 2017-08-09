@@ -202,14 +202,6 @@ $( window ).resize(function() {
 
 
 
-
-
-
-
-
-
-
-
   $(document).ready(function() {
       var title = {
         showInLegend: false,

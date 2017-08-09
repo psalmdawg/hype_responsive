@@ -2552,52 +2552,32 @@ a {
   }
 }
 
-/* line 44, ../scss/partials/_blog-page.scss */
-.blog-page-section {
-  background: white;
-  padding: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: #e0e0e0 1px solid;
-}
-@media screen and (max-width: 750px) {
-  /* line 44, ../scss/partials/_blog-page.scss */
-  .blog-page-section {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-/* line 59, ../scss/partials/_blog-page.scss */
+/* line 48, ../scss/partials/_blog-page.scss */
 .bp-img-caption {
   color: #e0e0e0;
   float: right;
 }
 
-/* line 63, ../scss/partials/_blog-page.scss */
+/* line 52, ../scss/partials/_blog-page.scss */
 .blog-sec-img-ctr {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 67, ../scss/partials/_blog-page.scss */
+/* line 56, ../scss/partials/_blog-page.scss */
 .blog-sec-img-ctr img {
   width: 100%;
 }
 
-/* line 72, ../scss/partials/_blog-page.scss */
+/* line 61, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr-large {
   position: relative;
-  background-image: url(../assets/pexels-photo.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 337px;
 }
-/* line 79, ../scss/partials/_blog-page.scss */
+/* line 67, ../scss/partials/_blog-page.scss */
+.blog-img-date-ctr-large img {
+  width: 100%;
+}
+/* line 70, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr-large .bidc-date-large {
   position: absolute;
   bottom: 0;
@@ -2605,7 +2585,7 @@ a {
   font-size: 18px;
   width: 163px;
 }
-/* line 87, ../scss/partials/_blog-page.scss */
+/* line 78, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr-large .bidc-date-large .bidc-d-left-large {
   width: 50%;
   float: left;
@@ -2618,7 +2598,7 @@ a {
   border-top: 1px solid #fcaa35;
   border-left: 1px solid #fcaa35;
 }
-/* line 99, ../scss/partials/_blog-page.scss */
+/* line 90, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr-large .bidc-date-large .bidc-d-right-large {
   border-top: 1px solid #fcaa35;
   border-left: 1px solid #fcaa35;
@@ -2635,7 +2615,7 @@ a {
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 115, ../scss/partials/_blog-page.scss */
+/* line 106, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr {
   position: relative;
   background-image: url(../assets/pexels-photo.png);
@@ -2643,7 +2623,7 @@ a {
   background-size: 100%;
   height: 130px;
 }
-/* line 122, ../scss/partials/_blog-page.scss */
+/* line 113, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr .bidc-date {
   position: absolute;
   bottom: 0;
@@ -2651,7 +2631,7 @@ a {
   font-size: 13px;
   width: 118px;
 }
-/* line 130, ../scss/partials/_blog-page.scss */
+/* line 121, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr .bidc-date .bidc-d-left {
   width: 50%;
   float: left;
@@ -2665,7 +2645,7 @@ a {
   border-left: 1px solid #fcaa35;
   border-bottom: 1px solid #fcaa35;
 }
-/* line 142, ../scss/partials/_blog-page.scss */
+/* line 133, ../scss/partials/_blog-page.scss */
 .blog-img-date-ctr .bidc-date .bidc-d-right {
   border: 1px solid #fcaa35;
   width: 50%;
@@ -2680,7 +2660,7 @@ a {
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 158, ../scss/partials/_blog-page.scss */
+/* line 149, ../scss/partials/_blog-page.scss */
 .blog-section-title {
   color: #fcaa35;
   font-family: 'cooper-hewitt-bold';
@@ -2691,7 +2671,7 @@ a {
   line-height: 34px;
 }
 
-/* line 168, ../scss/partials/_blog-page.scss */
+/* line 159, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials {
   overflow: hidden;
   margin-top: 15px;
@@ -2699,7 +2679,7 @@ a {
   clear: both;
   margin-bottom: 5px;
 }
-/* line 176, ../scss/partials/_blog-page.scss */
+/* line 167, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials .bsts-text {
   font-size: 0.75em;
   float: left;
@@ -2709,7 +2689,7 @@ a {
   letter-spacing: 0.04em;
   margin-top: 2px;
 }
-/* line 186, ../scss/partials/_blog-page.scss */
+/* line 177, ../scss/partials/_blog-page.scss */
 .blog-sec-title-socials .bsts-box {
   border: 1px solid #e0e0e0;
   width: 25px;
@@ -2723,26 +2703,26 @@ a {
   border-radius: 2px;
 }
 
-/* line 200, ../scss/partials/_blog-page.scss */
+/* line 191, ../scss/partials/_blog-page.scss */
 .blog-section-title-sub {
   font-weight: bold;
   font-family: "roboto-bold";
   font-size: 0.75em;
 }
 
-/* line 205, ../scss/partials/_blog-page.scss */
+/* line 196, ../scss/partials/_blog-page.scss */
 .blog-sec-article-text {
   line-height: 1.3;
   font-size: 0.75em;
 }
-/* line 208, ../scss/partials/_blog-page.scss */
+/* line 199, ../scss/partials/_blog-page.scss */
 .blog-sec-article-text div {
   margin-top: 15px;
   margin-bottom: 15px;
   font-family: "roboto-bold";
 }
 
-/* line 214, ../scss/partials/_blog-page.scss */
+/* line 205, ../scss/partials/_blog-page.scss */
 .blog-sec-large-heading {
   color: #fcaa35;
   margin-top: 23px;
@@ -2750,7 +2730,7 @@ a {
   font-family: "roboto-bold";
 }
 
-/* line 220, ../scss/partials/_blog-page.scss */
+/* line 211, ../scss/partials/_blog-page.scss */
 .blog-sec-large-subheading {
   font-size: 13px;
   letter-spacing: 0.04em;
@@ -2759,14 +2739,14 @@ a {
   font-family: "roboto-bold";
 }
 
-/* line 228, ../scss/partials/_blog-page.scss */
+/* line 219, ../scss/partials/_blog-page.scss */
 .bp-text-box {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 234, ../scss/partials/_blog-page.scss */
+/* line 225, ../scss/partials/_blog-page.scss */
 .bp-underliner {
   border-bottom: 1px solid #e0e0e0;
   height: 2px;
@@ -2774,31 +2754,51 @@ a {
   margin-bottom: 10px;
 }
 
-/* line 242, ../scss/partials/_blog-page.scss */
+/* line 232, ../scss/partials/_blog-page.scss */
+.blog-page-section {
+  background: white;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: #e0e0e0 1px solid;
+}
+@media screen and (max-width: 750px) {
+  /* line 232, ../scss/partials/_blog-page.scss */
+  .blog-page-section {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+}
+/* line 247, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr {
   padding: 2px;
 }
-/* line 249, ../scss/partials/_blog-page.scss */
+/* line 254, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr {
   padding: 2px;
   margin-right: 15%;
 }
-/* line 254, ../scss/partials/_blog-page.scss */
+/* line 259, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 258, ../scss/partials/_blog-page.scss */
+/* line 263, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article {
   width: 50%;
   float: left;
 }
-/* line 260, ../scss/partials/_blog-page.scss */
+/* line 265, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 263, ../scss/partials/_blog-page.scss */
+/* line 268, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left {
   width: 50%;
   float: left;
@@ -2810,7 +2810,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-/* line 273, ../scss/partials/_blog-page.scss */
+/* line 278, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date {
   position: absolute;
   width: 75%;
@@ -2819,7 +2819,7 @@ a {
   right: 0;
   font-size: 9px;
 }
-/* line 283, ../scss/partials/_blog-page.scss */
+/* line 288, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date .bpfa-date-left {
   height: 17px;
   background: #ffffff;
@@ -2832,7 +2832,7 @@ a {
   float: left;
   float: left;
 }
-/* line 297, ../scss/partials/_blog-page.scss */
+/* line 302, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-left .bpfa-date .bpfa-date-right {
   width: 50%;
   float: left;
@@ -2845,7 +2845,7 @@ a {
   color: #ffffff;
   text-align: center;
 }
-/* line 312, ../scss/partials/_blog-page.scss */
+/* line 317, ../scss/partials/_blog-page.scss */
 .blog-page-section .bp-flc-articles-ctr .bp-flc-articles-inr .bp-flc-a-row .bp-flc-a-article .bpfa-right {
   width: 47.61905%;
   float: left;
@@ -2858,7 +2858,7 @@ a {
   font-size: 0.5em;
 }
 
-/* line 328, ../scss/partials/_blog-page.scss */
+/* line 333, ../scss/partials/_blog-page.scss */
 .bp-big-btn {
   border: 1px solid #000000;
   display: table;
@@ -2867,12 +2867,12 @@ a {
   padding-top: 0.1875em;
   cursor: pointer;
 }
-/* line 336, ../scss/partials/_blog-page.scss */
+/* line 341, ../scss/partials/_blog-page.scss */
 .bp-big-btn:hover {
   border: #fcaa35 1px solid;
   color: #fcaa35;
 }
-/* line 340, ../scss/partials/_blog-page.scss */
+/* line 345, ../scss/partials/_blog-page.scss */
 .bp-big-btn .bp-big-btn-inr {
   font-size: 0.6875em;
   font-family: 'cooper-hewitt-bold';
@@ -2880,35 +2880,35 @@ a {
   line-height: 35px;
 }
 
-/* line 348, ../scss/partials/_blog-page.scss */
+/* line 353, ../scss/partials/_blog-page.scss */
 .bp-posted-date {
   margin-bottom: 20px;
 }
 
-/* line 352, ../scss/partials/_blog-page.scss */
+/* line 357, ../scss/partials/_blog-page.scss */
 .bp-share-socials {
   margin-bottom: 20px;
 }
-/* line 354, ../scss/partials/_blog-page.scss */
+/* line 359, ../scss/partials/_blog-page.scss */
 .bp-share-socials span {
   margin-left: 10px;
 }
 
-/* line 359, ../scss/partials/_blog-page.scss */
+/* line 364, ../scss/partials/_blog-page.scss */
 .bp-insider-tips-author {
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-/* line 366, ../scss/partials/_blog-page.scss */
+/* line 371, ../scss/partials/_blog-page.scss */
 .bp-blog-author-inr {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 540px;
 }
 
-/* line 372, ../scss/partials/_blog-page.scss */
+/* line 377, ../scss/partials/_blog-page.scss */
 .bp-avatar-ctr {
   border-radius: 50%;
   width: 85px;
@@ -2918,35 +2918,35 @@ a {
   margin-right: 20px;
 }
 
-/* line 381, ../scss/partials/_blog-page.scss */
+/* line 386, ../scss/partials/_blog-page.scss */
 .bp-i-t-name {
   margin-bottom: 16px;
   margin-left: 20px;
 }
 
-/* line 388, ../scss/partials/_blog-page.scss */
+/* line 393, ../scss/partials/_blog-page.scss */
 .bp-i-t-body {
   margin: 20px;
   margin-right: 20%;
 }
 
-/* line 398, ../scss/partials/_blog-page.scss */
+/* line 403, ../scss/partials/_blog-page.scss */
 .bp-table {
   margin-bottom: 25px;
 }
 
-/* line 406, ../scss/partials/_blog-page.scss */
+/* line 411, ../scss/partials/_blog-page.scss */
 .bp-table-inner {
   border: 1px solid black;
   width: 100%;
   overflow: auto;
 }
-/* line 412, ../scss/partials/_blog-page.scss */
+/* line 417, ../scss/partials/_blog-page.scss */
 .bp-table-inner thead {
   background: #e0e0e0;
   text-align: center;
 }
-/* line 422, ../scss/partials/_blog-page.scss */
+/* line 427, ../scss/partials/_blog-page.scss */
 .bp-table-inner th {
   border: 1px solid #e0e0e0;
   height: 40px;
@@ -2954,27 +2954,27 @@ a {
   font-family: 'roboto-bold';
   font-size: 0.875em;
 }
-/* line 430, ../scss/partials/_blog-page.scss */
+/* line 435, ../scss/partials/_blog-page.scss */
 .bp-table-inner td {
   height: 60px;
   border: 1px solid #e0e0e0;
   padding: 0.75em;
   letter-spacing: 0.04em;
 }
-/* line 437, ../scss/partials/_blog-page.scss */
+/* line 442, ../scss/partials/_blog-page.scss */
 .bp-table-inner .bpt-heading {
   font-weight: bold;
   font-family: 'roboto-bold';
   font-size: 0.75em;
   padding-top: 5px;
 }
-/* line 444, ../scss/partials/_blog-page.scss */
+/* line 449, ../scss/partials/_blog-page.scss */
 .bp-table-inner .bpt-text {
   padding-top: 10px;
   font-size: 12px;
 }
 
-/* line 451, ../scss/partials/_blog-page.scss */
+/* line 456, ../scss/partials/_blog-page.scss */
 .bp-vma {
   color: #fcaa35;
   font-family: "cooper-hewitt-bold";
@@ -2982,7 +2982,7 @@ a {
   cursor: pointer;
 }
 
-/* line 462, ../scss/partials/_blog-page.scss */
+/* line 467, ../scss/partials/_blog-page.scss */
 .bp-t-art-title {
   padding-bottom: 5px;
   font-family: "roboto-bold";
@@ -2992,7 +2992,7 @@ a {
   margin-bottom: 15px;
 }
 
-/* line 471, ../scss/partials/_blog-page.scss */
+/* line 476, ../scss/partials/_blog-page.scss */
 .bp-t-art-sub {
   padding-bottom: 5px;
   font-family: "roboto-bold";
@@ -3001,7 +3001,7 @@ a {
   margin-bottom: 15px;
 }
 
-/* line 480, ../scss/partials/_blog-page.scss */
+/* line 485, ../scss/partials/_blog-page.scss */
 .bp-t-art-text {
   font-family: 'cooper-hewitt-bold';
   font-size: 1em;
@@ -3009,7 +3009,7 @@ a {
   margin-bottom: 5px;
 }
 
-/* line 488, ../scss/partials/_blog-page.scss */
+/* line 493, ../scss/partials/_blog-page.scss */
 .bp-t-art-minor-text {
   color: #e0e0e0;
   font-family: 'roboto-bold';
@@ -3018,7 +3018,7 @@ a {
   margin-bottom: 4px;
 }
 
-/* line 497, ../scss/partials/_blog-page.scss */
+/* line 502, ../scss/partials/_blog-page.scss */
 .bp-t-art-wrp {
   cursor: pointer;
   margin-top: 5px;
@@ -3028,7 +3028,7 @@ a {
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* line 507, ../scss/partials/_blog-page.scss */
+/* line 512, ../scss/partials/_blog-page.scss */
 .bps-share-convo-ctr .bps-sh-title {
   font-size: 0.75em;
   text-align: center;
@@ -3036,13 +3036,13 @@ a {
   margin: 0 auto;
   padding-bottom: 7px;
 }
-/* line 514, ../scss/partials/_blog-page.scss */
+/* line 519, ../scss/partials/_blog-page.scss */
 .bps-share-convo-ctr .bps-sh-boxes {
   overflow: auto;
   width: 35%;
   margin: 10px auto;
 }
-/* line 520, ../scss/partials/_blog-page.scss */
+/* line 525, ../scss/partials/_blog-page.scss */
 .bps-share-convo-ctr .bps-sh-box {
   width: 31.25%;
   float: left;
@@ -3055,12 +3055,12 @@ a {
   font-size: 15px;
   border-radius: 2px;
 }
-/* line 532, ../scss/partials/_blog-page.scss */
+/* line 537, ../scss/partials/_blog-page.scss */
 .bps-share-convo-ctr .bps-sh-box:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 536, ../scss/partials/_blog-page.scss */
+/* line 541, ../scss/partials/_blog-page.scss */
 .bps-share-convo-ctr .bps-sh-title-underline {
   width: 114px;
   height: 3px;
@@ -3077,28 +3077,41 @@ a {
 
 /* line 10, ../scss/partials/_si_content.scss */
 .si-c-left {
-  background-image: url(../images/small-ad.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 80px;
-  width: 22.21875%;
+  width: 25%;
   float: left;
+  height: 80px;
+  float: left;
+}
+/* line 18, ../scss/partials/_si_content.scss */
+.si-c-left img {
+  width: 100%;
 }
 @media screen and (max-width: 750px) {
   /* line 10, ../scss/partials/_si_content.scss */
   .si-c-left {
-    width: 150px;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
     float: left;
   }
 }
-/* line 23, ../scss/partials/_si_content.scss */
+/* line 28, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb {
   font-size: 12px;
   text-align: center;
   position: relative;
   height: 80px;
+  overflow: hidden;
 }
-/* line 29, ../scss/partials/_si_content.scss */
+@media screen and (max-width: 750px) {
+  /* line 28, ../scss/partials/_si_content.scss */
+  .si-c-left .sic-art-thumb {
+    height: 150px;
+  }
+}
+/* line 38, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date {
   border: #fcaa35 1px solid;
   position: absolute;
@@ -3107,7 +3120,7 @@ a {
   bottom: 0;
   right: 0;
 }
-/* line 38, ../scss/partials/_si_content.scss */
+/* line 47, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date .sic-atd-left {
   background: #ffffff;
   height: 25px;
@@ -3116,7 +3129,7 @@ a {
   float: left;
   padding-top: 8px;
 }
-/* line 45, ../scss/partials/_si_content.scss */
+/* line 55, ../scss/partials/_si_content.scss */
 .si-c-left .sic-art-thumb .sic-art-thumb-date .sic-atd-right {
   width: 50%;
   float: left;
@@ -3128,17 +3141,18 @@ a {
   padding-top: 8px;
 }
 
-/* line 57, ../scss/partials/_si_content.scss */
+/* line 67, ../scss/partials/_si_content.scss */
 .si-c-right {
-  margin-left: 22px;
+  padding-left: 20px;
   font-size: 0.75em;
   letter-spacing: 0.06em;
-  width: 65.625%;
+  width: 75%;
   float: left;
-  margin-right: 3.125%;
+  float: right;
+  margin-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 57, ../scss/partials/_si_content.scss */
+  /* line 67, ../scss/partials/_si_content.scss */
   .si-c-right {
     width: 100%;
     float: left;
@@ -3146,27 +3160,27 @@ a {
     margin-right: 0;
     clear: both;
     padding-top: 10px;
+    padding-left: 0px;
   }
 }
-/* line 69, ../scss/partials/_si_content.scss */
+/* line 82, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-title {
   font-family: 'roboto-bold';
   padding-bottom: 7px;
 }
-/* line 74, ../scss/partials/_si_content.scss */
+/* line 87, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-sub {
   color: #e0e0e0;
   padding-bottom: 5px;
 }
-/* line 78, ../scss/partials/_si_content.scss */
+/* line 91, ../scss/partials/_si_content.scss */
 .si-c-right .si-c-body {
   font-family: 'roboto-medium';
   letter-spacing: 0.02em;
-  line-height: 1.3;
-  font-size: 12px;
+  line-height: 1.4;
 }
 
-/* line 88, ../scss/partials/_si_content.scss */
+/* line 101, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-title {
   border-bottom: 1px solid #e0e0e0;
   padding-top: 5px;
@@ -3174,28 +3188,28 @@ a {
   font-family: 'roboto-bold';
   font-size: 0.75em;
 }
-/* line 94, ../scss/partials/_si_content.scss */
+/* line 107, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-title img {
   vertical-align: sub;
   width: 22px;
   margin-right: 5px;
 }
-/* line 100, ../scss/partials/_si_content.scss */
+/* line 113, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bp-sports-sub {
   margin-top: 15px;
   font-size: 14px;
   font-family: 'roboto-bold';
   margin-bottom: 20px;
 }
-/* line 106, ../scss/partials/_si_content.scss */
+/* line 119, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .blog-sec-img-ctr {
   margin-bottom: 10px;
 }
-/* line 108, ../scss/partials/_si_content.scss */
+/* line 121, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .blog-sec-img-ctr img {
   vertical-align: bottom;
 }
-/* line 112, ../scss/partials/_si_content.scss */
+/* line 125, ../scss/partials/_si_content.scss */
 .bp-sports-wrp .bsec-img-text {
   border: #fcaa35 1px solid;
   padding: 15px;
@@ -3204,11 +3218,11 @@ a {
   font-size: 0.75em;
 }
 
-/* line 121, ../scss/partials/_si_content.scss */
+/* line 134, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp {
   height: 100%;
 }
-/* line 124, ../scss/partials/_si_content.scss */
+/* line 137, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .bp-top-headlines-title {
   font-family: 'cooper-hewitt-bold';
   font-size: 12px;
@@ -3217,11 +3231,11 @@ a {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 15px;
 }
-/* line 133, ../scss/partials/_si_content.scss */
+/* line 146, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices {
   overflow: hidden;
 }
-/* line 135, ../scss/partials/_si_content.scss */
+/* line 148, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn {
   font-family: 'cooper-hewitt-bold';
   font-size: 0.8125em;
@@ -3235,7 +3249,7 @@ a {
   float: left;
   margin-right: 1.85185%;
 }
-/* line 145, ../scss/partials/_si_content.scss */
+/* line 158, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn:last-child {
   width: 22.59259%;
   float: left;
@@ -3243,24 +3257,24 @@ a {
   float: right;
   margin-right: 0;
 }
-/* line 149, ../scss/partials/_si_content.scss */
+/* line 162, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .si-c-sports-choices .si-c-sports-choice-btn:hover {
   background: #fcaa35;
   color: white;
   border: none;
 }
-/* line 157, ../scss/partials/_si_content.scss */
+/* line 170, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list {
   clear: both;
   margin-top: 5px;
 }
-/* line 161, ../scss/partials/_si_content.scss */
+/* line 174, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list .btp-t-headline {
   height: 12.5%;
   font-size: 0.6875em;
   padding: 5px;
 }
-/* line 165, ../scss/partials/_si_content.scss */
+/* line 178, ../scss/partials/_si_content.scss */
 .bp-top-headlines-wrp .btp-t-headlines-list .btp-t-headline span {
   margin-right: 5px;
   color: #e0e0e0;
@@ -3268,39 +3282,52 @@ a {
   vertical-align: middle;
 }
 
-/* line 176, ../scss/partials/_si_content.scss */
+/* line 189, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp {
   font-size: 0.75em;
   font-family: 'roboto-bold';
 }
-/* line 179, ../scss/partials/_si_content.scss */
+/* line 192, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-title {
   padding: 5px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 183, ../scss/partials/_si_content.scss */
+/* line 196, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-date {
   padding: 5px;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 188, ../scss/partials/_si_content.scss */
+/* line 201, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-date span {
   font-weight: normal;
   font-family: 'roboto-medium';
 }
-/* line 195, ../scss/partials/_si_content.scss */
+/* line 208, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team {
+  font-size: 13px;
+  letter-spacing: 0.06em;
   padding: 20px;
   background: #e0e0e0;
+  vertical-align: bottom;
 }
-/* line 198, ../scss/partials/_si_content.scss */
+/* line 214, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team:first-child {
   border: 1px #61e063 solid;
   background: none;
 }
-/* line 202, ../scss/partials/_si_content.scss */
+/* line 218, ../scss/partials/_si_content.scss */
+.sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team span {
+  color: #fcaa35;
+}
+/* line 221, ../scss/partials/_si_content.scss */
+.sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team img {
+  float: right;
+  margin-top: -4px;
+  width: 20px;
+}
+/* line 226, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-sports-prediction-teams .sic-sports-prediction-team .sic-spt-color {
   border-radius: 50%;
   height: 15px;
@@ -3309,7 +3336,7 @@ a {
   float: left;
   margin-right: 10px;
 }
-/* line 213, ../scss/partials/_si_content.scss */
+/* line 237, ../scss/partials/_si_content.scss */
 .sic-sports-prediction-wrp .sic-view-all-btn {
   border: #000000 1px solid;
   padding-top: 15px;
@@ -3319,17 +3346,17 @@ a {
   font-family: 'cooper-hewitt-bold';
 }
 
-/* line 223, ../scss/partials/_si_content.scss */
+/* line 247, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp {
   font-family: 'roboto-bold';
   font-size: 0.75em;
 }
-/* line 227, ../scss/partials/_si_content.scss */
+/* line 251, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-title {
   padding-bottom: 7px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 232, ../scss/partials/_si_content.scss */
+/* line 256, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-text {
   padding-top: 10px;
   margin-top: 5px;
@@ -3339,11 +3366,11 @@ a {
   line-height: 1.3;
   font-size: 12px;
 }
-/* line 242, ../scss/partials/_si_content.scss */
+/* line 266, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input {
   overflow: hidden;
 }
-/* line 244, ../scss/partials/_si_content.scss */
+/* line 268, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input input {
   height: 30px;
   background: #ececec;
@@ -3354,7 +3381,7 @@ a {
   width: 80%;
   float: left;
 }
-/* line 253, ../scss/partials/_si_content.scss */
+/* line 277, ../scss/partials/_si_content.scss */
 .bp-newsletter-signup-wrp .bp-newsletter-input .bp-newsletter-input-btn {
   border: 1px solid #000000;
   text-align: center;
@@ -4078,8 +4105,9 @@ a {
 /* line 304, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-socials .umt-socials-icons img:hover {
   background: orange;
+  border-radius: 50%;
 }
-/* line 310, ../scss/partials/_team_profiles.scss */
+/* line 311, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons {
   font-family: 'cooper-hewitt-bold';
   clear: both;
@@ -4089,12 +4117,12 @@ a {
   font-size: 0.8125em;
 }
 @media screen and (max-width: 750px) {
-  /* line 310, ../scss/partials/_team_profiles.scss */
+  /* line 311, ../scss/partials/_team_profiles.scss */
   .upcoming-match-wrap .umt-buttons {
     font-size: 10px;
   }
 }
-/* line 321, ../scss/partials/_team_profiles.scss */
+/* line 322, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons .umt-button-dmp {
   background: #fcaa35;
   color: #ffffff;
@@ -4102,7 +4130,7 @@ a {
   float: left;
   height: 37px;
 }
-/* line 328, ../scss/partials/_team_profiles.scss */
+/* line 329, ../scss/partials/_team_profiles.scss */
 .upcoming-match-wrap .umt-buttons .umt-button-vl {
   background: #61e063;
   color: #ffffff;
@@ -4113,7 +4141,7 @@ a {
   height: 37px;
 }
 
-/* line 338, ../scss/partials/_team_profiles.scss */
+/* line 339, ../scss/partials/_team_profiles.scss */
 .current-squad-wrp {
   padding: 15px;
   margin-top: 15px;
@@ -4127,7 +4155,7 @@ a {
   height: 657px;
 }
 @media screen and (max-width: 750px) {
-  /* line 338, ../scss/partials/_team_profiles.scss */
+  /* line 339, ../scss/partials/_team_profiles.scss */
   .current-squad-wrp {
     width: 100%;
     float: left;
@@ -4138,7 +4166,7 @@ a {
   }
 }
 
-/* line 355, ../scss/partials/_team_profiles.scss */
+/* line 356, ../scss/partials/_team_profiles.scss */
 .current-sqd-title {
   padding-bottom: 5px;
   font-family: "roboto-bold";
@@ -4148,14 +4176,14 @@ a {
   margin-bottom: 10px;
 }
 
-/* line 364, ../scss/partials/_team_profiles.scss */
+/* line 365, ../scss/partials/_team_profiles.scss */
 .current-squad-lu {
   height: 100%;
   font-family: "roboto-bold";
   font-size: 0.8125em;
   letter-spacing: 0.04em;
 }
-/* line 369, ../scss/partials/_team_profiles.scss */
+/* line 370, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row {
   padding-left: 10px;
   padding-right: 10px;
@@ -4166,30 +4194,30 @@ a {
   clear: both;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 376, ../scss/partials/_team_profiles.scss */
+/* line 377, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row:nth-child(1) {
   border: none;
   background: #e0e0e0;
 }
-/* line 382, ../scss/partials/_team_profiles.scss */
+/* line 383, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-name-title {
   float: left;
 }
-/* line 385, ../scss/partials/_team_profiles.scss */
+/* line 386, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-rating-title {
   float: right;
 }
-/* line 389, ../scss/partials/_team_profiles.scss */
+/* line 390, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-name {
   float: left;
 }
-/* line 392, ../scss/partials/_team_profiles.scss */
+/* line 393, ../scss/partials/_team_profiles.scss */
 .current-squad-lu .cslu-row .cur-sq-lu-rating {
   float: right;
   padding-right: 10px;
 }
 
-/* line 402, ../scss/partials/_team_profiles.scss */
+/* line 403, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp {
   margin-top: 15px;
   width: 64.6789%;
@@ -4201,7 +4229,7 @@ a {
   margin-bottom: 15px;
 }
 @media screen and (max-width: 750px) {
-  /* line 402, ../scss/partials/_team_profiles.scss */
+  /* line 403, ../scss/partials/_team_profiles.scss */
   .team-rating-ot-wrp {
     width: 100%;
     float: left;
@@ -4211,32 +4239,32 @@ a {
     margin-top: 0px;
   }
 }
-/* line 417, ../scss/partials/_team_profiles.scss */
+/* line 418, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-ot-title {
   font-family: "roboto-bold";
   border-bottom: #e0e0e0 1px solid;
   padding: 5px;
   margin-bottom: 10px;
 }
-/* line 423, ../scss/partials/_team_profiles.scss */
+/* line 424, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-table {
   overflow: hidden;
   background: grey;
 }
-/* line 428, ../scss/partials/_team_profiles.scss */
+/* line 429, ../scss/partials/_team_profiles.scss */
 .team-rating-ot-wrp .tr-table img {
   width: 100%;
   vertical-align: bottom;
 }
 
-/* line 435, ../scss/partials/_team_profiles.scss */
+/* line 436, ../scss/partials/_team_profiles.scss */
 .people-also-viewed {
   padding: 25px;
   overflow: hidden;
   background: #ffffff;
   margin-top: -20px;
 }
-/* line 441, ../scss/partials/_team_profiles.scss */
+/* line 442, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-title {
   margin-bottom: 1.25em;
   border-bottom: 1px solid #e0e0e0;
@@ -4247,12 +4275,12 @@ a {
   letter-spacing: 0.04em;
   font-size: 0.8125em;
 }
-/* line 452, ../scss/partials/_team_profiles.scss */
+/* line 453, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-select {
   display: none;
 }
 @media screen and (max-width: 750px) {
-  /* line 452, ../scss/partials/_team_profiles.scss */
+  /* line 453, ../scss/partials/_team_profiles.scss */
   .people-also-viewed .pav-select {
     display: block;
     height: 30px;
@@ -4261,35 +4289,35 @@ a {
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 463, ../scss/partials/_team_profiles.scss */
+  /* line 464, ../scss/partials/_team_profiles.scss */
   .people-also-viewed .pav-col-wrp {
     display: none;
   }
 }
-/* line 468, ../scss/partials/_team_profiles.scss */
+/* line 469, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col {
   background: white;
   width: 31.25%;
   float: left;
   margin-right: 3.125%;
 }
-/* line 471, ../scss/partials/_team_profiles.scss */
+/* line 472, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(1) {
   border-right: 1px solid #e0e0e0;
   text-align: left;
 }
-/* line 478, ../scss/partials/_team_profiles.scss */
+/* line 479, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(2) {
   border-right: 1px solid #e0e0e0;
   padding-left: 7%;
 }
-/* line 483, ../scss/partials/_team_profiles.scss */
+/* line 484, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col:nth-child(3) {
   float: right;
   margin-right: 0;
   padding-left: 7%;
 }
-/* line 488, ../scss/partials/_team_profiles.scss */
+/* line 489, ../scss/partials/_team_profiles.scss */
 .people-also-viewed .pav-col-wrp .pav-col .pav-people {
   height: 31px;
   line-height: 30px;
@@ -4298,12 +4326,12 @@ a {
   font-size: 0.8125em;
 }
 
-/* line 500, ../scss/partials/_team_profiles.scss */
+/* line 501, ../scss/partials/_team_profiles.scss */
 .umtmt-bg {
   background: #e6e5e6;
 }
 
-/* line 504, ../scss/partials/_team_profiles.scss */
+/* line 505, ../scss/partials/_team_profiles.scss */
 .umtmt-bg_b {
   background: #f2f2f2;
 }
